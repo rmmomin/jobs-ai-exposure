@@ -18,7 +18,6 @@ from paths import (
     COMPARISON_FIGURES_DIR,
     COMPARISON_SOURCE_DIR,
     COMPARISON_TABLES_DIR,
-    LOCAL_GPT54_SCORES_JSON,
     OCCUPATIONS_CSV,
     SCORES_JSON,
     SCORES_ORG_JSON,
@@ -585,12 +584,12 @@ def _prepare_variant_frame(
 
 
 def load_internal_variants() -> dict[str, pd.DataFrame]:
-    """Load current, original, and optional local occupation score variants."""
+    """Load the canonical current and archived original occupation score variants."""
     occupations = load_occupations_metadata()
     current = pd.DataFrame(load_json_records(SCORES_JSON))
     current_extras = current[["slug", "industry_matrix_url", "industries", "naics_industry_codes"]].copy()
 
-    variants = {
+    return {
         "repo_current": _prepare_variant_frame(current, "repo_current", occupations),
         "repo_original": _prepare_variant_frame(
             pd.DataFrame(load_json_records(SCORES_ORG_JSON)),
@@ -599,14 +598,6 @@ def load_internal_variants() -> dict[str, pd.DataFrame]:
             current_extras=current_extras,
         ),
     }
-    if LOCAL_GPT54_SCORES_JSON.exists():
-        variants["local_gpt54"] = _prepare_variant_frame(
-            pd.DataFrame(load_json_records(LOCAL_GPT54_SCORES_JSON)),
-            "local_gpt54",
-            occupations,
-            current_extras=current_extras,
-        )
-    return variants
 
 
 def aggregate_variant_by_column(frame: pd.DataFrame, code_column: str) -> pd.DataFrame:

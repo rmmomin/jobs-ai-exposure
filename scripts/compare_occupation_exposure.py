@@ -335,10 +335,6 @@ def compare_internal_variants(prepared, tables_dir, figures_dir):
     pairs = []
     if "repo_current" in prepared and "repo_original" in prepared:
         pairs.append(("repo_current", "repo_original"))
-    if "local_gpt54" in prepared and "repo_current" in prepared:
-        pairs.append(("repo_current", "local_gpt54"))
-    if "local_gpt54" in prepared and "repo_original" in prepared:
-        pairs.append(("repo_original", "local_gpt54"))
 
     rows = []
     for left_name, right_name in pairs:

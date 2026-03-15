@@ -16,7 +16,6 @@ README.md
 pyproject.toml
 scripts/
 data/
-  local/
   source/
     occupational_outlook_handbook.html
     html/
@@ -28,7 +27,6 @@ data/
 
 - `scripts/` contains the runnable pipeline scripts.
 - `data/source/` contains the raw BLS source material.
-- `data/local/` is for optional local-only score variants such as `scores_gpt54.json`.
 - `data/pages/` contains parsed markdown pages generated from the raw HTML.
 - `data/exports/` contains the JSON and CSV outputs used for analysis.
 - `data/source/comparison/` stores downloaded external benchmark datasets.
@@ -106,11 +104,11 @@ The default comparison flow is:
 3. `scripts/build_industry_exposure.py --scores-path ... --naics-level 4 --output-prefix ...` for any alternate score variant
 4. `scripts/compare_industry_exposure.py`
 
-If you have an optional local alternate score file at `data/local/scores_gpt54.json`,
-you can build a compatible 4-digit industry exposure file for it and then include
-it in the industry comparison step. `scripts/compare_industry_exposure.py`
-automatically picks up any `custom_industry_exposure_*_4digit.csv` files from
-`data/exports/comparisons/tables/`.
+If you want to compare another score variant, first build a compatible 4-digit
+industry exposure file with `scripts/build_industry_exposure.py --scores-path`
+and save it under `data/exports/comparisons/tables/`. Then
+`scripts/compare_industry_exposure.py` will automatically pick up any
+`custom_industry_exposure_*_4digit.csv` files from that directory.
 
 ## Current benchmark results
 
@@ -216,7 +214,7 @@ uv run python scripts/download_comparison_data.py
 uv run python scripts/compare_occupation_exposure.py
 
 # Build a custom 4-digit industry exposure output for an alternate score file
-uv run python scripts/build_industry_exposure.py --scores-path data/local/scores_gpt54.json --naics-level 4 --output-prefix data/exports/comparisons/tables/custom_industry_exposure_local_gpt54_4digit
+uv run python scripts/build_industry_exposure.py --scores-path data/exports/scores_org.json --naics-level 4 --output-prefix data/exports/comparisons/tables/custom_industry_exposure_repo_original_4digit
 
 # Compare industry exposure with external 4-digit AIIE benchmarks
 uv run python scripts/compare_industry_exposure.py
