@@ -11,19 +11,20 @@ import csv
 import json
 import os
 import re
+from urllib.parse import urljoin
+
 from bs4 import BeautifulSoup
 
 
 def clean(text):
-    return re.sub(r'\s+', ' ', text).strip()
+    return re.sub(r"\s+", " ", text).strip()
 
 
 def parse_pay(value):
-    """Parse '62,350 per year $29.98 per hour' or '$23.33 per hour' into (annual, hourly)."""
+    """Parse pay text into (annual, hourly)."""
     annual = ""
     hourly = ""
-    # Find all dollar amounts
-    amounts = re.findall(r'\$([\d,]+(?:\.\d+)?)', value)
+    amounts = re.findall(r"\$([\d,]+(?:\.\d+)?)", value)
     if "per year" in value and "per hour" in value and len(amounts) >= 2:
         annual = amounts[0].replace(",", "")
         hourly = amounts[1].replace(",", "")
@@ -35,28 +36,54 @@ def parse_pay(value):
 
 
 def parse_outlook(value):
-    """Parse '9% (Much faster than average)' into (pct, description)."""
-    m = re.match(r'(-?\d+)%\s*\((.+)\)', value)
-    if m:
-        return m.group(1), m.group(2)
-    m = re.match(r'(-?\d+)%', value)
-    if m:
-        return m.group(1), ""
+    """Parse outlook text into (pct, description)."""
+    match = re.match(r"(-?\d+)%\s*\((.+)\)", value)
+    if match:
+        return match.group(1), match.group(2)
+    match = re.match(r"(-?\d+)%", value)
+    if match:
+        return match.group(1), ""
     return "", value
 
 
 def parse_number(value):
     """Strip commas and return a clean number string."""
     cleaned = value.replace(",", "").strip()
-    # Handle negative numbers
-    if re.match(r'^-?\d+$', cleaned):
+    if re.match(r"^-?\d+$", cleaned):
         return cleaned
     return value.strip()
 
 
+def extract_industry_matrix_url(soup, occupation_title):
+    """Find the BLS industry-matrix URL for this occupation."""
+    outlook_table = soup.find("table", id="outlook-table")
+    if not outlook_table:
+        return ""
+
+    tbody = outlook_table.find("tbody")
+    if not tbody:
+        return ""
+
+    fallback_url = ""
+    for tr in tbody.find_all("tr"):
+        link = tr.find("a", href=re.compile(r"nationalMatrix"))
+        if not link:
+            continue
+
+        full_url = urljoin("https://data.bls.gov/", link.get("href", ""))
+        if not fallback_url:
+            fallback_url = full_url
+
+        title_cell = tr.find(["th", "td"])
+        if title_cell and clean(title_cell.get_text()) == occupation_title:
+            return full_url
+
+    return fallback_url
+
+
 def extract_occupation(html_path, occ_meta):
     """Extract one row of data from an HTML file."""
-    with open(html_path) as f:
+    with open(html_path, encoding="utf-8", errors="replace") as f:
         soup = BeautifulSoup(f.read(), "html.parser")
 
     row = {
@@ -75,9 +102,9 @@ def extract_occupation(html_path, occ_meta):
         "outlook_desc": "",
         "employment_change": "",
         "projected_employment_2034": "",
+        "employment_by_industry_url": extract_industry_matrix_url(soup, occ_meta["title"]),
     }
 
-    # Quick Facts table
     qf_table = soup.find("table", id="quickfacts")
     if qf_table:
         tbody = qf_table.find("tbody")
@@ -105,7 +132,6 @@ def extract_occupation(html_path, occ_meta):
                 elif "employment change" in field:
                     row["employment_change"] = parse_number(value)
 
-    # Projections table (for SOC code and projected employment)
     outlook_table = soup.find("table", id="outlook-table")
     if outlook_table:
         tbody = outlook_table.find("tbody")
@@ -113,14 +139,12 @@ def extract_occupation(html_path, occ_meta):
             tr = tbody.find("tr")
             if tr:
                 cells = [clean(c.get_text()) for c in tr.find_all(["td", "th"])]
-                # cells: [Title, SOC, Emp2024, Emp2034, %change, numchange, ...]
                 if len(cells) >= 4:
                     soc = cells[1]
-                    if soc != "—":
+                    if soc != "-":
                         row["soc_code"] = soc
                     row["projected_employment_2034"] = parse_number(cells[3])
 
-    # Impute missing pay: annual <-> hourly using 2080 hours/year
     if row["median_pay_annual"] and not row["median_pay_hourly"]:
         row["median_pay_hourly"] = f"{float(row['median_pay_annual']) / 2080:.2f}"
     elif row["median_pay_hourly"] and not row["median_pay_annual"]:
@@ -130,15 +154,25 @@ def extract_occupation(html_path, occ_meta):
 
 
 def main():
-    with open("occupations.json") as f:
+    with open("occupations.json", encoding="utf-8") as f:
         occupations = json.load(f)
 
     fieldnames = [
-        "title", "category", "slug", "soc_code",
-        "median_pay_annual", "median_pay_hourly",
-        "entry_education", "work_experience", "training",
-        "num_jobs_2024", "projected_employment_2034",
-        "outlook_pct", "outlook_desc", "employment_change",
+        "title",
+        "category",
+        "slug",
+        "soc_code",
+        "median_pay_annual",
+        "median_pay_hourly",
+        "entry_education",
+        "work_experience",
+        "training",
+        "num_jobs_2024",
+        "projected_employment_2034",
+        "outlook_pct",
+        "outlook_desc",
+        "employment_change",
+        "employment_by_industry_url",
         "url",
     ]
 
@@ -149,20 +183,20 @@ def main():
         if not os.path.exists(html_path):
             missing += 1
             continue
-        row = extract_occupation(html_path, occ)
-        rows.append(row)
+        rows.append(extract_occupation(html_path, occ))
 
-    with open("occupations.csv", "w", newline="") as f:
+    with open("occupations.csv", "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(rows)
 
     print(f"Wrote {len(rows)} rows to occupations.csv (missing HTML: {missing})")
-
-    # Quick sanity check
-    print(f"\nSample rows:")
-    for r in rows[:3]:
-        print(f"  {r['title']}: ${r['median_pay_annual']}/yr, {r['num_jobs_2024']} jobs, {r['outlook_pct']}% outlook")
+    print("\nSample rows:")
+    for row in rows[:3]:
+        print(
+            f"  {row['title']}: ${row['median_pay_annual']}/yr, "
+            f"{row['num_jobs_2024']} jobs, {row['outlook_pct']}% outlook"
+        )
 
 
 if __name__ == "__main__":

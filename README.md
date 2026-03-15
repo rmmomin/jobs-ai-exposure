@@ -12,20 +12,21 @@ The BLS OOH covers **342 occupations** spanning every sector of the US economy, 
 
 ## Data pipeline
 
-1. **Scrape** (`scrape.py`) — Playwright (non-headless, BLS blocks bots) downloads raw HTML for all 342 occupation pages into `html/`.
-2. **Parse** (`parse_detail.py`, `process.py`) — BeautifulSoup converts raw HTML into clean Markdown files in `pages/`.
-3. **Tabulate** (`make_csv.py`) — Extracts structured fields (pay, education, job count, growth outlook, SOC code) into `occupations.csv`.
-4. **Score** (`score.py`) — Sends each occupation's Markdown description to an OpenAI model via the Responses API with a scoring rubric. Each occupation gets an AI Exposure score from 0-10 with a rationale. Results saved to `scores.json`.
-5. **Build site data** (`build_site_data.py`) — Merges CSV stats and AI exposure scores into a compact `site/data.json` for the frontend.
-6. **Website** (`site/index.html`) — Interactive treemap visualization where area = employment and color = AI exposure (green to red).
+1. **Scrape** (`scrape.py`) - Playwright (non-headless, BLS blocks bots) downloads raw HTML for all 342 occupation pages into `html/`.
+2. **Parse** (`parse_detail.py`, `process.py`) - BeautifulSoup converts raw HTML into clean Markdown files in `pages/`.
+3. **Tabulate** (`make_csv.py`) - Extracts structured fields (pay, education, job count, growth outlook, SOC code, and each occupation's BLS industry-matrix URL) into `occupations.csv`.
+4. **Score** (`score.py`) - Sends each occupation's Markdown description to OpenAI, saves the latest results into `scores.json`, and enriches each score entry with SOC metadata, industry rows, and NAICS industry codes.
+5. **Build site data** (`build_site_data.py`) - Merges CSV stats and the latest AI exposure scores into `site/data.json`, and compares `scores_org.json` vs `scores.json` for `site/changes.json`.
+6. **Website** (`site/index.html`) - Interactive treemap visualization where area = employment and color = AI exposure (green to red).
 
 ## Key files
 
 | File | Description |
 |------|-------------|
 | `occupations.json` | Master list of 342 occupations with title, URL, category, slug |
-| `occupations.csv` | Summary stats: pay, education, job count, growth projections |
-| `scores.json` | AI exposure scores (0-10) with rationales for all 342 occupations |
+| `occupations.csv` | Summary stats plus the BLS employment-by-industry matrix URL |
+| `scores_org.json` | Archived original score baseline |
+| `scores.json` | Latest canonical AI exposure scores with rationales, industries, and NAICS industry codes |
 | `html/` | Raw HTML pages from BLS (source of truth, ~40MB) |
 | `pages/` | Clean Markdown versions of each occupation page |
 | `site/` | Static website (treemap visualization) |
@@ -34,7 +35,7 @@ The BLS OOH covers **342 occupations** spanning every sector of the US economy, 
 
 Each occupation is scored on a single **AI Exposure** axis from 0 to 10, measuring how much AI will reshape that occupation. The score considers both direct automation (AI doing the work) and indirect effects (AI making workers so productive that fewer are needed).
 
-A key signal is whether the job's work product is fundamentally digital — if the job can be done entirely from a home office on a computer, AI exposure is inherently high. Conversely, jobs requiring physical presence, manual skill, or real-time human interaction have a natural barrier.
+A key signal is whether the job's work product is fundamentally digital - if the job can be done entirely from a home office on a computer, AI exposure is inherently high. Conversely, jobs requiring physical presence, manual skill, or real-time human interaction have a natural barrier.
 
 **Calibration examples from the dataset:**
 
@@ -59,13 +60,14 @@ The main visualization is an interactive **treemap** where:
 
 ## Setup
 
-```
+```bash
 uv sync
 uv run playwright install chromium
 ```
 
 Requires an OpenAI API key in `.env`:
-```
+
+```bash
 OPENAI_API_KEY=your_key_here
 ```
 
@@ -81,10 +83,10 @@ uv run python process.py
 # Generate CSV summary
 uv run python make_csv.py
 
-# Score AI exposure (uses the OpenAI Responses API)
+# Score AI exposure and overwrite the latest canonical scores file
 uv run python score.py
 
-# Build website data
+# Build website data and baseline-vs-latest comparison data
 uv run python build_site_data.py
 
 # Serve the site locally

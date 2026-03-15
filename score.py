@@ -7,22 +7,27 @@ incrementally to scores.json so the script can be resumed if interrupted.
 
 Usage:
     uv run python score.py
-    uv run python score.py --model gpt-5-mini
-    uv run python score.py --start 0 --end 10   # test on first 10
+    uv run python score.py --model gpt-5.4
+    uv run python score.py --start 0 --end 10
 """
 
 import argparse
+import csv
 import json
 import os
+import re
 import time
+
 import httpx
+from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 
 load_dotenv()
 
-DEFAULT_MODEL = "gpt-5-mini"
+DEFAULT_MODEL = "gpt-5.4"
 OUTPUT_FILE = "scores.json"
 API_URL = "https://api.openai.com/v1/responses"
+NUMERIC_CODE_RE = re.compile(r"^\d+$")
 OUTPUT_SCHEMA = {
     "type": "object",
     "properties": {
@@ -41,64 +46,66 @@ OUTPUT_SCHEMA = {
 }
 
 SYSTEM_PROMPT = """\
-You are an expert analyst evaluating how exposed different occupations are to \
-AI. You will be given a detailed description of an occupation from the Bureau \
-of Labor Statistics.
+You are an expert analyst evaluating how exposed different occupations are to AI.
+You will be given a detailed description of an occupation from the Bureau of
+Labor Statistics.
 
-Rate the occupation's overall **AI Exposure** on a scale from 0 to 10.
+Rate the occupation's overall AI Exposure on a scale from 0 to 10.
 
-AI Exposure measures: how much will AI reshape this occupation? Consider both \
-direct effects (AI automating tasks currently done by humans) and indirect \
+AI Exposure measures how much AI will reshape this occupation. Consider both
+direct effects (AI automating tasks currently done by humans) and indirect
 effects (AI making each worker so productive that fewer are needed).
 
-A key signal is whether the job's work product is fundamentally digital. If \
-the job can be done entirely from a home office on a computer — writing, \
-coding, analyzing, communicating — then AI exposure is inherently high (7+), \
-because AI capabilities in digital domains are advancing rapidly. Even if \
-today's AI can't handle every aspect of such a job, the trajectory is steep \
-and the ceiling is very high. Conversely, jobs requiring physical presence, \
-manual skill, or real-time human interaction in the physical world have a \
+A key signal is whether the job's work product is fundamentally digital. If
+the job can be done entirely from a home office on a computer - writing,
+coding, analyzing, communicating - then AI exposure is inherently high (7+),
+because AI capabilities in digital domains are advancing rapidly. Even if
+today's AI cannot handle every aspect of such a job, the trajectory is steep
+and the ceiling is very high. Conversely, jobs requiring physical presence,
+manual skill, or real-time human interaction in the physical world have a
 natural barrier to AI exposure.
 
 Use these anchors to calibrate your score:
 
-- **0–1: Minimal exposure.** The work is almost entirely physical, hands-on, \
-or requires real-time human presence in unpredictable environments. AI has \
-essentially no impact on daily work. \
-Examples: roofer, landscaper, commercial diver.
+- 0-1: Minimal exposure. The work is almost entirely physical, hands-on, or
+  requires real-time human presence in unpredictable environments. AI has
+  essentially no impact on daily work. Examples: roofer, landscaper,
+  commercial diver.
 
-- **2–3: Low exposure.** Mostly physical or interpersonal work. AI might help \
-with minor peripheral tasks (scheduling, paperwork) but doesn't touch the \
-core job. \
-Examples: electrician, plumber, firefighter, dental hygienist.
+- 2-3: Low exposure. Mostly physical or interpersonal work. AI might help with
+  minor peripheral tasks (scheduling, paperwork) but does not touch the core
+  job. Examples: electrician, plumber, firefighter, dental hygienist.
 
-- **4–5: Moderate exposure.** A mix of physical/interpersonal work and \
-knowledge work. AI can meaningfully assist with the information-processing \
-parts but a substantial share of the job still requires human presence. \
-Examples: registered nurse, police officer, veterinarian.
+- 4-5: Moderate exposure. A mix of physical/interpersonal work and knowledge
+  work. AI can meaningfully assist with the information-processing parts but a
+  substantial share of the job still requires human presence. Examples:
+  registered nurse, police officer, veterinarian.
 
-- **6–7: High exposure.** Predominantly knowledge work with some need for \
-human judgment, relationships, or physical presence. AI tools are already \
-useful and workers using AI may be substantially more productive. \
-Examples: teacher, manager, accountant, journalist.
+- 6-7: High exposure. Predominantly knowledge work with some need for human
+  judgment, relationships, or physical presence. AI tools are already useful
+  and workers using AI may be substantially more productive. Examples:
+  teacher, manager, accountant, journalist.
 
-- **8–9: Very high exposure.** The job is almost entirely done on a computer. \
-All core tasks — writing, coding, analyzing, designing, communicating — are \
-in domains where AI is rapidly improving. The occupation faces major \
-restructuring. \
-Examples: software developer, graphic designer, translator, data analyst, \
-paralegal, copywriter.
+- 8-9: Very high exposure. The job is almost entirely done on a computer. All
+  core tasks - writing, coding, analyzing, designing, communicating - are in
+  domains where AI is rapidly improving. The occupation faces major
+  restructuring. Examples: software developer, graphic designer, translator,
+  data analyst, paralegal, copywriter.
 
-- **10: Maximum exposure.** Routine information processing, fully digital, \
-with no physical component. AI can already do most of it today. \
-Examples: data entry clerk, telemarketer.
+- 10: Maximum exposure. Routine information processing, fully digital, with no
+  physical component. AI can already do most of it today. Examples: data entry
+  clerk, telemarketer.
 
-Respond with ONLY a JSON object in this exact format, no other text:
+Respond with only a JSON object in this exact format, with no other text:
 {
   "exposure": <0-10>,
   "rationale": "<2-3 sentences explaining the key factors>"
 }\
 """
+
+
+def clean(text):
+    return re.sub(r"\s+", " ", (text or "")).strip()
 
 
 def extract_output_text(payload):
@@ -143,6 +150,150 @@ def default_reasoning_effort(model):
     return None
 
 
+def parse_thousands_number(value):
+    """Convert BLS matrix employment figures from thousands into whole jobs."""
+    cleaned = clean(value).replace(",", "")
+    if not cleaned:
+        return None
+    try:
+        return int(round(float(cleaned) * 1000))
+    except ValueError:
+        return None
+
+
+def parse_percent(value):
+    cleaned = clean(value).replace(",", "")
+    if not cleaned:
+        return None
+    try:
+        return float(cleaned)
+    except ValueError:
+        return None
+
+
+def load_occupation_metadata():
+    metadata = {}
+    with open("occupations.csv", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            metadata[row["slug"]] = {
+                "soc_code": row.get("soc_code", ""),
+                "industry_matrix_url": row.get("employment_by_industry_url", ""),
+                "url": row.get("url", ""),
+            }
+    return metadata
+
+
+def parse_industry_matrix(html):
+    """Parse BLS employment-by-industry rows into a compact JSON shape."""
+    soup = BeautifulSoup(html, "html.parser")
+    table = None
+    for candidate in soup.find_all("table"):
+        headers = {
+            clean(th.get_text(" ", strip=True))
+            for th in candidate.find_all("th")
+        }
+        if "Industry Title" in headers and "Industry Code" in headers:
+            table = candidate
+            break
+
+    if table is None:
+        return [], []
+
+    industries = []
+    naics_codes = []
+    seen = set()
+
+    for tr in table.find_all("tr"):
+        cells = [clean(cell.get_text(" ", strip=True)) for cell in tr.find_all(["th", "td"])]
+        if len(cells) < 2:
+            continue
+
+        title, code = cells[0], cells[1]
+        if title == "Industry Title" or title.startswith("Filter by Title:"):
+            continue
+        if not NUMERIC_CODE_RE.match(code):
+            continue
+
+        key = (title, code)
+        if key in seen:
+            continue
+        seen.add(key)
+
+        industry = {
+            "title": title,
+            "naics_code": code,
+        }
+
+        if len(cells) > 2 and cells[2]:
+            industry["industry_type"] = cells[2]
+
+        employment_2024 = parse_thousands_number(cells[3]) if len(cells) > 3 else None
+        if employment_2024 is not None:
+            industry["employment_2024"] = employment_2024
+
+        occupation_share = parse_percent(cells[4]) if len(cells) > 4 else None
+        if occupation_share is not None:
+            industry["occupation_share_2024_pct"] = occupation_share
+
+        industries.append(industry)
+        naics_codes.append(code)
+
+    return industries, sorted(set(naics_codes))
+
+
+def fetch_industry_profile(client, url, cache):
+    if not url:
+        return [], []
+    if url in cache:
+        return cache[url]
+
+    response = client.get(
+        url,
+        headers={"User-Agent": "jobs-ai-exposure/1.0"},
+        timeout=60,
+    )
+    response.raise_for_status()
+    parsed = parse_industry_matrix(response.text)
+    cache[url] = parsed
+    return parsed
+
+
+def enrich_score_entry(entry, metadata, bls_client, industry_cache):
+    changed = False
+    if metadata is None:
+        return changed
+
+    soc_code = metadata.get("soc_code") or ""
+    if entry.get("soc_code") != soc_code:
+        entry["soc_code"] = soc_code
+        changed = True
+
+    industry_matrix_url = metadata.get("industry_matrix_url") or ""
+    if entry.get("industry_matrix_url") != industry_matrix_url:
+        entry["industry_matrix_url"] = industry_matrix_url
+        changed = True
+
+    url = metadata.get("url") or ""
+    if url and entry.get("url") != url:
+        entry["url"] = url
+        changed = True
+
+    industries, naics_codes = fetch_industry_profile(
+        bls_client,
+        industry_matrix_url,
+        industry_cache,
+    )
+    if entry.get("industries") != industries:
+        entry["industries"] = industries
+        changed = True
+    if entry.get("naics_industry_codes") != naics_codes:
+        entry["naics_industry_codes"] = naics_codes
+        changed = True
+
+    return changed
+
+
 def score_occupation(client, text, model, reasoning_effort=None):
     """Send one occupation to the model and parse the structured response."""
     payload = {
@@ -156,7 +307,7 @@ def score_occupation(client, text, model, reasoning_effort=None):
                 "name": "ai_exposure_score",
                 "strict": True,
                 "schema": OUTPUT_SCHEMA,
-            }
+            },
         },
         "max_output_tokens": 800,
         "store": False,
@@ -185,6 +336,26 @@ def score_occupation(client, text, model, reasoning_effort=None):
     return result
 
 
+def ordered_scores(scores, occupations):
+    known_slugs = set()
+    ordered = []
+    for occ in occupations:
+        slug = occ["slug"]
+        if slug in scores:
+            ordered.append(scores[slug])
+            known_slugs.add(slug)
+
+    for slug, entry in scores.items():
+        if slug not in known_slugs:
+            ordered.append(entry)
+    return ordered
+
+
+def write_scores(path, scores, occupations):
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(ordered_scores(scores, occupations), f, indent=2)
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", default=DEFAULT_MODEL)
@@ -193,19 +364,22 @@ def main():
     parser.add_argument("--delay", type=float, default=0.5)
     parser.add_argument("--reasoning-effort", default=None)
     parser.add_argument("--output-file", default=OUTPUT_FILE)
-    parser.add_argument("--force", action="store_true",
-                        help="Re-score even if already cached")
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="Re-score even if already cached",
+    )
     args = parser.parse_args()
 
-    with open("occupations.json") as f:
+    with open("occupations.json", encoding="utf-8") as f:
         occupations = json.load(f)
 
     subset = occupations[args.start:args.end]
+    metadata_by_slug = load_occupation_metadata()
 
-    # Load existing scores
     scores = {}
     if os.path.exists(args.output_file) and not args.force:
-        with open(args.output_file) as f:
+        with open(args.output_file, encoding="utf-8") as f:
             for entry in json.load(f):
                 scores[entry["slug"]] = entry
 
@@ -213,61 +387,84 @@ def main():
     print(f"Already cached: {len(scores)}")
 
     errors = []
-    client = httpx.Client()
+    openai_client = httpx.Client()
+    bls_client = httpx.Client(follow_redirects=True)
+    industry_cache = {}
+    dirty = False
 
-    for i, occ in enumerate(subset):
+    for slug, entry in list(scores.items()):
+        metadata = metadata_by_slug.get(slug)
+        try:
+            dirty = enrich_score_entry(entry, metadata, bls_client, industry_cache) or dirty
+        except Exception as exc:
+            print(f"  WARN {slug}: could not load industry metadata ({exc})")
+
+    for index, occ in enumerate(subset):
         slug = occ["slug"]
+        metadata = metadata_by_slug.get(slug)
 
         if slug in scores:
             continue
 
         md_path = f"pages/{slug}.md"
         if not os.path.exists(md_path):
-            print(f"  [{i+1}] SKIP {slug} (no markdown)")
+            print(f"  [{index + 1}] SKIP {slug} (no markdown)")
             continue
 
         with open(md_path, encoding="utf-8") as f:
             text = f.read()
 
-        print(f"  [{i+1}/{len(subset)}] {occ['title']}...", end=" ", flush=True)
+        print(f"  [{index + 1}/{len(subset)}] {occ['title']}...", end=" ", flush=True)
 
         try:
-            result = score_occupation(client, text, args.model, args.reasoning_effort)
-            scores[slug] = {
+            result = score_occupation(
+                openai_client,
+                text,
+                args.model,
+                args.reasoning_effort,
+            )
+            entry = {
                 "slug": slug,
                 "title": occ["title"],
                 **result,
             }
+            try:
+                enrich_score_entry(entry, metadata, bls_client, industry_cache)
+            except Exception as exc:
+                print(f"WARN industry metadata unavailable ({exc})", end=" ")
+            scores[slug] = entry
+            dirty = True
             print(f"exposure={result['exposure']}")
-        except Exception as e:
-            print(f"ERROR: {e}")
+        except Exception as exc:
+            print(f"ERROR: {exc}")
             errors.append(slug)
 
-        # Save after each one (incremental checkpoint)
-        with open(args.output_file, "w") as f:
-            json.dump(list(scores.values()), f, indent=2)
+        write_scores(args.output_file, scores, occupations)
 
-        if i < len(subset) - 1:
+        if index < len(subset) - 1:
             time.sleep(args.delay)
 
-    client.close()
+    if dirty:
+        write_scores(args.output_file, scores, occupations)
+
+    openai_client.close()
+    bls_client.close()
 
     print(f"\nDone. Scored {len(scores)} occupations, {len(errors)} errors.")
     if errors:
         print(f"Errors: {errors}")
 
-    # Summary stats
-    vals = [s for s in scores.values() if "exposure" in s]
+    vals = [entry for entry in scores.values() if "exposure" in entry]
     if vals:
-        avg = sum(s["exposure"] for s in vals) / len(vals)
+        avg = sum(entry["exposure"] for entry in vals) / len(vals)
         by_score = {}
-        for s in vals:
-            bucket = s["exposure"]
+        for entry in vals:
+            bucket = entry["exposure"]
             by_score[bucket] = by_score.get(bucket, 0) + 1
         print(f"\nAverage exposure across {len(vals)} occupations: {avg:.1f}")
         print("Distribution:")
-        for k in sorted(by_score):
-            print(f"  {k}: {'█' * by_score[k]} ({by_score[k]})")
+        for bucket in sorted(by_score):
+            print(f"  {bucket}: {'#' * by_score[bucket]} ({by_score[bucket]})")
 
 
 if __name__ == "__main__":

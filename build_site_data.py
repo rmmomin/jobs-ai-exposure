@@ -1,9 +1,8 @@
 """
 Build a compact JSON for the website by merging CSV stats with AI exposure scores.
 
-Reads occupations.csv (for stats), scores.json (baseline scores), and
-scores_gpt54.json (latest comparison scores).
-Writes site/data.json and site/changes.json.
+Reads occupations.csv, scores_org.json (archived baseline), and scores.json
+(latest canonical scores). Writes site/data.json and site/changes.json.
 
 Usage:
     uv run python build_site_data.py
@@ -14,8 +13,8 @@ import json
 import os
 
 
-BASELINE_SCORES_FILE = "scores.json"
-LATEST_SCORES_FILE = "scores_gpt54.json"
+BASELINE_SCORES_FILE = "scores_org.json"
+LATEST_SCORES_FILE = "scores.json"
 
 
 def load_json(path):
@@ -24,26 +23,23 @@ def load_json(path):
 
 
 def main():
-    baseline_scores = {s["slug"]: s for s in load_json(BASELINE_SCORES_FILE)}
-    latest_scores = None
-    if os.path.exists(LATEST_SCORES_FILE):
-        latest_scores = {
-            s["slug"]: s for s in load_json(LATEST_SCORES_FILE)
-        }
-    display_scores = latest_scores or baseline_scores
+    baseline_scores = None
+    if os.path.exists(BASELINE_SCORES_FILE):
+        baseline_scores = {score["slug"]: score for score in load_json(BASELINE_SCORES_FILE)}
 
-    # Load CSV stats
+    latest_scores = {score["slug"]: score for score in load_json(LATEST_SCORES_FILE)}
+
     with open("occupations.csv", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         rows = list(reader)
 
-    # Build treemap data from the latest scores when available.
     data = []
     changes = []
     for row in rows:
         slug = row["slug"]
-        baseline = baseline_scores.get(slug, {})
-        display = display_scores.get(slug, {})
+        baseline = baseline_scores.get(slug, {}) if baseline_scores else {}
+        latest = latest_scores.get(slug, {})
+
         data.append({
             "title": row["title"],
             "slug": slug,
@@ -53,17 +49,16 @@ def main():
             "outlook": int(row["outlook_pct"]) if row["outlook_pct"] else None,
             "outlook_desc": row["outlook_desc"],
             "education": row["entry_education"],
-            "exposure": display.get("exposure"),
-            "exposure_rationale": display.get("rationale"),
+            "exposure": latest.get("exposure"),
+            "exposure_rationale": latest.get("rationale"),
             "url": row.get("url", ""),
         })
 
-        if latest_scores is None:
+        if not baseline_scores:
             continue
 
-        comparison = latest_scores.get(slug, {})
         old_exposure = baseline.get("exposure")
-        new_exposure = comparison.get("exposure")
+        new_exposure = latest.get("exposure")
         if old_exposure is None or new_exposure is None:
             continue
 
@@ -78,7 +73,7 @@ def main():
             "new_exposure": new_exposure,
             "delta": new_exposure - old_exposure,
             "old_rationale": baseline.get("rationale"),
-            "new_rationale": comparison.get("rationale"),
+            "new_rationale": latest.get("rationale"),
         })
 
     os.makedirs("site", exist_ok=True)
@@ -86,11 +81,11 @@ def main():
         json.dump(data, f)
 
     print(f"Wrote {len(data)} occupations to site/data.json")
-    total_jobs = sum(d["jobs"] for d in data if d["jobs"])
+    total_jobs = sum(entry["jobs"] for entry in data if entry["jobs"])
     print(f"Total jobs represented: {total_jobs:,}")
 
-    if latest_scores is None:
-        print(f"Skipped site/changes.json because {LATEST_SCORES_FILE} was not found")
+    if not baseline_scores:
+        print(f"Skipped site/changes.json because {BASELINE_SCORES_FILE} was not found")
         return
 
     with open("site/changes.json", "w", encoding="utf-8") as f:
