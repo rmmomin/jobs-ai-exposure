@@ -17,10 +17,12 @@ Outputs:
 
 Usage:
     uv run python build_industry_exposure.py
+    uv run python build_industry_exposure.py --naics-level 4
 """
 
 from __future__ import annotations
 
+import argparse
 import csv
 import json
 from collections import defaultdict
@@ -61,7 +63,13 @@ def sort_rows(rows):
     )
 
 
-def aggregate_industries(scores):
+def keep_row(row, exact_naics_level):
+    if exact_naics_level is None:
+        return True
+    return row["naics_level"] == exact_naics_level
+
+
+def aggregate_industries(scores, exact_naics_level=None):
     industries = {}
     contributors = defaultdict(list)
 
@@ -106,6 +114,8 @@ def aggregate_industries(scores):
         record["weighted_exposure"] = round(employment / total_jobs, 4)
         record["naics_level"] = naics_level(code)
         record["is_sector"] = record["naics_level"] == 2
+        if not keep_row(record, exact_naics_level):
+            continue
 
         top_occupations = sorted(
             contributors[code],
@@ -152,17 +162,48 @@ def write_json(rows, path: str):
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--naics-level",
+        type=int,
+        choices=[2, 3, 4, 5, 6],
+        default=None,
+        help="Only emit industries at a single NAICS level",
+    )
+    parser.add_argument(
+        "--output-prefix",
+        default=None,
+        help="Write outputs to <prefix>.json and <prefix>.csv",
+    )
+    args = parser.parse_args()
+
+    output_prefix = args.output_prefix or OUTPUT_JSON.removesuffix(".json")
+    output_json = f"{output_prefix}.json"
+    output_csv = f"{output_prefix}.csv"
+
     scores = load_scores(SCORES_FILE)
-    rows = aggregate_industries(scores)
-    write_json(rows, OUTPUT_JSON)
-    write_csv(rows, OUTPUT_CSV)
+    rows = aggregate_industries(scores, args.naics_level)
+    write_json(rows, output_json)
+    write_csv(rows, output_csv)
 
-    print(f"Wrote {len(rows)} industry rows to {OUTPUT_JSON}")
-    print(f"Wrote {len(rows)} industry rows to {OUTPUT_CSV}")
+    print(f"Wrote {len(rows)} industry rows to {output_json}")
+    print(f"Wrote {len(rows)} industry rows to {output_csv}")
 
-    sectors = [row for row in rows if row["is_sector"]]
-    print("\nTop sectors by weighted exposure:")
-    for row in sorted(sectors, key=lambda row: row["weighted_exposure"], reverse=True)[:10]:
+    label = (
+        f"NAICS level {args.naics_level} industries"
+        if args.naics_level is not None
+        else "sectors"
+    )
+    printable_rows = rows
+    if args.naics_level is None:
+        printable_rows = [row for row in rows if row["is_sector"]]
+
+    print(f"\nTop {label} by weighted exposure:")
+    for row in sorted(
+        printable_rows,
+        key=lambda row: row["weighted_exposure"],
+        reverse=True,
+    )[:10]:
         print(
             f"  {row['naics_code']} {row['title']}: "
             f"{row['weighted_exposure']:.2f} "
