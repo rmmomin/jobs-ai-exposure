@@ -1,0 +1,2 @@
+left,right,overlap_count,pearson_correlation,pearson_pvalue,spearman_correlation,spearman_pvalue,top_decile_intersection_count,top_decile_union_count,top_decile_overlap,bottom_decile_intersection_count,bottom_decile_union_count,bottom_decile_overlap,comparison_level
+repo_current,repo_original,342,0.9548959339211252,2.3093512287422404e-181,0.9561058249104238,2.51841079319918e-183,22,32,0.6875,37,53,0.6981132075471698,slug

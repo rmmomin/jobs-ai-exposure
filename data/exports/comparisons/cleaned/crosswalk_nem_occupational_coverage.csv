@@ -1,0 +1,1114 @@
+nem_code,nem_title,occupation_type,level
+00-0000,"Total, all occupations",Summary,0
+11-0000,Management occupations,Summary,1
+11-1000,Top executives,Summary,2
+11-1011,Chief executives,Line item,3
+11-1021,General and operations managers,Line item,3
+11-1031,Legislators,Line item,3
+11-2000,"Advertising, marketing, promotions, public relations, and sales managers",Summary,2
+11-2011,Advertising and promotions managers,Line item,3
+11-2020,Marketing and sales managers,Summary,3
+11-2021,Marketing managers,Line item,4
+11-2022,Sales managers,Line item,4
+11-2030,Public relations and fundraising managers,Summary,3
+11-2032,Public relations managers,Line item,4
+11-2033,Fundraising managers,Line item,4
+11-3000,Operations specialties managers,Summary,2
+11-3010,Administrative services and facilities managers,Summary,3
+11-3012,Administrative services managers,Line item,4
+11-3013,Facilities managers,Line item,4
+11-3021,Computer and information systems managers,Line item,3
+11-3031,Financial managers,Line item,3
+11-3051,Industrial production managers,Line item,3
+11-3061,Purchasing managers,Line item,3
+11-3071,"Transportation, storage, and distribution managers",Line item,3
+11-3111,Compensation and benefits managers,Line item,3
+11-3121,Human resources managers,Line item,3
+11-3131,Training and development managers,Line item,3
+11-9000,Other management occupations,Summary,2
+11-9013,"Farmers, ranchers, and other agricultural managers",Line item,3
+11-9021,Construction managers,Line item,3
+11-9030,Education and childcare administrators,Summary,3
+11-9031,"Education and childcare administrators, preschool and daycare",Line item,4
+11-9032,"Education administrators, kindergarten through secondary",Line item,4
+11-9033,"Education administrators, postsecondary",Line item,4
+11-9039,"Education administrators, all other",Line item,4
+11-9041,Architectural and engineering managers,Line item,3
+11-9051,Food service managers,Line item,3
+11-9070,Entertainment and recreation managers,Summary,3
+11-9071,Gambling managers,Line item,4
+11-9072,"Entertainment and recreation managers, except gambling",Line item,4
+11-9081,Lodging managers,Line item,3
+11-9111,Medical and health services managers,Line item,3
+11-9121,Natural sciences managers,Line item,3
+11-9131,Postmasters and mail superintendents,Line item,3
+11-9141,"Property, real estate, and community association managers",Line item,3
+11-9151,Social and community service managers,Line item,3
+11-9161,Emergency management directors,Line item,3
+11-9170,Personal service managers,Summary,3
+11-9171,Funeral home managers,Line item,4
+11-9179,"Personal service managers, all other",Line item,4
+11-9199,"Managers, all other",Line item,3
+13-0000,Business and financial operations occupations,Summary,1
+13-1000,Business operations specialists,Summary,2
+13-1011,"Agents and business managers of artists, performers, and athletes",Line item,3
+13-1020,Buyers and purchasing agents,Line item,3
+13-1030,"Claims adjusters, appraisers, examiners, and investigators",Summary,3
+13-1031,"Claims adjusters, examiners, and investigators",Line item,4
+13-1032,"Insurance appraisers, auto damage",Line item,4
+13-1041,Compliance officers,Line item,3
+13-1051,Cost estimators,Line item,3
+13-1070,Human resources workers,Summary,3
+13-1071,Human resources specialists,Line item,4
+13-1074,Farm labor contractors,Line item,4
+13-1075,Labor relations specialists,Line item,4
+13-1080,Logisticians and project management specialists,Summary,3
+13-1081,Logisticians,Line item,4
+13-1082,Project management specialists,Line item,4
+13-1111,Management analysts,Line item,3
+13-1121,"Meeting, convention, and event planners",Line item,3
+13-1131,Fundraisers,Line item,3
+13-1141,"Compensation, benefits, and job analysis specialists",Line item,3
+13-1151,Training and development specialists,Line item,3
+13-1161,Market research analysts and marketing specialists,Line item,3
+13-1199,"Business operations specialists, all other",Line item,3
+13-2000,Financial specialists,Summary,2
+13-2011,Accountants and auditors,Line item,3
+13-2020,Property appraisers and assessors,Line item,3
+13-2031,Budget analysts,Line item,3
+13-2041,Credit analysts,Line item,3
+13-2050,Financial analysts and advisors,Summary,3
+13-2051,Financial and investment analysts,Line item,4
+13-2052,Personal financial advisors,Line item,4
+13-2053,Insurance underwriters,Line item,4
+13-2054,Financial risk specialists,Line item,4
+13-2061,Financial examiners,Line item,3
+13-2070,Credit counselors and loan officers,Summary,3
+13-2071,Credit counselors,Line item,4
+13-2072,Loan officers,Line item,4
+13-2080,"Tax examiners, collectors and preparers, and revenue agents",Summary,3
+13-2081,"Tax examiners and collectors, and revenue agents",Line item,4
+13-2082,Tax preparers,Line item,4
+13-2099,"Financial specialists, all other",Line item,3
+15-0000,Computer and mathematical occupations,Summary,1
+15-1200,Computer occupations,Summary,2
+15-1210,Computer and information analysts,Summary,3
+15-1211,Computer systems analysts,Line item,4
+15-1212,Information security analysts,Line item,4
+15-1221,Computer and information research scientists,Line item,3
+15-1230,Computer support specialists,Summary,3
+15-1231,Computer network support specialists,Line item,4
+15-1232,Computer user support specialists,Line item,4
+15-1240,Database and network administrators and architects,Summary,3
+15-1241,Computer network architects,Line item,4
+15-1242,Database administrators,Line item,4
+15-1243,Database architects,Line item,4
+15-1244,Network and computer systems administrators,Line item,4
+15-1250,"Software and web developers, programmers, and testers",Summary,3
+15-1251,Computer programmers,Line item,4
+15-1252,Software developers,Line item,4
+15-1253,Software quality assurance analysts and testers,Line item,4
+15-1254,Web developers,Line item,4
+15-1255,Web and digital interface designers,Line item,4
+15-1299,"Computer occupations, all other",Line item,3
+15-2000,Mathematical science occupations,Summary,2
+15-2011,Actuaries,Line item,3
+15-2021,Mathematicians,Line item,3
+15-2031,Operations research analysts,Line item,3
+15-2041,Statisticians,Line item,3
+15-2051,Data scientists,Line item,3
+15-2099,"Mathematical science occupations, all other",Line item,3
+17-0000,Architecture and engineering occupations,Summary,1
+17-1000,"Architects, surveyors, and cartographers",Summary,2
+17-1010,"Architects, except naval",Summary,3
+17-1011,"Architects, except landscape and naval",Line item,4
+17-1012,Landscape architects,Line item,4
+17-1020,"Surveyors, cartographers, and photogrammetrists",Summary,3
+17-1021,Cartographers and photogrammetrists,Line item,4
+17-1022,Surveyors,Line item,4
+17-2000,Engineers,Summary,2
+17-2011,Aerospace engineers,Line item,3
+17-2021,Agricultural engineers,Line item,3
+17-2031,Bioengineers and biomedical engineers,Line item,3
+17-2041,Chemical engineers,Line item,3
+17-2051,Civil engineers,Line item,3
+17-2061,Computer hardware engineers,Line item,3
+17-2070,Electrical and electronics engineers,Summary,3
+17-2071,Electrical engineers,Line item,4
+17-2072,"Electronics engineers, except computer",Line item,4
+17-2081,Environmental engineers,Line item,3
+17-2110,"Industrial engineers, including health and safety",Summary,3
+17-2111,"Health and safety engineers, except mining safety engineers and inspectors",Line item,4
+17-2112,Industrial engineers,Line item,4
+17-2121,Marine engineers and naval architects,Line item,3
+17-2131,Materials engineers,Line item,3
+17-2141,Mechanical engineers,Line item,3
+17-2151,"Mining and geological engineers, including mining safety engineers",Line item,3
+17-2161,Nuclear engineers,Line item,3
+17-2171,Petroleum engineers,Line item,3
+17-2199,"Engineers, all other",Line item,3
+17-3000,"Drafters, engineering technicians, and mapping technicians",Summary,2
+17-3010,Drafters,Summary,3
+17-3011,Architectural and civil drafters,Line item,4
+17-3012,Electrical and electronics drafters,Line item,4
+17-3013,Mechanical drafters,Line item,4
+17-3019,"Drafters, all other",Line item,4
+17-3020,"Engineering technologists and technicians, except drafters",Summary,3
+17-3021,Aerospace engineering and operations technologists and technicians,Line item,4
+17-3022,Civil engineering technologists and technicians,Line item,4
+17-3023,Electrical and electronic engineering technologists and technicians,Line item,4
+17-3024,Electro-mechanical and mechatronics technologists and technicians,Line item,4
+17-3025,Environmental engineering technologists and technicians,Line item,4
+17-3026,Industrial engineering technologists and technicians,Line item,4
+17-3027,Mechanical engineering technologists and technicians,Line item,4
+17-3028,Calibration technologists and technicians,Line item,4
+17-3029,"Engineering technologists and technicians, except drafters, all other",Line item,4
+17-3031,Surveying and mapping technicians,Line item,3
+19-0000,"Life, physical, and social science occupations",Summary,1
+19-1000,Life scientists,Summary,2
+19-1010,Agricultural and food scientists,Summary,3
+19-1011,Animal scientists,Line item,4
+19-1012,Food scientists and technologists,Line item,4
+19-1013,Soil and plant scientists,Line item,4
+19-1020,Biological scientists,Summary,3
+19-1021,Biochemists and biophysicists,Line item,4
+19-1022,Microbiologists,Line item,4
+19-1023,Zoologists and wildlife biologists,Line item,4
+19-1029,"Biological scientists, all other",Line item,4
+19-1030,Conservation scientists and foresters,Summary,3
+19-1031,Conservation scientists,Line item,4
+19-1032,Foresters,Line item,4
+19-1040,Medical scientists,Summary,3
+19-1041,Epidemiologists,Line item,4
+19-1042,"Medical scientists, except epidemiologists",Line item,4
+19-1099,"Life scientists, all other",Line item,3
+19-2000,Physical scientists,Summary,2
+19-2010,Astronomers and physicists,Summary,3
+19-2011,Astronomers,Line item,4
+19-2012,Physicists,Line item,4
+19-2021,Atmospheric and space scientists,Line item,3
+19-2030,Chemists and materials scientists,Summary,3
+19-2031,Chemists,Line item,4
+19-2032,Materials scientists,Line item,4
+19-2040,Environmental scientists and geoscientists,Summary,3
+19-2041,"Environmental scientists and specialists, including health",Line item,4
+19-2042,"Geoscientists, except hydrologists and geographers",Line item,4
+19-2043,Hydrologists,Line item,4
+19-2099,"Physical scientists, all other",Line item,3
+19-3000,Social scientists and related workers,Summary,2
+19-3011,Economists,Line item,3
+19-3022,Survey researchers,Line item,3
+19-3030,Psychologists,Summary,3
+19-3032,Industrial-organizational psychologists,Line item,4
+19-3033,Clinical and counseling psychologists,Line item,4
+19-3034,School psychologists,Line item,4
+19-3039,"Psychologists, all other",Line item,4
+19-3041,Sociologists,Line item,3
+19-3051,Urban and regional planners,Line item,3
+19-3090,Miscellaneous social scientists and related workers,Summary,3
+19-3091,Anthropologists and archeologists,Line item,4
+19-3092,Geographers,Line item,4
+19-3093,Historians,Line item,4
+19-3094,Political scientists,Line item,4
+19-3099,"Social scientists and related workers, all other",Line item,4
+19-4000,"Life, physical, and social science technicians",Summary,2
+19-4010,Agricultural and food science technicians,Summary,3
+19-4012,Agricultural technicians,Line item,4
+19-4013,Food science technicians,Line item,4
+19-4021,Biological technicians,Line item,3
+19-4031,Chemical technicians,Line item,3
+19-4040,Environmental science and geoscience technicians,Summary,3
+19-4042,"Environmental science and protection technicians, including health",Line item,4
+19-4043,"Geological technicians, except hydrologic technicians",Line item,4
+19-4044,Hydrologic technicians,Line item,4
+19-4051,Nuclear technicians,Line item,3
+19-4061,Social science research assistants,Line item,3
+19-4071,Forest and conservation technicians,Line item,3
+19-4090,"Miscellaneous life, physical, and social science technicians",Summary,3
+19-4092,Forensic science technicians,Line item,4
+19-4099,"Life, physical, and social science technicians, all other",Line item,4
+19-5000,Occupational health and safety specialists and technicians,Summary,2
+19-5011,Occupational health and safety specialists,Line item,3
+19-5012,Occupational health and safety technicians,Line item,3
+21-0000,Community and social service occupations,Summary,1
+21-1000,"Counselors, social workers, and other community and social service specialists",Summary,2
+21-1010,Counselors,Summary,3
+21-1012,"Educational, guidance, and career counselors and advisors",Line item,4
+21-1013,Marriage and family therapists,Line item,4
+21-1015,Rehabilitation counselors,Line item,4
+21-1018,"Substance abuse, behavioral disorder, and mental health counselors",Line item,4
+21-1019,"Counselors, all other",Line item,4
+21-1020,Social workers,Summary,3
+21-1021,"Child, family, and school social workers",Line item,4
+21-1022,Healthcare social workers,Line item,4
+21-1023,Mental health and substance abuse social workers,Line item,4
+21-1029,"Social workers, all other",Line item,4
+21-1090,Miscellaneous community and social service specialists,Summary,3
+21-1091,Health education specialists,Line item,4
+21-1092,Probation officers and correctional treatment specialists,Line item,4
+21-1093,Social and human service assistants,Line item,4
+21-1094,Community health workers,Line item,4
+21-1099,"Community and social service specialists, all other",Line item,4
+21-2000,Religious workers,Summary,2
+21-2011,Clergy,Line item,3
+21-2021,"Directors, religious activities and education",Line item,3
+21-2099,"Religious workers, all other",Line item,3
+23-0000,Legal occupations,Summary,1
+23-1000,"Lawyers, judges, and related workers",Summary,2
+23-1010,Lawyers and judicial law clerks,Summary,3
+23-1011,Lawyers,Line item,4
+23-1012,Judicial law clerks,Line item,4
+23-1020,"Judges, magistrates, and other judicial workers",Summary,3
+23-1021,"Administrative law judges, adjudicators, and hearing officers",Line item,4
+23-1022,"Arbitrators, mediators, and conciliators",Line item,4
+23-1023,"Judges, magistrate judges, and magistrates",Line item,4
+23-2000,Legal support workers,Summary,2
+23-2011,Paralegals and legal assistants,Line item,3
+23-2090,Miscellaneous legal support workers,Summary,3
+23-2093,"Title examiners, abstractors, and searchers",Line item,4
+23-2099,"Legal support workers, all other",Line item,4
+25-0000,Educational instruction and library occupations,Summary,1
+25-1000,Postsecondary teachers,Summary,2
+25-1011,"Business teachers, postsecondary",Line item,3
+25-1020,"Math and computer science teachers, postsecondary",Summary,3
+25-1021,"Computer science teachers, postsecondary",Line item,4
+25-1022,"Mathematical science teachers, postsecondary",Line item,4
+25-1030,"Engineering and architecture teachers, postsecondary",Summary,3
+25-1031,"Architecture teachers, postsecondary",Line item,4
+25-1032,"Engineering teachers, postsecondary",Line item,4
+25-1040,"Life sciences teachers, postsecondary",Summary,3
+25-1041,"Agricultural sciences teachers, postsecondary",Line item,4
+25-1042,"Biological science teachers, postsecondary",Line item,4
+25-1043,"Forestry and conservation science teachers, postsecondary",Line item,4
+25-1050,"Physical sciences teachers, postsecondary",Summary,3
+25-1051,"Atmospheric, earth, marine, and space sciences teachers, postsecondary",Line item,4
+25-1052,"Chemistry teachers, postsecondary",Line item,4
+25-1053,"Environmental science teachers, postsecondary",Line item,4
+25-1054,"Physics teachers, postsecondary",Line item,4
+25-1060,"Social sciences teachers, postsecondary",Summary,3
+25-1061,"Anthropology and archeology teachers, postsecondary",Line item,4
+25-1062,"Area, ethnic, and cultural studies teachers, postsecondary",Line item,4
+25-1063,"Economics teachers, postsecondary",Line item,4
+25-1064,"Geography teachers, postsecondary",Line item,4
+25-1065,"Political science teachers, postsecondary",Line item,4
+25-1066,"Psychology teachers, postsecondary",Line item,4
+25-1067,"Sociology teachers, postsecondary",Line item,4
+25-1069,"Social sciences teachers, postsecondary, all other",Line item,4
+25-1070,"Health teachers, postsecondary",Summary,3
+25-1071,"Health specialties teachers, postsecondary",Line item,4
+25-1072,"Nursing instructors and teachers, postsecondary",Line item,4
+25-1080,"Education and library science teachers, postsecondary",Summary,3
+25-1081,"Education teachers, postsecondary",Line item,4
+25-1082,"Library science teachers, postsecondary",Line item,4
+25-1110,"Law, criminal justice, and social work teachers, postsecondary",Summary,3
+25-1111,"Criminal justice and law enforcement teachers, postsecondary",Line item,4
+25-1112,"Law teachers, postsecondary",Line item,4
+25-1113,"Social work teachers, postsecondary",Line item,4
+25-1120,"Arts, communications, history, and humanities teachers, postsecondary",Summary,3
+25-1121,"Art, drama, and music teachers, postsecondary",Line item,4
+25-1122,"Communications teachers, postsecondary",Line item,4
+25-1123,"English language and literature teachers, postsecondary",Line item,4
+25-1124,"Foreign language and literature teachers, postsecondary",Line item,4
+25-1125,"History teachers, postsecondary",Line item,4
+25-1126,"Philosophy and religion teachers, postsecondary",Line item,4
+25-1190,Miscellaneous postsecondary teachers,Summary,3
+25-1192,"Family and consumer sciences teachers, postsecondary",Line item,4
+25-1193,"Recreation and fitness studies teachers, postsecondary",Line item,4
+25-1194,"Career/technical education teachers, postsecondary",Line item,4
+25-1199,"Postsecondary teachers, all other",Line item,4
+25-2000,"Preschool, elementary, middle, secondary, and special education teachers",Summary,2
+25-2010,Preschool and kindergarten teachers,Summary,3
+25-2011,"Preschool teachers, except special education",Line item,4
+25-2012,"Kindergarten teachers, except special education",Line item,4
+25-2020,Elementary and middle school teachers,Summary,3
+25-2021,"Elementary school teachers, except special education",Line item,4
+25-2022,"Middle school teachers, except special and career/technical education",Line item,4
+25-2023,"Career/technical education teachers, middle school",Line item,4
+25-2030,Secondary school teachers,Summary,3
+25-2031,"Secondary school teachers, except special and career/technical education",Line item,4
+25-2032,"Career/technical education teachers, secondary school",Line item,4
+25-2050,Special education teachers,Summary,3
+25-2051,"Special education teachers, preschool",Line item,4
+25-2052,"Special education teachers, kindergarten and elementary school",Line item,4
+25-2057,"Special education teachers, middle school",Line item,4
+25-2058,"Special education teachers, secondary school",Line item,4
+25-2059,"Special education teachers, all other",Line item,4
+25-3000,Other teachers and instructors,Summary,2
+25-3011,"Adult basic education, adult secondary education, and english as a second language instructors",Line item,3
+25-3021,Self-enrichment teachers,Line item,3
+25-3031,"Substitute teachers, short-term",Line item,3
+25-3041,Tutors,Line item,3
+25-3099,"Teachers and instructors, all other",Line item,3
+25-4000,"Librarians, curators, and archivists",Summary,2
+25-4010,"Archivists, curators, and museum technicians",Summary,3
+25-4011,Archivists,Line item,4
+25-4012,Curators,Line item,4
+25-4013,Museum technicians and conservators,Line item,4
+25-4022,Librarians and media collections specialists,Line item,3
+25-4031,Library technicians,Line item,3
+25-9000,Other educational instruction and library occupations,Summary,2
+25-9021,Farm and home management educators,Line item,3
+25-9031,Instructional coordinators,Line item,3
+25-9040,Teaching assistants,Summary,3
+25-9044,"Teaching assistants, postsecondary",Line item,4
+25-9045,"Teaching assistants, except postsecondary",Line item,4
+25-9099,"Educational instruction and library workers, all other",Line item,3
+27-0000,"Arts, design, entertainment, sports, and media occupations",Summary,1
+27-1000,Art and design workers,Summary,2
+27-1010,Artists and related workers,Summary,3
+27-1011,Art directors,Line item,4
+27-1012,Craft artists,Line item,4
+27-1013,"Fine artists, including painters, sculptors, and illustrators",Line item,4
+27-1014,Special effects artists and animators,Line item,4
+27-1019,"Artists and related workers, all other",Line item,4
+27-1020,Designers,Summary,3
+27-1021,Commercial and industrial designers,Line item,4
+27-1022,Fashion designers,Line item,4
+27-1023,Floral designers,Line item,4
+27-1024,Graphic designers,Line item,4
+27-1025,Interior designers,Line item,4
+27-1026,Merchandise displayers and window trimmers,Line item,4
+27-1027,Set and exhibit designers,Line item,4
+27-1029,"Designers, all other",Line item,4
+27-2000,"Entertainers and performers, sports and related workers",Summary,2
+27-2010,"Actors, producers, and directors",Summary,3
+27-2011,Actors,Line item,4
+27-2012,Producers and directors,Line item,4
+27-2020,"Athletes, coaches, umpires, and related workers",Summary,3
+27-2021,Athletes and sports competitors,Line item,4
+27-2022,Coaches and scouts,Line item,4
+27-2023,"Umpires, referees, and other sports officials",Line item,4
+27-2030,Dancers and choreographers,Summary,3
+27-2031,Dancers,Line item,4
+27-2032,Choreographers,Line item,4
+27-2040,"Musicians, singers, and related workers",Summary,3
+27-2041,Music directors and composers,Line item,4
+27-2042,Musicians and singers,Line item,4
+27-2090,"Miscellaneous entertainers and performers, sports and related workers",Summary,3
+27-2091,"Disc jockeys, except radio",Line item,4
+27-2099,"Entertainers and performers, sports and related workers, all other",Line item,4
+27-3000,Media and communication workers,Summary,2
+27-3011,Broadcast announcers and radio disc jockeys,Line item,3
+27-3023,"News analysts, reporters, and journalists",Line item,3
+27-3031,Public relations specialists,Line item,3
+27-3040,Writers and editors,Summary,3
+27-3041,Editors,Line item,4
+27-3042,Technical writers,Line item,4
+27-3043,Writers and authors,Line item,4
+27-3090,Miscellaneous media and communication workers,Summary,3
+27-3091,Interpreters and translators,Line item,4
+27-3092,Court reporters and simultaneous captioners,Line item,4
+27-3099,"Media and communication workers, all other",Line item,4
+27-4000,Media and communication equipment workers,Summary,2
+27-4010,"Broadcast, sound, and lighting technicians",Summary,3
+27-4011,Audio and video technicians,Line item,4
+27-4012,Broadcast technicians,Line item,4
+27-4014,Sound engineering technicians,Line item,4
+27-4015,Lighting technicians,Line item,4
+27-4021,Photographers,Line item,3
+27-4030,"Television, video, and film camera operators and editors",Summary,3
+27-4031,"Camera operators, television, video, and film",Line item,4
+27-4032,Film and video editors,Line item,4
+27-4099,"Media and communication equipment workers, all other",Line item,3
+29-0000,Healthcare practitioners and technical occupations,Summary,1
+29-1000,Healthcare diagnosing or treating practitioners,Summary,2
+29-1011,Chiropractors,Line item,3
+29-1020,Dentists,Summary,3
+29-1021,"Dentists, general",Line item,4
+29-1022,Oral and maxillofacial surgeons,Line item,4
+29-1023,Orthodontists,Line item,4
+29-1024,Prosthodontists,Line item,4
+29-1029,"Dentists, all other specialists",Line item,4
+29-1031,Dietitians and nutritionists,Line item,3
+29-1041,Optometrists,Line item,3
+29-1051,Pharmacists,Line item,3
+29-1071,Physician assistants,Line item,3
+29-1081,Podiatrists,Line item,3
+29-1120,Therapists,Summary,3
+29-1122,Occupational therapists,Line item,4
+29-1123,Physical therapists,Line item,4
+29-1124,Radiation therapists,Line item,4
+29-1125,Recreational therapists,Line item,4
+29-1126,Respiratory therapists,Line item,4
+29-1127,Speech-language pathologists,Line item,4
+29-1128,Exercise physiologists,Line item,4
+29-1129,"Therapists, all other",Line item,4
+29-1131,Veterinarians,Line item,3
+29-1141,Registered nurses,Line item,3
+29-1151,Nurse anesthetists,Line item,3
+29-1161,Nurse midwives,Line item,3
+29-1171,Nurse practitioners,Line item,3
+29-1181,Audiologists,Line item,3
+29-1210,Physicians,Summary,3
+29-1211,Anesthesiologists,Line item,4
+29-1212,Cardiologists,Line item,4
+29-1213,Dermatologists,Line item,4
+29-1214,Emergency medicine physicians,Line item,4
+29-1215,Family medicine physicians,Line item,4
+29-1216,General internal medicine physicians,Line item,4
+29-1217,Neurologists,Line item,4
+29-1218,Obstetricians and gynecologists,Line item,4
+29-1221,"Pediatricians, general",Line item,4
+29-1222,"Physicians, pathologists",Line item,4
+29-1223,Psychiatrists,Line item,4
+29-1224,Radiologists,Line item,4
+29-1229,"Physicians, all other",Line item,4
+29-1240,Surgeons,Summary,3
+29-1241,"Ophthalmologists, except pediatric",Line item,4
+29-1242,"Orthopedic surgeons, except pediatric",Line item,4
+29-1243,Pediatric surgeons,Line item,4
+29-1249,"Surgeons, all other",Line item,4
+29-1290,Miscellaneous healthcare diagnosing or treating practitioners,Summary,3
+29-1291,Acupuncturists,Line item,4
+29-1292,Dental hygienists,Line item,4
+29-1299,"Healthcare diagnosing or treating practitioners, all other",Line item,4
+29-2000,Health technologists and technicians,Summary,2
+29-2010,Clinical laboratory technologists and technicians,Line item,3
+29-2030,Diagnostic related technologists and technicians,Summary,3
+29-2031,Cardiovascular technologists and technicians,Line item,4
+29-2032,Diagnostic medical sonographers,Line item,4
+29-2033,Nuclear medicine technologists,Line item,4
+29-2034,Radiologic technologists and technicians,Line item,4
+29-2035,Magnetic resonance imaging technologists,Line item,4
+29-2036,Medical dosimetrists,Line item,4
+29-2040,Emergency medical technicians and paramedics,Summary,3
+29-2042,Emergency medical technicians,Line item,4
+29-2043,Paramedics,Line item,4
+29-2050,Health practitioner support technologists and technicians,Summary,3
+29-2051,Dietetic technicians,Line item,4
+29-2052,Pharmacy technicians,Line item,4
+29-2053,Psychiatric technicians,Line item,4
+29-2055,Surgical technologists,Line item,4
+29-2056,Veterinary technologists and technicians,Line item,4
+29-2057,Ophthalmic medical technicians,Line item,4
+29-2061,Licensed practical and licensed vocational nurses,Line item,3
+29-2072,Medical records specialists,Line item,3
+29-2081,"Opticians, dispensing",Line item,3
+29-2090,Miscellaneous health technologists and technicians,Summary,3
+29-2091,Orthotists and prosthetists,Line item,4
+29-2092,Hearing aid specialists,Line item,4
+29-2099,"Health technologists and technicians, all other",Line item,4
+29-9000,Other healthcare practitioners and technical occupations,Summary,2
+29-9021,Health information technologists and medical registrars,Line item,3
+29-9090,Miscellaneous health practitioners and technical workers,Summary,3
+29-9091,Athletic trainers,Line item,4
+29-9092,Genetic counselors,Line item,4
+29-9093,Surgical assistants,Line item,4
+29-9099,"Healthcare practitioners and technical workers, all other",Line item,4
+31-0000,Healthcare support occupations,Summary,1
+31-1100,"Home health and personal care aides; and nursing assistants, orderlies, and psychiatric aides",Summary,2
+31-1120,Home health and personal care aides,Line item,3
+31-1130,"Nursing assistants, orderlies, and psychiatric aides",Summary,3
+31-1131,Nursing assistants,Line item,4
+31-1132,Orderlies,Line item,4
+31-1133,Psychiatric aides,Line item,4
+31-2000,Occupational therapy and physical therapist assistants and aides,Summary,2
+31-2010,Occupational therapy assistants and aides,Summary,3
+31-2011,Occupational therapy assistants,Line item,4
+31-2012,Occupational therapy aides,Line item,4
+31-2020,Physical therapist assistants and aides,Summary,3
+31-2021,Physical therapist assistants,Line item,4
+31-2022,Physical therapist aides,Line item,4
+31-9000,Other healthcare support occupations,Summary,2
+31-9011,Massage therapists,Line item,3
+31-9090,Miscellaneous healthcare support occupations,Summary,3
+31-9091,Dental assistants,Line item,4
+31-9092,Medical assistants,Line item,4
+31-9093,Medical equipment preparers,Line item,4
+31-9094,Medical transcriptionists,Line item,4
+31-9095,Pharmacy aides,Line item,4
+31-9096,Veterinary assistants and laboratory animal caretakers,Line item,4
+31-9097,Phlebotomists,Line item,4
+31-9099,"Healthcare support workers, all other",Line item,4
+33-0000,Protective service occupations,Summary,1
+33-1000,Supervisors of protective service workers,Summary,2
+33-1010,First-line supervisors of law enforcement workers,Summary,3
+33-1011,First-line supervisors of correctional officers,Line item,4
+33-1012,First-line supervisors of police and detectives,Line item,4
+33-1021,First-line supervisors of firefighting and prevention workers,Line item,3
+33-1090,"Miscellaneous first-line supervisors, protective service workers",Summary,3
+33-1091,First-line supervisors of security workers,Line item,4
+33-1099,"First-line supervisors of protective service workers, all other",Line item,4
+33-2000,Firefighting and prevention workers,Summary,2
+33-2011,Firefighters,Line item,3
+33-2020,Fire inspectors,Summary,3
+33-2021,Fire inspectors and investigators,Line item,4
+33-2022,Forest fire inspectors and prevention specialists,Line item,4
+33-3000,Law enforcement workers,Summary,2
+33-3010,"Bailiffs, correctional officers, and jailers",Summary,3
+33-3011,Bailiffs,Line item,4
+33-3012,Correctional officers and jailers,Line item,4
+33-3021,Detectives and criminal investigators,Line item,3
+33-3031,Fish and game wardens,Line item,3
+33-3041,Parking enforcement workers,Line item,3
+33-3050,Police officers,Summary,3
+33-3051,Police and sheriff's patrol officers,Line item,4
+33-3052,Transit and railroad police,Line item,4
+33-9000,Other protective service workers,Summary,2
+33-9011,Animal control workers,Line item,3
+33-9021,Private detectives and investigators,Line item,3
+33-9030,Security guards and gambling surveillance officers,Summary,3
+33-9031,Gambling surveillance officers and gambling investigators,Line item,4
+33-9032,Security guards,Line item,4
+33-9090,Miscellaneous protective service workers,Summary,3
+33-9091,Crossing guards and flaggers,Line item,4
+33-9092,"Lifeguards, ski patrol, and other recreational protective service workers",Line item,4
+33-9093,Transportation security screeners,Line item,4
+33-9094,School bus monitors,Line item,4
+33-9099,"Protective service workers, all other",Line item,4
+35-0000,Food preparation and serving related occupations,Summary,1
+35-1000,Supervisors of food preparation and serving workers,Summary,2
+35-1011,Chefs and head cooks,Line item,3
+35-1012,First-line supervisors of food preparation and serving workers,Line item,3
+35-2000,Cooks and food preparation workers,Summary,2
+35-2010,Cooks,Summary,3
+35-2011,"Cooks, fast food",Line item,4
+35-2012,"Cooks, institution and cafeteria",Line item,4
+35-2013,"Cooks, private household",Line item,4
+35-2014,"Cooks, restaurant",Line item,4
+35-2015,"Cooks, short order",Line item,4
+35-2019,"Cooks, all other",Line item,4
+35-2021,Food preparation workers,Line item,3
+35-3000,Food and beverage serving workers,Summary,2
+35-3011,Bartenders,Line item,3
+35-3023,Fast food and counter workers,Line item,3
+35-3031,Waiters and waitresses,Line item,3
+35-3041,"Food servers, nonrestaurant",Line item,3
+35-9000,Other food preparation and serving related workers,Summary,2
+35-9011,Dining room and cafeteria attendants and bartender helpers,Line item,3
+35-9021,Dishwashers,Line item,3
+35-9031,"Hosts and hostesses, restaurant, lounge, and coffee shop",Line item,3
+35-9099,"Food preparation and serving related workers, all other",Line item,3
+37-0000,Building and grounds cleaning and maintenance occupations,Summary,1
+37-1000,Supervisors of building and grounds cleaning and maintenance workers,Summary,2
+37-1011,First-line supervisors of housekeeping and janitorial workers,Line item,3
+37-1012,"First-line supervisors of landscaping, lawn service, and groundskeeping workers",Line item,3
+37-2000,Building cleaning and pest control workers,Summary,2
+37-2010,Building cleaning workers,Summary,3
+37-2011,"Janitors and cleaners, except maids and housekeeping cleaners",Line item,4
+37-2012,Maids and housekeeping cleaners,Line item,4
+37-2019,"Building cleaning workers, all other",Line item,4
+37-2021,Pest control workers,Line item,3
+37-3000,Grounds maintenance workers,Summary,2
+37-3011,Landscaping and groundskeeping workers,Line item,3
+37-3012,"Pesticide handlers, sprayers, and applicators, vegetation",Line item,3
+37-3013,Tree trimmers and pruners,Line item,3
+37-3019,"Grounds maintenance workers, all other",Line item,3
+39-0000,Personal care and service occupations,Summary,1
+39-1000,Supervisors of personal care and service workers,Summary,2
+39-1010,First-line supervisors of entertainment and recreation workers,Summary,3
+39-1013,First-line supervisors of gambling services workers,Line item,4
+39-1014,"First-line supervisors of entertainment and recreation workers, except gambling services",Line item,4
+39-1022,First-line supervisors of personal service workers,Line item,3
+39-2000,Animal care and service workers,Summary,2
+39-2011,Animal trainers,Line item,3
+39-2021,Animal caretakers,Line item,3
+39-3000,Entertainment attendants and related workers,Summary,2
+39-3010,Gambling services workers,Summary,3
+39-3011,Gambling dealers,Line item,4
+39-3012,Gambling and sports book writers and runners,Line item,4
+39-3019,"Gambling service workers, all other",Line item,4
+39-3021,Motion picture projectionists,Line item,3
+39-3031,"Ushers, lobby attendants, and ticket takers",Line item,3
+39-3090,Miscellaneous entertainment attendants and related workers,Summary,3
+39-3091,Amusement and recreation attendants,Line item,4
+39-3092,Costume attendants,Line item,4
+39-3093,"Locker room, coatroom, and dressing room attendants",Line item,4
+39-3099,"Entertainment attendants and related workers, all other",Line item,4
+39-4000,Funeral service workers,Summary,2
+39-4010,Embalmers and crematory operators,Summary,3
+39-4011,Embalmers,Line item,4
+39-4012,Crematory operators,Line item,4
+39-4021,Funeral attendants,Line item,3
+39-4031,"Morticians, undertakers, and funeral arrangers",Line item,3
+39-5000,Personal appearance workers,Summary,2
+39-5010,"Barbers, hairdressers, hairstylists and cosmetologists",Summary,3
+39-5011,Barbers,Line item,4
+39-5012,"Hairdressers, hairstylists, and cosmetologists",Line item,4
+39-5090,Miscellaneous personal appearance workers,Summary,3
+39-5091,"Makeup artists, theatrical and performance",Line item,4
+39-5092,Manicurists and pedicurists,Line item,4
+39-5093,Shampooers,Line item,4
+39-5094,Skincare specialists,Line item,4
+39-6000,"Baggage porters, bellhops, and concierges",Summary,2
+39-6011,Baggage porters and bellhops,Line item,3
+39-6012,Concierges,Line item,3
+39-7000,Tour and travel guides,Summary,2
+39-7010,Tour and travel guides,Line item,3
+39-9000,Other personal care and service workers,Summary,2
+39-9011,Childcare workers,Line item,3
+39-9030,Recreation and fitness workers,Summary,3
+39-9031,Exercise trainers and group fitness instructors,Line item,4
+39-9032,Recreation workers,Line item,4
+39-9041,Residential advisors,Line item,3
+39-9099,"Personal care and service workers, all other",Line item,3
+41-0000,Sales and related occupations,Summary,1
+41-1000,Supervisors of sales workers,Summary,2
+41-1011,First-line supervisors of retail sales workers,Line item,3
+41-1012,First-line supervisors of non-retail sales workers,Line item,3
+41-2000,Retail sales workers,Summary,2
+41-2010,Cashiers,Summary,3
+41-2011,Cashiers,Line item,4
+41-2012,Gambling change persons and booth cashiers,Line item,4
+41-2020,Counter and rental clerks and parts salespersons,Summary,3
+41-2021,Counter and rental clerks,Line item,4
+41-2022,Parts salespersons,Line item,4
+41-2031,Retail salespersons,Line item,3
+41-3000,"Sales representatives, services",Summary,2
+41-3011,Advertising sales agents,Line item,3
+41-3021,Insurance sales agents,Line item,3
+41-3031,"Securities, commodities, and financial services sales agents",Line item,3
+41-3041,Travel agents,Line item,3
+41-3091,"Sales representatives of services, except advertising, insurance, financial services, and travel",Line item,3
+41-4000,"Sales representatives, wholesale and manufacturing",Summary,2
+41-4011,"Sales representatives, wholesale and manufacturing, technical and scientific products",Line item,3
+41-4012,"Sales representatives, wholesale and manufacturing, except technical and scientific products",Line item,3
+41-9000,Other sales and related workers,Summary,2
+41-9010,"Models, demonstrators, and product promoters",Summary,3
+41-9011,Demonstrators and product promoters,Line item,4
+41-9012,Models,Line item,4
+41-9020,Real estate brokers and sales agents,Summary,3
+41-9021,Real estate brokers,Line item,4
+41-9022,Real estate sales agents,Line item,4
+41-9031,Sales engineers,Line item,3
+41-9041,Telemarketers,Line item,3
+41-9090,Miscellaneous sales and related workers,Summary,3
+41-9091,"Door-to-door sales workers, news and street vendors, and related workers",Line item,4
+41-9099,"Sales and related workers, all other",Line item,4
+43-0000,Office and administrative support occupations,Summary,1
+43-1000,Supervisors of office and administrative support workers,Summary,2
+43-1011,First-line supervisors of office and administrative support workers,Line item,3
+43-2000,Communications equipment operators,Summary,2
+43-2011,"Switchboard operators, including answering service",Line item,3
+43-2021,Telephone operators,Line item,3
+43-2099,"Communications equipment operators, all other",Line item,3
+43-3000,Financial clerks,Summary,2
+43-3011,Bill and account collectors,Line item,3
+43-3021,Billing and posting clerks,Line item,3
+43-3031,"Bookkeeping, accounting, and auditing clerks",Line item,3
+43-3041,Gambling cage workers,Line item,3
+43-3051,Payroll and timekeeping clerks,Line item,3
+43-3061,Procurement clerks,Line item,3
+43-3071,Tellers,Line item,3
+43-3099,"Financial clerks, all other",Line item,3
+43-4000,Information and record clerks,Summary,2
+43-4011,Brokerage clerks,Line item,3
+43-4021,Correspondence clerks,Line item,3
+43-4031,"Court, municipal, and license clerks",Line item,3
+43-4041,"Credit authorizers, checkers, and clerks",Line item,3
+43-4051,Customer service representatives,Line item,3
+43-4061,"Eligibility interviewers, government programs",Line item,3
+43-4071,File clerks,Line item,3
+43-4081,"Hotel, motel, and resort desk clerks",Line item,3
+43-4111,"Interviewers, except eligibility and loan",Line item,3
+43-4121,"Library assistants, clerical",Line item,3
+43-4131,Loan interviewers and clerks,Line item,3
+43-4141,New accounts clerks,Line item,3
+43-4151,Order clerks,Line item,3
+43-4161,"Human resources assistants, except payroll and timekeeping",Line item,3
+43-4171,Receptionists and information clerks,Line item,3
+43-4181,Reservation and transportation ticket agents and travel clerks,Line item,3
+43-4199,"Information and record clerks, all other",Line item,3
+43-5000,"Material recording, scheduling, dispatching, and distributing workers",Summary,2
+43-5011,Cargo and freight agents,Line item,3
+43-5021,Couriers and messengers,Line item,3
+43-5030,Dispatchers,Summary,3
+43-5031,Public safety telecommunicators,Line item,4
+43-5032,"Dispatchers, except police, fire, and ambulance",Line item,4
+43-5041,"Meter readers, utilities",Line item,3
+43-5050,Postal service workers,Summary,3
+43-5051,Postal service clerks,Line item,4
+43-5052,Postal service mail carriers,Line item,4
+43-5053,"Postal service mail sorters, processors, and processing machine operators",Line item,4
+43-5061,"Production, planning, and expediting clerks",Line item,3
+43-5071,"Shipping, receiving, and inventory clerks",Line item,3
+43-5111,"Weighers, measurers, checkers, and samplers, recordkeeping",Line item,3
+43-6000,Secretaries and administrative assistants,Summary,2
+43-6011,Executive secretaries and executive administrative assistants,Line item,3
+43-6012,Legal secretaries and administrative assistants,Line item,3
+43-6013,Medical secretaries and administrative assistants,Line item,3
+43-6014,"Secretaries and administrative assistants, except legal, medical, and executive",Line item,3
+43-9000,Other office and administrative support workers,Summary,2
+43-9020,Data entry and information processing workers,Summary,3
+43-9021,Data entry keyers,Line item,4
+43-9022,Word processors and typists,Line item,4
+43-9031,Desktop publishers,Line item,3
+43-9041,Insurance claims and policy processing clerks,Line item,3
+43-9051,"Mail clerks and mail machine operators, except postal service",Line item,3
+43-9061,"Office clerks, general",Line item,3
+43-9071,"Office machine operators, except computer",Line item,3
+43-9081,Proofreaders and copy markers,Line item,3
+43-9111,Statistical assistants,Line item,3
+43-9199,"Office and administrative support workers, all other",Line item,3
+45-0000,"Farming, fishing, and forestry occupations",Summary,1
+45-1000,"Supervisors of farming, fishing, and forestry workers",Summary,2
+45-1011,"First-line supervisors of farming, fishing, and forestry workers",Line item,3
+45-2000,Agricultural workers,Summary,2
+45-2011,Agricultural inspectors,Line item,3
+45-2021,Animal breeders,Line item,3
+45-2041,"Graders and sorters, agricultural products",Line item,3
+45-2090,Miscellaneous agricultural workers,Summary,3
+45-2091,Agricultural equipment operators,Line item,4
+45-2092,"Farmworkers and laborers, crop, nursery, and greenhouse",Line item,4
+45-2093,"Farmworkers, farm, ranch, and aquacultural animals",Line item,4
+45-2099,"Agricultural workers, all other",Line item,4
+45-3000,Fishing and hunting workers,Summary,2
+45-3031,Fishing and hunting workers,Line item,3
+45-4000,"Forest, conservation, and logging workers",Summary,2
+45-4011,Forest and conservation workers,Line item,3
+45-4020,Logging workers,Summary,3
+45-4021,Fallers,Line item,4
+45-4022,Logging equipment operators,Line item,4
+45-4023,Log graders and scalers,Line item,4
+45-4029,"Logging workers, all other",Line item,4
+47-0000,Construction and extraction occupations,Summary,1
+47-1000,Supervisors of construction and extraction workers,Summary,2
+47-1011,First-line supervisors of construction trades and extraction workers,Line item,3
+47-2000,Construction trades workers,Summary,2
+47-2011,Boilermakers,Line item,3
+47-2020,"Brickmasons, blockmasons, and stonemasons",Summary,3
+47-2021,Brickmasons and blockmasons,Line item,4
+47-2022,Stonemasons,Line item,4
+47-2031,Carpenters,Line item,3
+47-2040,"Carpet, floor, and tile installers and finishers",Summary,3
+47-2041,Carpet installers,Line item,4
+47-2042,"Floor layers, except carpet, wood, and hard tiles",Line item,4
+47-2043,Floor sanders and finishers,Line item,4
+47-2044,Tile and stone setters,Line item,4
+47-2050,"Cement masons, concrete finishers, and terrazzo workers",Summary,3
+47-2051,Cement masons and concrete finishers,Line item,4
+47-2053,Terrazzo workers and finishers,Line item,4
+47-2061,Construction laborers,Line item,3
+47-2070,Construction equipment operators,Summary,3
+47-2071,"Paving, surfacing, and tamping equipment operators",Line item,4
+47-2072,Pile driver operators,Line item,4
+47-2073,Operating engineers and other construction equipment operators,Line item,4
+47-2080,"Drywall installers, ceiling tile installers, and tapers",Summary,3
+47-2081,Drywall and ceiling tile installers,Line item,4
+47-2082,Tapers,Line item,4
+47-2111,Electricians,Line item,3
+47-2121,Glaziers,Line item,3
+47-2130,Insulation workers,Summary,3
+47-2131,"Insulation workers, floor, ceiling, and wall",Line item,4
+47-2132,"Insulation workers, mechanical",Line item,4
+47-2140,Painters and paperhangers,Summary,3
+47-2141,"Painters, construction and maintenance",Line item,4
+47-2142,Paperhangers,Line item,4
+47-2150,"Pipelayers, plumbers, pipefitters, and steamfitters",Summary,3
+47-2151,Pipelayers,Line item,4
+47-2152,"Plumbers, pipefitters, and steamfitters",Line item,4
+47-2161,Plasterers and stucco masons,Line item,3
+47-2171,Reinforcing iron and rebar workers,Line item,3
+47-2181,Roofers,Line item,3
+47-2211,Sheet metal workers,Line item,3
+47-2221,Structural iron and steel workers,Line item,3
+47-2231,Solar photovoltaic installers,Line item,3
+47-3000,"Helpers, construction trades",Summary,2
+47-3011,"Helpers--brickmasons, blockmasons, stonemasons, and tile and marble setters",Line item,3
+47-3012,Helpers--carpenters,Line item,3
+47-3013,Helpers--electricians,Line item,3
+47-3014,"Helpers--painters, paperhangers, plasterers, and stucco masons",Line item,3
+47-3015,"Helpers--pipelayers, plumbers, pipefitters, and steamfitters",Line item,3
+47-3016,Helpers--roofers,Line item,3
+47-3019,"Helpers, construction trades, all other",Line item,3
+47-4000,Other construction and related workers,Summary,2
+47-4011,Construction and building inspectors,Line item,3
+47-4021,Elevator and escalator installers and repairers,Line item,3
+47-4031,Fence erectors,Line item,3
+47-4041,Hazardous materials removal workers,Line item,3
+47-4051,Highway maintenance workers,Line item,3
+47-4061,Rail-track laying and maintenance equipment operators,Line item,3
+47-4071,Septic tank servicers and sewer pipe cleaners,Line item,3
+47-4090,Miscellaneous construction and related workers,Line item,3
+47-5000,Extraction workers,Summary,2
+47-5010,"Derrick, rotary drill, and service unit operators, oil and gas",Summary,3
+47-5011,"Derrick operators, oil and gas",Line item,4
+47-5012,"Rotary drill operators, oil and gas",Line item,4
+47-5013,"Service unit operators, oil and gas",Line item,4
+47-5020,Surface mining machine operators and earth drillers,Summary,3
+47-5022,"Excavating and loading machine and dragline operators, surface mining",Line item,4
+47-5023,"Earth drillers, except oil and gas",Line item,4
+47-5032,"Explosives workers, ordnance handling experts, and blasters",Line item,3
+47-5040,Underground mining machine operators,Summary,3
+47-5041,Continuous mining machine operators,Line item,4
+47-5043,"Roof bolters, mining",Line item,4
+47-5044,"Loading and moving machine operators, underground mining",Line item,4
+47-5049,"Underground mining machine operators, all other",Line item,4
+47-5051,"Rock splitters, quarry",Line item,3
+47-5071,"Roustabouts, oil and gas",Line item,3
+47-5081,Helpers--extraction workers,Line item,3
+47-5099,"Extraction workers, all other",Line item,3
+49-0000,"Installation, maintenance, and repair occupations",Summary,1
+49-1000,"Supervisors of installation, maintenance, and repair workers",Summary,2
+49-1011,"First-line supervisors of mechanics, installers, and repairers",Line item,3
+49-2000,"Electrical and electronic equipment mechanics, installers, and repairers",Summary,2
+49-2011,"Computer, automated teller, and office machine repairers",Line item,3
+49-2020,Radio and telecommunications equipment installers and repairers,Summary,3
+49-2021,"Radio, cellular, and tower equipment installers and repairers",Line item,4
+49-2022,"Telecommunications equipment installers and repairers, except line installers",Line item,4
+49-2090,"Miscellaneous electrical and electronic equipment mechanics, installers, and repairers",Summary,3
+49-2091,Avionics technicians,Line item,4
+49-2092,"Electric motor, power tool, and related repairers",Line item,4
+49-2093,"Electrical and electronics installers and repairers, transportation equipment",Line item,4
+49-2094,"Electrical and electronics repairers, commercial and industrial equipment",Line item,4
+49-2095,"Electrical and electronics repairers, powerhouse, substation, and relay",Line item,4
+49-2096,"Electronic equipment installers and repairers, motor vehicles",Line item,4
+49-2097,Audiovisual equipment installers and repairers,Line item,4
+49-2098,Security and fire alarm systems installers,Line item,4
+49-3000,"Vehicle and mobile equipment mechanics, installers, and repairers",Summary,2
+49-3011,Aircraft mechanics and service technicians,Line item,3
+49-3020,Automotive technicians and repairers,Summary,3
+49-3021,Automotive body and related repairers,Line item,4
+49-3022,Automotive glass installers and repairers,Line item,4
+49-3023,Automotive service technicians and mechanics,Line item,4
+49-3031,Bus and truck mechanics and diesel engine specialists,Line item,3
+49-3040,Heavy vehicle and mobile equipment service technicians and mechanics,Summary,3
+49-3041,Farm equipment mechanics and service technicians,Line item,4
+49-3042,"Mobile heavy equipment mechanics, except engines",Line item,4
+49-3043,Rail car repairers,Line item,4
+49-3050,Small engine mechanics,Summary,3
+49-3051,Motorboat mechanics and service technicians,Line item,4
+49-3052,Motorcycle mechanics,Line item,4
+49-3053,Outdoor power equipment and other small engine mechanics,Line item,4
+49-3090,"Miscellaneous vehicle and mobile equipment mechanics, installers, and repairers",Summary,3
+49-3091,Bicycle repairers,Line item,4
+49-3092,Recreational vehicle service technicians,Line item,4
+49-3093,Tire repairers and changers,Line item,4
+49-9000,"Other installation, maintenance, and repair occupations",Summary,2
+49-9010,Control and valve installers and repairers,Summary,3
+49-9011,Mechanical door repairers,Line item,4
+49-9012,"Control and valve installers and repairers, except mechanical door",Line item,4
+49-9021,"Heating, air conditioning, and refrigeration mechanics and installers",Line item,3
+49-9031,Home appliance repairers,Line item,3
+49-9040,"Industrial machinery installation, repair, and maintenance workers",Summary,3
+49-9041,Industrial machinery mechanics,Line item,4
+49-9043,"Maintenance workers, machinery",Line item,4
+49-9044,Millwrights,Line item,4
+49-9045,"Refractory materials repairers, except brickmasons",Line item,4
+49-9050,Line installers and repairers,Summary,3
+49-9051,Electrical power-line installers and repairers,Line item,4
+49-9052,Telecommunications line installers and repairers,Line item,4
+49-9060,Precision instrument and equipment repairers,Summary,3
+49-9061,Camera and photographic equipment repairers,Line item,4
+49-9062,Medical equipment repairers,Line item,4
+49-9063,Musical instrument repairers and tuners,Line item,4
+49-9064,Watch and clock repairers,Line item,4
+49-9069,"Precision instrument and equipment repairers, all other",Line item,4
+49-9071,"Maintenance and repair workers, general",Line item,3
+49-9081,Wind turbine service technicians,Line item,3
+49-9090,"Miscellaneous installation, maintenance, and repair workers",Summary,3
+49-9091,"Coin, vending, and amusement machine servicers and repairers",Line item,4
+49-9092,Commercial divers,Line item,4
+49-9094,Locksmiths and safe repairers,Line item,4
+49-9095,Manufactured building and mobile home installers,Line item,4
+49-9096,Riggers,Line item,4
+49-9097,Signal and track switch repairers,Line item,4
+49-9098,"Helpers--installation, maintenance, and repair workers",Line item,4
+49-9099,"Installation, maintenance, and repair workers, all other",Line item,4
+51-0000,Production occupations,Summary,1
+51-1000,Supervisors of production workers,Summary,2
+51-1011,First-line supervisors of production and operating workers,Line item,3
+51-2000,Assemblers and fabricators,Summary,2
+51-2011,"Aircraft structure, surfaces, rigging, and systems assemblers",Line item,3
+51-2020,"Electrical, electronics, and electromechanical assemblers",Summary,3
+51-2021,"Coil winders, tapers, and finishers",Line item,4
+51-2028,"Electrical, electronic, and electromechanical assemblers, except coil winders, tapers, and finishers",Line item,4
+51-2031,Engine and other machine assemblers,Line item,3
+51-2041,Structural metal fabricators and fitters,Line item,3
+51-2051,Fiberglass laminators and fabricators,Line item,3
+51-2061,Timing device assemblers and adjusters,Line item,3
+51-2090,Miscellaneous assemblers and fabricators,Line item,3
+51-3000,Food processing workers,Summary,2
+51-3011,Bakers,Line item,3
+51-3020,"Butchers and other meat, poultry, and fish processing workers",Summary,3
+51-3021,Butchers and meat cutters,Line item,4
+51-3022,"Meat, poultry, and fish cutters and trimmers",Line item,4
+51-3023,Slaughterers and meat packers,Line item,4
+51-3090,Miscellaneous food processing workers,Summary,3
+51-3091,"Food and tobacco roasting, baking, and drying machine operators and tenders",Line item,4
+51-3092,Food batchmakers,Line item,4
+51-3093,Food cooking machine operators and tenders,Line item,4
+51-3099,"Food processing workers, all other",Line item,4
+51-4000,Metal workers and plastic workers,Summary,2
+51-4020,"Forming machine setters, operators, and tenders, metal and plastic",Summary,3
+51-4021,"Extruding and drawing machine setters, operators, and tenders, metal and plastic",Line item,4
+51-4022,"Forging machine setters, operators, and tenders, metal and plastic",Line item,4
+51-4023,"Rolling machine setters, operators, and tenders, metal and plastic",Line item,4
+51-4030,"Machine tool cutting setters, operators, and tenders, metal and plastic",Summary,3
+51-4031,"Cutting, punching, and press machine setters, operators, and tenders, metal and plastic",Line item,4
+51-4032,"Drilling and boring machine tool setters, operators, and tenders, metal and plastic",Line item,4
+51-4033,"Grinding, lapping, polishing, and buffing machine tool setters, operators, and tenders, metal and plastic",Line item,4
+51-4034,"Lathe and turning machine tool setters, operators, and tenders, metal and plastic",Line item,4
+51-4035,"Milling and planing machine setters, operators, and tenders, metal and plastic",Line item,4
+51-4041,Machinists,Line item,3
+51-4050,"Metal furnace operators, tenders, pourers, and casters",Summary,3
+51-4051,Metal-refining furnace operators and tenders,Line item,4
+51-4052,"Pourers and casters, metal",Line item,4
+51-4060,"Model makers and patternmakers, metal and plastic",Summary,3
+51-4061,"Model makers, metal and plastic",Line item,4
+51-4062,"Patternmakers, metal and plastic",Line item,4
+51-4070,"Molders and molding machine setters, operators, and tenders, metal and plastic",Summary,3
+51-4071,Foundry mold and coremakers,Line item,4
+51-4072,"Molding, coremaking, and casting machine setters, operators, and tenders, metal and plastic",Line item,4
+51-4081,"Multiple machine tool setters, operators, and tenders, metal and plastic",Line item,3
+51-4111,Tool and die makers,Line item,3
+51-4120,"Welding, soldering, and brazing workers",Summary,3
+51-4121,"Welders, cutters, solderers, and brazers",Line item,4
+51-4122,"Welding, soldering, and brazing machine setters, operators, and tenders",Line item,4
+51-4190,Miscellaneous metal workers and plastic workers,Summary,3
+51-4191,"Heat treating equipment setters, operators, and tenders, metal and plastic",Line item,4
+51-4192,"Layout workers, metal and plastic",Line item,4
+51-4193,"Plating machine setters, operators, and tenders, metal and plastic",Line item,4
+51-4194,"Tool grinders, filers, and sharpeners",Line item,4
+51-4199,"Metal workers and plastic workers, all other",Line item,4
+51-5100,Printing workers,Summary,2
+51-5111,Prepress technicians and workers,Line item,3
+51-5112,Printing press operators,Line item,3
+51-5113,Print binding and finishing workers,Line item,3
+51-6000,"Textile, apparel, and furnishings workers",Summary,2
+51-6011,Laundry and dry-cleaning workers,Line item,3
+51-6021,"Pressers, textile, garment, and related materials",Line item,3
+51-6031,Sewing machine operators,Line item,3
+51-6040,Shoe and leather workers,Summary,3
+51-6041,Shoe and leather workers and repairers,Line item,4
+51-6042,Shoe machine operators and tenders,Line item,4
+51-6050,"Tailors, dressmakers, and sewers",Summary,3
+51-6051,"Sewers, hand",Line item,4
+51-6052,"Tailors, dressmakers, and custom sewers",Line item,4
+51-6060,"Textile machine setters, operators, and tenders",Summary,3
+51-6061,Textile bleaching and dyeing machine operators and tenders,Line item,4
+51-6062,"Textile cutting machine setters, operators, and tenders",Line item,4
+51-6063,"Textile knitting and weaving machine setters, operators, and tenders",Line item,4
+51-6064,"Textile winding, twisting, and drawing out machine setters, operators, and tenders",Line item,4
+51-6090,"Miscellaneous textile, apparel, and furnishings workers",Summary,3
+51-6091,"Extruding and forming machine setters, operators, and tenders, synthetic and glass fibers",Line item,4
+51-6092,Fabric and apparel patternmakers,Line item,4
+51-6093,Upholsterers,Line item,4
+51-6099,"Textile, apparel, and furnishings workers, all other",Line item,4
+51-7000,Woodworkers,Summary,2
+51-7011,Cabinetmakers and bench carpenters,Line item,3
+51-7021,Furniture finishers,Line item,3
+51-7030,"Model makers and patternmakers, wood",Summary,3
+51-7031,"Model makers, wood",Line item,4
+51-7032,"Patternmakers, wood",Line item,4
+51-7040,"Woodworking machine setters, operators, and tenders",Summary,3
+51-7041,"Sawing machine setters, operators, and tenders, wood",Line item,4
+51-7042,"Woodworking machine setters, operators, and tenders, except sawing",Line item,4
+51-7099,"Woodworkers, all other",Line item,3
+51-8000,Plant and system operators,Summary,2
+51-8010,"Power plant operators, distributors, and dispatchers",Summary,3
+51-8011,Nuclear power reactor operators,Line item,4
+51-8012,Power distributors and dispatchers,Line item,4
+51-8013,Power plant operators,Line item,4
+51-8021,Stationary engineers and boiler operators,Line item,3
+51-8031,Water and wastewater treatment plant and system operators,Line item,3
+51-8090,Miscellaneous plant and system operators,Summary,3
+51-8091,Chemical plant and system operators,Line item,4
+51-8092,Gas plant operators,Line item,4
+51-8093,"Petroleum pump system operators, refinery operators, and gaugers",Line item,4
+51-8099,"Plant and system operators, all other",Line item,4
+51-9000,Other production occupations,Summary,2
+51-9010,"Chemical processing machine setters, operators, and tenders",Summary,3
+51-9011,Chemical equipment operators and tenders,Line item,4
+51-9012,"Separating, filtering, clarifying, precipitating, and still machine setters, operators, and tenders",Line item,4
+51-9020,"Crushing, grinding, polishing, mixing, and blending workers",Summary,3
+51-9021,"Crushing, grinding, and polishing machine setters, operators, and tenders",Line item,4
+51-9022,"Grinding and polishing workers, hand",Line item,4
+51-9023,"Mixing and blending machine setters, operators, and tenders",Line item,4
+51-9030,Cutting workers,Summary,3
+51-9031,"Cutters and trimmers, hand",Line item,4
+51-9032,"Cutting and slicing machine setters, operators, and tenders",Line item,4
+51-9041,"Extruding, forming, pressing, and compacting machine setters, operators, and tenders",Line item,3
+51-9051,"Furnace, kiln, oven, drier, and kettle operators and tenders",Line item,3
+51-9061,"Inspectors, testers, sorters, samplers, and weighers",Line item,3
+51-9071,Jewelers and precious stone and metal workers,Line item,3
+51-9080,Dental and ophthalmic laboratory technicians and medical appliance technicians,Summary,3
+51-9081,Dental laboratory technicians,Line item,4
+51-9082,Medical appliance technicians,Line item,4
+51-9083,Ophthalmic laboratory technicians,Line item,4
+51-9111,Packaging and filling machine operators and tenders,Line item,3
+51-9120,Painting workers,Summary,3
+51-9123,"Painting, coating, and decorating workers",Line item,4
+51-9124,"Coating, painting, and spraying machine setters, operators, and tenders",Line item,4
+51-9141,Semiconductor processing technicians,Line item,3
+51-9151,Photographic process workers and processing machine operators,Line item,3
+51-9160,Computer numerically controlled tool operators and programmers,Summary,3
+51-9161,Computer numerically controlled tool operators,Line item,4
+51-9162,Computer numerically controlled tool programmers,Line item,4
+51-9190,Miscellaneous production workers,Summary,3
+51-9191,Adhesive bonding machine operators and tenders,Line item,4
+51-9192,"Cleaning, washing, and metal pickling equipment operators and tenders",Line item,4
+51-9193,Cooling and freezing equipment operators and tenders,Line item,4
+51-9194,Etchers and engravers,Line item,4
+51-9195,"Molders, shapers, and casters, except metal and plastic",Line item,4
+51-9196,"Paper goods machine setters, operators, and tenders",Line item,4
+51-9197,Tire builders,Line item,4
+51-9198,Helpers--production workers,Line item,4
+51-9199,"Production workers, all other",Line item,4
+53-0000,Transportation and material moving occupations,Summary,1
+53-1000,Supervisors of transportation and material moving workers,Summary,2
+53-1041,Aircraft cargo handling supervisors,Line item,3
+53-1047,"First-line supervisors of transportation and material moving workers, except aircraft cargo handling supervisors",Line item,3
+53-2000,Air transportation workers,Summary,2
+53-2010,Aircraft pilots and flight engineers,Summary,3
+53-2011,"Airline pilots, copilots, and flight engineers",Line item,4
+53-2012,Commercial pilots,Line item,4
+53-2020,Air traffic controllers and airfield operations specialists,Summary,3
+53-2021,Air traffic controllers,Line item,4
+53-2022,Airfield operations specialists,Line item,4
+53-2031,Flight attendants,Line item,3
+53-3000,Motor vehicle operators,Summary,2
+53-3011,"Ambulance drivers and attendants, except emergency medical technicians",Line item,3
+53-3030,Driver/sales workers and truck drivers,Summary,3
+53-3031,Driver/sales workers,Line item,4
+53-3032,Heavy and tractor-trailer truck drivers,Line item,4
+53-3033,Light truck drivers,Line item,4
+53-3050,Passenger vehicle drivers,Summary,3
+53-3051,"Bus drivers, school",Line item,4
+53-3052,"Bus drivers, transit and intercity",Line item,4
+53-3053,Shuttle drivers and chauffeurs,Line item,4
+53-3054,Taxi drivers,Line item,4
+53-3099,"Motor vehicle operators, all other",Line item,3
+53-4000,Rail transportation workers,Summary,2
+53-4010,Locomotive engineers and operators,Summary,3
+53-4011,Locomotive engineers,Line item,4
+53-4013,"Rail yard engineers, dinkey operators, and hostlers",Line item,4
+53-4022,"Railroad brake, signal, and switch operators and locomotive firers",Line item,3
+53-4031,Railroad conductors and yardmasters,Line item,3
+53-4041,Subway and streetcar operators,Line item,3
+53-4099,"Rail transportation workers, all other",Line item,3
+53-5000,Water transportation workers,Summary,2
+53-5011,Sailors and marine oilers,Line item,3
+53-5020,Ship and boat captains and operators,Summary,3
+53-5021,"Captains, mates, and pilots of water vessels",Line item,4
+53-5022,Motorboat operators,Line item,4
+53-5031,Ship engineers,Line item,3
+53-6000,Other transportation workers,Summary,2
+53-6011,Bridge and lock tenders,Line item,3
+53-6021,Parking attendants,Line item,3
+53-6030,Transportation service attendants,Summary,3
+53-6031,Automotive and watercraft service attendants,Line item,4
+53-6032,Aircraft service attendants,Line item,4
+53-6041,Traffic technicians,Line item,3
+53-6051,Transportation inspectors,Line item,3
+53-6061,Passenger attendants,Line item,3
+53-6099,"Transportation workers, all other",Line item,3
+53-7000,Material moving workers,Summary,2
+53-7011,Conveyor operators and tenders,Line item,3
+53-7021,Crane and tower operators,Line item,3
+53-7031,Dredge operators,Line item,3
+53-7041,Hoist and winch operators,Line item,3
+53-7051,Industrial truck and tractor operators,Line item,3
+53-7060,Laborers and material movers,Summary,3
+53-7061,Cleaners of vehicles and equipment,Line item,4
+53-7062,"Laborers and freight, stock, and material movers, hand",Line item,4
+53-7063,Machine feeders and offbearers,Line item,4
+53-7064,"Packers and packagers, hand",Line item,4
+53-7065,Stockers and order fillers,Line item,4
+53-7070,Pumping station operators,Summary,3
+53-7071,Gas compressor and gas pumping station operators,Line item,4
+53-7072,"Pump operators, except wellhead pumpers",Line item,4
+53-7073,Wellhead pumpers,Line item,4
+53-7081,Refuse and recyclable material collectors,Line item,3
+53-7121,"Tank car, truck, and ship loaders",Line item,3
+53-7199,"Material moving workers, all other",Line item,3

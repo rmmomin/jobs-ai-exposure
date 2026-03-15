@@ -1,0 +1,998 @@
+onet_soc_code,onet_soc_title,nem_code,nem_title,ooh_profile_code,ooh_profile_title,ooh_profile_website,onet_soc_norm
+11-1011.00,Chief Executives,11-1011,Chief executives,B039,Top executives,https://www.bls.gov/ooh/management/top-executives.htm,11-1011
+11-1011.03,Chief Sustainability Officers,11-1011,Chief executives,B039,Top executives,https://www.bls.gov/ooh/management/top-executives.htm,11-1011
+11-1021.00,General and Operations Managers,11-1021,General and operations managers,B039,Top executives,https://www.bls.gov/ooh/management/top-executives.htm,11-1021
+11-1031.00,Legislators,11-1031,Legislators,—,,,11-1031
+11-2011.00,Advertising and Promotions Managers,11-2011,Advertising and promotions managers,B016,"Advertising, promotions, and marketing managers",https://www.bls.gov/ooh/management/advertising-promotions-and-marketing-managers.htm,11-2011
+11-2021.00,Marketing Managers,11-2021,Marketing managers,B016,"Advertising, promotions, and marketing managers",https://www.bls.gov/ooh/management/advertising-promotions-and-marketing-managers.htm,11-2021
+11-2022.00,Sales Managers,11-2022,Sales managers,B018,Sales managers,https://www.bls.gov/ooh/management/sales-managers.htm,11-2022
+11-2032.00,Public Relations Managers,11-2032,Public relations managers,B019,Public relations and fundraising managers,https://www.bls.gov/ooh/management/public-relations-managers.htm,11-2032
+11-2033.00,Fundraising Managers,11-2033,Fundraising managers,B019,Public relations and fundraising managers,https://www.bls.gov/ooh/management/public-relations-managers.htm,11-2033
+11-3012.00,Administrative Services Managers,11-3012,Administrative services managers,B020,Administrative services and facilities managers,https://www.bls.gov/ooh/management/administrative-services-managers.htm,11-3012
+11-3013.00,Facilities Managers,11-3013,Facilities managers,B020,Administrative services and facilities managers,https://www.bls.gov/ooh/management/administrative-services-managers.htm,11-3013
+11-3013.01,Security Managers,11-3013,Facilities managers,B020,Administrative services and facilities managers,https://www.bls.gov/ooh/management/administrative-services-managers.htm,11-3013
+11-3021.00,Computer and Information Systems Managers,11-3021,Computer and information systems managers,B021,Computer and information systems managers,https://www.bls.gov/ooh/management/computer-and-information-systems-managers.htm,11-3021
+11-3031.00,Financial Managers,11-3031,Financial managers,B022,Financial managers,https://www.bls.gov/ooh/management/financial-managers.htm,11-3031
+11-3031.01,Treasurers and Controllers,11-3031,Financial managers,B022,Financial managers,https://www.bls.gov/ooh/management/financial-managers.htm,11-3031
+11-3031.03,Investment Fund Managers,11-3031,Financial managers,B022,Financial managers,https://www.bls.gov/ooh/management/financial-managers.htm,11-3031
+11-3051.00,Industrial Production Managers,11-3051,Industrial production managers,B026,Industrial production managers,https://www.bls.gov/ooh/management/industrial-production-managers.htm,11-3051
+11-3051.01,Quality Control Systems Managers,11-3051,Industrial production managers,B026,Industrial production managers,https://www.bls.gov/ooh/management/industrial-production-managers.htm,11-3051
+11-3051.02,Geothermal Production Managers,11-3051,Industrial production managers,B026,Industrial production managers,https://www.bls.gov/ooh/management/industrial-production-managers.htm,11-3051
+11-3051.03,Biofuels Production Managers,11-3051,Industrial production managers,B026,Industrial production managers,https://www.bls.gov/ooh/management/industrial-production-managers.htm,11-3051
+11-3051.04,Biomass Power Plant Managers,11-3051,Industrial production managers,B026,Industrial production managers,https://www.bls.gov/ooh/management/industrial-production-managers.htm,11-3051
+11-3051.06,Hydroelectric Production Managers,11-3051,Industrial production managers,B026,Industrial production managers,https://www.bls.gov/ooh/management/industrial-production-managers.htm,11-3051
+11-3061.00,Purchasing Managers,11-3061,Purchasing managers,B324,"Purchasing managers, buyers, and purchasing agents",https://www.bls.gov/ooh/business-and-financial/purchasing-managers-buyers-and-purchasing-agents.htm,11-3061
+11-3071.00,"Transportation, Storage, and Distribution Managers",11-3071,"Transportation, storage, and distribution managers",B404,"Transportation, storage, and distribution managers",https://www.bls.gov/ooh/management/transportation-storage-and-distribution-managers.htm,11-3071
+11-3071.04,Supply Chain Managers,11-3071,"Transportation, storage, and distribution managers",B404,"Transportation, storage, and distribution managers",https://www.bls.gov/ooh/management/transportation-storage-and-distribution-managers.htm,11-3071
+11-3111.00,Compensation and Benefits Managers,11-3111,Compensation and benefits managers,B023,Compensation and benefits managers,https://www.bls.gov/ooh/management/compensation-and-benefits-managers.htm,11-3111
+11-3121.00,Human Resources Managers,11-3121,Human resources managers,B025,Human resources managers,https://www.bls.gov/ooh/management/human-resources-managers.htm,11-3121
+11-3131.00,Training and Development Managers,11-3131,Training and development managers,B024,Training and development managers,https://www.bls.gov/ooh/management/training-and-development-managers.htm,11-3131
+11-9013.00,"Farmers, Ranchers, and Other Agricultural Managers",11-9013,"Farmers, ranchers, and other agricultural managers",B027,"Farmers, ranchers, and other agricultural managers",https://www.bls.gov/ooh/management/farmers-ranchers-and-other-agricultural-managers.htm,11-9013
+11-9021.00,Construction Managers,11-9021,Construction managers,B028,Construction managers,https://www.bls.gov/ooh/management/construction-managers.htm,11-9021
+11-9031.00,"Education and Childcare Administrators, Preschool and Daycare",11-9031,"Education and childcare administrators, preschool and daycare",B029,Preschool and childcare center directors,https://www.bls.gov/ooh/management/preschool-and-childcare-center-directors.htm,11-9031
+11-9032.00,"Education Administrators, Kindergarten through Secondary",11-9032,"Education administrators, kindergarten through secondary",B030,"Elementary, middle, and high school principals",https://www.bls.gov/ooh/management/elementary-middle-and-high-school-principals.htm,11-9032
+11-9033.00,"Education Administrators, Postsecondary",11-9033,"Education administrators, postsecondary",B031,Postsecondary education administrators,https://www.bls.gov/ooh/management/postsecondary-education-administrators.htm,11-9033
+11-9039.00,"Education Administrators, All Other",11-9039,"Education administrators, all other",—,,,11-9039
+11-9041.00,Architectural and Engineering Managers,11-9041,Architectural and engineering managers,B032,Architectural and engineering managers,https://www.bls.gov/ooh/management/architectural-and-engineering-managers.htm,11-9041
+11-9041.01,Biofuels/Biodiesel Technology and Product Development Managers,11-9041,Architectural and engineering managers,B032,Architectural and engineering managers,https://www.bls.gov/ooh/management/architectural-and-engineering-managers.htm,11-9041
+11-9051.00,Food Service Managers,11-9051,Food service managers,B033,Food service managers,https://www.bls.gov/ooh/management/food-service-managers.htm,11-9051
+11-9071.00,Gambling Managers,11-9071,Gambling managers,B228,Gambling services workers,https://www.bls.gov/ooh/personal-care-and-service/gaming-services-occupations.htm,11-9071
+11-9072.00,"Entertainment and Recreation Managers, Except Gambling",11-9072,"Entertainment and recreation managers, except gambling",B401,Entertainment and recreation managers,https://www.bls.gov/ooh/management/entertainment-and-recreation-managers.htm,11-9072
+11-9081.00,Lodging Managers,11-9081,Lodging managers,B034,Lodging managers,https://www.bls.gov/ooh/management/lodging-managers.htm,11-9081
+11-9111.00,Medical and Health Services Managers,11-9111,Medical and health services managers,B035,Medical and health services managers,https://www.bls.gov/ooh/management/medical-and-health-services-managers.htm,11-9111
+11-9121.00,Natural Sciences Managers,11-9121,Natural sciences managers,B036,Natural sciences managers,https://www.bls.gov/ooh/management/natural-sciences-managers.htm,11-9121
+11-9121.01,Clinical Research Coordinators,11-9121,Natural sciences managers,B036,Natural sciences managers,https://www.bls.gov/ooh/management/natural-sciences-managers.htm,11-9121
+11-9121.02,Water Resource Specialists,11-9121,Natural sciences managers,B036,Natural sciences managers,https://www.bls.gov/ooh/management/natural-sciences-managers.htm,11-9121
+11-9131.00,Postmasters and Mail Superintendents,11-9131,Postmasters and mail superintendents,—,,,11-9131
+11-9141.00,"Property, Real Estate, and Community Association Managers",11-9141,"Property, real estate, and community association managers",B037,"Property, real estate, and community association managers",https://www.bls.gov/ooh/management/property-real-estate-and-community-association-managers.htm,11-9141
+11-9151.00,Social and Community Service Managers,11-9151,Social and community service managers,B038,Social and community service managers,https://www.bls.gov/ooh/management/social-and-community-service-managers.htm,11-9151
+11-9161.00,Emergency Management Directors,11-9161,Emergency management directors,B040,Emergency management directors,https://www.bls.gov/ooh/management/emergency-management-directors.htm,11-9161
+11-9171.00,Funeral Home Managers,11-9171,Funeral home managers,B001,Funeral service workers,https://www.bls.gov/ooh/personal-care-and-service/funeral-service-occupations.htm,11-9171
+11-9179.00,"Personal Service Managers, All Other",11-9179,"Personal service managers, all other",—,,,11-9179
+11-9179.01,Fitness and Wellness Coordinators,11-9179,"Personal service managers, all other",—,,,11-9179
+11-9179.02,Spa Managers,11-9179,"Personal service managers, all other",—,,,11-9179
+11-9199.00,"Managers, All Other",11-9199,"Managers, all other",—,,,11-9199
+11-9199.01,Regulatory Affairs Managers,11-9199,"Managers, all other",—,,,11-9199
+11-9199.02,Compliance Managers,11-9199,"Managers, all other",—,,,11-9199
+11-9199.08,Loss Prevention Managers,11-9199,"Managers, all other",—,,,11-9199
+11-9199.09,Wind Energy Operations Managers,11-9199,"Managers, all other",—,,,11-9199
+11-9199.10,Wind Energy Development Managers,11-9199,"Managers, all other",—,,,11-9199
+11-9199.11,Brownfield Redevelopment Specialists and Site Managers,11-9199,"Managers, all other",—,,,11-9199
+13-1011.00,"Agents and Business Managers of Artists, Performers, and Athletes",13-1011,"Agents and business managers of artists, performers, and athletes",—,,,13-1011
+13-1021.00,"Buyers and Purchasing Agents, Farm Products",13-1020,Buyers and purchasing agents,B324,"Purchasing managers, buyers, and purchasing agents",https://www.bls.gov/ooh/business-and-financial/purchasing-managers-buyers-and-purchasing-agents.htm,13-1021
+13-1022.00,"Wholesale and Retail Buyers, Except Farm Products",13-1020,Buyers and purchasing agents,B324,"Purchasing managers, buyers, and purchasing agents",https://www.bls.gov/ooh/business-and-financial/purchasing-managers-buyers-and-purchasing-agents.htm,13-1022
+13-1023.00,"Purchasing Agents, Except Wholesale, Retail, and Farm Products",13-1020,Buyers and purchasing agents,B324,"Purchasing managers, buyers, and purchasing agents",https://www.bls.gov/ooh/business-and-financial/purchasing-managers-buyers-and-purchasing-agents.htm,13-1023
+13-1031.00,"Claims Adjusters, Examiners, and Investigators",13-1031,"Claims adjusters, examiners, and investigators",B042,"Claims adjusters, appraisers, examiners, and investigators",https://www.bls.gov/ooh/business-and-financial/claims-adjusters-appraisers-examiners-and-investigators.htm,13-1031
+13-1032.00,"Insurance Appraisers, Auto Damage",13-1032,"Insurance appraisers, auto damage",B042,"Claims adjusters, appraisers, examiners, and investigators",https://www.bls.gov/ooh/business-and-financial/claims-adjusters-appraisers-examiners-and-investigators.htm,13-1032
+13-1041.00,Compliance Officers,13-1041,Compliance officers,B405,Compliance officers,https://www.bls.gov/ooh/business-and-financial/compliance-officers.htm,13-1041
+13-1041.01,Environmental Compliance Inspectors,13-1041,Compliance officers,B405,Compliance officers,https://www.bls.gov/ooh/business-and-financial/compliance-officers.htm,13-1041
+13-1041.03,Equal Opportunity Representatives and Officers,13-1041,Compliance officers,B405,Compliance officers,https://www.bls.gov/ooh/business-and-financial/compliance-officers.htm,13-1041
+13-1041.04,Government Property Inspectors and Investigators,13-1041,Compliance officers,B405,Compliance officers,https://www.bls.gov/ooh/business-and-financial/compliance-officers.htm,13-1041
+13-1041.06,Coroners,13-1041,Compliance officers,B405,Compliance officers,https://www.bls.gov/ooh/business-and-financial/compliance-officers.htm,13-1041
+13-1041.07,Regulatory Affairs Specialists,13-1041,Compliance officers,B405,Compliance officers,https://www.bls.gov/ooh/business-and-financial/compliance-officers.htm,13-1041
+13-1041.08,Customs Brokers,13-1041,Compliance officers,B405,Compliance officers,https://www.bls.gov/ooh/business-and-financial/compliance-officers.htm,13-1041
+13-1051.00,Cost Estimators,13-1051,Cost estimators,B043,Cost estimators,https://www.bls.gov/ooh/business-and-financial/cost-estimators.htm,13-1051
+13-1071.00,Human Resources Specialists,13-1071,Human resources specialists,B041,Human resources specialists,https://www.bls.gov/ooh/business-and-financial/human-resources-specialists.htm,13-1071
+13-1074.00,Farm Labor Contractors,13-1074,Farm labor contractors,—,,,13-1074
+13-1075.00,Labor Relations Specialists,13-1075,Labor relations specialists,B394,Labor relations specialists,https://www.bls.gov/ooh/business-and-financial/labor-relations-specialists.htm,13-1075
+13-1081.00,Logisticians,13-1081,Logisticians,B329,Logisticians,https://www.bls.gov/ooh/business-and-financial/logisticians.htm,13-1081
+13-1081.01,Logistics Engineers,13-1081,Logisticians,B329,Logisticians,https://www.bls.gov/ooh/business-and-financial/logisticians.htm,13-1081
+13-1081.02,Logistics Analysts,13-1081,Logisticians,B329,Logisticians,https://www.bls.gov/ooh/business-and-financial/logisticians.htm,13-1081
+13-1082.00,Project Management Specialists,13-1082,Project management specialists,B396,Project management specialists,https://www.bls.gov/ooh/business-and-financial/project-management-specialists.htm,13-1082
+13-1111.00,Management Analysts,13-1111,Management analysts,B045,Management analysts,https://www.bls.gov/ooh/business-and-financial/management-analysts.htm,13-1111
+13-1121.00,"Meeting, Convention, and Event Planners",13-1121,"Meeting, convention, and event planners",B046,"Meeting, convention, and event planners",https://www.bls.gov/ooh/business-and-financial/meeting-convention-and-event-planners.htm,13-1121
+13-1131.00,Fundraisers,13-1131,Fundraisers,B393,Fundraisers,https://www.bls.gov/ooh/business-and-financial/fundraisers.htm,13-1131
+13-1141.00,"Compensation, Benefits, and Job Analysis Specialists",13-1141,"Compensation, benefits, and job analysis specialists",B050,"Compensation, benefits, and job analysis specialists",https://www.bls.gov/ooh/business-and-financial/compensation-benefits-and-job-analysis-specialists.htm,13-1141
+13-1151.00,Training and Development Specialists,13-1151,Training and development specialists,B091,Training and development specialists,https://www.bls.gov/ooh/business-and-financial/training-and-development-specialists.htm,13-1151
+13-1161.00,Market Research Analysts and Marketing Specialists,13-1161,Market research analysts and marketing specialists,B103,Market research analysts,https://www.bls.gov/ooh/business-and-financial/market-research-analysts.htm,13-1161
+13-1161.01,Search Marketing Strategists,13-1161,Market research analysts and marketing specialists,B103,Market research analysts,https://www.bls.gov/ooh/business-and-financial/market-research-analysts.htm,13-1161
+13-1199.00,"Business Operations Specialists, All Other",13-1199,"Business operations specialists, all other",—,,,13-1199
+13-1199.04,Business Continuity Planners,13-1199,"Business operations specialists, all other",—,,,13-1199
+13-1199.05,Sustainability Specialists,13-1199,"Business operations specialists, all other",—,,,13-1199
+13-1199.06,Online Merchants,13-1199,"Business operations specialists, all other",—,,,13-1199
+13-1199.07,Security Management Specialists,13-1199,"Business operations specialists, all other",—,,,13-1199
+13-2011.00,Accountants and Auditors,13-2011,Accountants and auditors,B047,Accountants and auditors,https://www.bls.gov/ooh/business-and-financial/accountants-and-auditors.htm,13-2011
+13-2022.00,Appraisers of Personal and Business Property,13-2020,Property appraisers and assessors,B048,Property appraisers and assessors,https://www.bls.gov/ooh/business-and-financial/appraisers-and-assessors-of-real-estate.htm,13-2022
+13-2023.00,Appraisers and Assessors of Real Estate,13-2020,Property appraisers and assessors,B048,Property appraisers and assessors,https://www.bls.gov/ooh/business-and-financial/appraisers-and-assessors-of-real-estate.htm,13-2023
+13-2031.00,Budget Analysts,13-2031,Budget analysts,B049,Budget analysts,https://www.bls.gov/ooh/business-and-financial/budget-analysts.htm,13-2031
+13-2041.00,Credit Analysts,13-2041,Credit analysts,—,,,13-2041
+13-2051.00,Financial and Investment Analysts,13-2051,Financial and investment analysts,B051,Financial analysts,https://www.bls.gov/ooh/business-and-financial/financial-analysts.htm,13-2051
+13-2052.00,Personal Financial Advisors,13-2052,Personal financial advisors,B052,Personal financial advisors,https://www.bls.gov/ooh/business-and-financial/personal-financial-advisors.htm,13-2052
+13-2053.00,Insurance Underwriters,13-2053,Insurance underwriters,B002,Insurance underwriters,https://www.bls.gov/ooh/business-and-financial/insurance-underwriters.htm,13-2053
+13-2054.00,Financial Risk Specialists,13-2054,Financial risk specialists,B051,Financial analysts,https://www.bls.gov/ooh/business-and-financial/financial-analysts.htm,13-2054
+13-2061.00,Financial Examiners,13-2061,Financial examiners,B053,Financial examiners,https://www.bls.gov/ooh/business-and-financial/financial-examiners.htm,13-2061
+13-2071.00,Credit Counselors,13-2071,Credit counselors,B406,Credit counselors,https://www.bls.gov/ooh/business-and-financial/credit-counselors.htm,13-2071
+13-2072.00,Loan Officers,13-2072,Loan officers,B054,Loan officers,https://www.bls.gov/ooh/business-and-financial/loan-officers.htm,13-2072
+13-2081.00,"Tax Examiners and Collectors, and Revenue Agents",13-2081,"Tax examiners and collectors, and revenue agents",B055,"Tax examiners and collectors, and revenue agents",https://www.bls.gov/ooh/business-and-financial/tax-examiners-and-collectors-and-revenue-agents.htm,13-2081
+13-2082.00,Tax Preparers,13-2082,Tax preparers,—,,,13-2082
+13-2099.00,"Financial Specialists, All Other",13-2099,"Financial specialists, all other",—,,,13-2099
+13-2099.01,Financial Quantitative Analysts,13-2099,"Financial specialists, all other",—,,,13-2099
+13-2099.04,"Fraud Examiners, Investigators and Analysts",13-2099,"Financial specialists, all other",—,,,13-2099
+15-1211.00,Computer Systems Analysts,15-1211,Computer systems analysts,B059,Computer systems analysts,https://www.bls.gov/ooh/computer-and-information-technology/computer-systems-analysts.htm,15-1211
+15-1211.01,Health Informatics Specialists,15-1211,Computer systems analysts,B059,Computer systems analysts,https://www.bls.gov/ooh/computer-and-information-technology/computer-systems-analysts.htm,15-1211
+15-1212.00,Information Security Analysts,15-1212,Information security analysts,B062,Information security analysts,https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm,15-1212
+15-1221.00,Computer and Information Research Scientists,15-1221,Computer and information research scientists,B003,Computer and information research scientists,https://www.bls.gov/ooh/computer-and-information-technology/computer-and-information-research-scientists.htm,15-1221
+15-1231.00,Computer Network Support Specialists,15-1231,Computer network support specialists,B058,Computer support specialists,https://www.bls.gov/ooh/computer-and-information-technology/computer-support-specialists.htm,15-1231
+15-1232.00,Computer User Support Specialists,15-1232,Computer user support specialists,B058,Computer support specialists,https://www.bls.gov/ooh/computer-and-information-technology/computer-support-specialists.htm,15-1232
+15-1241.00,Computer Network Architects,15-1241,Computer network architects,B118,Computer network architects,https://www.bls.gov/ooh/computer-and-information-technology/computer-network-architects.htm,15-1241
+15-1241.01,Telecommunications Engineering Specialists,15-1241,Computer network architects,B118,Computer network architects,https://www.bls.gov/ooh/computer-and-information-technology/computer-network-architects.htm,15-1241
+15-1242.00,Database Administrators,15-1242,Database administrators,B060,Database administrators and architects,https://www.bls.gov/ooh/computer-and-information-technology/database-administrators.htm,15-1242
+15-1243.00,Database Architects,15-1243,Database architects,B060,Database administrators and architects,https://www.bls.gov/ooh/computer-and-information-technology/database-administrators.htm,15-1243
+15-1243.01,Data Warehousing Specialists,15-1243,Database architects,B060,Database administrators and architects,https://www.bls.gov/ooh/computer-and-information-technology/database-administrators.htm,15-1243
+15-1244.00,Network and Computer Systems Administrators,15-1244,Network and computer systems administrators,B061,Network and computer systems administrators,https://www.bls.gov/ooh/computer-and-information-technology/network-and-computer-systems-administrators.htm,15-1244
+15-1251.00,Computer Programmers,15-1251,Computer programmers,B056,Computer programmers,https://www.bls.gov/ooh/computer-and-information-technology/computer-programmers.htm,15-1251
+15-1252.00,Software Developers,15-1252,Software developers,B057,"Software developers, quality assurance analysts, and testers",https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm,15-1252
+15-1253.00,Software Quality Assurance Analysts and Testers,15-1253,Software quality assurance analysts and testers,B057,"Software developers, quality assurance analysts, and testers",https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm,15-1253
+15-1254.00,Web Developers,15-1254,Web developers,B092,Web developers and digital designers,https://www.bls.gov/ooh/computer-and-information-technology/web-developers.htm,15-1254
+15-1255.00,Web and Digital Interface Designers,15-1255,Web and digital interface designers,B092,Web developers and digital designers,https://www.bls.gov/ooh/computer-and-information-technology/web-developers.htm,15-1255
+15-1255.01,Video Game Designers,15-1255,Web and digital interface designers,B092,Web developers and digital designers,https://www.bls.gov/ooh/computer-and-information-technology/web-developers.htm,15-1255
+15-1299.00,"Computer Occupations, All Other",15-1299,"Computer occupations, all other",—,,,15-1299
+15-1299.01,Web Administrators,15-1299,"Computer occupations, all other",—,,,15-1299
+15-1299.02,Geographic Information Systems Technologists and Technicians,15-1299,"Computer occupations, all other",—,,,15-1299
+15-1299.03,Document Management Specialists,15-1299,"Computer occupations, all other",—,,,15-1299
+15-1299.04,Penetration Testers,15-1299,"Computer occupations, all other",—,,,15-1299
+15-1299.05,Information Security Engineers,15-1299,"Computer occupations, all other",—,,,15-1299
+15-1299.06,Digital Forensics Analysts,15-1299,"Computer occupations, all other",—,,,15-1299
+15-1299.07,Blockchain Engineers,15-1299,"Computer occupations, all other",—,,,15-1299
+15-1299.08,Computer Systems Engineers/Architects,15-1299,"Computer occupations, all other",—,,,15-1299
+15-1299.09,Information Technology Project Managers,15-1299,"Computer occupations, all other",—,,,15-1299
+15-2011.00,Actuaries,15-2011,Actuaries,B063,Actuaries,https://www.bls.gov/ooh/math/actuaries.htm,15-2011
+15-2021.00,Mathematicians,15-2021,Mathematicians,B004,Mathematicians and statisticians,https://www.bls.gov/ooh/math/mathematicians-and-statisticians.htm,15-2021
+15-2031.00,Operations Research Analysts,15-2031,Operations research analysts,B064,Operations research analysts,https://www.bls.gov/ooh/math/operations-research-analysts.htm,15-2031
+15-2041.00,Statisticians,15-2041,Statisticians,B004,Mathematicians and statisticians,https://www.bls.gov/ooh/math/mathematicians-and-statisticians.htm,15-2041
+15-2041.01,Biostatisticians,15-2041,Statisticians,B004,Mathematicians and statisticians,https://www.bls.gov/ooh/math/mathematicians-and-statisticians.htm,15-2041
+15-2051.00,Data Scientists,15-2051,Data scientists,B397,Data scientists,https://www.bls.gov/ooh/math/data-scientists.htm,15-2051
+15-2051.01,Business Intelligence Analysts,15-2051,Data scientists,B397,Data scientists,https://www.bls.gov/ooh/math/data-scientists.htm,15-2051
+15-2051.02,Clinical Data Managers,15-2051,Data scientists,B397,Data scientists,https://www.bls.gov/ooh/math/data-scientists.htm,15-2051
+15-2099.00,"Mathematical Science Occupations, All Other",15-2099,"Mathematical science occupations, all other",—,,,15-2099
+15-2099.01,Bioinformatics Technicians,15-2099,"Mathematical science occupations, all other",—,,,15-2099
+17-1011.00,"Architects, Except Landscape and Naval",17-1011,"Architects, except landscape and naval",B066,Architects,https://www.bls.gov/ooh/architecture-and-engineering/architects.htm,17-1011
+17-1012.00,Landscape Architects,17-1012,Landscape architects,B067,Landscape architects,https://www.bls.gov/ooh/architecture-and-engineering/landscape-architects.htm,17-1012
+17-1021.00,Cartographers and Photogrammetrists,17-1021,Cartographers and photogrammetrists,B068,Cartographers and photogrammetrists,https://www.bls.gov/ooh/architecture-and-engineering/cartographers-and-photogrammetrists.htm,17-1021
+17-1022.00,Surveyors,17-1022,Surveyors,B069,Surveyors,https://www.bls.gov/ooh/architecture-and-engineering/surveyors.htm,17-1022
+17-1022.01,Geodetic Surveyors,17-1022,Surveyors,B069,Surveyors,https://www.bls.gov/ooh/architecture-and-engineering/surveyors.htm,17-1022
+17-2011.00,Aerospace Engineers,17-2011,Aerospace engineers,B070,Aerospace engineers,https://www.bls.gov/ooh/architecture-and-engineering/aerospace-engineers.htm,17-2011
+17-2021.00,Agricultural Engineers,17-2021,Agricultural engineers,B332,Agricultural engineers,https://www.bls.gov/ooh/architecture-and-engineering/agricultural-engineers.htm,17-2021
+17-2031.00,Bioengineers and Biomedical Engineers,17-2031,Bioengineers and biomedical engineers,B071,Bioengineers and biomedical engineers,https://www.bls.gov/ooh/architecture-and-engineering/biomedical-engineers.htm,17-2031
+17-2041.00,Chemical Engineers,17-2041,Chemical engineers,B072,Chemical engineers,https://www.bls.gov/ooh/architecture-and-engineering/chemical-engineers.htm,17-2041
+17-2051.00,Civil Engineers,17-2051,Civil engineers,B073,Civil engineers,https://www.bls.gov/ooh/architecture-and-engineering/civil-engineers.htm,17-2051
+17-2051.01,Transportation Engineers,17-2051,Civil engineers,B073,Civil engineers,https://www.bls.gov/ooh/architecture-and-engineering/civil-engineers.htm,17-2051
+17-2051.02,Water/Wastewater Engineers,17-2051,Civil engineers,B073,Civil engineers,https://www.bls.gov/ooh/architecture-and-engineering/civil-engineers.htm,17-2051
+17-2061.00,Computer Hardware Engineers,17-2061,Computer hardware engineers,B074,Computer hardware engineers,https://www.bls.gov/ooh/architecture-and-engineering/computer-hardware-engineers.htm,17-2061
+17-2071.00,Electrical Engineers,17-2071,Electrical engineers,B075,Electrical and electronics engineers,https://www.bls.gov/ooh/architecture-and-engineering/electrical-and-electronics-engineers.htm,17-2071
+17-2072.00,"Electronics Engineers, Except Computer",17-2072,"Electronics engineers, except computer",B075,Electrical and electronics engineers,https://www.bls.gov/ooh/architecture-and-engineering/electrical-and-electronics-engineers.htm,17-2072
+17-2072.01,Radio Frequency Identification Device Specialists,17-2072,"Electronics engineers, except computer",B075,Electrical and electronics engineers,https://www.bls.gov/ooh/architecture-and-engineering/electrical-and-electronics-engineers.htm,17-2072
+17-2081.00,Environmental Engineers,17-2081,Environmental engineers,B076,Environmental engineers,https://www.bls.gov/ooh/architecture-and-engineering/environmental-engineers.htm,17-2081
+17-2111.00,"Health and Safety Engineers, Except Mining Safety Engineers and Inspectors",17-2111,"Health and safety engineers, except mining safety engineers and inspectors",B333,Health and safety engineers,https://www.bls.gov/ooh/architecture-and-engineering/health-and-safety-engineers.htm,17-2111
+17-2111.02,Fire-Prevention and Protection Engineers,17-2111,"Health and safety engineers, except mining safety engineers and inspectors",B333,Health and safety engineers,https://www.bls.gov/ooh/architecture-and-engineering/health-and-safety-engineers.htm,17-2111
+17-2112.00,Industrial Engineers,17-2112,Industrial engineers,B077,Industrial engineers,https://www.bls.gov/ooh/architecture-and-engineering/industrial-engineers.htm,17-2112
+17-2112.01,Human Factors Engineers and Ergonomists,17-2112,Industrial engineers,B077,Industrial engineers,https://www.bls.gov/ooh/architecture-and-engineering/industrial-engineers.htm,17-2112
+17-2112.02,Validation Engineers,17-2112,Industrial engineers,B077,Industrial engineers,https://www.bls.gov/ooh/architecture-and-engineering/industrial-engineers.htm,17-2112
+17-2112.03,Manufacturing Engineers,17-2112,Industrial engineers,B077,Industrial engineers,https://www.bls.gov/ooh/architecture-and-engineering/industrial-engineers.htm,17-2112
+17-2121.00,Marine Engineers and Naval Architects,17-2121,Marine engineers and naval architects,B078,Marine engineers and naval architects,https://www.bls.gov/ooh/architecture-and-engineering/marine-engineers-and-naval-architects.htm,17-2121
+17-2131.00,Materials Engineers,17-2131,Materials engineers,B079,Materials engineers,https://www.bls.gov/ooh/architecture-and-engineering/materials-engineers.htm,17-2131
+17-2141.00,Mechanical Engineers,17-2141,Mechanical engineers,B080,Mechanical engineers,https://www.bls.gov/ooh/architecture-and-engineering/mechanical-engineers.htm,17-2141
+17-2141.01,Fuel Cell Engineers,17-2141,Mechanical engineers,B080,Mechanical engineers,https://www.bls.gov/ooh/architecture-and-engineering/mechanical-engineers.htm,17-2141
+17-2141.02,Automotive Engineers,17-2141,Mechanical engineers,B080,Mechanical engineers,https://www.bls.gov/ooh/architecture-and-engineering/mechanical-engineers.htm,17-2141
+17-2151.00,"Mining and Geological Engineers, Including Mining Safety Engineers",17-2151,"Mining and geological engineers, including mining safety engineers",B081,Mining and geological engineers,https://www.bls.gov/ooh/architecture-and-engineering/mining-and-geological-engineers.htm,17-2151
+17-2161.00,Nuclear Engineers,17-2161,Nuclear engineers,B082,Nuclear engineers,https://www.bls.gov/ooh/architecture-and-engineering/nuclear-engineers.htm,17-2161
+17-2171.00,Petroleum Engineers,17-2171,Petroleum engineers,B083,Petroleum engineers,https://www.bls.gov/ooh/architecture-and-engineering/petroleum-engineers.htm,17-2171
+17-2199.00,"Engineers, All Other",17-2199,"Engineers, all other",—,,,17-2199
+17-2199.03,"Energy Engineers, Except Wind and Solar",17-2199,"Engineers, all other",—,,,17-2199
+17-2199.05,Mechatronics Engineers,17-2199,"Engineers, all other",—,,,17-2199
+17-2199.06,Microsystems Engineers,17-2199,"Engineers, all other",—,,,17-2199
+17-2199.07,Photonics Engineers,17-2199,"Engineers, all other",—,,,17-2199
+17-2199.08,Robotics Engineers,17-2199,"Engineers, all other",—,,,17-2199
+17-2199.09,Nanosystems Engineers,17-2199,"Engineers, all other",—,,,17-2199
+17-2199.10,Wind Energy Engineers,17-2199,"Engineers, all other",—,,,17-2199
+17-2199.11,Solar Energy Systems Engineers,17-2199,"Engineers, all other",—,,,17-2199
+17-3011.00,Architectural and Civil Drafters,17-3011,Architectural and civil drafters,B084,Drafters,https://www.bls.gov/ooh/architecture-and-engineering/drafters.htm,17-3011
+17-3012.00,Electrical and Electronics Drafters,17-3012,Electrical and electronics drafters,B084,Drafters,https://www.bls.gov/ooh/architecture-and-engineering/drafters.htm,17-3012
+17-3013.00,Mechanical Drafters,17-3013,Mechanical drafters,B084,Drafters,https://www.bls.gov/ooh/architecture-and-engineering/drafters.htm,17-3013
+17-3019.00,"Drafters, All Other",17-3019,"Drafters, all other",B084,Drafters,https://www.bls.gov/ooh/architecture-and-engineering/drafters.htm,17-3019
+17-3021.00,Aerospace Engineering and Operations Technologists and Technicians,17-3021,Aerospace engineering and operations technologists and technicians,B334,Aerospace engineering and operations technologists and technicians,https://www.bls.gov/ooh/architecture-and-engineering/aerospace-engineering-and-operations-technicians.htm,17-3021
+17-3022.00,Civil Engineering Technologists and Technicians,17-3022,Civil engineering technologists and technicians,B085,Civil engineering technologists and technicians,https://www.bls.gov/ooh/architecture-and-engineering/civil-engineering-technicians.htm,17-3022
+17-3023.00,Electrical and Electronic Engineering Technologists and Technicians,17-3023,Electrical and electronic engineering technologists and technicians,B335,Electrical and electronic engineering technologists and technicians,https://www.bls.gov/ooh/architecture-and-engineering/electrical-and-electronics-engineering-technicians.htm,17-3023
+17-3024.00,Electro-Mechanical and Mechatronics Technologists and Technicians,17-3024,Electro-mechanical and mechatronics technologists and technicians,B336,Electro-mechanical and mechatronics technologists and technicians,https://www.bls.gov/ooh/architecture-and-engineering/electro-mechanical-technicians.htm,17-3024
+17-3024.01,Robotics Technicians,17-3024,Electro-mechanical and mechatronics technologists and technicians,B336,Electro-mechanical and mechatronics technologists and technicians,https://www.bls.gov/ooh/architecture-and-engineering/electro-mechanical-technicians.htm,17-3024
+17-3025.00,Environmental Engineering Technologists and Technicians,17-3025,Environmental engineering technologists and technicians,B086,Environmental engineering technologists and technicians,https://www.bls.gov/ooh/architecture-and-engineering/environmental-engineering-technicians.htm,17-3025
+17-3026.00,Industrial Engineering Technologists and Technicians,17-3026,Industrial engineering technologists and technicians,B087,Industrial engineering technologists and technicians,https://www.bls.gov/ooh/architecture-and-engineering/industrial-engineering-technicians.htm,17-3026
+17-3026.01,Nanotechnology Engineering Technologists and Technicians,17-3026,Industrial engineering technologists and technicians,B087,Industrial engineering technologists and technicians,https://www.bls.gov/ooh/architecture-and-engineering/industrial-engineering-technicians.htm,17-3026
+17-3027.00,Mechanical Engineering Technologists and Technicians,17-3027,Mechanical engineering technologists and technicians,B088,Mechanical engineering technologists and technicians,https://www.bls.gov/ooh/architecture-and-engineering/mechanical-engineering-technicians.htm,17-3027
+17-3027.01,Automotive Engineering Technicians,17-3027,Mechanical engineering technologists and technicians,B088,Mechanical engineering technologists and technicians,https://www.bls.gov/ooh/architecture-and-engineering/mechanical-engineering-technicians.htm,17-3027
+17-3028.00,Calibration Technologists and Technicians,17-3028,Calibration technologists and technicians,B402,Calibration technologists and technicians,https://www.bls.gov/ooh/installation-maintenance-and-repair/calibration-technologists-and-technicians.htm,17-3028
+17-3029.00,"Engineering Technologists and Technicians, Except Drafters, All Other",17-3029,"Engineering technologists and technicians, except drafters, all other",—,,,17-3029
+17-3029.01,Non-Destructive Testing Specialists,17-3029,"Engineering technologists and technicians, except drafters, all other",—,,,17-3029
+17-3029.08,Photonics Technicians,17-3029,"Engineering technologists and technicians, except drafters, all other",—,,,17-3029
+17-3031.00,Surveying and Mapping Technicians,17-3031,Surveying and mapping technicians,B089,Surveying and mapping technicians,https://www.bls.gov/ooh/architecture-and-engineering/surveying-and-mapping-technicians.htm,17-3031
+19-1011.00,Animal Scientists,19-1011,Animal scientists,B090,Agricultural and food scientists,https://www.bls.gov/ooh/life-physical-and-social-science/agricultural-and-food-scientists.htm,19-1011
+19-1012.00,Food Scientists and Technologists,19-1012,Food scientists and technologists,B090,Agricultural and food scientists,https://www.bls.gov/ooh/life-physical-and-social-science/agricultural-and-food-scientists.htm,19-1012
+19-1013.00,Soil and Plant Scientists,19-1013,Soil and plant scientists,B090,Agricultural and food scientists,https://www.bls.gov/ooh/life-physical-and-social-science/agricultural-and-food-scientists.htm,19-1013
+19-1021.00,Biochemists and Biophysicists,19-1021,Biochemists and biophysicists,B093,Biochemists and biophysicists,https://www.bls.gov/ooh/life-physical-and-social-science/biochemists-and-biophysicists.htm,19-1021
+19-1022.00,Microbiologists,19-1022,Microbiologists,B094,Microbiologists,https://www.bls.gov/ooh/life-physical-and-social-science/microbiologists.htm,19-1022
+19-1023.00,Zoologists and Wildlife Biologists,19-1023,Zoologists and wildlife biologists,B095,Zoologists and wildlife biologists,https://www.bls.gov/ooh/life-physical-and-social-science/zoologists-and-wildlife-biologists.htm,19-1023
+19-1029.00,"Biological Scientists, All Other",19-1029,"Biological scientists, all other",—,,,19-1029
+19-1029.01,Bioinformatics Scientists,19-1029,"Biological scientists, all other",—,,,19-1029
+19-1029.02,Molecular and Cellular Biologists,19-1029,"Biological scientists, all other",—,,,19-1029
+19-1029.03,Geneticists,19-1029,"Biological scientists, all other",—,,,19-1029
+19-1029.04,Biologists,19-1029,"Biological scientists, all other",—,,,19-1029
+19-1031.00,Conservation Scientists,19-1031,Conservation scientists,B337,Conservation scientists and foresters,https://www.bls.gov/ooh/life-physical-and-social-science/conservation-scientists.htm,19-1031
+19-1031.02,Range Managers,19-1031,Conservation scientists,B337,Conservation scientists and foresters,https://www.bls.gov/ooh/life-physical-and-social-science/conservation-scientists.htm,19-1031
+19-1031.03,Park Naturalists,19-1031,Conservation scientists,B337,Conservation scientists and foresters,https://www.bls.gov/ooh/life-physical-and-social-science/conservation-scientists.htm,19-1031
+19-1032.00,Foresters,19-1032,Foresters,B337,Conservation scientists and foresters,https://www.bls.gov/ooh/life-physical-and-social-science/conservation-scientists.htm,19-1032
+19-1041.00,Epidemiologists,19-1041,Epidemiologists,B096,Epidemiologists,https://www.bls.gov/ooh/life-physical-and-social-science/epidemiologists.htm,19-1041
+19-1042.00,"Medical Scientists, Except Epidemiologists",19-1042,"Medical scientists, except epidemiologists",B097,Medical scientists,https://www.bls.gov/ooh/life-physical-and-social-science/medical-scientists.htm,19-1042
+19-1099.00,"Life Scientists, All Other",19-1099,"Life scientists, all other",—,,,19-1099
+19-2011.00,Astronomers,19-2011,Astronomers,B098,Physicists and astronomers,https://www.bls.gov/ooh/life-physical-and-social-science/physicists-and-astronomers.htm,19-2011
+19-2012.00,Physicists,19-2012,Physicists,B098,Physicists and astronomers,https://www.bls.gov/ooh/life-physical-and-social-science/physicists-and-astronomers.htm,19-2012
+19-2021.00,Atmospheric and Space Scientists,19-2021,Atmospheric and space scientists,B005,"Atmospheric scientists, including meteorologists",https://www.bls.gov/ooh/life-physical-and-social-science/atmospheric-scientists-including-meteorologists.htm,19-2021
+19-2031.00,Chemists,19-2031,Chemists,B099,Chemists and materials scientists,https://www.bls.gov/ooh/life-physical-and-social-science/chemists-and-materials-scientists.htm,19-2031
+19-2032.00,Materials Scientists,19-2032,Materials scientists,B099,Chemists and materials scientists,https://www.bls.gov/ooh/life-physical-and-social-science/chemists-and-materials-scientists.htm,19-2032
+19-2041.00,"Environmental Scientists and Specialists, Including Health",19-2041,"Environmental scientists and specialists, including health",B100,Environmental scientists and specialists,https://www.bls.gov/ooh/life-physical-and-social-science/environmental-scientists-and-specialists.htm,19-2041
+19-2041.01,Climate Change Policy Analysts,19-2041,"Environmental scientists and specialists, including health",B100,Environmental scientists and specialists,https://www.bls.gov/ooh/life-physical-and-social-science/environmental-scientists-and-specialists.htm,19-2041
+19-2041.02,Environmental Restoration Planners,19-2041,"Environmental scientists and specialists, including health",B100,Environmental scientists and specialists,https://www.bls.gov/ooh/life-physical-and-social-science/environmental-scientists-and-specialists.htm,19-2041
+19-2041.03,Industrial Ecologists,19-2041,"Environmental scientists and specialists, including health",B100,Environmental scientists and specialists,https://www.bls.gov/ooh/life-physical-and-social-science/environmental-scientists-and-specialists.htm,19-2041
+19-2042.00,"Geoscientists, Except Hydrologists and Geographers",19-2042,"Geoscientists, except hydrologists and geographers",B101,Geoscientists,https://www.bls.gov/ooh/life-physical-and-social-science/geoscientists.htm,19-2042
+19-2043.00,Hydrologists,19-2043,Hydrologists,B102,Hydrologists,https://www.bls.gov/ooh/life-physical-and-social-science/hydrologists.htm,19-2043
+19-2099.00,"Physical Scientists, All Other",19-2099,"Physical scientists, all other",—,,,19-2099
+19-2099.01,Remote Sensing Scientists and Technologists,19-2099,"Physical scientists, all other",—,,,19-2099
+19-3011.00,Economists,19-3011,Economists,B006,Economists,https://www.bls.gov/ooh/life-physical-and-social-science/economists.htm,19-3011
+19-3011.01,Environmental Economists,19-3011,Economists,B006,Economists,https://www.bls.gov/ooh/life-physical-and-social-science/economists.htm,19-3011
+19-3022.00,Survey Researchers,19-3022,Survey researchers,B104,Survey researchers,https://www.bls.gov/ooh/life-physical-and-social-science/survey-researchers.htm,19-3022
+19-3032.00,Industrial-Organizational Psychologists,19-3032,Industrial-organizational psychologists,B105,Psychologists,https://www.bls.gov/ooh/life-physical-and-social-science/psychologists.htm,19-3032
+19-3033.00,Clinical and Counseling Psychologists,19-3033,Clinical and counseling psychologists,B105,Psychologists,https://www.bls.gov/ooh/life-physical-and-social-science/psychologists.htm,19-3033
+19-3034.00,School Psychologists,19-3034,School psychologists,B105,Psychologists,https://www.bls.gov/ooh/life-physical-and-social-science/psychologists.htm,19-3034
+19-3039.00,"Psychologists, All Other",19-3039,"Psychologists, all other",B105,Psychologists,https://www.bls.gov/ooh/life-physical-and-social-science/psychologists.htm,19-3039
+19-3039.02,Neuropsychologists,19-3039,"Psychologists, all other",B105,Psychologists,https://www.bls.gov/ooh/life-physical-and-social-science/psychologists.htm,19-3039
+19-3039.03,Clinical Neuropsychologists,19-3039,"Psychologists, all other",B105,Psychologists,https://www.bls.gov/ooh/life-physical-and-social-science/psychologists.htm,19-3039
+19-3041.00,Sociologists,19-3041,Sociologists,B106,Sociologists,https://www.bls.gov/ooh/life-physical-and-social-science/sociologists.htm,19-3041
+19-3051.00,Urban and Regional Planners,19-3051,Urban and regional planners,B107,Urban and regional planners,https://www.bls.gov/ooh/life-physical-and-social-science/urban-and-regional-planners.htm,19-3051
+19-3091.00,Anthropologists and Archeologists,19-3091,Anthropologists and archeologists,B108,Anthropologists and archeologists,https://www.bls.gov/ooh/life-physical-and-social-science/anthropologists-and-archeologists.htm,19-3091
+19-3092.00,Geographers,19-3092,Geographers,B340,Geographers,https://www.bls.gov/ooh/life-physical-and-social-science/geographers.htm,19-3092
+19-3093.00,Historians,19-3093,Historians,B341,Historians,https://www.bls.gov/ooh/life-physical-and-social-science/historians.htm,19-3093
+19-3094.00,Political Scientists,19-3094,Political scientists,B109,Political scientists,https://www.bls.gov/ooh/life-physical-and-social-science/political-scientists.htm,19-3094
+19-3099.00,"Social Scientists and Related Workers, All Other",19-3099,"Social scientists and related workers, all other",—,,,19-3099
+19-3099.01,Transportation Planners,19-3099,"Social scientists and related workers, all other",—,,,19-3099
+19-4012.00,Agricultural Technicians,19-4012,Agricultural technicians,B342,Agricultural and food science technicians,https://www.bls.gov/ooh/life-physical-and-social-science/agricultural-and-food-science-technicians.htm,19-4012
+19-4012.01,Precision Agriculture Technicians,19-4012,Agricultural technicians,B342,Agricultural and food science technicians,https://www.bls.gov/ooh/life-physical-and-social-science/agricultural-and-food-science-technicians.htm,19-4012
+19-4013.00,Food Science Technicians,19-4013,Food science technicians,B342,Agricultural and food science technicians,https://www.bls.gov/ooh/life-physical-and-social-science/agricultural-and-food-science-technicians.htm,19-4013
+19-4021.00,Biological Technicians,19-4021,Biological technicians,B110,Biological technicians,https://www.bls.gov/ooh/life-physical-and-social-science/biological-technicians.htm,19-4021
+19-4031.00,Chemical Technicians,19-4031,Chemical technicians,B111,Chemical technicians,https://www.bls.gov/ooh/life-physical-and-social-science/chemical-technicians.htm,19-4031
+19-4042.00,"Environmental Science and Protection Technicians, Including Health",19-4042,"Environmental science and protection technicians, including health",B114,Environmental science and protection technicians,https://www.bls.gov/ooh/life-physical-and-social-science/environmental-science-and-protection-technicians.htm,19-4042
+19-4043.00,"Geological Technicians, Except Hydrologic Technicians",19-4043,"Geological technicians, except hydrologic technicians",B112,Geological and hydrologic technicians,https://www.bls.gov/ooh/life-physical-and-social-science/geological-and-petroleum-technicians.htm,19-4043
+19-4044.00,Hydrologic Technicians,19-4044,Hydrologic technicians,B112,Geological and hydrologic technicians,https://www.bls.gov/ooh/life-physical-and-social-science/geological-and-petroleum-technicians.htm,19-4044
+19-4051.00,Nuclear Technicians,19-4051,Nuclear technicians,B113,Nuclear technicians,https://www.bls.gov/ooh/life-physical-and-social-science/nuclear-technicians.htm,19-4051
+19-4051.02,Nuclear Monitoring Technicians,19-4051,Nuclear technicians,B113,Nuclear technicians,https://www.bls.gov/ooh/life-physical-and-social-science/nuclear-technicians.htm,19-4051
+19-4061.00,Social Science Research Assistants,19-4061,Social science research assistants,—,,,19-4061
+19-4071.00,Forest and Conservation Technicians,19-4071,Forest and conservation technicians,—,,,19-4071
+19-4092.00,Forensic Science Technicians,19-4092,Forensic science technicians,B115,Forensic science technicians,https://www.bls.gov/ooh/life-physical-and-social-science/forensic-science-technicians.htm,19-4092
+19-4099.00,"Life, Physical, and Social Science Technicians, All Other",19-4099,"Life, physical, and social science technicians, all other",—,,,19-4099
+19-4099.01,Quality Control Analysts,19-4099,"Life, physical, and social science technicians, all other",—,,,19-4099
+19-4099.03,Remote Sensing Technicians,19-4099,"Life, physical, and social science technicians, all other",—,,,19-4099
+19-5011.00,Occupational Health and Safety Specialists,19-5011,Occupational health and safety specialists,B198,Occupational health and safety specialists and technicians,https://www.bls.gov/ooh/healthcare/occupational-health-and-safety-specialists-and-technicians.htm,19-5011
+19-5012.00,Occupational Health and Safety Technicians,19-5012,Occupational health and safety technicians,B198,Occupational health and safety specialists and technicians,https://www.bls.gov/ooh/healthcare/occupational-health-and-safety-specialists-and-technicians.htm,19-5012
+21-1011.00,Substance Abuse and Behavioral Disorder Counselors,21-1018,"Substance abuse, behavioral disorder, and mental health counselors",B116,"Substance abuse, behavioral disorder, and mental health counselors",https://www.bls.gov/ooh/community-and-social-service/substance-abuse-behavioral-disorder-and-mental-health-counselors.htm,21-1011
+21-1012.00,"Educational, Guidance, and Career Counselors and Advisors",21-1012,"Educational, guidance, and career counselors and advisors",B117,School and career counselors and advisors,https://www.bls.gov/ooh/community-and-social-service/school-and-career-counselors.htm,21-1012
+21-1013.00,Marriage and Family Therapists,21-1013,Marriage and family therapists,B119,Marriage and family therapists,https://www.bls.gov/ooh/community-and-social-service/marriage-and-family-therapists.htm,21-1013
+21-1014.00,Mental Health Counselors,21-1018,"Substance abuse, behavioral disorder, and mental health counselors",B116,"Substance abuse, behavioral disorder, and mental health counselors",https://www.bls.gov/ooh/community-and-social-service/substance-abuse-behavioral-disorder-and-mental-health-counselors.htm,21-1014
+21-1015.00,Rehabilitation Counselors,21-1015,Rehabilitation counselors,B120,Rehabilitation counselors,https://www.bls.gov/ooh/community-and-social-service/rehabilitation-counselors.htm,21-1015
+21-1019.00,"Counselors, All Other",21-1019,"Counselors, all other",—,,,21-1019
+21-1021.00,"Child, Family, and School Social Workers",21-1021,"Child, family, and school social workers",B121,Social workers,https://www.bls.gov/ooh/community-and-social-service/social-workers.htm,21-1021
+21-1022.00,Healthcare Social Workers,21-1022,Healthcare social workers,B121,Social workers,https://www.bls.gov/ooh/community-and-social-service/social-workers.htm,21-1022
+21-1023.00,Mental Health and Substance Abuse Social Workers,21-1023,Mental health and substance abuse social workers,B121,Social workers,https://www.bls.gov/ooh/community-and-social-service/social-workers.htm,21-1023
+21-1029.00,"Social Workers, All Other",21-1029,"Social workers, all other",B121,Social workers,https://www.bls.gov/ooh/community-and-social-service/social-workers.htm,21-1029
+21-1091.00,Health Education Specialists,21-1091,Health education specialists,B007,Health education specialists,https://www.bls.gov/ooh/community-and-social-service/health-educators.htm,21-1091
+21-1092.00,Probation Officers and Correctional Treatment Specialists,21-1092,Probation officers and correctional treatment specialists,B124,Probation officers and correctional treatment specialists,https://www.bls.gov/ooh/community-and-social-service/probation-officers-and-correctional-treatment-specialists.htm,21-1092
+21-1093.00,Social and Human Service Assistants,21-1093,Social and human service assistants,B125,Social and human service assistants,https://www.bls.gov/ooh/community-and-social-service/social-and-human-service-assistants.htm,21-1093
+21-1094.00,Community Health Workers,21-1094,Community health workers,B399,Community health workers,https://www.bls.gov/ooh/community-and-social-service/community-health-workers.htm,21-1094
+21-1099.00,"Community and Social Service Specialists, All Other",21-1099,"Community and social service specialists, all other",—,,,21-1099
+21-2011.00,Clergy,21-2011,Clergy,—,,,21-2011
+21-2021.00,"Directors, Religious Activities and Education",21-2021,"Directors, religious activities and education",—,,,21-2021
+21-2099.00,"Religious Workers, All Other",21-2099,"Religious workers, all other",—,,,21-2099
+23-1011.00,Lawyers,23-1011,Lawyers,B126,Lawyers,https://www.bls.gov/ooh/legal/lawyers.htm,23-1011
+23-1012.00,Judicial Law Clerks,23-1012,Judicial law clerks,—,,,23-1012
+23-1021.00,"Administrative Law Judges, Adjudicators, and Hearing Officers",23-1021,"Administrative law judges, adjudicators, and hearing officers",B123,Judges and hearing officers,https://www.bls.gov/ooh/legal/judges-and-hearing-officers.htm,23-1021
+23-1022.00,"Arbitrators, Mediators, and Conciliators",23-1022,"Arbitrators, mediators, and conciliators",B122,"Arbitrators, mediators, and conciliators",https://www.bls.gov/ooh/legal/arbitrators-mediators-and-conciliators.htm,23-1022
+23-1023.00,"Judges, Magistrate Judges, and Magistrates",23-1023,"Judges, magistrate judges, and magistrates",B123,Judges and hearing officers,https://www.bls.gov/ooh/legal/judges-and-hearing-officers.htm,23-1023
+23-2011.00,Paralegals and Legal Assistants,23-2011,Paralegals and legal assistants,B129,Paralegals and legal assistants,https://www.bls.gov/ooh/legal/paralegals-and-legal-assistants.htm,23-2011
+23-2093.00,"Title Examiners, Abstractors, and Searchers",23-2093,"Title examiners, abstractors, and searchers",—,,,23-2093
+23-2099.00,"Legal Support Workers, All Other",23-2099,"Legal support workers, all other",—,,,23-2099
+25-1011.00,"Business Teachers, Postsecondary",25-1011,"Business teachers, postsecondary",B261,Postsecondary teachers,https://www.bls.gov/ooh/education-training-and-library/postsecondary-teachers.htm,25-1011
+25-1021.00,"Computer Science Teachers, Postsecondary",25-1021,"Computer science teachers, postsecondary",B261,Postsecondary teachers,https://www.bls.gov/ooh/education-training-and-library/postsecondary-teachers.htm,25-1021
+25-1022.00,"Mathematical Science Teachers, Postsecondary",25-1022,"Mathematical science teachers, postsecondary",B261,Postsecondary teachers,https://www.bls.gov/ooh/education-training-and-library/postsecondary-teachers.htm,25-1022
+25-1031.00,"Architecture Teachers, Postsecondary",25-1031,"Architecture teachers, postsecondary",B261,Postsecondary teachers,https://www.bls.gov/ooh/education-training-and-library/postsecondary-teachers.htm,25-1031
+25-1032.00,"Engineering Teachers, Postsecondary",25-1032,"Engineering teachers, postsecondary",B261,Postsecondary teachers,https://www.bls.gov/ooh/education-training-and-library/postsecondary-teachers.htm,25-1032
+25-1041.00,"Agricultural Sciences Teachers, Postsecondary",25-1041,"Agricultural sciences teachers, postsecondary",B261,Postsecondary teachers,https://www.bls.gov/ooh/education-training-and-library/postsecondary-teachers.htm,25-1041
+25-1042.00,"Biological Science Teachers, Postsecondary",25-1042,"Biological science teachers, postsecondary",B261,Postsecondary teachers,https://www.bls.gov/ooh/education-training-and-library/postsecondary-teachers.htm,25-1042
+25-1043.00,"Forestry and Conservation Science Teachers, Postsecondary",25-1043,"Forestry and conservation science teachers, postsecondary",B261,Postsecondary teachers,https://www.bls.gov/ooh/education-training-and-library/postsecondary-teachers.htm,25-1043
+25-1051.00,"Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary",25-1051,"Atmospheric, earth, marine, and space sciences teachers, postsecondary",B261,Postsecondary teachers,https://www.bls.gov/ooh/education-training-and-library/postsecondary-teachers.htm,25-1051
+25-1052.00,"Chemistry Teachers, Postsecondary",25-1052,"Chemistry teachers, postsecondary",B261,Postsecondary teachers,https://www.bls.gov/ooh/education-training-and-library/postsecondary-teachers.htm,25-1052
+25-1053.00,"Environmental Science Teachers, Postsecondary",25-1053,"Environmental science teachers, postsecondary",B261,Postsecondary teachers,https://www.bls.gov/ooh/education-training-and-library/postsecondary-teachers.htm,25-1053
+25-1054.00,"Physics Teachers, Postsecondary",25-1054,"Physics teachers, postsecondary",B261,Postsecondary teachers,https://www.bls.gov/ooh/education-training-and-library/postsecondary-teachers.htm,25-1054
+25-1061.00,"Anthropology and Archeology Teachers, Postsecondary",25-1061,"Anthropology and archeology teachers, postsecondary",B261,Postsecondary teachers,https://www.bls.gov/ooh/education-training-and-library/postsecondary-teachers.htm,25-1061
+25-1062.00,"Area, Ethnic, and Cultural Studies Teachers, Postsecondary",25-1062,"Area, ethnic, and cultural studies teachers, postsecondary",B261,Postsecondary teachers,https://www.bls.gov/ooh/education-training-and-library/postsecondary-teachers.htm,25-1062
+25-1063.00,"Economics Teachers, Postsecondary",25-1063,"Economics teachers, postsecondary",B261,Postsecondary teachers,https://www.bls.gov/ooh/education-training-and-library/postsecondary-teachers.htm,25-1063
+25-1064.00,"Geography Teachers, Postsecondary",25-1064,"Geography teachers, postsecondary",B261,Postsecondary teachers,https://www.bls.gov/ooh/education-training-and-library/postsecondary-teachers.htm,25-1064
+25-1065.00,"Political Science Teachers, Postsecondary",25-1065,"Political science teachers, postsecondary",B261,Postsecondary teachers,https://www.bls.gov/ooh/education-training-and-library/postsecondary-teachers.htm,25-1065
+25-1066.00,"Psychology Teachers, Postsecondary",25-1066,"Psychology teachers, postsecondary",B261,Postsecondary teachers,https://www.bls.gov/ooh/education-training-and-library/postsecondary-teachers.htm,25-1066
+25-1067.00,"Sociology Teachers, Postsecondary",25-1067,"Sociology teachers, postsecondary",B261,Postsecondary teachers,https://www.bls.gov/ooh/education-training-and-library/postsecondary-teachers.htm,25-1067
+25-1069.00,"Social Sciences Teachers, Postsecondary, All Other",25-1069,"Social sciences teachers, postsecondary, all other",B261,Postsecondary teachers,https://www.bls.gov/ooh/education-training-and-library/postsecondary-teachers.htm,25-1069
+25-1071.00,"Health Specialties Teachers, Postsecondary",25-1071,"Health specialties teachers, postsecondary",B261,Postsecondary teachers,https://www.bls.gov/ooh/education-training-and-library/postsecondary-teachers.htm,25-1071
+25-1072.00,"Nursing Instructors and Teachers, Postsecondary",25-1072,"Nursing instructors and teachers, postsecondary",B261,Postsecondary teachers,https://www.bls.gov/ooh/education-training-and-library/postsecondary-teachers.htm,25-1072
+25-1081.00,"Education Teachers, Postsecondary",25-1081,"Education teachers, postsecondary",B261,Postsecondary teachers,https://www.bls.gov/ooh/education-training-and-library/postsecondary-teachers.htm,25-1081
+25-1082.00,"Library Science Teachers, Postsecondary",25-1082,"Library science teachers, postsecondary",B261,Postsecondary teachers,https://www.bls.gov/ooh/education-training-and-library/postsecondary-teachers.htm,25-1082
+25-1111.00,"Criminal Justice and Law Enforcement Teachers, Postsecondary",25-1111,"Criminal justice and law enforcement teachers, postsecondary",B261,Postsecondary teachers,https://www.bls.gov/ooh/education-training-and-library/postsecondary-teachers.htm,25-1111
+25-1112.00,"Law Teachers, Postsecondary",25-1112,"Law teachers, postsecondary",B261,Postsecondary teachers,https://www.bls.gov/ooh/education-training-and-library/postsecondary-teachers.htm,25-1112
+25-1113.00,"Social Work Teachers, Postsecondary",25-1113,"Social work teachers, postsecondary",B261,Postsecondary teachers,https://www.bls.gov/ooh/education-training-and-library/postsecondary-teachers.htm,25-1113
+25-1121.00,"Art, Drama, and Music Teachers, Postsecondary",25-1121,"Art, drama, and music teachers, postsecondary",B261,Postsecondary teachers,https://www.bls.gov/ooh/education-training-and-library/postsecondary-teachers.htm,25-1121
+25-1122.00,"Communications Teachers, Postsecondary",25-1122,"Communications teachers, postsecondary",B261,Postsecondary teachers,https://www.bls.gov/ooh/education-training-and-library/postsecondary-teachers.htm,25-1122
+25-1123.00,"English Language and Literature Teachers, Postsecondary",25-1123,"English language and literature teachers, postsecondary",B261,Postsecondary teachers,https://www.bls.gov/ooh/education-training-and-library/postsecondary-teachers.htm,25-1123
+25-1124.00,"Foreign Language and Literature Teachers, Postsecondary",25-1124,"Foreign language and literature teachers, postsecondary",B261,Postsecondary teachers,https://www.bls.gov/ooh/education-training-and-library/postsecondary-teachers.htm,25-1124
+25-1125.00,"History Teachers, Postsecondary",25-1125,"History teachers, postsecondary",B261,Postsecondary teachers,https://www.bls.gov/ooh/education-training-and-library/postsecondary-teachers.htm,25-1125
+25-1126.00,"Philosophy and Religion Teachers, Postsecondary",25-1126,"Philosophy and religion teachers, postsecondary",B261,Postsecondary teachers,https://www.bls.gov/ooh/education-training-and-library/postsecondary-teachers.htm,25-1126
+25-1192.00,"Family and Consumer Sciences Teachers, Postsecondary",25-1192,"Family and consumer sciences teachers, postsecondary",B261,Postsecondary teachers,https://www.bls.gov/ooh/education-training-and-library/postsecondary-teachers.htm,25-1192
+25-1193.00,"Recreation and Fitness Studies Teachers, Postsecondary",25-1193,"Recreation and fitness studies teachers, postsecondary",B261,Postsecondary teachers,https://www.bls.gov/ooh/education-training-and-library/postsecondary-teachers.htm,25-1193
+25-1194.00,"Career/Technical Education Teachers, Postsecondary",25-1194,"Career/technical education teachers, postsecondary",B134,Career and technical education teachers,https://www.bls.gov/ooh/education-training-and-library/career-and-technical-education-teachers.htm,25-1194
+25-1199.00,"Postsecondary Teachers, All Other",25-1199,"Postsecondary teachers, all other",—,,,25-1199
+25-2011.00,"Preschool Teachers, Except Special Education",25-2011,"Preschool teachers, except special education",B131,Preschool teachers,https://www.bls.gov/ooh/education-training-and-library/preschool-teachers.htm,25-2011
+25-2012.00,"Kindergarten Teachers, Except Special Education",25-2012,"Kindergarten teachers, except special education",B132,Kindergarten and elementary school teachers,https://www.bls.gov/ooh/education-training-and-library/kindergarten-and-elementary-school-teachers.htm,25-2012
+25-2021.00,"Elementary School Teachers, Except Special Education",25-2021,"Elementary school teachers, except special education",B132,Kindergarten and elementary school teachers,https://www.bls.gov/ooh/education-training-and-library/kindergarten-and-elementary-school-teachers.htm,25-2021
+25-2022.00,"Middle School Teachers, Except Special and Career/Technical Education",25-2022,"Middle school teachers, except special and career/technical education",B133,Middle school teachers,https://www.bls.gov/ooh/education-training-and-library/middle-school-teachers.htm,25-2022
+25-2023.00,"Career/Technical Education Teachers, Middle School",25-2023,"Career/technical education teachers, middle school",B134,Career and technical education teachers,https://www.bls.gov/ooh/education-training-and-library/career-and-technical-education-teachers.htm,25-2023
+25-2031.00,"Secondary School Teachers, Except Special and Career/Technical Education",25-2031,"Secondary school teachers, except special and career/technical education",B392,High school teachers,https://www.bls.gov/ooh/education-training-and-library/high-school-teachers.htm,25-2031
+25-2032.00,"Career/Technical Education Teachers, Secondary School",25-2032,"Career/technical education teachers, secondary school",B134,Career and technical education teachers,https://www.bls.gov/ooh/education-training-and-library/career-and-technical-education-teachers.htm,25-2032
+25-2051.00,"Special Education Teachers, Preschool",25-2051,"Special education teachers, preschool",B135,Special education teachers,https://www.bls.gov/ooh/education-training-and-library/special-education-teachers.htm,25-2051
+25-2055.00,"Special Education Teachers, Kindergarten",25-2052,"Special education teachers, kindergarten and elementary school",B135,Special education teachers,https://www.bls.gov/ooh/education-training-and-library/special-education-teachers.htm,25-2055
+25-2056.00,"Special Education Teachers, Elementary School",25-2052,"Special education teachers, kindergarten and elementary school",B135,Special education teachers,https://www.bls.gov/ooh/education-training-and-library/special-education-teachers.htm,25-2056
+25-2057.00,"Special Education Teachers, Middle School",25-2057,"Special education teachers, middle school",B135,Special education teachers,https://www.bls.gov/ooh/education-training-and-library/special-education-teachers.htm,25-2057
+25-2058.00,"Special Education Teachers, Secondary School",25-2058,"Special education teachers, secondary school",B135,Special education teachers,https://www.bls.gov/ooh/education-training-and-library/special-education-teachers.htm,25-2058
+25-2059.00,"Special Education Teachers, All Other",25-2059,"Special education teachers, all other",B135,Special education teachers,https://www.bls.gov/ooh/education-training-and-library/special-education-teachers.htm,25-2059
+25-2059.01,Adapted Physical Education Specialists,25-2059,"Special education teachers, all other",B135,Special education teachers,https://www.bls.gov/ooh/education-training-and-library/special-education-teachers.htm,25-2059
+25-3011.00,"Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors",25-3011,"Adult basic education, adult secondary education, and english as a second language instructors",B136,Adult basic and secondary education and ESL teachers,https://www.bls.gov/ooh/education-training-and-library/adult-literacy-and-ged-teachers.htm,25-3011
+25-3021.00,Self-Enrichment Teachers,25-3021,Self-enrichment teachers,—,,,25-3021
+25-3031.00,"Substitute Teachers, Short-Term",25-3031,"Substitute teachers, short-term",—,,,25-3031
+25-3041.00,Tutors,25-3041,Tutors,B403,Tutors,https://www.bls.gov/ooh/education-training-and-library/tutors.htm,25-3041
+25-3099.00,"Teachers and Instructors, All Other",25-3099,"Teachers and instructors, all other",—,,,25-3099
+25-4011.00,Archivists,25-4011,Archivists,B137,"Archivists, curators, and museum workers",https://www.bls.gov/ooh/education-training-and-library/curators-museum-technicians-and-conservators.htm,25-4011
+25-4012.00,Curators,25-4012,Curators,B137,"Archivists, curators, and museum workers",https://www.bls.gov/ooh/education-training-and-library/curators-museum-technicians-and-conservators.htm,25-4012
+25-4013.00,Museum Technicians and Conservators,25-4013,Museum technicians and conservators,B137,"Archivists, curators, and museum workers",https://www.bls.gov/ooh/education-training-and-library/curators-museum-technicians-and-conservators.htm,25-4013
+25-4022.00,Librarians and Media Collections Specialists,25-4022,Librarians and media collections specialists,B139,Librarians and library media specialists,https://www.bls.gov/ooh/education-training-and-library/librarians.htm,25-4022
+25-4031.00,Library Technicians,25-4031,Library technicians,B140,Library technicians and assistants,https://www.bls.gov/ooh/education-training-and-library/library-technicians-and-assistants.htm,25-4031
+25-9021.00,Farm and Home Management Educators,25-9021,Farm and home management educators,—,,,25-9021
+25-9031.00,Instructional Coordinators,25-9031,Instructional coordinators,B141,Instructional coordinators,https://www.bls.gov/ooh/education-training-and-library/instructional-coordinators.htm,25-9031
+25-9042.00,"Teaching Assistants, Preschool, Elementary, Middle, and Secondary School, Except Special Education",25-9045,"Teaching assistants, except postsecondary",B142,Teacher assistants,https://www.bls.gov/ooh/education-training-and-library/teacher-assistants.htm,25-9042
+25-9043.00,"Teaching Assistants, Special Education",25-9045,"Teaching assistants, except postsecondary",B142,Teacher assistants,https://www.bls.gov/ooh/education-training-and-library/teacher-assistants.htm,25-9043
+25-9044.00,"Teaching Assistants, Postsecondary",25-9044,"Teaching assistants, postsecondary",—,,,25-9044
+25-9049.00,"Teaching Assistants, All Other",25-9045,"Teaching assistants, except postsecondary",B142,Teacher assistants,https://www.bls.gov/ooh/education-training-and-library/teacher-assistants.htm,25-9049
+25-9099.00,"Educational Instruction and Library Workers, All Other",25-9099,"Educational instruction and library workers, all other",—,,,25-9099
+27-1011.00,Art Directors,27-1011,Art directors,B143,Art directors,https://www.bls.gov/ooh/arts-and-design/art-directors.htm,27-1011
+27-1012.00,Craft Artists,27-1012,Craft artists,B348,Craft and fine artists,https://www.bls.gov/ooh/arts-and-design/craft-and-fine-artists.htm,27-1012
+27-1013.00,"Fine Artists, Including Painters, Sculptors, and Illustrators",27-1013,"Fine artists, including painters, sculptors, and illustrators",B348,Craft and fine artists,https://www.bls.gov/ooh/arts-and-design/craft-and-fine-artists.htm,27-1013
+27-1014.00,Special Effects Artists and Animators,27-1014,Special effects artists and animators,B144,Special effects artists and animators,https://www.bls.gov/ooh/arts-and-design/multimedia-artists-and-animators.htm,27-1014
+27-1019.00,"Artists and Related Workers, All Other",27-1019,"Artists and related workers, all other",B348,Craft and fine artists,https://www.bls.gov/ooh/arts-and-design/craft-and-fine-artists.htm,27-1019
+27-1021.00,Commercial and Industrial Designers,27-1021,Commercial and industrial designers,B145,Industrial designers,https://www.bls.gov/ooh/arts-and-design/industrial-designers.htm,27-1021
+27-1022.00,Fashion Designers,27-1022,Fashion designers,B146,Fashion designers,https://www.bls.gov/ooh/arts-and-design/fashion-designers.htm,27-1022
+27-1023.00,Floral Designers,27-1023,Floral designers,B147,Floral designers,https://www.bls.gov/ooh/arts-and-design/floral-designers.htm,27-1023
+27-1024.00,Graphic Designers,27-1024,Graphic designers,B148,Graphic designers,https://www.bls.gov/ooh/arts-and-design/graphic-designers.htm,27-1024
+27-1025.00,Interior Designers,27-1025,Interior designers,B149,Interior designers,https://www.bls.gov/ooh/arts-and-design/interior-designers.htm,27-1025
+27-1026.00,Merchandise Displayers and Window Trimmers,27-1026,Merchandise displayers and window trimmers,—,,,27-1026
+27-1027.00,Set and Exhibit Designers,27-1027,Set and exhibit designers,B407,Set and exhibit designers,https://www.bls.gov/ooh/arts-and-design/set-and-exhibit-designers.htm,27-1027
+27-1029.00,"Designers, All Other",27-1029,"Designers, all other",—,,,27-1029
+27-2011.00,Actors,27-2011,Actors,B151,Actors,https://www.bls.gov/ooh/entertainment-and-sports/actors.htm,27-2011
+27-2012.00,Producers and Directors,27-2012,Producers and directors,B152,Producers and directors,https://www.bls.gov/ooh/entertainment-and-sports/producers-and-directors.htm,27-2012
+27-2012.03,Media Programming Directors,27-2012,Producers and directors,B152,Producers and directors,https://www.bls.gov/ooh/entertainment-and-sports/producers-and-directors.htm,27-2012
+27-2012.04,Talent Directors,27-2012,Producers and directors,B152,Producers and directors,https://www.bls.gov/ooh/entertainment-and-sports/producers-and-directors.htm,27-2012
+27-2012.05,Media Technical Directors/Managers,27-2012,Producers and directors,B152,Producers and directors,https://www.bls.gov/ooh/entertainment-and-sports/producers-and-directors.htm,27-2012
+27-2021.00,Athletes and Sports Competitors,27-2021,Athletes and sports competitors,B153,Athletes and sports competitors,https://www.bls.gov/ooh/entertainment-and-sports/athletes-and-sports-competitors.htm,27-2021
+27-2022.00,Coaches and Scouts,27-2022,Coaches and scouts,B154,Coaches and scouts,https://www.bls.gov/ooh/entertainment-and-sports/coaches-and-scouts.htm,27-2022
+27-2023.00,"Umpires, Referees, and Other Sports Officials",27-2023,"Umpires, referees, and other sports officials",B155,"Umpires, referees, and other sports officials",https://www.bls.gov/ooh/entertainment-and-sports/umpires-referees-and-other-sports-officials.htm,27-2023
+27-2031.00,Dancers,27-2031,Dancers,B156,Dancers and choreographers,https://www.bls.gov/ooh/entertainment-and-sports/dancers-and-choreographers.htm,27-2031
+27-2032.00,Choreographers,27-2032,Choreographers,B156,Dancers and choreographers,https://www.bls.gov/ooh/entertainment-and-sports/dancers-and-choreographers.htm,27-2032
+27-2041.00,Music Directors and Composers,27-2041,Music directors and composers,B158,Music directors and composers,https://www.bls.gov/ooh/entertainment-and-sports/music-directors-and-composers.htm,27-2041
+27-2042.00,Musicians and Singers,27-2042,Musicians and singers,B159,Musicians and singers,https://www.bls.gov/ooh/entertainment-and-sports/musicians-and-singers.htm,27-2042
+27-2091.00,"Disc Jockeys, Except Radio",27-2091,"Disc jockeys, except radio",B160,Announcers and DJs,https://www.bls.gov/ooh/media-and-communication/announcers.htm,27-2091
+27-2099.00,"Entertainers and Performers, Sports and Related Workers, All Other",27-2099,"Entertainers and performers, sports and related workers, all other",—,,,27-2099
+27-3011.00,Broadcast Announcers and Radio Disc Jockeys,27-3011,Broadcast announcers and radio disc jockeys,B160,Announcers and DJs,https://www.bls.gov/ooh/media-and-communication/announcers.htm,27-3011
+27-3023.00,"News Analysts, Reporters, and Journalists",27-3023,"News analysts, reporters, and journalists",B161,"News analysts, reporters, and journalists",https://www.bls.gov/ooh/media-and-communication/reporters-correspondents-and-broadcast-news-analysts.htm,27-3023
+27-3031.00,Public Relations Specialists,27-3031,Public relations specialists,B009,Public relations specialists,https://www.bls.gov/ooh/media-and-communication/public-relations-specialists.htm,27-3031
+27-3041.00,Editors,27-3041,Editors,B162,Editors,https://www.bls.gov/ooh/media-and-communication/editors.htm,27-3041
+27-3042.00,Technical Writers,27-3042,Technical writers,B163,Technical writers,https://www.bls.gov/ooh/media-and-communication/technical-writers.htm,27-3042
+27-3043.00,Writers and Authors,27-3043,Writers and authors,B164,Writers and authors,https://www.bls.gov/ooh/media-and-communication/writers-and-authors.htm,27-3043
+27-3043.05,"Poets, Lyricists and Creative Writers",27-3043,Writers and authors,B164,Writers and authors,https://www.bls.gov/ooh/media-and-communication/writers-and-authors.htm,27-3043
+27-3091.00,Interpreters and Translators,27-3091,Interpreters and translators,B165,Interpreters and translators,https://www.bls.gov/ooh/media-and-communication/interpreters-and-translators.htm,27-3091
+27-3092.00,Court Reporters and Simultaneous Captioners,27-3092,Court reporters and simultaneous captioners,B008,Court reporters and simultaneous captioners,https://www.bls.gov/ooh/legal/court-reporters.htm,27-3092
+27-3099.00,"Media and Communication Workers, All Other",27-3099,"Media and communication workers, all other",—,,,27-3099
+27-4011.00,Audio and Video Technicians,27-4011,Audio and video technicians,B166,"Broadcast, sound, and video technicians",https://www.bls.gov/ooh/media-and-communication/broadcast-and-sound-engineering-technicians.htm,27-4011
+27-4012.00,Broadcast Technicians,27-4012,Broadcast technicians,B166,"Broadcast, sound, and video technicians",https://www.bls.gov/ooh/media-and-communication/broadcast-and-sound-engineering-technicians.htm,27-4012
+27-4014.00,Sound Engineering Technicians,27-4014,Sound engineering technicians,B166,"Broadcast, sound, and video technicians",https://www.bls.gov/ooh/media-and-communication/broadcast-and-sound-engineering-technicians.htm,27-4014
+27-4015.00,Lighting Technicians,27-4015,Lighting technicians,B166,"Broadcast, sound, and video technicians",https://www.bls.gov/ooh/media-and-communication/broadcast-and-sound-engineering-technicians.htm,27-4015
+27-4021.00,Photographers,27-4021,Photographers,B167,Photographers,https://www.bls.gov/ooh/media-and-communication/photographers.htm,27-4021
+27-4031.00,"Camera Operators, Television, Video, and Film",27-4031,"Camera operators, television, video, and film",B168,Film and video editors and camera operators,https://www.bls.gov/ooh/media-and-communication/film-and-video-editors-and-camera-operators.htm,27-4031
+27-4032.00,Film and Video Editors,27-4032,Film and video editors,B168,Film and video editors and camera operators,https://www.bls.gov/ooh/media-and-communication/film-and-video-editors-and-camera-operators.htm,27-4032
+27-4099.00,"Media and Communication Equipment Workers, All Other",27-4099,"Media and communication equipment workers, all other",—,,,27-4099
+29-1011.00,Chiropractors,29-1011,Chiropractors,B169,Chiropractors,https://www.bls.gov/ooh/healthcare/chiropractors.htm,29-1011
+29-1021.00,"Dentists, General",29-1021,"Dentists, general",B170,Dentists,https://www.bls.gov/ooh/healthcare/dentists.htm,29-1021
+29-1022.00,Oral and Maxillofacial Surgeons,29-1022,Oral and maxillofacial surgeons,B170,Dentists,https://www.bls.gov/ooh/healthcare/dentists.htm,29-1022
+29-1023.00,Orthodontists,29-1023,Orthodontists,B170,Dentists,https://www.bls.gov/ooh/healthcare/dentists.htm,29-1023
+29-1024.00,Prosthodontists,29-1024,Prosthodontists,B170,Dentists,https://www.bls.gov/ooh/healthcare/dentists.htm,29-1024
+29-1029.00,"Dentists, All Other Specialists",29-1029,"Dentists, all other specialists",B170,Dentists,https://www.bls.gov/ooh/healthcare/dentists.htm,29-1029
+29-1031.00,Dietitians and Nutritionists,29-1031,Dietitians and nutritionists,B010,Dietitians and nutritionists,https://www.bls.gov/ooh/healthcare/dietitians-and-nutritionists.htm,29-1031
+29-1041.00,Optometrists,29-1041,Optometrists,B171,Optometrists,https://www.bls.gov/ooh/healthcare/optometrists.htm,29-1041
+29-1051.00,Pharmacists,29-1051,Pharmacists,B172,Pharmacists,https://www.bls.gov/ooh/healthcare/pharmacists.htm,29-1051
+29-1071.00,Physician Assistants,29-1071,Physician assistants,B174,Physician assistants,https://www.bls.gov/ooh/healthcare/physician-assistants.htm,29-1071
+29-1071.01,Anesthesiologist Assistants,29-1071,Physician assistants,B174,Physician assistants,https://www.bls.gov/ooh/healthcare/physician-assistants.htm,29-1071
+29-1081.00,Podiatrists,29-1081,Podiatrists,B175,Podiatrists,https://www.bls.gov/ooh/healthcare/podiatrists.htm,29-1081
+29-1122.00,Occupational Therapists,29-1122,Occupational therapists,B177,Occupational therapists,https://www.bls.gov/ooh/healthcare/occupational-therapists.htm,29-1122
+29-1122.01,"Low Vision Therapists, Orientation and Mobility Specialists, and Vision Rehabilitation Therapists",29-1122,Occupational therapists,B177,Occupational therapists,https://www.bls.gov/ooh/healthcare/occupational-therapists.htm,29-1122
+29-1123.00,Physical Therapists,29-1123,Physical therapists,B178,Physical therapists,https://www.bls.gov/ooh/healthcare/physical-therapists.htm,29-1123
+29-1124.00,Radiation Therapists,29-1124,Radiation therapists,B179,Radiation therapists,https://www.bls.gov/ooh/healthcare/radiation-therapists.htm,29-1124
+29-1125.00,Recreational Therapists,29-1125,Recreational therapists,B180,Recreational therapists,https://www.bls.gov/ooh/healthcare/recreational-therapists.htm,29-1125
+29-1126.00,Respiratory Therapists,29-1126,Respiratory therapists,B181,Respiratory therapists,https://www.bls.gov/ooh/healthcare/respiratory-therapists.htm,29-1126
+29-1127.00,Speech-Language Pathologists,29-1127,Speech-language pathologists,B182,Speech-language pathologists,https://www.bls.gov/ooh/healthcare/speech-language-pathologists.htm,29-1127
+29-1128.00,Exercise Physiologists,29-1128,Exercise physiologists,B395,Exercise physiologists,https://www.bls.gov/ooh/healthcare/exercise-physiologists.htm,29-1128
+29-1129.00,"Therapists, All Other",29-1129,"Therapists, all other",—,,,29-1129
+29-1129.01,Art Therapists,29-1129,"Therapists, all other",—,,,29-1129
+29-1129.02,Music Therapists,29-1129,"Therapists, all other",—,,,29-1129
+29-1131.00,Veterinarians,29-1131,Veterinarians,B183,Veterinarians,https://www.bls.gov/ooh/healthcare/veterinarians.htm,29-1131
+29-1141.00,Registered Nurses,29-1141,Registered nurses,B176,Registered nurses,https://www.bls.gov/ooh/healthcare/registered-nurses.htm,29-1141
+29-1141.01,Acute Care Nurses,29-1141,Registered nurses,B176,Registered nurses,https://www.bls.gov/ooh/healthcare/registered-nurses.htm,29-1141
+29-1141.02,Advanced Practice Psychiatric Nurses,29-1141,Registered nurses,B176,Registered nurses,https://www.bls.gov/ooh/healthcare/registered-nurses.htm,29-1141
+29-1141.03,Critical Care Nurses,29-1141,Registered nurses,B176,Registered nurses,https://www.bls.gov/ooh/healthcare/registered-nurses.htm,29-1141
+29-1141.04,Clinical Nurse Specialists,29-1141,Registered nurses,B176,Registered nurses,https://www.bls.gov/ooh/healthcare/registered-nurses.htm,29-1141
+29-1151.00,Nurse Anesthetists,29-1151,Nurse anesthetists,B017,"Nurse anesthetists, nurse midwives, and nurse practitioners",https://www.bls.gov/ooh/healthcare/nurse-anesthetists-nurse-midwives-and-nurse-practitioners.htm,29-1151
+29-1161.00,Nurse Midwives,29-1161,Nurse midwives,B017,"Nurse anesthetists, nurse midwives, and nurse practitioners",https://www.bls.gov/ooh/healthcare/nurse-anesthetists-nurse-midwives-and-nurse-practitioners.htm,29-1161
+29-1171.00,Nurse Practitioners,29-1171,Nurse practitioners,B017,"Nurse anesthetists, nurse midwives, and nurse practitioners",https://www.bls.gov/ooh/healthcare/nurse-anesthetists-nurse-midwives-and-nurse-practitioners.htm,29-1171
+29-1181.00,Audiologists,29-1181,Audiologists,B011,Audiologists,https://www.bls.gov/ooh/healthcare/audiologists.htm,29-1181
+29-1211.00,Anesthesiologists,29-1211,Anesthesiologists,B173,Physicians and surgeons,https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm,29-1211
+29-1212.00,Cardiologists,29-1212,Cardiologists,B173,Physicians and surgeons,https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm,29-1212
+29-1213.00,Dermatologists,29-1213,Dermatologists,B173,Physicians and surgeons,https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm,29-1213
+29-1214.00,Emergency Medicine Physicians,29-1214,Emergency medicine physicians,B173,Physicians and surgeons,https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm,29-1214
+29-1215.00,Family Medicine Physicians,29-1215,Family medicine physicians,B173,Physicians and surgeons,https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm,29-1215
+29-1216.00,General Internal Medicine Physicians,29-1216,General internal medicine physicians,B173,Physicians and surgeons,https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm,29-1216
+29-1217.00,Neurologists,29-1217,Neurologists,B173,Physicians and surgeons,https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm,29-1217
+29-1218.00,Obstetricians and Gynecologists,29-1218,Obstetricians and gynecologists,B173,Physicians and surgeons,https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm,29-1218
+29-1221.00,"Pediatricians, General",29-1221,"Pediatricians, general",B173,Physicians and surgeons,https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm,29-1221
+29-1222.00,"Physicians, Pathologists",29-1222,"Physicians, pathologists",B173,Physicians and surgeons,https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm,29-1222
+29-1223.00,Psychiatrists,29-1223,Psychiatrists,B173,Physicians and surgeons,https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm,29-1223
+29-1224.00,Radiologists,29-1224,Radiologists,B173,Physicians and surgeons,https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm,29-1224
+29-1229.00,"Physicians, All Other",29-1229,"Physicians, all other",B173,Physicians and surgeons,https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm,29-1229
+29-1229.01,Allergists and Immunologists,29-1229,"Physicians, all other",B173,Physicians and surgeons,https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm,29-1229
+29-1229.02,Hospitalists,29-1229,"Physicians, all other",B173,Physicians and surgeons,https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm,29-1229
+29-1229.03,Urologists,29-1229,"Physicians, all other",B173,Physicians and surgeons,https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm,29-1229
+29-1229.04,Physical Medicine and Rehabilitation Physicians,29-1229,"Physicians, all other",B173,Physicians and surgeons,https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm,29-1229
+29-1229.05,Preventive Medicine Physicians,29-1229,"Physicians, all other",B173,Physicians and surgeons,https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm,29-1229
+29-1229.06,Sports Medicine Physicians,29-1229,"Physicians, all other",B173,Physicians and surgeons,https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm,29-1229
+29-1241.00,"Ophthalmologists, Except Pediatric",29-1241,"Ophthalmologists, except pediatric",B173,Physicians and surgeons,https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm,29-1241
+29-1242.00,"Orthopedic Surgeons, Except Pediatric",29-1242,"Orthopedic surgeons, except pediatric",B173,Physicians and surgeons,https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm,29-1242
+29-1243.00,Pediatric Surgeons,29-1243,Pediatric surgeons,B173,Physicians and surgeons,https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm,29-1243
+29-1249.00,"Surgeons, All Other",29-1249,"Surgeons, all other",B173,Physicians and surgeons,https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm,29-1249
+29-1291.00,Acupuncturists,29-1291,Acupuncturists,—,,,29-1291
+29-1292.00,Dental Hygienists,29-1292,Dental hygienists,B185,Dental hygienists,https://www.bls.gov/ooh/healthcare/dental-hygienists.htm,29-1292
+29-1299.00,"Healthcare Diagnosing or Treating Practitioners, All Other",29-1299,"Healthcare diagnosing or treating practitioners, all other",—,,,29-1299
+29-1299.01,Naturopathic Physicians,29-1299,"Healthcare diagnosing or treating practitioners, all other",—,,,29-1299
+29-1299.02,Orthoptists,29-1299,"Healthcare diagnosing or treating practitioners, all other",—,,,29-1299
+29-2011.00,Medical and Clinical Laboratory Technologists,29-2010,Clinical laboratory technologists and technicians,B184,Clinical laboratory technologists and technicians,https://www.bls.gov/ooh/healthcare/clinical-laboratory-technologists-and-technicians.htm,29-2011
+29-2011.01,Cytogenetic Technologists,29-2010,Clinical laboratory technologists and technicians,B184,Clinical laboratory technologists and technicians,https://www.bls.gov/ooh/healthcare/clinical-laboratory-technologists-and-technicians.htm,29-2011
+29-2011.02,Cytotechnologists,29-2010,Clinical laboratory technologists and technicians,B184,Clinical laboratory technologists and technicians,https://www.bls.gov/ooh/healthcare/clinical-laboratory-technologists-and-technicians.htm,29-2011
+29-2011.04,Histotechnologists,29-2010,Clinical laboratory technologists and technicians,B184,Clinical laboratory technologists and technicians,https://www.bls.gov/ooh/healthcare/clinical-laboratory-technologists-and-technicians.htm,29-2011
+29-2012.00,Medical and Clinical Laboratory Technicians,29-2010,Clinical laboratory technologists and technicians,B184,Clinical laboratory technologists and technicians,https://www.bls.gov/ooh/healthcare/clinical-laboratory-technologists-and-technicians.htm,29-2012
+29-2012.01,Histology Technicians,29-2010,Clinical laboratory technologists and technicians,B184,Clinical laboratory technologists and technicians,https://www.bls.gov/ooh/healthcare/clinical-laboratory-technologists-and-technicians.htm,29-2012
+29-2031.00,Cardiovascular Technologists and Technicians,29-2031,Cardiovascular technologists and technicians,B186,Cardiovascular technologists and technicians,https://www.bls.gov/ooh/healthcare/cardiovascular-technologists-and-technicians.htm,29-2031
+29-2032.00,Diagnostic Medical Sonographers,29-2032,Diagnostic medical sonographers,B187,Diagnostic medical sonographers,https://www.bls.gov/ooh/healthcare/diagnostic-medical-sonographers.htm,29-2032
+29-2033.00,Nuclear Medicine Technologists,29-2033,Nuclear medicine technologists,B188,Nuclear medicine technologists,https://www.bls.gov/ooh/healthcare/nuclear-medicine-technologists.htm,29-2033
+29-2034.00,Radiologic Technologists and Technicians,29-2034,Radiologic technologists and technicians,B189,Radiologic and MRI technologists,https://www.bls.gov/ooh/healthcare/radiologic-technologists.htm,29-2034
+29-2035.00,Magnetic Resonance Imaging Technologists,29-2035,Magnetic resonance imaging technologists,B189,Radiologic and MRI technologists,https://www.bls.gov/ooh/healthcare/radiologic-technologists.htm,29-2035
+29-2036.00,Medical Dosimetrists,29-2036,Medical dosimetrists,B400,Medical dosimetrists,https://www.bls.gov/ooh/healthcare/medical-dosimetrists.htm,29-2036
+29-2042.00,Emergency Medical Technicians,29-2042,Emergency medical technicians,B190,EMTs and paramedics,https://www.bls.gov/ooh/healthcare/emts-and-paramedics.htm,29-2042
+29-2043.00,Paramedics,29-2043,Paramedics,B190,EMTs and paramedics,https://www.bls.gov/ooh/healthcare/emts-and-paramedics.htm,29-2043
+29-2051.00,Dietetic Technicians,29-2051,Dietetic technicians,—,,,29-2051
+29-2052.00,Pharmacy Technicians,29-2052,Pharmacy technicians,B191,Pharmacy technicians,https://www.bls.gov/ooh/healthcare/pharmacy-technicians.htm,29-2052
+29-2053.00,Psychiatric Technicians,29-2053,Psychiatric technicians,B203,Psychiatric technicians and aides,https://www.bls.gov/ooh/healthcare/psychiatric-technicians-and-aides.htm,29-2053
+29-2055.00,Surgical Technologists,29-2055,Surgical technologists,B193,Surgical assistants and technologists,https://www.bls.gov/ooh/healthcare/surgical-technologists.htm,29-2055
+29-2056.00,Veterinary Technologists and Technicians,29-2056,Veterinary technologists and technicians,B194,Veterinary technologists and technicians,https://www.bls.gov/ooh/healthcare/veterinary-technologists-and-technicians.htm,29-2056
+29-2057.00,Ophthalmic Medical Technicians,29-2057,Ophthalmic medical technicians,—,,,29-2057
+29-2061.00,Licensed Practical and Licensed Vocational Nurses,29-2061,Licensed practical and licensed vocational nurses,B195,Licensed practical and licensed vocational nurses,https://www.bls.gov/ooh/healthcare/licensed-practical-and-licensed-vocational-nurses.htm,29-2061
+29-2072.00,Medical Records Specialists,29-2072,Medical records specialists,B196,Medical records specialists,https://www.bls.gov/ooh/healthcare/medical-records-and-health-information-technicians.htm,29-2072
+29-2081.00,"Opticians, Dispensing",29-2081,"Opticians, dispensing",B197,Opticians,https://www.bls.gov/ooh/healthcare/opticians-dispensing.htm,29-2081
+29-2091.00,Orthotists and Prosthetists,29-2091,Orthotists and prosthetists,B351,Orthotists and prosthetists,https://www.bls.gov/ooh/healthcare/orthotists-and-prosthetists.htm,29-2091
+29-2092.00,Hearing Aid Specialists,29-2092,Hearing aid specialists,—,,,29-2092
+29-2099.00,"Health Technologists and Technicians, All Other",29-2099,"Health technologists and technicians, all other",—,,,29-2099
+29-2099.01,Neurodiagnostic Technologists,29-2099,"Health technologists and technicians, all other",—,,,29-2099
+29-2099.05,Ophthalmic Medical Technologists,29-2099,"Health technologists and technicians, all other",—,,,29-2099
+29-2099.08,Patient Representatives,29-2099,"Health technologists and technicians, all other",—,,,29-2099
+29-9021.00,Health Information Technologists and Medical Registrars,29-9021,Health information technologists and medical registrars,B398,Health information technologists and medical registrars,https://www.bls.gov/ooh/healthcare/health-information-technologists-and-medical-registrars.htm,29-9021
+29-9091.00,Athletic Trainers,29-9091,Athletic trainers,B128,Athletic trainers,https://www.bls.gov/ooh/healthcare/athletic-trainers.htm,29-9091
+29-9092.00,Genetic Counselors,29-9092,Genetic counselors,B138,Genetic counselors,https://www.bls.gov/ooh/healthcare/genetic-counselors.htm,29-9092
+29-9093.00,Surgical Assistants,29-9093,Surgical assistants,B193,Surgical assistants and technologists,https://www.bls.gov/ooh/healthcare/surgical-technologists.htm,29-9093
+29-9099.00,"Healthcare Practitioners and Technical Workers, All Other",29-9099,"Healthcare practitioners and technical workers, all other",—,,,29-9099
+29-9099.01,Midwives,29-9099,"Healthcare practitioners and technical workers, all other",—,,,29-9099
+31-1121.00,Home Health Aides,31-1120,Home health and personal care aides,B201,Home health and personal care aides,https://www.bls.gov/ooh/healthcare/home-health-aides-and-personal-care-aides.htm,31-1121
+31-1122.00,Personal Care Aides,31-1120,Home health and personal care aides,B201,Home health and personal care aides,https://www.bls.gov/ooh/healthcare/home-health-aides-and-personal-care-aides.htm,31-1122
+31-1131.00,Nursing Assistants,31-1131,Nursing assistants,B150,Nursing assistants and orderlies,https://www.bls.gov/ooh/healthcare/nursing-assistants.htm,31-1131
+31-1132.00,Orderlies,31-1132,Orderlies,B150,Nursing assistants and orderlies,https://www.bls.gov/ooh/healthcare/nursing-assistants.htm,31-1132
+31-1133.00,Psychiatric Aides,31-1133,Psychiatric aides,B203,Psychiatric technicians and aides,https://www.bls.gov/ooh/healthcare/psychiatric-technicians-and-aides.htm,31-1133
+31-2011.00,Occupational Therapy Assistants,31-2011,Occupational therapy assistants,B204,Occupational therapy assistants and aides,https://www.bls.gov/ooh/healthcare/occupational-therapy-assistants-and-aides.htm,31-2011
+31-2012.00,Occupational Therapy Aides,31-2012,Occupational therapy aides,B204,Occupational therapy assistants and aides,https://www.bls.gov/ooh/healthcare/occupational-therapy-assistants-and-aides.htm,31-2012
+31-2021.00,Physical Therapist Assistants,31-2021,Physical therapist assistants,B205,Physical therapist assistants and aides,https://www.bls.gov/ooh/healthcare/physical-therapist-assistants-and-aides.htm,31-2021
+31-2022.00,Physical Therapist Aides,31-2022,Physical therapist aides,B205,Physical therapist assistants and aides,https://www.bls.gov/ooh/healthcare/physical-therapist-assistants-and-aides.htm,31-2022
+31-9011.00,Massage Therapists,31-9011,Massage therapists,B206,Massage therapists,https://www.bls.gov/ooh/healthcare/massage-therapists.htm,31-9011
+31-9091.00,Dental Assistants,31-9091,Dental assistants,B207,Dental assistants,https://www.bls.gov/ooh/healthcare/dental-assistants.htm,31-9091
+31-9092.00,Medical Assistants,31-9092,Medical assistants,B208,Medical assistants,https://www.bls.gov/ooh/healthcare/medical-assistants.htm,31-9092
+31-9093.00,Medical Equipment Preparers,31-9093,Medical equipment preparers,—,,,31-9093
+31-9094.00,Medical Transcriptionists,31-9094,Medical transcriptionists,B209,Medical transcriptionists,https://www.bls.gov/ooh/healthcare/medical-transcriptionists.htm,31-9094
+31-9095.00,Pharmacy Aides,31-9095,Pharmacy aides,—,,,31-9095
+31-9096.00,Veterinary Assistants and Laboratory Animal Caretakers,31-9096,Veterinary assistants and laboratory animal caretakers,B210,Veterinary assistants and laboratory animal caretakers,https://www.bls.gov/ooh/healthcare/veterinary-assistants-and-laboratory-animal-caretakers.htm,31-9096
+31-9097.00,Phlebotomists,31-9097,Phlebotomists,B157,Phlebotomists,https://www.bls.gov/ooh/healthcare/phlebotomists.htm,31-9097
+31-9099.00,"Healthcare Support Workers, All Other",31-9099,"Healthcare support workers, all other",—,,,31-9099
+31-9099.01,Speech-Language Pathology Assistants,31-9099,"Healthcare support workers, all other",—,,,31-9099
+31-9099.02,Endoscopy Technicians,31-9099,"Healthcare support workers, all other",—,,,31-9099
+33-1011.00,First-Line Supervisors of Correctional Officers,33-1011,First-line supervisors of correctional officers,—,,,33-1011
+33-1012.00,First-Line Supervisors of Police and Detectives,33-1012,First-line supervisors of police and detectives,—,,,33-1012
+33-1021.00,First-Line Supervisors of Firefighting and Prevention Workers,33-1021,First-line supervisors of firefighting and prevention workers,—,,,33-1021
+33-1091.00,First-Line Supervisors of Security Workers,33-1091,First-line supervisors of security workers,—,,,33-1091
+33-1099.00,"First-Line Supervisors of Protective Service Workers, All Other",33-1099,"First-line supervisors of protective service workers, all other",—,,,33-1099
+33-2011.00,Firefighters,33-2011,Firefighters,B211,Firefighters,https://www.bls.gov/ooh/protective-service/firefighters.htm,33-2011
+33-2021.00,Fire Inspectors and Investigators,33-2021,Fire inspectors and investigators,B352,Fire inspectors,https://www.bls.gov/ooh/protective-service/fire-inspectors-and-investigators.htm,33-2021
+33-2022.00,Forest Fire Inspectors and Prevention Specialists,33-2022,Forest fire inspectors and prevention specialists,B352,Fire inspectors,https://www.bls.gov/ooh/protective-service/fire-inspectors-and-investigators.htm,33-2022
+33-3011.00,Bailiffs,33-3011,Bailiffs,B212,Correctional officers and bailiffs,https://www.bls.gov/ooh/protective-service/correctional-officers.htm,33-3011
+33-3012.00,Correctional Officers and Jailers,33-3012,Correctional officers and jailers,B212,Correctional officers and bailiffs,https://www.bls.gov/ooh/protective-service/correctional-officers.htm,33-3012
+33-3021.00,Detectives and Criminal Investigators,33-3021,Detectives and criminal investigators,B213,Police and detectives,https://www.bls.gov/ooh/protective-service/police-and-detectives.htm,33-3021
+33-3021.02,Police Identification and Records Officers,33-3021,Detectives and criminal investigators,B213,Police and detectives,https://www.bls.gov/ooh/protective-service/police-and-detectives.htm,33-3021
+33-3021.06,Intelligence Analysts,33-3021,Detectives and criminal investigators,B213,Police and detectives,https://www.bls.gov/ooh/protective-service/police-and-detectives.htm,33-3021
+33-3031.00,Fish and Game Wardens,33-3031,Fish and game wardens,B213,Police and detectives,https://www.bls.gov/ooh/protective-service/police-and-detectives.htm,33-3031
+33-3041.00,Parking Enforcement Workers,33-3041,Parking enforcement workers,—,,,33-3041
+33-3051.00,Police and Sheriff's Patrol Officers,33-3051,Police and sheriff's patrol officers,B213,Police and detectives,https://www.bls.gov/ooh/protective-service/police-and-detectives.htm,33-3051
+33-3051.04,Customs and Border Protection Officers,33-3051,Police and sheriff's patrol officers,B213,Police and detectives,https://www.bls.gov/ooh/protective-service/police-and-detectives.htm,33-3051
+33-3052.00,Transit and Railroad Police,33-3052,Transit and railroad police,B213,Police and detectives,https://www.bls.gov/ooh/protective-service/police-and-detectives.htm,33-3052
+33-9011.00,Animal Control Workers,33-9011,Animal control workers,—,,,33-9011
+33-9021.00,Private Detectives and Investigators,33-9021,Private detectives and investigators,B215,Private detectives and investigators,https://www.bls.gov/ooh/protective-service/private-detectives-and-investigators.htm,33-9021
+33-9031.00,Gambling Surveillance Officers and Gambling Investigators,33-9031,Gambling surveillance officers and gambling investigators,B216,Security guards and gambling surveillance officers,https://www.bls.gov/ooh/protective-service/security-guards.htm,33-9031
+33-9032.00,Security Guards,33-9032,Security guards,B216,Security guards and gambling surveillance officers,https://www.bls.gov/ooh/protective-service/security-guards.htm,33-9032
+33-9091.00,Crossing Guards and Flaggers,33-9091,Crossing guards and flaggers,—,,,33-9091
+33-9092.00,"Lifeguards, Ski Patrol, and Other Recreational Protective Service Workers",33-9092,"Lifeguards, ski patrol, and other recreational protective service workers",—,,,33-9092
+33-9093.00,Transportation Security Screeners,33-9093,Transportation security screeners,—,,,33-9093
+33-9094.00,School Bus Monitors,33-9094,School bus monitors,—,,,33-9094
+33-9099.00,"Protective Service Workers, All Other",33-9099,"Protective service workers, all other",—,,,33-9099
+33-9099.02,Retail Loss Prevention Specialists,33-9099,"Protective service workers, all other",—,,,33-9099
+35-1011.00,Chefs and Head Cooks,35-1011,Chefs and head cooks,B217,Chefs and head cooks,https://www.bls.gov/ooh/food-preparation-and-serving/chefs-and-head-cooks.htm,35-1011
+35-1012.00,First-Line Supervisors of Food Preparation and Serving Workers,35-1012,First-line supervisors of food preparation and serving workers,—,,,35-1012
+35-2011.00,"Cooks, Fast Food",35-2011,"Cooks, fast food",B218,Cooks,https://www.bls.gov/ooh/food-preparation-and-serving/cooks.htm,35-2011
+35-2012.00,"Cooks, Institution and Cafeteria",35-2012,"Cooks, institution and cafeteria",B218,Cooks,https://www.bls.gov/ooh/food-preparation-and-serving/cooks.htm,35-2012
+35-2013.00,"Cooks, Private Household",35-2013,"Cooks, private household",B218,Cooks,https://www.bls.gov/ooh/food-preparation-and-serving/cooks.htm,35-2013
+35-2014.00,"Cooks, Restaurant",35-2014,"Cooks, restaurant",B218,Cooks,https://www.bls.gov/ooh/food-preparation-and-serving/cooks.htm,35-2014
+35-2015.00,"Cooks, Short Order",35-2015,"Cooks, short order",B218,Cooks,https://www.bls.gov/ooh/food-preparation-and-serving/cooks.htm,35-2015
+35-2019.00,"Cooks, All Other",35-2019,"Cooks, all other",B218,Cooks,https://www.bls.gov/ooh/food-preparation-and-serving/cooks.htm,35-2019
+35-2021.00,Food Preparation Workers,35-2021,Food preparation workers,B219,Food preparation workers,https://www.bls.gov/ooh/food-preparation-and-serving/food-preparation-workers.htm,35-2021
+35-3011.00,Bartenders,35-3011,Bartenders,B220,Bartenders,https://www.bls.gov/ooh/food-preparation-and-serving/bartenders.htm,35-3011
+35-3023.00,Fast Food and Counter Workers,35-3023,Fast food and counter workers,B221,Food and beverage serving and related workers,https://www.bls.gov/ooh/food-preparation-and-serving/food-and-beverage-serving-and-related-workers.htm,35-3023
+35-3023.01,Baristas,35-3023,Fast food and counter workers,B221,Food and beverage serving and related workers,https://www.bls.gov/ooh/food-preparation-and-serving/food-and-beverage-serving-and-related-workers.htm,35-3023
+35-3031.00,Waiters and Waitresses,35-3031,Waiters and waitresses,B222,Waiters and waitresses,https://www.bls.gov/ooh/food-preparation-and-serving/waiters-and-waitresses.htm,35-3031
+35-3041.00,"Food Servers, Nonrestaurant",35-3041,"Food servers, nonrestaurant",B221,Food and beverage serving and related workers,https://www.bls.gov/ooh/food-preparation-and-serving/food-and-beverage-serving-and-related-workers.htm,35-3041
+35-9011.00,Dining Room and Cafeteria Attendants and Bartender Helpers,35-9011,Dining room and cafeteria attendants and bartender helpers,B221,Food and beverage serving and related workers,https://www.bls.gov/ooh/food-preparation-and-serving/food-and-beverage-serving-and-related-workers.htm,35-9011
+35-9021.00,Dishwashers,35-9021,Dishwashers,—,,,35-9021
+35-9031.00,"Hosts and Hostesses, Restaurant, Lounge, and Coffee Shop",35-9031,"Hosts and hostesses, restaurant, lounge, and coffee shop",B221,Food and beverage serving and related workers,https://www.bls.gov/ooh/food-preparation-and-serving/food-and-beverage-serving-and-related-workers.htm,35-9031
+35-9099.00,"Food Preparation and Serving Related Workers, All Other",35-9099,"Food preparation and serving related workers, all other",—,,,35-9099
+37-1011.00,First-Line Supervisors of Housekeeping and Janitorial Workers,37-1011,First-line supervisors of housekeeping and janitorial workers,—,,,37-1011
+37-1012.00,"First-Line Supervisors of Landscaping, Lawn Service, and Groundskeeping Workers",37-1012,"First-line supervisors of landscaping, lawn service, and groundskeeping workers",—,,,37-1012
+37-2011.00,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",37-2011,"Janitors and cleaners, except maids and housekeeping cleaners",B223,Janitors and building cleaners,https://www.bls.gov/ooh/building-and-grounds-cleaning/janitors-and-building-cleaners.htm,37-2011
+37-2012.00,Maids and Housekeeping Cleaners,37-2012,Maids and housekeeping cleaners,—,,,37-2012
+37-2019.00,"Building Cleaning Workers, All Other",37-2019,"Building cleaning workers, all other",—,,,37-2019
+37-2021.00,Pest Control Workers,37-2021,Pest control workers,B225,Pest control workers,https://www.bls.gov/ooh/building-and-grounds-cleaning/pest-control-workers.htm,37-2021
+37-3011.00,Landscaping and Groundskeeping Workers,37-3011,Landscaping and groundskeeping workers,B226,Grounds maintenance workers,https://www.bls.gov/ooh/building-and-grounds-cleaning/grounds-maintenance-workers.htm,37-3011
+37-3012.00,"Pesticide Handlers, Sprayers, and Applicators, Vegetation",37-3012,"Pesticide handlers, sprayers, and applicators, vegetation",B226,Grounds maintenance workers,https://www.bls.gov/ooh/building-and-grounds-cleaning/grounds-maintenance-workers.htm,37-3012
+37-3013.00,Tree Trimmers and Pruners,37-3013,Tree trimmers and pruners,B226,Grounds maintenance workers,https://www.bls.gov/ooh/building-and-grounds-cleaning/grounds-maintenance-workers.htm,37-3013
+37-3019.00,"Grounds Maintenance Workers, All Other",37-3019,"Grounds maintenance workers, all other",B226,Grounds maintenance workers,https://www.bls.gov/ooh/building-and-grounds-cleaning/grounds-maintenance-workers.htm,37-3019
+39-1013.00,First-Line Supervisors of Gambling Services Workers,39-1013,First-line supervisors of gambling services workers,B228,Gambling services workers,https://www.bls.gov/ooh/personal-care-and-service/gaming-services-occupations.htm,39-1013
+39-1014.00,"First-Line Supervisors of Entertainment and Recreation Workers, Except Gambling Services",39-1014,"First-line supervisors of entertainment and recreation workers, except gambling services",—,,,39-1014
+39-1022.00,First-Line Supervisors of Personal Service Workers,39-1022,First-line supervisors of personal service workers,—,,,39-1022
+39-2011.00,Animal Trainers,39-2011,Animal trainers,B227,Animal care and service workers,https://www.bls.gov/ooh/personal-care-and-service/animal-care-and-service-workers.htm,39-2011
+39-2021.00,Animal Caretakers,39-2021,Animal caretakers,B227,Animal care and service workers,https://www.bls.gov/ooh/personal-care-and-service/animal-care-and-service-workers.htm,39-2021
+39-3011.00,Gambling Dealers,39-3011,Gambling dealers,B228,Gambling services workers,https://www.bls.gov/ooh/personal-care-and-service/gaming-services-occupations.htm,39-3011
+39-3012.00,Gambling and Sports Book Writers and Runners,39-3012,Gambling and sports book writers and runners,B228,Gambling services workers,https://www.bls.gov/ooh/personal-care-and-service/gaming-services-occupations.htm,39-3012
+39-3019.00,"Gambling Service Workers, All Other",39-3019,"Gambling service workers, all other",B228,Gambling services workers,https://www.bls.gov/ooh/personal-care-and-service/gaming-services-occupations.htm,39-3019
+39-3021.00,Motion Picture Projectionists,39-3021,Motion picture projectionists,—,,,39-3021
+39-3031.00,"Ushers, Lobby Attendants, and Ticket Takers",39-3031,"Ushers, lobby attendants, and ticket takers",—,,,39-3031
+39-3091.00,Amusement and Recreation Attendants,39-3091,Amusement and recreation attendants,—,,,39-3091
+39-3092.00,Costume Attendants,39-3092,Costume attendants,—,,,39-3092
+39-3093.00,"Locker Room, Coatroom, and Dressing Room Attendants",39-3093,"Locker room, coatroom, and dressing room attendants",—,,,39-3093
+39-3099.00,"Entertainment Attendants and Related Workers, All Other",39-3099,"Entertainment attendants and related workers, all other",—,,,39-3099
+39-4011.00,Embalmers,39-4011,Embalmers,—,,,39-4011
+39-4012.00,Crematory Operators,39-4012,Crematory operators,—,,,39-4012
+39-4021.00,Funeral Attendants,39-4021,Funeral attendants,—,,,39-4021
+39-4031.00,"Morticians, Undertakers, and Funeral Arrangers",39-4031,"Morticians, undertakers, and funeral arrangers",B001,Funeral service workers,https://www.bls.gov/ooh/personal-care-and-service/funeral-service-occupations.htm,39-4031
+39-5011.00,Barbers,39-5011,Barbers,B229,"Barbers, hairstylists, and cosmetologists",https://www.bls.gov/ooh/personal-care-and-service/barbers-hairstylists-and-cosmetologists.htm,39-5011
+39-5012.00,"Hairdressers, Hairstylists, and Cosmetologists",39-5012,"Hairdressers, hairstylists, and cosmetologists",B229,"Barbers, hairstylists, and cosmetologists",https://www.bls.gov/ooh/personal-care-and-service/barbers-hairstylists-and-cosmetologists.htm,39-5012
+39-5091.00,"Makeup Artists, Theatrical and Performance",39-5091,"Makeup artists, theatrical and performance",—,,,39-5091
+39-5092.00,Manicurists and Pedicurists,39-5092,Manicurists and pedicurists,B230,Manicurists and pedicurists,https://www.bls.gov/ooh/personal-care-and-service/manicurists-and-pedicurists.htm,39-5092
+39-5093.00,Shampooers,39-5093,Shampooers,—,,,39-5093
+39-5094.00,Skincare Specialists,39-5094,Skincare specialists,B231,Skincare specialists,https://www.bls.gov/ooh/personal-care-and-service/skincare-specialists.htm,39-5094
+39-6011.00,Baggage Porters and Bellhops,39-6011,Baggage porters and bellhops,—,,,39-6011
+39-6012.00,Concierges,39-6012,Concierges,B409,Concierges,https://www.bls.gov/ooh/personal-care-and-service/concierges.htm,39-6012
+39-7011.00,Tour Guides and Escorts,39-7010,Tour and travel guides,B411,Tour and travel guides,https://www.bls.gov/ooh/personal-care-and-service/tour-and-travel-guides.htm,39-7011
+39-7012.00,Travel Guides,39-7010,Tour and travel guides,B411,Tour and travel guides,https://www.bls.gov/ooh/personal-care-and-service/tour-and-travel-guides.htm,39-7012
+39-9011.00,Childcare Workers,39-9011,Childcare workers,B233,Childcare workers,https://www.bls.gov/ooh/personal-care-and-service/childcare-workers.htm,39-9011
+39-9011.01,Nannies,39-9011,Childcare workers,B233,Childcare workers,https://www.bls.gov/ooh/personal-care-and-service/childcare-workers.htm,39-9011
+39-9031.00,Exercise Trainers and Group Fitness Instructors,39-9031,Exercise trainers and group fitness instructors,B235,Fitness trainers and instructors,https://www.bls.gov/ooh/personal-care-and-service/fitness-trainers-and-instructors.htm,39-9031
+39-9032.00,Recreation Workers,39-9032,Recreation workers,B236,Recreation workers,https://www.bls.gov/ooh/personal-care-and-service/recreation-workers.htm,39-9032
+39-9041.00,Residential Advisors,39-9041,Residential advisors,—,,,39-9041
+39-9099.00,"Personal Care and Service Workers, All Other",39-9099,"Personal care and service workers, all other",—,,,39-9099
+41-1011.00,First-Line Supervisors of Retail Sales Workers,41-1011,First-line supervisors of retail sales workers,—,,,41-1011
+41-1012.00,First-Line Supervisors of Non-Retail Sales Workers,41-1012,First-line supervisors of non-retail sales workers,—,,,41-1012
+41-2011.00,Cashiers,41-2011,Cashiers,B237,Cashiers,https://www.bls.gov/ooh/sales/cashiers.htm,41-2011
+41-2012.00,Gambling Change Persons and Booth Cashiers,41-2012,Gambling change persons and booth cashiers,—,,,41-2012
+41-2021.00,Counter and Rental Clerks,41-2021,Counter and rental clerks,—,,,41-2021
+41-2022.00,Parts Salespersons,41-2022,Parts salespersons,B238,Retail sales workers,https://www.bls.gov/ooh/sales/retail-sales-workers.htm,41-2022
+41-2031.00,Retail Salespersons,41-2031,Retail salespersons,B238,Retail sales workers,https://www.bls.gov/ooh/sales/retail-sales-workers.htm,41-2031
+41-3011.00,Advertising Sales Agents,41-3011,Advertising sales agents,B239,Advertising sales agents,https://www.bls.gov/ooh/sales/advertising-sales-agents.htm,41-3011
+41-3021.00,Insurance Sales Agents,41-3021,Insurance sales agents,B240,Insurance sales agents,https://www.bls.gov/ooh/sales/insurance-sales-agents.htm,41-3021
+41-3031.00,"Securities, Commodities, and Financial Services Sales Agents",41-3031,"Securities, commodities, and financial services sales agents",B241,"Securities, commodities, and financial services sales agents",https://www.bls.gov/ooh/sales/securities-commodities-and-financial-services-sales-agents.htm,41-3031
+41-3041.00,Travel Agents,41-3041,Travel agents,B012,Travel agents,https://www.bls.gov/ooh/sales/travel-agents.htm,41-3041
+41-3091.00,"Sales Representatives of Services, Except Advertising, Insurance, Financial Services, and Travel",41-3091,"Sales representatives of services, except advertising, insurance, financial services, and travel",—,,,41-3091
+41-4011.00,"Sales Representatives, Wholesale and Manufacturing, Technical and Scientific Products",41-4011,"Sales representatives, wholesale and manufacturing, technical and scientific products",B242,Wholesale and manufacturing sales representatives,https://www.bls.gov/ooh/sales/wholesale-and-manufacturing-sales-representatives.htm,41-4011
+41-4011.07,Solar Sales Representatives and Assessors,41-4011,"Sales representatives, wholesale and manufacturing, technical and scientific products",B242,Wholesale and manufacturing sales representatives,https://www.bls.gov/ooh/sales/wholesale-and-manufacturing-sales-representatives.htm,41-4011
+41-4012.00,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",41-4012,"Sales representatives, wholesale and manufacturing, except technical and scientific products",B242,Wholesale and manufacturing sales representatives,https://www.bls.gov/ooh/sales/wholesale-and-manufacturing-sales-representatives.htm,41-4012
+41-9011.00,Demonstrators and Product Promoters,41-9011,Demonstrators and product promoters,—,,,41-9011
+41-9012.00,Models,41-9012,Models,B243,Models,https://www.bls.gov/ooh/sales/models.htm,41-9012
+41-9021.00,Real Estate Brokers,41-9021,Real estate brokers,B244,Real estate brokers and sales agents,https://www.bls.gov/ooh/sales/real-estate-brokers-and-sales-agents.htm,41-9021
+41-9022.00,Real Estate Sales Agents,41-9022,Real estate sales agents,B244,Real estate brokers and sales agents,https://www.bls.gov/ooh/sales/real-estate-brokers-and-sales-agents.htm,41-9022
+41-9031.00,Sales Engineers,41-9031,Sales engineers,B245,Sales engineers,https://www.bls.gov/ooh/sales/sales-engineers.htm,41-9031
+41-9041.00,Telemarketers,41-9041,Telemarketers,—,,,41-9041
+41-9091.00,"Door-to-Door Sales Workers, News and Street Vendors, and Related Workers",41-9091,"Door-to-door sales workers, news and street vendors, and related workers",—,,,41-9091
+41-9099.00,"Sales and Related Workers, All Other",41-9099,"Sales and related workers, all other",—,,,41-9099
+43-1011.00,First-Line Supervisors of Office and Administrative Support Workers,43-1011,First-line supervisors of office and administrative support workers,—,,,43-1011
+43-2011.00,"Switchboard Operators, Including Answering Service",43-2011,"Switchboard operators, including answering service",—,,,43-2011
+43-2021.00,Telephone Operators,43-2021,Telephone operators,—,,,43-2021
+43-2099.00,"Communications Equipment Operators, All Other",43-2099,"Communications equipment operators, all other",—,,,43-2099
+43-3011.00,Bill and Account Collectors,43-3011,Bill and account collectors,B246,Bill and account collectors,https://www.bls.gov/ooh/office-and-administrative-support/bill-and-account-collectors.htm,43-3011
+43-3021.00,Billing and Posting Clerks,43-3021,Billing and posting clerks,B358,Financial clerks,https://www.bls.gov/ooh/office-and-administrative-support/financial-clerks.htm,43-3021
+43-3031.00,"Bookkeeping, Accounting, and Auditing Clerks",43-3031,"Bookkeeping, accounting, and auditing clerks",B247,"Bookkeeping, accounting, and auditing clerks",https://www.bls.gov/ooh/office-and-administrative-support/bookkeeping-accounting-and-auditing-clerks.htm,43-3031
+43-3041.00,Gambling Cage Workers,43-3041,Gambling cage workers,B358,Financial clerks,https://www.bls.gov/ooh/office-and-administrative-support/financial-clerks.htm,43-3041
+43-3051.00,Payroll and Timekeeping Clerks,43-3051,Payroll and timekeeping clerks,B358,Financial clerks,https://www.bls.gov/ooh/office-and-administrative-support/financial-clerks.htm,43-3051
+43-3061.00,Procurement Clerks,43-3061,Procurement clerks,B358,Financial clerks,https://www.bls.gov/ooh/office-and-administrative-support/financial-clerks.htm,43-3061
+43-3071.00,Tellers,43-3071,Tellers,B248,Tellers,https://www.bls.gov/ooh/office-and-administrative-support/tellers.htm,43-3071
+43-3099.00,"Financial Clerks, All Other",43-3099,"Financial clerks, all other",—,,,43-3099
+43-4011.00,Brokerage Clerks,43-4011,Brokerage clerks,B358,Financial clerks,https://www.bls.gov/ooh/office-and-administrative-support/financial-clerks.htm,43-4011
+43-4021.00,Correspondence Clerks,43-4021,Correspondence clerks,B359,Information clerks,https://www.bls.gov/ooh/office-and-administrative-support/information-clerks.htm,43-4021
+43-4031.00,"Court, Municipal, and License Clerks",43-4031,"Court, municipal, and license clerks",B359,Information clerks,https://www.bls.gov/ooh/office-and-administrative-support/information-clerks.htm,43-4031
+43-4041.00,"Credit Authorizers, Checkers, and Clerks",43-4041,"Credit authorizers, checkers, and clerks",B358,Financial clerks,https://www.bls.gov/ooh/office-and-administrative-support/financial-clerks.htm,43-4041
+43-4051.00,Customer Service Representatives,43-4051,Customer service representatives,B249,Customer service representatives,https://www.bls.gov/ooh/office-and-administrative-support/customer-service-representatives.htm,43-4051
+43-4061.00,"Eligibility Interviewers, Government Programs",43-4061,"Eligibility interviewers, government programs",B359,Information clerks,https://www.bls.gov/ooh/office-and-administrative-support/information-clerks.htm,43-4061
+43-4071.00,File Clerks,43-4071,File clerks,B359,Information clerks,https://www.bls.gov/ooh/office-and-administrative-support/information-clerks.htm,43-4071
+43-4081.00,"Hotel, Motel, and Resort Desk Clerks",43-4081,"Hotel, motel, and resort desk clerks",B359,Information clerks,https://www.bls.gov/ooh/office-and-administrative-support/information-clerks.htm,43-4081
+43-4111.00,"Interviewers, Except Eligibility and Loan",43-4111,"Interviewers, except eligibility and loan",B359,Information clerks,https://www.bls.gov/ooh/office-and-administrative-support/information-clerks.htm,43-4111
+43-4121.00,"Library Assistants, Clerical",43-4121,"Library assistants, clerical",B140,Library technicians and assistants,https://www.bls.gov/ooh/education-training-and-library/library-technicians-and-assistants.htm,43-4121
+43-4131.00,Loan Interviewers and Clerks,43-4131,Loan interviewers and clerks,B358,Financial clerks,https://www.bls.gov/ooh/office-and-administrative-support/financial-clerks.htm,43-4131
+43-4141.00,New Accounts Clerks,43-4141,New accounts clerks,B358,Financial clerks,https://www.bls.gov/ooh/office-and-administrative-support/financial-clerks.htm,43-4141
+43-4151.00,Order Clerks,43-4151,Order clerks,B359,Information clerks,https://www.bls.gov/ooh/office-and-administrative-support/information-clerks.htm,43-4151
+43-4161.00,"Human Resources Assistants, Except Payroll and Timekeeping",43-4161,"Human resources assistants, except payroll and timekeeping",B359,Information clerks,https://www.bls.gov/ooh/office-and-administrative-support/information-clerks.htm,43-4161
+43-4171.00,Receptionists and Information Clerks,43-4171,Receptionists and information clerks,B250,Receptionists,https://www.bls.gov/ooh/office-and-administrative-support/receptionists.htm,43-4171
+43-4181.00,Reservation and Transportation Ticket Agents and Travel Clerks,43-4181,Reservation and transportation ticket agents and travel clerks,B359,Information clerks,https://www.bls.gov/ooh/office-and-administrative-support/information-clerks.htm,43-4181
+43-4199.00,"Information and Record Clerks, All Other",43-4199,"Information and record clerks, all other",B359,Information clerks,https://www.bls.gov/ooh/office-and-administrative-support/information-clerks.htm,43-4199
+43-5011.00,Cargo and Freight Agents,43-5011,Cargo and freight agents,—,,,43-5011
+43-5011.01,Freight Forwarders,43-5011,Cargo and freight agents,—,,,43-5011
+43-5021.00,Couriers and Messengers,43-5021,Couriers and messengers,—,,,43-5021
+43-5031.00,Public Safety Telecommunicators,43-5031,Public safety telecommunicators,B252,Public safety telecommunicators,https://www.bls.gov/ooh/office-and-administrative-support/police-fire-and-ambulance-dispatchers.htm,43-5031
+43-5032.00,"Dispatchers, Except Police, Fire, and Ambulance",43-5032,"Dispatchers, except police, fire, and ambulance",—,,,43-5032
+43-5041.00,"Meter Readers, Utilities",43-5041,"Meter readers, utilities",—,,,43-5041
+43-5051.00,Postal Service Clerks,43-5051,Postal service clerks,B253,Postal service workers,https://www.bls.gov/ooh/office-and-administrative-support/postal-service-workers.htm,43-5051
+43-5052.00,Postal Service Mail Carriers,43-5052,Postal service mail carriers,B253,Postal service workers,https://www.bls.gov/ooh/office-and-administrative-support/postal-service-workers.htm,43-5052
+43-5053.00,"Postal Service Mail Sorters, Processors, and Processing Machine Operators",43-5053,"Postal service mail sorters, processors, and processing machine operators",B253,Postal service workers,https://www.bls.gov/ooh/office-and-administrative-support/postal-service-workers.htm,43-5053
+43-5061.00,"Production, Planning, and Expediting Clerks",43-5061,"Production, planning, and expediting clerks",B361,Material recording clerks,https://www.bls.gov/ooh/office-and-administrative-support/material-recording-clerks.htm,43-5061
+43-5071.00,"Shipping, Receiving, and Inventory Clerks",43-5071,"Shipping, receiving, and inventory clerks",B361,Material recording clerks,https://www.bls.gov/ooh/office-and-administrative-support/material-recording-clerks.htm,43-5071
+43-5111.00,"Weighers, Measurers, Checkers, and Samplers, Recordkeeping",43-5111,"Weighers, measurers, checkers, and samplers, recordkeeping",B361,Material recording clerks,https://www.bls.gov/ooh/office-and-administrative-support/material-recording-clerks.htm,43-5111
+43-6011.00,Executive Secretaries and Executive Administrative Assistants,43-6011,Executive secretaries and executive administrative assistants,B254,Secretaries and administrative assistants,https://www.bls.gov/ooh/office-and-administrative-support/secretaries-and-administrative-assistants.htm,43-6011
+43-6012.00,Legal Secretaries and Administrative Assistants,43-6012,Legal secretaries and administrative assistants,B254,Secretaries and administrative assistants,https://www.bls.gov/ooh/office-and-administrative-support/secretaries-and-administrative-assistants.htm,43-6012
+43-6013.00,Medical Secretaries and Administrative Assistants,43-6013,Medical secretaries and administrative assistants,B254,Secretaries and administrative assistants,https://www.bls.gov/ooh/office-and-administrative-support/secretaries-and-administrative-assistants.htm,43-6013
+43-6014.00,"Secretaries and Administrative Assistants, Except Legal, Medical, and Executive",43-6014,"Secretaries and administrative assistants, except legal, medical, and executive",B254,Secretaries and administrative assistants,https://www.bls.gov/ooh/office-and-administrative-support/secretaries-and-administrative-assistants.htm,43-6014
+43-9021.00,Data Entry Keyers,43-9021,Data entry keyers,—,,,43-9021
+43-9022.00,Word Processors and Typists,43-9022,Word processors and typists,—,,,43-9022
+43-9031.00,Desktop Publishers,43-9031,Desktop publishers,B256,Desktop publishers,https://www.bls.gov/ooh/office-and-administrative-support/desktop-publishers.htm,43-9031
+43-9041.00,Insurance Claims and Policy Processing Clerks,43-9041,Insurance claims and policy processing clerks,B358,Financial clerks,https://www.bls.gov/ooh/office-and-administrative-support/financial-clerks.htm,43-9041
+43-9051.00,"Mail Clerks and Mail Machine Operators, Except Postal Service",43-9051,"Mail clerks and mail machine operators, except postal service",—,,,43-9051
+43-9061.00,"Office Clerks, General",43-9061,"Office clerks, general",B364,General office clerks,https://www.bls.gov/ooh/office-and-administrative-support/general-office-clerks.htm,43-9061
+43-9071.00,"Office Machine Operators, Except Computer",43-9071,"Office machine operators, except computer",—,,,43-9071
+43-9081.00,Proofreaders and Copy Markers,43-9081,Proofreaders and copy markers,—,,,43-9081
+43-9111.00,Statistical Assistants,43-9111,Statistical assistants,—,,,43-9111
+43-9199.00,"Office and Administrative Support Workers, All Other",43-9199,"Office and administrative support workers, all other",—,,,43-9199
+45-1011.00,"First-Line Supervisors of Farming, Fishing, and Forestry Workers",45-1011,"First-line supervisors of farming, fishing, and forestry workers",—,,,45-1011
+45-2011.00,Agricultural Inspectors,45-2011,Agricultural inspectors,—,,,45-2011
+45-2021.00,Animal Breeders,45-2021,Animal breeders,B257,Agricultural workers,https://www.bls.gov/ooh/farming-fishing-and-forestry/agricultural-workers.htm,45-2021
+45-2041.00,"Graders and Sorters, Agricultural Products",45-2041,"Graders and sorters, agricultural products",—,,,45-2041
+45-2091.00,Agricultural Equipment Operators,45-2091,Agricultural equipment operators,B257,Agricultural workers,https://www.bls.gov/ooh/farming-fishing-and-forestry/agricultural-workers.htm,45-2091
+45-2092.00,"Farmworkers and Laborers, Crop, Nursery, and Greenhouse",45-2092,"Farmworkers and laborers, crop, nursery, and greenhouse",B257,Agricultural workers,https://www.bls.gov/ooh/farming-fishing-and-forestry/agricultural-workers.htm,45-2092
+45-2093.00,"Farmworkers, Farm, Ranch, and Aquacultural Animals",45-2093,"Farmworkers, farm, ranch, and aquacultural animals",B257,Agricultural workers,https://www.bls.gov/ooh/farming-fishing-and-forestry/agricultural-workers.htm,45-2093
+45-2099.00,"Agricultural Workers, All Other",45-2099,"Agricultural workers, all other",B257,Agricultural workers,https://www.bls.gov/ooh/farming-fishing-and-forestry/agricultural-workers.htm,45-2099
+45-3031.00,Fishing and Hunting Workers,45-3031,Fishing and hunting workers,B258,Fishing and hunting workers,https://www.bls.gov/ooh/farming-fishing-and-forestry/fishers-and-related-fishing-workers.htm,45-3031
+45-4011.00,Forest and Conservation Workers,45-4011,Forest and conservation workers,B365,Forest and conservation workers,https://www.bls.gov/ooh/farming-fishing-and-forestry/forest-and-conservation-workers.htm,45-4011
+45-4021.00,Fallers,45-4021,Fallers,B366,Logging workers,https://www.bls.gov/ooh/farming-fishing-and-forestry/logging-workers.htm,45-4021
+45-4022.00,Logging Equipment Operators,45-4022,Logging equipment operators,B366,Logging workers,https://www.bls.gov/ooh/farming-fishing-and-forestry/logging-workers.htm,45-4022
+45-4023.00,Log Graders and Scalers,45-4023,Log graders and scalers,B366,Logging workers,https://www.bls.gov/ooh/farming-fishing-and-forestry/logging-workers.htm,45-4023
+45-4029.00,"Logging Workers, All Other",45-4029,"Logging workers, all other",B366,Logging workers,https://www.bls.gov/ooh/farming-fishing-and-forestry/logging-workers.htm,45-4029
+47-1011.00,First-Line Supervisors of Construction Trades and Extraction Workers,47-1011,First-line supervisors of construction trades and extraction workers,—,,,47-1011
+47-1011.03,Solar Energy Installation Managers,47-1011,First-line supervisors of construction trades and extraction workers,—,,,47-1011
+47-2011.00,Boilermakers,47-2011,Boilermakers,B367,Boilermakers,https://www.bls.gov/ooh/construction-and-extraction/boilermakers.htm,47-2011
+47-2021.00,Brickmasons and Blockmasons,47-2021,Brickmasons and blockmasons,B259,Masonry workers,https://www.bls.gov/ooh/construction-and-extraction/brickmasons-blockmasons-and-stonemasons.htm,47-2021
+47-2022.00,Stonemasons,47-2022,Stonemasons,B259,Masonry workers,https://www.bls.gov/ooh/construction-and-extraction/brickmasons-blockmasons-and-stonemasons.htm,47-2022
+47-2031.00,Carpenters,47-2031,Carpenters,B260,Carpenters,https://www.bls.gov/ooh/construction-and-extraction/carpenters.htm,47-2031
+47-2041.00,Carpet Installers,47-2041,Carpet installers,B262,Flooring installers and tile and stone setters,https://www.bls.gov/ooh/construction-and-extraction/tile-and-marble-setters.htm,47-2041
+47-2042.00,"Floor Layers, Except Carpet, Wood, and Hard Tiles",47-2042,"Floor layers, except carpet, wood, and hard tiles",B262,Flooring installers and tile and stone setters,https://www.bls.gov/ooh/construction-and-extraction/tile-and-marble-setters.htm,47-2042
+47-2043.00,Floor Sanders and Finishers,47-2043,Floor sanders and finishers,B262,Flooring installers and tile and stone setters,https://www.bls.gov/ooh/construction-and-extraction/tile-and-marble-setters.htm,47-2043
+47-2044.00,Tile and Stone Setters,47-2044,Tile and stone setters,B262,Flooring installers and tile and stone setters,https://www.bls.gov/ooh/construction-and-extraction/tile-and-marble-setters.htm,47-2044
+47-2051.00,Cement Masons and Concrete Finishers,47-2051,Cement masons and concrete finishers,B259,Masonry workers,https://www.bls.gov/ooh/construction-and-extraction/brickmasons-blockmasons-and-stonemasons.htm,47-2051
+47-2053.00,Terrazzo Workers and Finishers,47-2053,Terrazzo workers and finishers,B259,Masonry workers,https://www.bls.gov/ooh/construction-and-extraction/brickmasons-blockmasons-and-stonemasons.htm,47-2053
+47-2061.00,Construction Laborers,47-2061,Construction laborers,B263,Construction laborers and helpers,https://www.bls.gov/ooh/construction-and-extraction/construction-laborers-and-helpers.htm,47-2061
+47-2071.00,"Paving, Surfacing, and Tamping Equipment Operators",47-2071,"Paving, surfacing, and tamping equipment operators",B264,Construction equipment operators,https://www.bls.gov/ooh/construction-and-extraction/construction-equipment-operators.htm,47-2071
+47-2072.00,Pile Driver Operators,47-2072,Pile driver operators,B264,Construction equipment operators,https://www.bls.gov/ooh/construction-and-extraction/construction-equipment-operators.htm,47-2072
+47-2073.00,Operating Engineers and Other Construction Equipment Operators,47-2073,Operating engineers and other construction equipment operators,B264,Construction equipment operators,https://www.bls.gov/ooh/construction-and-extraction/construction-equipment-operators.htm,47-2073
+47-2081.00,Drywall and Ceiling Tile Installers,47-2081,Drywall and ceiling tile installers,B265,"Drywall installers, ceiling tile installers, and tapers",https://www.bls.gov/ooh/construction-and-extraction/drywall-and-ceiling-tile-installers-and-tapers.htm,47-2081
+47-2082.00,Tapers,47-2082,Tapers,B265,"Drywall installers, ceiling tile installers, and tapers",https://www.bls.gov/ooh/construction-and-extraction/drywall-and-ceiling-tile-installers-and-tapers.htm,47-2082
+47-2111.00,Electricians,47-2111,Electricians,B013,Electricians,https://www.bls.gov/ooh/construction-and-extraction/electricians.htm,47-2111
+47-2121.00,Glaziers,47-2121,Glaziers,B266,Glaziers,https://www.bls.gov/ooh/construction-and-extraction/glaziers.htm,47-2121
+47-2131.00,"Insulation Workers, Floor, Ceiling, and Wall",47-2131,"Insulation workers, floor, ceiling, and wall",B267,Insulation workers,https://www.bls.gov/ooh/construction-and-extraction/insulation-workers.htm,47-2131
+47-2132.00,"Insulation Workers, Mechanical",47-2132,"Insulation workers, mechanical",B267,Insulation workers,https://www.bls.gov/ooh/construction-and-extraction/insulation-workers.htm,47-2132
+47-2141.00,"Painters, Construction and Maintenance",47-2141,"Painters, construction and maintenance",B268,"Painters, construction and maintenance",https://www.bls.gov/ooh/construction-and-extraction/painters-construction-and-maintenance.htm,47-2141
+47-2142.00,Paperhangers,47-2142,Paperhangers,—,,,47-2142
+47-2151.00,Pipelayers,47-2151,Pipelayers,—,,,47-2151
+47-2152.00,"Plumbers, Pipefitters, and Steamfitters",47-2152,"Plumbers, pipefitters, and steamfitters",B269,"Plumbers, pipefitters, and steamfitters",https://www.bls.gov/ooh/construction-and-extraction/plumbers-pipefitters-and-steamfitters.htm,47-2152
+47-2152.04,Solar Thermal Installers and Technicians,47-2152,"Plumbers, pipefitters, and steamfitters",B269,"Plumbers, pipefitters, and steamfitters",https://www.bls.gov/ooh/construction-and-extraction/plumbers-pipefitters-and-steamfitters.htm,47-2152
+47-2161.00,Plasterers and Stucco Masons,47-2161,Plasterers and stucco masons,—,,,47-2161
+47-2171.00,Reinforcing Iron and Rebar Workers,47-2171,Reinforcing iron and rebar workers,B273,Ironworkers,https://www.bls.gov/ooh/construction-and-extraction/structural-iron-and-steel-workers.htm,47-2171
+47-2181.00,Roofers,47-2181,Roofers,B272,Roofers,https://www.bls.gov/ooh/construction-and-extraction/roofers.htm,47-2181
+47-2211.00,Sheet Metal Workers,47-2211,Sheet metal workers,B369,Sheet metal workers,https://www.bls.gov/ooh/construction-and-extraction/sheet-metal-workers.htm,47-2211
+47-2221.00,Structural Iron and Steel Workers,47-2221,Structural iron and steel workers,B273,Ironworkers,https://www.bls.gov/ooh/construction-and-extraction/structural-iron-and-steel-workers.htm,47-2221
+47-2231.00,Solar Photovoltaic Installers,47-2231,Solar photovoltaic installers,B234,Solar photovoltaic installers,https://www.bls.gov/ooh/construction-and-extraction/solar-photovoltaic-installers.htm,47-2231
+47-3011.00,"Helpers--Brickmasons, Blockmasons, Stonemasons, and Tile and Marble Setters",47-3011,"Helpers--brickmasons, blockmasons, stonemasons, and tile and marble setters",B263,Construction laborers and helpers,https://www.bls.gov/ooh/construction-and-extraction/construction-laborers-and-helpers.htm,47-3011
+47-3012.00,Helpers--Carpenters,47-3012,Helpers--carpenters,B263,Construction laborers and helpers,https://www.bls.gov/ooh/construction-and-extraction/construction-laborers-and-helpers.htm,47-3012
+47-3013.00,Helpers--Electricians,47-3013,Helpers--electricians,B263,Construction laborers and helpers,https://www.bls.gov/ooh/construction-and-extraction/construction-laborers-and-helpers.htm,47-3013
+47-3014.00,"Helpers--Painters, Paperhangers, Plasterers, and Stucco Masons",47-3014,"Helpers--painters, paperhangers, plasterers, and stucco masons",B263,Construction laborers and helpers,https://www.bls.gov/ooh/construction-and-extraction/construction-laborers-and-helpers.htm,47-3014
+47-3015.00,"Helpers--Pipelayers, Plumbers, Pipefitters, and Steamfitters",47-3015,"Helpers--pipelayers, plumbers, pipefitters, and steamfitters",B263,Construction laborers and helpers,https://www.bls.gov/ooh/construction-and-extraction/construction-laborers-and-helpers.htm,47-3015
+47-3016.00,Helpers--Roofers,47-3016,Helpers--roofers,B263,Construction laborers and helpers,https://www.bls.gov/ooh/construction-and-extraction/construction-laborers-and-helpers.htm,47-3016
+47-3019.00,"Helpers, Construction Trades, All Other",47-3019,"Helpers, construction trades, all other",B263,Construction laborers and helpers,https://www.bls.gov/ooh/construction-and-extraction/construction-laborers-and-helpers.htm,47-3019
+47-4011.00,Construction and Building Inspectors,47-4011,Construction and building inspectors,B274,Construction and building inspectors,https://www.bls.gov/ooh/construction-and-extraction/construction-and-building-inspectors.htm,47-4011
+47-4011.01,Energy Auditors,47-4011,Construction and building inspectors,B274,Construction and building inspectors,https://www.bls.gov/ooh/construction-and-extraction/construction-and-building-inspectors.htm,47-4011
+47-4021.00,Elevator and Escalator Installers and Repairers,47-4021,Elevator and escalator installers and repairers,B275,Elevator and escalator installers and repairers,https://www.bls.gov/ooh/construction-and-extraction/elevator-installers-and-repairers.htm,47-4021
+47-4031.00,Fence Erectors,47-4031,Fence erectors,—,,,47-4031
+47-4041.00,Hazardous Materials Removal Workers,47-4041,Hazardous materials removal workers,B276,Hazardous materials removal workers,https://www.bls.gov/ooh/construction-and-extraction/hazardous-materials-removal-workers.htm,47-4041
+47-4051.00,Highway Maintenance Workers,47-4051,Highway maintenance workers,—,,,47-4051
+47-4061.00,Rail-Track Laying and Maintenance Equipment Operators,47-4061,Rail-track laying and maintenance equipment operators,—,,,47-4061
+47-4071.00,Septic Tank Servicers and Sewer Pipe Cleaners,47-4071,Septic tank servicers and sewer pipe cleaners,—,,,47-4071
+47-4091.00,Segmental Pavers,47-4090,Miscellaneous construction and related workers,—,,,47-4091
+47-4099.00,"Construction and Related Workers, All Other",47-4090,Miscellaneous construction and related workers,—,,,47-4099
+47-4099.03,Weatherization Installers and Technicians,47-4090,Miscellaneous construction and related workers,—,,,47-4099
+47-5011.00,"Derrick Operators, Oil and Gas",47-5011,"Derrick operators, oil and gas",B410,Oil and gas workers,https://www.bls.gov/ooh/construction-and-extraction/oil-and-gas-workers.htm,47-5011
+47-5012.00,"Rotary Drill Operators, Oil and Gas",47-5012,"Rotary drill operators, oil and gas",B410,Oil and gas workers,https://www.bls.gov/ooh/construction-and-extraction/oil-and-gas-workers.htm,47-5012
+47-5013.00,"Service Unit Operators, Oil and Gas",47-5013,"Service unit operators, oil and gas",B410,Oil and gas workers,https://www.bls.gov/ooh/construction-and-extraction/oil-and-gas-workers.htm,47-5013
+47-5022.00,"Excavating and Loading Machine and Dragline Operators, Surface Mining",47-5022,"Excavating and loading machine and dragline operators, surface mining",—,,,47-5022
+47-5023.00,"Earth Drillers, Except Oil and Gas",47-5023,"Earth drillers, except oil and gas",—,,,47-5023
+47-5032.00,"Explosives Workers, Ordnance Handling Experts, and Blasters",47-5032,"Explosives workers, ordnance handling experts, and blasters",—,,,47-5032
+47-5041.00,Continuous Mining Machine Operators,47-5041,Continuous mining machine operators,—,,,47-5041
+47-5043.00,"Roof Bolters, Mining",47-5043,"Roof bolters, mining",—,,,47-5043
+47-5044.00,"Loading and Moving Machine Operators, Underground Mining",47-5044,"Loading and moving machine operators, underground mining",—,,,47-5044
+47-5049.00,"Underground Mining Machine Operators, All Other",47-5049,"Underground mining machine operators, all other",—,,,47-5049
+47-5051.00,"Rock Splitters, Quarry",47-5051,"Rock splitters, quarry",—,,,47-5051
+47-5071.00,"Roustabouts, Oil and Gas",47-5071,"Roustabouts, oil and gas",B410,Oil and gas workers,https://www.bls.gov/ooh/construction-and-extraction/oil-and-gas-workers.htm,47-5071
+47-5081.00,Helpers--Extraction Workers,47-5081,Helpers--extraction workers,—,,,47-5081
+47-5099.00,"Extraction Workers, All Other",47-5099,"Extraction workers, all other",—,,,47-5099
+49-1011.00,"First-Line Supervisors of Mechanics, Installers, and Repairers",49-1011,"First-line supervisors of mechanics, installers, and repairers",—,,,49-1011
+49-2011.00,"Computer, Automated Teller, and Office Machine Repairers",49-2011,"Computer, automated teller, and office machine repairers",—,,,49-2011
+49-2021.00,"Radio, Cellular, and Tower Equipment Installers and Repairers",49-2021,"Radio, cellular, and tower equipment installers and repairers",B279,Telecommunications technicians,https://www.bls.gov/ooh/installation-maintenance-and-repair/telecommunications-equipment-installers-and-repairers-except-line-installers.htm,49-2021
+49-2022.00,"Telecommunications Equipment Installers and Repairers, Except Line Installers",49-2022,"Telecommunications equipment installers and repairers, except line installers",B279,Telecommunications technicians,https://www.bls.gov/ooh/installation-maintenance-and-repair/telecommunications-equipment-installers-and-repairers-except-line-installers.htm,49-2022
+49-2091.00,Avionics Technicians,49-2091,Avionics technicians,B280,Aircraft and avionics equipment mechanics and technicians,https://www.bls.gov/ooh/installation-maintenance-and-repair/aircraft-and-avionics-equipment-mechanics-and-technicians.htm,49-2091
+49-2092.00,"Electric Motor, Power Tool, and Related Repairers",49-2092,"Electric motor, power tool, and related repairers",B373,Electrical and electronics installers and repairers,https://www.bls.gov/ooh/installation-maintenance-and-repair/electrical-and-electronics-installers-and-repairers.htm,49-2092
+49-2093.00,"Electrical and Electronics Installers and Repairers, Transportation Equipment",49-2093,"Electrical and electronics installers and repairers, transportation equipment",B373,Electrical and electronics installers and repairers,https://www.bls.gov/ooh/installation-maintenance-and-repair/electrical-and-electronics-installers-and-repairers.htm,49-2093
+49-2094.00,"Electrical and Electronics Repairers, Commercial and Industrial Equipment",49-2094,"Electrical and electronics repairers, commercial and industrial equipment",B373,Electrical and electronics installers and repairers,https://www.bls.gov/ooh/installation-maintenance-and-repair/electrical-and-electronics-installers-and-repairers.htm,49-2094
+49-2095.00,"Electrical and Electronics Repairers, Powerhouse, Substation, and Relay",49-2095,"Electrical and electronics repairers, powerhouse, substation, and relay",B373,Electrical and electronics installers and repairers,https://www.bls.gov/ooh/installation-maintenance-and-repair/electrical-and-electronics-installers-and-repairers.htm,49-2095
+49-2096.00,"Electronic Equipment Installers and Repairers, Motor Vehicles",49-2096,"Electronic equipment installers and repairers, motor vehicles",B373,Electrical and electronics installers and repairers,https://www.bls.gov/ooh/installation-maintenance-and-repair/electrical-and-electronics-installers-and-repairers.htm,49-2096
+49-2097.00,Audiovisual Equipment Installers and Repairers,49-2097,Audiovisual equipment installers and repairers,—,,,49-2097
+49-2098.00,Security and Fire Alarm Systems Installers,49-2098,Security and fire alarm systems installers,—,,,49-2098
+49-3011.00,Aircraft Mechanics and Service Technicians,49-3011,Aircraft mechanics and service technicians,B280,Aircraft and avionics equipment mechanics and technicians,https://www.bls.gov/ooh/installation-maintenance-and-repair/aircraft-and-avionics-equipment-mechanics-and-technicians.htm,49-3011
+49-3021.00,Automotive Body and Related Repairers,49-3021,Automotive body and related repairers,B282,Automotive body and glass repairers,https://www.bls.gov/ooh/installation-maintenance-and-repair/automotive-body-and-glass-repairers.htm,49-3021
+49-3022.00,Automotive Glass Installers and Repairers,49-3022,Automotive glass installers and repairers,B282,Automotive body and glass repairers,https://www.bls.gov/ooh/installation-maintenance-and-repair/automotive-body-and-glass-repairers.htm,49-3022
+49-3023.00,Automotive Service Technicians and Mechanics,49-3023,Automotive service technicians and mechanics,B283,Automotive service technicians and mechanics,https://www.bls.gov/ooh/installation-maintenance-and-repair/automotive-service-technicians-and-mechanics.htm,49-3023
+49-3031.00,Bus and Truck Mechanics and Diesel Engine Specialists,49-3031,Bus and truck mechanics and diesel engine specialists,B284,Diesel service technicians and mechanics,https://www.bls.gov/ooh/installation-maintenance-and-repair/diesel-service-technicians-and-mechanics.htm,49-3031
+49-3041.00,Farm Equipment Mechanics and Service Technicians,49-3041,Farm equipment mechanics and service technicians,B285,Heavy vehicle and mobile equipment service technicians,https://www.bls.gov/ooh/installation-maintenance-and-repair/heavy-vehicle-and-mobile-equipment-service-technicians.htm,49-3041
+49-3042.00,"Mobile Heavy Equipment Mechanics, Except Engines",49-3042,"Mobile heavy equipment mechanics, except engines",B285,Heavy vehicle and mobile equipment service technicians,https://www.bls.gov/ooh/installation-maintenance-and-repair/heavy-vehicle-and-mobile-equipment-service-technicians.htm,49-3042
+49-3043.00,Rail Car Repairers,49-3043,Rail car repairers,B285,Heavy vehicle and mobile equipment service technicians,https://www.bls.gov/ooh/installation-maintenance-and-repair/heavy-vehicle-and-mobile-equipment-service-technicians.htm,49-3043
+49-3051.00,Motorboat Mechanics and Service Technicians,49-3051,Motorboat mechanics and service technicians,B286,Small engine mechanics,https://www.bls.gov/ooh/installation-maintenance-and-repair/small-engine-mechanics.htm,49-3051
+49-3052.00,Motorcycle Mechanics,49-3052,Motorcycle mechanics,B286,Small engine mechanics,https://www.bls.gov/ooh/installation-maintenance-and-repair/small-engine-mechanics.htm,49-3052
+49-3053.00,Outdoor Power Equipment and Other Small Engine Mechanics,49-3053,Outdoor power equipment and other small engine mechanics,B286,Small engine mechanics,https://www.bls.gov/ooh/installation-maintenance-and-repair/small-engine-mechanics.htm,49-3053
+49-3091.00,Bicycle Repairers,49-3091,Bicycle repairers,—,,,49-3091
+49-3092.00,Recreational Vehicle Service Technicians,49-3092,Recreational vehicle service technicians,—,,,49-3092
+49-3093.00,Tire Repairers and Changers,49-3093,Tire repairers and changers,—,,,49-3093
+49-9011.00,Mechanical Door Repairers,49-9011,Mechanical door repairers,—,,,49-9011
+49-9012.00,"Control and Valve Installers and Repairers, Except Mechanical Door",49-9012,"Control and valve installers and repairers, except mechanical door",—,,,49-9012
+49-9021.00,"Heating, Air Conditioning, and Refrigeration Mechanics and Installers",49-9021,"Heating, air conditioning, and refrigeration mechanics and installers",B287,"Heating, air conditioning, and refrigeration mechanics and installers",https://www.bls.gov/ooh/installation-maintenance-and-repair/heating-air-conditioning-and-refrigeration-mechanics-and-installers.htm,49-9021
+49-9031.00,Home Appliance Repairers,49-9031,Home appliance repairers,—,,,49-9031
+49-9041.00,Industrial Machinery Mechanics,49-9041,Industrial machinery mechanics,B288,"Industrial machinery mechanics, machinery maintenance workers, and millwrights",https://www.bls.gov/ooh/installation-maintenance-and-repair/industrial-machinery-mechanics-and-maintenance-workers-and-millwrights.htm,49-9041
+49-9043.00,"Maintenance Workers, Machinery",49-9043,"Maintenance workers, machinery",B288,"Industrial machinery mechanics, machinery maintenance workers, and millwrights",https://www.bls.gov/ooh/installation-maintenance-and-repair/industrial-machinery-mechanics-and-maintenance-workers-and-millwrights.htm,49-9043
+49-9044.00,Millwrights,49-9044,Millwrights,B288,"Industrial machinery mechanics, machinery maintenance workers, and millwrights",https://www.bls.gov/ooh/installation-maintenance-and-repair/industrial-machinery-mechanics-and-maintenance-workers-and-millwrights.htm,49-9044
+49-9045.00,"Refractory Materials Repairers, Except Brickmasons",49-9045,"Refractory materials repairers, except brickmasons",—,,,49-9045
+49-9051.00,Electrical Power-Line Installers and Repairers,49-9051,Electrical power-line installers and repairers,B291,Electrical power-line installers and repairers,https://www.bls.gov/ooh/installation-maintenance-and-repair/line-installers-and-repairers.htm,49-9051
+49-9052.00,Telecommunications Line Installers and Repairers,49-9052,Telecommunications line installers and repairers,B279,Telecommunications technicians,https://www.bls.gov/ooh/installation-maintenance-and-repair/telecommunications-equipment-installers-and-repairers-except-line-installers.htm,49-9052
+49-9061.00,Camera and Photographic Equipment Repairers,49-9061,Camera and photographic equipment repairers,—,,,49-9061
+49-9062.00,Medical Equipment Repairers,49-9062,Medical equipment repairers,B292,Medical equipment repairers,https://www.bls.gov/ooh/installation-maintenance-and-repair/medical-equipment-repairers.htm,49-9062
+49-9063.00,Musical Instrument Repairers and Tuners,49-9063,Musical instrument repairers and tuners,—,,,49-9063
+49-9064.00,Watch and Clock Repairers,49-9064,Watch and clock repairers,—,,,49-9064
+49-9069.00,"Precision Instrument and Equipment Repairers, All Other",49-9069,"Precision instrument and equipment repairers, all other",—,,,49-9069
+49-9071.00,"Maintenance and Repair Workers, General",49-9071,"Maintenance and repair workers, general",B289,General maintenance and repair workers,https://www.bls.gov/ooh/installation-maintenance-and-repair/general-maintenance-and-repair-workers.htm,49-9071
+49-9081.00,Wind Turbine Service Technicians,49-9081,Wind turbine service technicians,B255,Wind turbine technicians,https://www.bls.gov/ooh/installation-maintenance-and-repair/wind-turbine-technicians.htm,49-9081
+49-9091.00,"Coin, Vending, and Amusement Machine Servicers and Repairers",49-9091,"Coin, vending, and amusement machine servicers and repairers",—,,,49-9091
+49-9092.00,Commercial Divers,49-9092,Commercial divers,—,,,49-9092
+49-9094.00,Locksmiths and Safe Repairers,49-9094,Locksmiths and safe repairers,—,,,49-9094
+49-9095.00,Manufactured Building and Mobile Home Installers,49-9095,Manufactured building and mobile home installers,—,,,49-9095
+49-9096.00,Riggers,49-9096,Riggers,—,,,49-9096
+49-9097.00,Signal and Track Switch Repairers,49-9097,Signal and track switch repairers,—,,,49-9097
+49-9098.00,"Helpers--Installation, Maintenance, and Repair Workers",49-9098,"Helpers--installation, maintenance, and repair workers",—,,,49-9098
+49-9099.00,"Installation, Maintenance, and Repair Workers, All Other",49-9099,"Installation, maintenance, and repair workers, all other",—,,,49-9099
+49-9099.01,Geothermal Technicians,49-9099,"Installation, maintenance, and repair workers, all other",—,,,49-9099
+51-1011.00,First-Line Supervisors of Production and Operating Workers,51-1011,First-line supervisors of production and operating workers,—,,,51-1011
+51-2011.00,"Aircraft Structure, Surfaces, Rigging, and Systems Assemblers",51-2011,"Aircraft structure, surfaces, rigging, and systems assemblers",B293,Assemblers and fabricators,https://www.bls.gov/ooh/production/assemblers-and-fabricators.htm,51-2011
+51-2021.00,"Coil Winders, Tapers, and Finishers",51-2021,"Coil winders, tapers, and finishers",B293,Assemblers and fabricators,https://www.bls.gov/ooh/production/assemblers-and-fabricators.htm,51-2021
+51-2022.00,Electrical and Electronic Equipment Assemblers,51-2028,"Electrical, electronic, and electromechanical assemblers, except coil winders, tapers, and finishers",B293,Assemblers and fabricators,https://www.bls.gov/ooh/production/assemblers-and-fabricators.htm,51-2022
+51-2023.00,Electromechanical Equipment Assemblers,51-2028,"Electrical, electronic, and electromechanical assemblers, except coil winders, tapers, and finishers",B293,Assemblers and fabricators,https://www.bls.gov/ooh/production/assemblers-and-fabricators.htm,51-2023
+51-2031.00,Engine and Other Machine Assemblers,51-2031,Engine and other machine assemblers,B293,Assemblers and fabricators,https://www.bls.gov/ooh/production/assemblers-and-fabricators.htm,51-2031
+51-2041.00,Structural Metal Fabricators and Fitters,51-2041,Structural metal fabricators and fitters,B293,Assemblers and fabricators,https://www.bls.gov/ooh/production/assemblers-and-fabricators.htm,51-2041
+51-2051.00,Fiberglass Laminators and Fabricators,51-2051,Fiberglass laminators and fabricators,B293,Assemblers and fabricators,https://www.bls.gov/ooh/production/assemblers-and-fabricators.htm,51-2051
+51-2061.00,Timing Device Assemblers and Adjusters,51-2061,Timing device assemblers and adjusters,B293,Assemblers and fabricators,https://www.bls.gov/ooh/production/assemblers-and-fabricators.htm,51-2061
+51-2092.00,Team Assemblers,51-2090,Miscellaneous assemblers and fabricators,B293,Assemblers and fabricators,https://www.bls.gov/ooh/production/assemblers-and-fabricators.htm,51-2092
+51-2099.00,"Assemblers and Fabricators, All Other",51-2090,Miscellaneous assemblers and fabricators,B293,Assemblers and fabricators,https://www.bls.gov/ooh/production/assemblers-and-fabricators.htm,51-2099
+51-3011.00,Bakers,51-3011,Bakers,B294,Bakers,https://www.bls.gov/ooh/production/bakers.htm,51-3011
+51-3021.00,Butchers and Meat Cutters,51-3021,Butchers and meat cutters,B295,Butchers,https://www.bls.gov/ooh/production/butchers-and-meat-cutters.htm,51-3021
+51-3022.00,"Meat, Poultry, and Fish Cutters and Trimmers",51-3022,"Meat, poultry, and fish cutters and trimmers",—,,,51-3022
+51-3023.00,Slaughterers and Meat Packers,51-3023,Slaughterers and meat packers,—,,,51-3023
+51-3091.00,"Food and Tobacco Roasting, Baking, and Drying Machine Operators and Tenders",51-3091,"Food and tobacco roasting, baking, and drying machine operators and tenders",B381,Food processing equipment workers,https://www.bls.gov/ooh/production/food-and-tobacco-processing-workers.htm,51-3091
+51-3092.00,Food Batchmakers,51-3092,Food batchmakers,B381,Food processing equipment workers,https://www.bls.gov/ooh/production/food-and-tobacco-processing-workers.htm,51-3092
+51-3093.00,Food Cooking Machine Operators and Tenders,51-3093,Food cooking machine operators and tenders,B381,Food processing equipment workers,https://www.bls.gov/ooh/production/food-and-tobacco-processing-workers.htm,51-3093
+51-3099.00,"Food Processing Workers, All Other",51-3099,"Food processing workers, all other",B381,Food processing equipment workers,https://www.bls.gov/ooh/production/food-and-tobacco-processing-workers.htm,51-3099
+51-4021.00,"Extruding and Drawing Machine Setters, Operators, and Tenders, Metal and Plastic",51-4021,"Extruding and drawing machine setters, operators, and tenders, metal and plastic",B296,Metal and plastic machine workers,https://www.bls.gov/ooh/production/metal-and-plastic-machine-workers.htm,51-4021
+51-4022.00,"Forging Machine Setters, Operators, and Tenders, Metal and Plastic",51-4022,"Forging machine setters, operators, and tenders, metal and plastic",B296,Metal and plastic machine workers,https://www.bls.gov/ooh/production/metal-and-plastic-machine-workers.htm,51-4022
+51-4023.00,"Rolling Machine Setters, Operators, and Tenders, Metal and Plastic",51-4023,"Rolling machine setters, operators, and tenders, metal and plastic",B296,Metal and plastic machine workers,https://www.bls.gov/ooh/production/metal-and-plastic-machine-workers.htm,51-4023
+51-4031.00,"Cutting, Punching, and Press Machine Setters, Operators, and Tenders, Metal and Plastic",51-4031,"Cutting, punching, and press machine setters, operators, and tenders, metal and plastic",B296,Metal and plastic machine workers,https://www.bls.gov/ooh/production/metal-and-plastic-machine-workers.htm,51-4031
+51-4032.00,"Drilling and Boring Machine Tool Setters, Operators, and Tenders, Metal and Plastic",51-4032,"Drilling and boring machine tool setters, operators, and tenders, metal and plastic",B296,Metal and plastic machine workers,https://www.bls.gov/ooh/production/metal-and-plastic-machine-workers.htm,51-4032
+51-4033.00,"Grinding, Lapping, Polishing, and Buffing Machine Tool Setters, Operators, and Tenders, Metal and Plastic",51-4033,"Grinding, lapping, polishing, and buffing machine tool setters, operators, and tenders, metal and plastic",B296,Metal and plastic machine workers,https://www.bls.gov/ooh/production/metal-and-plastic-machine-workers.htm,51-4033
+51-4034.00,"Lathe and Turning Machine Tool Setters, Operators, and Tenders, Metal and Plastic",51-4034,"Lathe and turning machine tool setters, operators, and tenders, metal and plastic",B296,Metal and plastic machine workers,https://www.bls.gov/ooh/production/metal-and-plastic-machine-workers.htm,51-4034
+51-4035.00,"Milling and Planing Machine Setters, Operators, and Tenders, Metal and Plastic",51-4035,"Milling and planing machine setters, operators, and tenders, metal and plastic",B296,Metal and plastic machine workers,https://www.bls.gov/ooh/production/metal-and-plastic-machine-workers.htm,51-4035
+51-4041.00,Machinists,51-4041,Machinists,B297,Machinists and tool and die makers,https://www.bls.gov/ooh/production/machinists-and-tool-and-die-makers.htm,51-4041
+51-4051.00,Metal-Refining Furnace Operators and Tenders,51-4051,Metal-refining furnace operators and tenders,B296,Metal and plastic machine workers,https://www.bls.gov/ooh/production/metal-and-plastic-machine-workers.htm,51-4051
+51-4052.00,"Pourers and Casters, Metal",51-4052,"Pourers and casters, metal",B296,Metal and plastic machine workers,https://www.bls.gov/ooh/production/metal-and-plastic-machine-workers.htm,51-4052
+51-4061.00,"Model Makers, Metal and Plastic",51-4061,"Model makers, metal and plastic",B296,Metal and plastic machine workers,https://www.bls.gov/ooh/production/metal-and-plastic-machine-workers.htm,51-4061
+51-4062.00,"Patternmakers, Metal and Plastic",51-4062,"Patternmakers, metal and plastic",B296,Metal and plastic machine workers,https://www.bls.gov/ooh/production/metal-and-plastic-machine-workers.htm,51-4062
+51-4071.00,Foundry Mold and Coremakers,51-4071,Foundry mold and coremakers,B296,Metal and plastic machine workers,https://www.bls.gov/ooh/production/metal-and-plastic-machine-workers.htm,51-4071
+51-4072.00,"Molding, Coremaking, and Casting Machine Setters, Operators, and Tenders, Metal and Plastic",51-4072,"Molding, coremaking, and casting machine setters, operators, and tenders, metal and plastic",B296,Metal and plastic machine workers,https://www.bls.gov/ooh/production/metal-and-plastic-machine-workers.htm,51-4072
+51-4081.00,"Multiple Machine Tool Setters, Operators, and Tenders, Metal and Plastic",51-4081,"Multiple machine tool setters, operators, and tenders, metal and plastic",B296,Metal and plastic machine workers,https://www.bls.gov/ooh/production/metal-and-plastic-machine-workers.htm,51-4081
+51-4111.00,Tool and Die Makers,51-4111,Tool and die makers,B297,Machinists and tool and die makers,https://www.bls.gov/ooh/production/machinists-and-tool-and-die-makers.htm,51-4111
+51-4121.00,"Welders, Cutters, Solderers, and Brazers",51-4121,"Welders, cutters, solderers, and brazers",B298,"Welders, cutters, solderers, and brazers",https://www.bls.gov/ooh/production/welders-cutters-solderers-and-brazers.htm,51-4121
+51-4122.00,"Welding, Soldering, and Brazing Machine Setters, Operators, and Tenders",51-4122,"Welding, soldering, and brazing machine setters, operators, and tenders",B296,Metal and plastic machine workers,https://www.bls.gov/ooh/production/metal-and-plastic-machine-workers.htm,51-4122
+51-4191.00,"Heat Treating Equipment Setters, Operators, and Tenders, Metal and Plastic",51-4191,"Heat treating equipment setters, operators, and tenders, metal and plastic",B296,Metal and plastic machine workers,https://www.bls.gov/ooh/production/metal-and-plastic-machine-workers.htm,51-4191
+51-4192.00,"Layout Workers, Metal and Plastic",51-4192,"Layout workers, metal and plastic",—,,,51-4192
+51-4193.00,"Plating Machine Setters, Operators, and Tenders, Metal and Plastic",51-4193,"Plating machine setters, operators, and tenders, metal and plastic",B296,Metal and plastic machine workers,https://www.bls.gov/ooh/production/metal-and-plastic-machine-workers.htm,51-4193
+51-4194.00,"Tool Grinders, Filers, and Sharpeners",51-4194,"Tool grinders, filers, and sharpeners",—,,,51-4194
+51-4199.00,"Metal Workers and Plastic Workers, All Other",51-4199,"Metal workers and plastic workers, all other",—,,,51-4199
+51-5111.00,Prepress Technicians and Workers,51-5111,Prepress technicians and workers,—,,,51-5111
+51-5112.00,Printing Press Operators,51-5112,Printing press operators,—,,,51-5112
+51-5113.00,Print Binding and Finishing Workers,51-5113,Print binding and finishing workers,—,,,51-5113
+51-6011.00,Laundry and Dry-Cleaning Workers,51-6011,Laundry and dry-cleaning workers,—,,,51-6011
+51-6021.00,"Pressers, Textile, Garment, and Related Materials",51-6021,"Pressers, textile, garment, and related materials",—,,,51-6021
+51-6031.00,Sewing Machine Operators,51-6031,Sewing machine operators,—,,,51-6031
+51-6041.00,Shoe and Leather Workers and Repairers,51-6041,Shoe and leather workers and repairers,—,,,51-6041
+51-6042.00,Shoe Machine Operators and Tenders,51-6042,Shoe machine operators and tenders,—,,,51-6042
+51-6051.00,"Sewers, Hand",51-6051,"Sewers, hand",—,,,51-6051
+51-6052.00,"Tailors, Dressmakers, and Custom Sewers",51-6052,"Tailors, dressmakers, and custom sewers",—,,,51-6052
+51-6061.00,Textile Bleaching and Dyeing Machine Operators and Tenders,51-6061,Textile bleaching and dyeing machine operators and tenders,—,,,51-6061
+51-6062.00,"Textile Cutting Machine Setters, Operators, and Tenders",51-6062,"Textile cutting machine setters, operators, and tenders",—,,,51-6062
+51-6063.00,"Textile Knitting and Weaving Machine Setters, Operators, and Tenders",51-6063,"Textile knitting and weaving machine setters, operators, and tenders",—,,,51-6063
+51-6064.00,"Textile Winding, Twisting, and Drawing Out Machine Setters, Operators, and Tenders",51-6064,"Textile winding, twisting, and drawing out machine setters, operators, and tenders",—,,,51-6064
+51-6091.00,"Extruding and Forming Machine Setters, Operators, and Tenders, Synthetic and Glass Fibers",51-6091,"Extruding and forming machine setters, operators, and tenders, synthetic and glass fibers",—,,,51-6091
+51-6092.00,Fabric and Apparel Patternmakers,51-6092,Fabric and apparel patternmakers,—,,,51-6092
+51-6093.00,Upholsterers,51-6093,Upholsterers,—,,,51-6093
+51-6099.00,"Textile, Apparel, and Furnishings Workers, All Other",51-6099,"Textile, apparel, and furnishings workers, all other",—,,,51-6099
+51-7011.00,Cabinetmakers and Bench Carpenters,51-7011,Cabinetmakers and bench carpenters,B300,Woodworkers,https://www.bls.gov/ooh/production/woodworkers.htm,51-7011
+51-7021.00,Furniture Finishers,51-7021,Furniture finishers,B300,Woodworkers,https://www.bls.gov/ooh/production/woodworkers.htm,51-7021
+51-7031.00,"Model Makers, Wood",51-7031,"Model makers, wood",—,,,51-7031
+51-7032.00,"Patternmakers, Wood",51-7032,"Patternmakers, wood",—,,,51-7032
+51-7041.00,"Sawing Machine Setters, Operators, and Tenders, Wood",51-7041,"Sawing machine setters, operators, and tenders, wood",B300,Woodworkers,https://www.bls.gov/ooh/production/woodworkers.htm,51-7041
+51-7042.00,"Woodworking Machine Setters, Operators, and Tenders, Except Sawing",51-7042,"Woodworking machine setters, operators, and tenders, except sawing",B300,Woodworkers,https://www.bls.gov/ooh/production/woodworkers.htm,51-7042
+51-7099.00,"Woodworkers, All Other",51-7099,"Woodworkers, all other",—,,,51-7099
+51-8011.00,Nuclear Power Reactor Operators,51-8011,Nuclear power reactor operators,B301,"Power plant operators, distributors, and dispatchers",https://www.bls.gov/ooh/production/power-plant-operators-distributors-and-dispatchers.htm,51-8011
+51-8012.00,Power Distributors and Dispatchers,51-8012,Power distributors and dispatchers,B301,"Power plant operators, distributors, and dispatchers",https://www.bls.gov/ooh/production/power-plant-operators-distributors-and-dispatchers.htm,51-8012
+51-8013.00,Power Plant Operators,51-8013,Power plant operators,B301,"Power plant operators, distributors, and dispatchers",https://www.bls.gov/ooh/production/power-plant-operators-distributors-and-dispatchers.htm,51-8013
+51-8013.03,Biomass Plant Technicians,51-8013,Power plant operators,B301,"Power plant operators, distributors, and dispatchers",https://www.bls.gov/ooh/production/power-plant-operators-distributors-and-dispatchers.htm,51-8013
+51-8013.04,Hydroelectric Plant Technicians,51-8013,Power plant operators,B301,"Power plant operators, distributors, and dispatchers",https://www.bls.gov/ooh/production/power-plant-operators-distributors-and-dispatchers.htm,51-8013
+51-8021.00,Stationary Engineers and Boiler Operators,51-8021,Stationary engineers and boiler operators,B303,Stationary engineers and boiler operators,https://www.bls.gov/ooh/production/stationary-engineers-and-boiler-operators.htm,51-8021
+51-8031.00,Water and Wastewater Treatment Plant and System Operators,51-8031,Water and wastewater treatment plant and system operators,B304,Water and wastewater treatment plant and system operators,https://www.bls.gov/ooh/production/water-and-wastewater-treatment-plant-and-system-operators.htm,51-8031
+51-8091.00,Chemical Plant and System Operators,51-8091,Chemical plant and system operators,—,,,51-8091
+51-8092.00,Gas Plant Operators,51-8092,Gas plant operators,—,,,51-8092
+51-8093.00,"Petroleum Pump System Operators, Refinery Operators, and Gaugers",51-8093,"Petroleum pump system operators, refinery operators, and gaugers",—,,,51-8093
+51-8099.00,"Plant and System Operators, All Other",51-8099,"Plant and system operators, all other",—,,,51-8099
+51-8099.01,Biofuels Processing Technicians,51-8099,"Plant and system operators, all other",—,,,51-8099
+51-9011.00,Chemical Equipment Operators and Tenders,51-9011,Chemical equipment operators and tenders,—,,,51-9011
+51-9012.00,"Separating, Filtering, Clarifying, Precipitating, and Still Machine Setters, Operators, and Tenders",51-9012,"Separating, filtering, clarifying, precipitating, and still machine setters, operators, and tenders",—,,,51-9012
+51-9021.00,"Crushing, Grinding, and Polishing Machine Setters, Operators, and Tenders",51-9021,"Crushing, grinding, and polishing machine setters, operators, and tenders",—,,,51-9021
+51-9022.00,"Grinding and Polishing Workers, Hand",51-9022,"Grinding and polishing workers, hand",—,,,51-9022
+51-9023.00,"Mixing and Blending Machine Setters, Operators, and Tenders",51-9023,"Mixing and blending machine setters, operators, and tenders",—,,,51-9023
+51-9031.00,"Cutters and Trimmers, Hand",51-9031,"Cutters and trimmers, hand",—,,,51-9031
+51-9032.00,"Cutting and Slicing Machine Setters, Operators, and Tenders",51-9032,"Cutting and slicing machine setters, operators, and tenders",—,,,51-9032
+51-9041.00,"Extruding, Forming, Pressing, and Compacting Machine Setters, Operators, and Tenders",51-9041,"Extruding, forming, pressing, and compacting machine setters, operators, and tenders",—,,,51-9041
+51-9051.00,"Furnace, Kiln, Oven, Drier, and Kettle Operators and Tenders",51-9051,"Furnace, kiln, oven, drier, and kettle operators and tenders",—,,,51-9051
+51-9061.00,"Inspectors, Testers, Sorters, Samplers, and Weighers",51-9061,"Inspectors, testers, sorters, samplers, and weighers",B306,Quality control inspectors,https://www.bls.gov/ooh/production/quality-control-inspectors.htm,51-9061
+51-9071.00,Jewelers and Precious Stone and Metal Workers,51-9071,Jewelers and precious stone and metal workers,B307,Jewelers and precious stone and metal workers,https://www.bls.gov/ooh/production/jewelers-and-precious-stone-and-metal-workers.htm,51-9071
+51-9071.06,Gem and Diamond Workers,51-9071,Jewelers and precious stone and metal workers,B307,Jewelers and precious stone and metal workers,https://www.bls.gov/ooh/production/jewelers-and-precious-stone-and-metal-workers.htm,51-9071
+51-9081.00,Dental Laboratory Technicians,51-9081,Dental laboratory technicians,B308,Dental and ophthalmic laboratory technicians and medical appliance technicians,https://www.bls.gov/ooh/production/dental-and-ophthalmic-laboratory-technicians-and-medical-appliance-technicians.htm,51-9081
+51-9082.00,Medical Appliance Technicians,51-9082,Medical appliance technicians,B308,Dental and ophthalmic laboratory technicians and medical appliance technicians,https://www.bls.gov/ooh/production/dental-and-ophthalmic-laboratory-technicians-and-medical-appliance-technicians.htm,51-9082
+51-9083.00,Ophthalmic Laboratory Technicians,51-9083,Ophthalmic laboratory technicians,B308,Dental and ophthalmic laboratory technicians and medical appliance technicians,https://www.bls.gov/ooh/production/dental-and-ophthalmic-laboratory-technicians-and-medical-appliance-technicians.htm,51-9083
+51-9111.00,Packaging and Filling Machine Operators and Tenders,51-9111,Packaging and filling machine operators and tenders,—,,,51-9111
+51-9123.00,"Painting, Coating, and Decorating Workers",51-9123,"Painting, coating, and decorating workers",B386,Painting and coating workers,https://www.bls.gov/ooh/production/painting-and-coating-workers.htm,51-9123
+51-9124.00,"Coating, Painting, and Spraying Machine Setters, Operators, and Tenders",51-9124,"Coating, painting, and spraying machine setters, operators, and tenders",B386,Painting and coating workers,https://www.bls.gov/ooh/production/painting-and-coating-workers.htm,51-9124
+51-9141.00,Semiconductor Processing Technicians,51-9141,Semiconductor processing technicians,B408,Semiconductor processing technicians,https://www.bls.gov/ooh/production/semiconductor-processing-technicians.htm,51-9141
+51-9151.00,Photographic Process Workers and Processing Machine Operators,51-9151,Photographic process workers and processing machine operators,—,,,51-9151
+51-9161.00,Computer Numerically Controlled Tool Operators,51-9161,Computer numerically controlled tool operators,B296,Metal and plastic machine workers,https://www.bls.gov/ooh/production/metal-and-plastic-machine-workers.htm,51-9161
+51-9162.00,Computer Numerically Controlled Tool Programmers,51-9162,Computer numerically controlled tool programmers,B296,Metal and plastic machine workers,https://www.bls.gov/ooh/production/metal-and-plastic-machine-workers.htm,51-9162
+51-9191.00,Adhesive Bonding Machine Operators and Tenders,51-9191,Adhesive bonding machine operators and tenders,—,,,51-9191
+51-9192.00,"Cleaning, Washing, and Metal Pickling Equipment Operators and Tenders",51-9192,"Cleaning, washing, and metal pickling equipment operators and tenders",—,,,51-9192
+51-9193.00,Cooling and Freezing Equipment Operators and Tenders,51-9193,Cooling and freezing equipment operators and tenders,—,,,51-9193
+51-9194.00,Etchers and Engravers,51-9194,Etchers and engravers,—,,,51-9194
+51-9195.00,"Molders, Shapers, and Casters, Except Metal and Plastic",51-9195,"Molders, shapers, and casters, except metal and plastic",—,,,51-9195
+51-9195.03,"Stone Cutters and Carvers, Manufacturing",51-9195,"Molders, shapers, and casters, except metal and plastic",—,,,51-9195
+51-9195.04,"Glass Blowers, Molders, Benders, and Finishers",51-9195,"Molders, shapers, and casters, except metal and plastic",—,,,51-9195
+51-9195.05,"Potters, Manufacturing",51-9195,"Molders, shapers, and casters, except metal and plastic",—,,,51-9195
+51-9196.00,"Paper Goods Machine Setters, Operators, and Tenders",51-9196,"Paper goods machine setters, operators, and tenders",—,,,51-9196
+51-9197.00,Tire Builders,51-9197,Tire builders,—,,,51-9197
+51-9198.00,Helpers--Production Workers,51-9198,Helpers--production workers,—,,,51-9198
+51-9199.00,"Production Workers, All Other",51-9199,"Production workers, all other",—,,,51-9199
+53-1041.00,Aircraft Cargo Handling Supervisors,53-1041,Aircraft cargo handling supervisors,—,,,53-1041
+53-1042.00,"First-Line Supervisors of Helpers, Laborers, and Material Movers, Hand",53-1047,"First-line supervisors of transportation and material moving workers, except aircraft cargo handling supervisors",—,,,53-1042
+53-1042.01,Recycling Coordinators,53-1047,"First-line supervisors of transportation and material moving workers, except aircraft cargo handling supervisors",—,,,53-1042
+53-1043.00,First-Line Supervisors of Material-Moving Machine and Vehicle Operators,53-1047,"First-line supervisors of transportation and material moving workers, except aircraft cargo handling supervisors",—,,,53-1043
+53-1044.00,First-Line Supervisors of Passenger Attendants,53-1047,"First-line supervisors of transportation and material moving workers, except aircraft cargo handling supervisors",—,,,53-1044
+53-1049.00,"First-Line Supervisors of Transportation Workers, All Other",53-1047,"First-line supervisors of transportation and material moving workers, except aircraft cargo handling supervisors",—,,,53-1049
+53-2011.00,"Airline Pilots, Copilots, and Flight Engineers",53-2011,"Airline pilots, copilots, and flight engineers",B311,Airline and commercial pilots,https://www.bls.gov/ooh/transportation-and-material-moving/airline-and-commercial-pilots.htm,53-2011
+53-2012.00,Commercial Pilots,53-2012,Commercial pilots,B311,Airline and commercial pilots,https://www.bls.gov/ooh/transportation-and-material-moving/airline-and-commercial-pilots.htm,53-2012
+53-2021.00,Air Traffic Controllers,53-2021,Air traffic controllers,B312,Air traffic controllers,https://www.bls.gov/ooh/transportation-and-material-moving/air-traffic-controllers.htm,53-2021
+53-2022.00,Airfield Operations Specialists,53-2022,Airfield operations specialists,—,,,53-2022
+53-2031.00,Flight Attendants,53-2031,Flight attendants,B232,Flight attendants,https://www.bls.gov/ooh/transportation-and-material-moving/flight-attendants.htm,53-2031
+53-3011.00,"Ambulance Drivers and Attendants, Except Emergency Medical Technicians",53-3011,"Ambulance drivers and attendants, except emergency medical technicians",—,,,53-3011
+53-3031.00,Driver/Sales Workers,53-3031,Driver/sales workers,B314,Delivery truck drivers and driver/sales workers,https://www.bls.gov/ooh/transportation-and-material-moving/delivery-truck-drivers-and-driver-sales-workers.htm,53-3031
+53-3032.00,Heavy and Tractor-Trailer Truck Drivers,53-3032,Heavy and tractor-trailer truck drivers,B315,Heavy and tractor-trailer truck drivers,https://www.bls.gov/ooh/transportation-and-material-moving/heavy-and-tractor-trailer-truck-drivers.htm,53-3032
+53-3033.00,Light Truck Drivers,53-3033,Light truck drivers,B314,Delivery truck drivers and driver/sales workers,https://www.bls.gov/ooh/transportation-and-material-moving/delivery-truck-drivers-and-driver-sales-workers.htm,53-3033
+53-3051.00,"Bus Drivers, School",53-3051,"Bus drivers, school",B313,Bus drivers,https://www.bls.gov/ooh/transportation-and-material-moving/bus-drivers.htm,53-3051
+53-3052.00,"Bus Drivers, Transit and Intercity",53-3052,"Bus drivers, transit and intercity",B313,Bus drivers,https://www.bls.gov/ooh/transportation-and-material-moving/bus-drivers.htm,53-3052
+53-3053.00,Shuttle Drivers and Chauffeurs,53-3053,Shuttle drivers and chauffeurs,B316,"Taxi drivers, shuttle drivers, and chauffeurs",https://www.bls.gov/ooh/transportation-and-material-moving/taxi-drivers-and-chauffeurs.htm,53-3053
+53-3054.00,Taxi Drivers,53-3054,Taxi drivers,B316,"Taxi drivers, shuttle drivers, and chauffeurs",https://www.bls.gov/ooh/transportation-and-material-moving/taxi-drivers-and-chauffeurs.htm,53-3054
+53-3099.00,"Motor Vehicle Operators, All Other",53-3099,"Motor vehicle operators, all other",—,,,53-3099
+53-4011.00,Locomotive Engineers,53-4011,Locomotive engineers,B317,Railroad workers,https://www.bls.gov/ooh/transportation-and-material-moving/railroad-occupations.htm,53-4011
+53-4013.00,"Rail Yard Engineers, Dinkey Operators, and Hostlers",53-4013,"Rail yard engineers, dinkey operators, and hostlers",B317,Railroad workers,https://www.bls.gov/ooh/transportation-and-material-moving/railroad-occupations.htm,53-4013
+53-4022.00,"Railroad Brake, Signal, and Switch Operators and Locomotive Firers",53-4022,"Railroad brake, signal, and switch operators and locomotive firers",B317,Railroad workers,https://www.bls.gov/ooh/transportation-and-material-moving/railroad-occupations.htm,53-4022
+53-4031.00,Railroad Conductors and Yardmasters,53-4031,Railroad conductors and yardmasters,B317,Railroad workers,https://www.bls.gov/ooh/transportation-and-material-moving/railroad-occupations.htm,53-4031
+53-4041.00,Subway and Streetcar Operators,53-4041,Subway and streetcar operators,—,,,53-4041
+53-4099.00,"Rail Transportation Workers, All Other",53-4099,"Rail transportation workers, all other",—,,,53-4099
+53-5011.00,Sailors and Marine Oilers,53-5011,Sailors and marine oilers,B320,Water transportation workers,https://www.bls.gov/ooh/transportation-and-material-moving/water-transportation-occupations.htm,53-5011
+53-5021.00,"Captains, Mates, and Pilots of Water Vessels",53-5021,"Captains, mates, and pilots of water vessels",B320,Water transportation workers,https://www.bls.gov/ooh/transportation-and-material-moving/water-transportation-occupations.htm,53-5021
+53-5022.00,Motorboat Operators,53-5022,Motorboat operators,B320,Water transportation workers,https://www.bls.gov/ooh/transportation-and-material-moving/water-transportation-occupations.htm,53-5022
+53-5031.00,Ship Engineers,53-5031,Ship engineers,B320,Water transportation workers,https://www.bls.gov/ooh/transportation-and-material-moving/water-transportation-occupations.htm,53-5031
+53-6011.00,Bridge and Lock Tenders,53-6011,Bridge and lock tenders,—,,,53-6011
+53-6021.00,Parking Attendants,53-6021,Parking attendants,—,,,53-6021
+53-6031.00,Automotive and Watercraft Service Attendants,53-6031,Automotive and watercraft service attendants,—,,,53-6031
+53-6032.00,Aircraft Service Attendants,53-6032,Aircraft service attendants,—,,,53-6032
+53-6041.00,Traffic Technicians,53-6041,Traffic technicians,—,,,53-6041
+53-6051.00,Transportation Inspectors,53-6051,Transportation inspectors,—,,,53-6051
+53-6051.01,Aviation Inspectors,53-6051,Transportation inspectors,—,,,53-6051
+53-6051.07,"Transportation Vehicle, Equipment and Systems Inspectors, Except Aviation",53-6051,Transportation inspectors,—,,,53-6051
+53-6061.00,Passenger Attendants,53-6061,Passenger attendants,—,,,53-6061
+53-6099.00,"Transportation Workers, All Other",53-6099,"Transportation workers, all other",—,,,53-6099
+53-7011.00,Conveyor Operators and Tenders,53-7011,Conveyor operators and tenders,B321,Material moving machine operators,https://www.bls.gov/ooh/transportation-and-material-moving/material-moving-machine-operators.htm,53-7011
+53-7021.00,Crane and Tower Operators,53-7021,Crane and tower operators,B321,Material moving machine operators,https://www.bls.gov/ooh/transportation-and-material-moving/material-moving-machine-operators.htm,53-7021
+53-7031.00,Dredge Operators,53-7031,Dredge operators,B321,Material moving machine operators,https://www.bls.gov/ooh/transportation-and-material-moving/material-moving-machine-operators.htm,53-7031
+53-7041.00,Hoist and Winch Operators,53-7041,Hoist and winch operators,B321,Material moving machine operators,https://www.bls.gov/ooh/transportation-and-material-moving/material-moving-machine-operators.htm,53-7041
+53-7051.00,Industrial Truck and Tractor Operators,53-7051,Industrial truck and tractor operators,B321,Material moving machine operators,https://www.bls.gov/ooh/transportation-and-material-moving/material-moving-machine-operators.htm,53-7051
+53-7061.00,Cleaners of Vehicles and Equipment,53-7061,Cleaners of vehicles and equipment,B322,Hand laborers and material movers,https://www.bls.gov/ooh/transportation-and-material-moving/hand-laborers-and-material-movers.htm,53-7061
+53-7062.00,"Laborers and Freight, Stock, and Material Movers, Hand",53-7062,"Laborers and freight, stock, and material movers, hand",B322,Hand laborers and material movers,https://www.bls.gov/ooh/transportation-and-material-moving/hand-laborers-and-material-movers.htm,53-7062
+53-7062.04,Recycling and Reclamation Workers,53-7062,"Laborers and freight, stock, and material movers, hand",B322,Hand laborers and material movers,https://www.bls.gov/ooh/transportation-and-material-moving/hand-laborers-and-material-movers.htm,53-7062
+53-7063.00,Machine Feeders and Offbearers,53-7063,Machine feeders and offbearers,B322,Hand laborers and material movers,https://www.bls.gov/ooh/transportation-and-material-moving/hand-laborers-and-material-movers.htm,53-7063
+53-7064.00,"Packers and Packagers, Hand",53-7064,"Packers and packagers, hand",B322,Hand laborers and material movers,https://www.bls.gov/ooh/transportation-and-material-moving/hand-laborers-and-material-movers.htm,53-7064
+53-7065.00,Stockers and Order Fillers,53-7065,Stockers and order fillers,B322,Hand laborers and material movers,https://www.bls.gov/ooh/transportation-and-material-moving/hand-laborers-and-material-movers.htm,53-7065
+53-7071.00,Gas Compressor and Gas Pumping Station Operators,53-7071,Gas compressor and gas pumping station operators,—,,,53-7071
+53-7072.00,"Pump Operators, Except Wellhead Pumpers",53-7072,"Pump operators, except wellhead pumpers",—,,,53-7072
+53-7073.00,Wellhead Pumpers,53-7073,Wellhead pumpers,—,,,53-7073
+53-7081.00,Refuse and Recyclable Material Collectors,53-7081,Refuse and recyclable material collectors,B322,Hand laborers and material movers,https://www.bls.gov/ooh/transportation-and-material-moving/hand-laborers-and-material-movers.htm,53-7081
+53-7121.00,"Tank Car, Truck, and Ship Loaders",53-7121,"Tank car, truck, and ship loaders",—,,,53-7121
+53-7199.00,"Material Moving Workers, All Other",53-7199,"Material moving workers, all other",—,,,53-7199

@@ -11,6 +11,7 @@ wheels/
 
 # Secrets
 .env
+data/local/
 
 # Parsed markdown (reproducible via scripts/process.py)
 data/pages/
@@ -21,3 +22,6 @@ embeddings.json
 
 # macOS
 .DS_Store
+CODEX_PROMPTS.md
+README_codex.md
+TASKS.md

@@ -1,0 +1,13 @@
+name,kind,path,downloaded,status,error
+felten_base,occupation_industry,E:\code\karpathyjobs\data\source\comparison\AIOE_DataAppendix.xlsx,False,ok,
+felten_language_modeling,occupation_industry,E:\code\karpathyjobs\data\source\comparison\Language_Modeling_AIOE_and_AIIE.xlsx,False,ok,
+felten_image_generation,occupation_industry,E:\code\karpathyjobs\data\source\comparison\Image_Generation_AIOE_and_AIIE.xlsx,False,ok,
+openai_gpts_are_gpts,occupation,E:\code\karpathyjobs\data\source\comparison\openai_occ_level.csv,False,ok,
+microsoft_working_with_ai,occupation,E:\code\karpathyjobs\data\source\comparison\microsoft_ai_applicability_scores.csv,False,ok,
+eisfeldt_occupation,occupation,E:\code\karpathyjobs\data\source\comparison\genaiexp_estz_occscores.csv,False,ok,
+eisfeldt_firm,reference,E:\code\karpathyjobs\data\source\comparison\genaiexp_estz_firmscores.csv,False,ok,
+webb_soc4,occupation,E:\code\karpathyjobs\data\source\comparison\webb_exposure_by_soc4.xlsx,False,ok,
+yale_workbook,reference,E:\code\karpathyjobs\data\source\comparison\TBL_Data_AI_Exposure_What_do_we_know_202602_Updated.xlsx,False,ok,
+bls_soc_2010_to_2018_crosswalk,crosswalk,E:\code\karpathyjobs\data\source\comparison\soc_2010_to_2018_crosswalk.xlsx,False,ok,
+bls_nem_onet_to_soc_crosswalk,crosswalk,E:\code\karpathyjobs\data\source\comparison\nem_onet_to_soc_crosswalk.xlsx,False,ok,
+bls_nem_occupational_coverage,crosswalk,E:\code\karpathyjobs\data\source\comparison\nem_occupational_coverage.xlsx,False,ok,
