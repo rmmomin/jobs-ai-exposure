@@ -9,10 +9,14 @@ project into clearer script/source/export directories.
 There is no live website in this repo. The focus here is the data pipeline, the
 occupation-level scores, and the derived industry-level outputs.
 
+For a longer write-up comparing the internal and external exposure measures,
+see [ANALYSIS.md](/e:/code/karpathyjobs/ANALYSIS.md).
+
 ## Repo layout
 
 ```text
 README.md
+ANALYSIS.md
 pyproject.toml
 scripts/
 data/
@@ -25,6 +29,7 @@ data/
     comparisons/
 ```
 
+- `ANALYSIS.md` is a narrative note on how the repo's exposure measures compare.
 - `scripts/` contains the runnable pipeline scripts.
 - `data/source/` contains the raw BLS source material.
 - `data/pages/` contains parsed markdown pages generated from the raw HTML.
