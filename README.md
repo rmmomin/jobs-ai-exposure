@@ -75,6 +75,17 @@ The industry outputs are based on the occupations covered by this repository's
 BLS-derived dataset, so `covered_employment_2024` reflects covered occupations
 rather than a full census of every job in the industry.
 
+
+## Comparison data download (first pass)
+
+A first-pass comparison setup script is available to download public benchmark data files into `data/source/comparison/`.
+
+```bash
+uv run python scripts/download_comparison_data.py
+```
+
+The script is cache-aware by default and will skip files that already exist. Use `--force` to refresh all files. It reports per-file failures without stopping the full batch download.
+
 ## Setup
 
 ```bash
