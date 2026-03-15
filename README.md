@@ -10,7 +10,7 @@ There is no live website in this repo. The focus here is the data pipeline, the
 occupation-level scores, and the derived industry-level outputs.
 
 For a longer write-up comparing the internal and external exposure measures,
-see [ANALYSIS.md](/e:/code/karpathyjobs/ANALYSIS.md).
+see [ANALYSIS.md](ANALYSIS.md).
 
 ## Repo layout
 
