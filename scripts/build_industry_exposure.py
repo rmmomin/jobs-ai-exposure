@@ -191,8 +191,8 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--scores-path",
-        default=str(SCORES_JSON.relative_to(ROOT_DIR)),
-        help="Scores JSON path (default: data/exports/scores.json)",
+        default=None,
+        help="Load occupation scores from an alternate JSON path (defaults to data/exports/scores.json)",
     )
     parser.add_argument(
         "--naics-level",
@@ -214,8 +214,8 @@ def main():
     output_json = output_base.with_suffix(".json")
     output_csv = output_base.with_suffix(".csv")
 
-    scores_path = resolve_project_path(args.scores_path)
-    scores = load_scores_for_aggregation(scores_path)
+    scores_path = resolve_project_path(args.scores_path) if args.scores_path else SCORES_JSON
+    scores = load_scores(scores_path)
     rows = aggregate_industries(scores, args.naics_level)
     write_json(rows, output_json)
     write_csv(rows, output_csv)
@@ -223,6 +223,7 @@ def main():
     print(f"Loaded scores from {scores_path}")
     print(f"Wrote {len(rows)} industry rows to {output_json}")
     print(f"Wrote {len(rows)} industry rows to {output_csv}")
+    print(f"Loaded scores from {scores_path}")
 
     label = f"NAICS level {args.naics_level} industries" if args.naics_level is not None else "sectors"
     printable_rows = rows if args.naics_level is not None else [row for row in rows if row["is_sector"]]

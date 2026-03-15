@@ -78,27 +78,21 @@ rather than a full census of every job in the industry.
 
 ## Comparison scripts
 
-Run the downloader first, then run occupation and industry comparison scripts from the repo root:
+The repository includes a comparison/benchmarking layer for aligning internal Karpathy-style scores with external occupation and industry AI exposure datasets.
+
+- `scripts/download_comparison_data.py` downloads comparison workbooks/CSVs into `data/source/comparison/`.
+- `scripts/compare_occupation_exposure.py` harmonizes occupation-level metrics, writes cleaned datasets to `data/exports/comparisons/cleaned/`, summary/disagreement tables to `data/exports/comparisons/tables/`, and scatter plots to `data/exports/comparisons/figures/`.
+- `scripts/compare_industry_exposure.py` compares 4-digit industry exposures and writes overlap tables/figures to `data/exports/comparisons/`.
+- `scripts/build_industry_exposure.py` now accepts `--scores-path` for alternate score files while preserving defaults.
+
+If present, `data/local/scores_gpt54.json` is treated as an optional additional internal variant.
 
 ```bash
 uv run python scripts/download_comparison_data.py
 uv run python scripts/compare_occupation_exposure.py
+uv run python scripts/build_industry_exposure.py --scores-path data/local/scores_gpt54.json --naics-level 4 --output-prefix data/exports/comparisons/tables/custom_industry_exposure_local_gpt54_4digit
 uv run python scripts/compare_industry_exposure.py
 ```
-
-If you want custom industry variants (for example `repo_original` or `local_gpt54`) generate them first:
-
-```bash
-uv run python scripts/build_industry_exposure.py --scores-path data/exports/scores_org.json --naics-level 4 --output-prefix data/exports/comparisons/tables/custom_industry_exposure_repo_original_4digit
-uv run python scripts/build_industry_exposure.py --scores-path data/local/scores_gpt54.json --naics-level 4 --output-prefix data/exports/comparisons/tables/custom_industry_exposure_local_gpt54_4digit
-```
-
-Outputs are written under `data/exports/comparisons/`:
-- cleaned intermediate files in `cleaned/`,
-- summary/overlap/disagreement tables in `tables/`,
-- scatter plots in `figures/`.
-
-`data/local/scores_gpt54.json` is optional; scripts should run without it.
 
 ## Setup
 
