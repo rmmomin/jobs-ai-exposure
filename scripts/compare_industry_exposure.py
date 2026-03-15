@@ -1,215 +1,169 @@
-"""Compare internal 4-digit industry exposure variants against external AIIE metrics."""
+"""Compare internal industry exposure variants against external industry-level AI metrics."""
 
 from __future__ import annotations
 
 import argparse
+import json
 from pathlib import Path
 
 import matplotlib.pyplot as plt
 import pandas as pd
 
-from comparison_config import COMPARISON_FIGURES_DIR, COMPARISON_SOURCE_DIR, COMPARISON_TABLES_DIR, ensure_comparison_dirs
-from comparison_utils import ensure_dir, naics4, pearson, percentile, spearman, zscore
-from paths import INDUSTRY_EXPOSURE_4DIGIT_CSV, resolve_project_path
-
-SUMMARY_COLUMNS = [
-    "variant",
-    "metric",
-    "overlap_count",
-    "pearson_z",
-    "spearman_pct",
-]
+from comparison_utils import ensure_dir, norm_naics, pearson, percentile_ranks, spearman, write_csv
+from paths import (
+    EXPORTS_DIR,
+    INDUSTRY_EXPOSURE_4DIGIT_CSV,
+    SCORES_JSON,
+    SCORES_ORG_JSON,
+    resolve_project_path,
+)
 
 
-def _as_numeric(series: pd.Series) -> pd.Series:
-    return pd.to_numeric(series, errors="coerce")
+def build_custom_industry(scores_path: Path, canonical_scores_path: Path, variant_name: str, output_tables: Path) -> pd.DataFrame:
+    base = pd.DataFrame(json.loads(canonical_scores_path.read_text(encoding="utf-8")))
+    alt = pd.DataFrame(json.loads(scores_path.read_text(encoding="utf-8")))
+    merged = alt[["slug", "exposure"]].merge(base[["slug", "industries"]], on="slug", how="left")
+    exploded = merged.explode("industries").dropna(subset=["industries"]).copy()
+
+    exploded["naics_code"] = exploded["industries"].map(lambda x: str(x.get("naics_code")) if isinstance(x, dict) else None)
+    exploded["title"] = exploded["industries"].map(lambda x: x.get("title") if isinstance(x, dict) else None)
+    exploded["industry_type"] = exploded["industries"].map(lambda x: x.get("industry_type") if isinstance(x, dict) else None)
+    exploded["employment_2024"] = exploded["industries"].map(lambda x: x.get("employment_2024") if isinstance(x, dict) else None)
+    exploded = exploded.dropna(subset=["naics_code", "employment_2024", "exposure"])  # type: ignore[arg-type]
+
+    exploded["weighted_component"] = exploded["exposure"] * exploded["employment_2024"]
+    grouped = (
+        exploded.groupby(["naics_code", "title", "industry_type"], as_index=False)
+        .agg(
+            covered_employment_2024=("employment_2024", "sum"),
+            occupation_count=("slug", "count"),
+            weighted_numerator=("weighted_component", "sum"),
+        )
+    )
+    grouped["weighted_exposure"] = grouped["weighted_numerator"] / grouped["covered_employment_2024"]
+    grouped = grouped.drop(columns=["weighted_numerator"])
+    grouped["naics_level"] = grouped["naics_code"].astype(str).str.len()
+    grouped["is_sector"] = grouped["naics_level"] == 2
+    grouped = grouped[grouped["naics_level"] == 4].copy()
+    grouped["weighted_exposure"] = grouped["weighted_exposure"].round(4)
+
+    out_path = output_tables / f"custom_industry_exposure_{variant_name}_4digit.csv"
+    write_csv(
+        out_path,
+        grouped.to_dict(orient="records"),
+        ["naics_code", "title", "industry_type", "naics_level", "is_sector", "covered_employment_2024", "occupation_count", "weighted_exposure"],
+    )
+    return grouped
 
 
-def load_internal_variants(output_root: Path) -> tuple[dict[str, pd.DataFrame], list[str]]:
-    variants: dict[str, pd.DataFrame] = {}
-    issues: list[str] = []
-
-    current = pd.read_csv(INDUSTRY_EXPOSURE_4DIGIT_CSV)
-    current["naics4"] = current["naics_code"].map(naics4)
-    current["value"] = _as_numeric(current["weighted_exposure"])
-    current = current.dropna(subset=["naics4", "value"]).copy()
-    current["value_z"] = zscore(current["value"].tolist())
-    current["value_pct"] = percentile(current["value"].tolist())
-    current["variant"] = "repo_current"
-    variants["repo_current"] = current
-
-    candidate_files = {
-        "repo_original": output_root / "tables" / "custom_industry_exposure_repo_original_4digit.csv",
-        "local_gpt54": output_root / "tables" / "custom_industry_exposure_local_gpt54_4digit.csv",
-    }
-
-    for variant, path in candidate_files.items():
-        if not path.exists():
-            issues.append(f"Missing custom variant file for {variant}: {path}")
-            continue
-        try:
-            df = pd.read_csv(path)
-            df["naics4"] = df["naics_code"].map(naics4)
-            value_col = "weighted_exposure" if "weighted_exposure" in df.columns else "value"
-            df["value"] = _as_numeric(df[value_col])
-            df = df.dropna(subset=["naics4", "value"]).copy()
-            df["value_z"] = zscore(df["value"].tolist())
-            df["value_pct"] = percentile(df["value"].tolist())
-            df["variant"] = variant
-            variants[variant] = df
-        except Exception as exc:  # pragma: no cover
-            issues.append(f"Failed loading {path}: {exc}")
-
-    return variants, issues
+def pick_naics_column(df: pd.DataFrame) -> str | None:
+    for c in df.columns:
+        lc = c.lower()
+        if "naics" in lc or "industry_code" in lc:
+            return c
+    return None
 
 
-def _clean_aiie_sheet(df: pd.DataFrame, source_file: str, sheet_name: str) -> pd.DataFrame | None:
-    naics_col = None
-    metric_col = None
-
-    for col in df.columns:
-        lc = str(col).lower()
-        if naics_col is None and "naics" in lc:
-            naics_col = col
-        if metric_col is None and "aiie" in lc:
-            metric_col = col
-
-    if naics_col is None or metric_col is None:
-        return None
-
-    out = pd.DataFrame()
-    out["source_file"] = source_file
-    out["sheet_name"] = sheet_name
-    out["raw_naics"] = df[naics_col].astype(str)
-    out["value_raw"] = df[metric_col]
-    out["value"] = _as_numeric(df[metric_col])
-    out["naics4"] = out["raw_naics"].map(naics4)
-    out = out.dropna(subset=["naics4", "value"]).copy()
-    if out.empty:
-        return None
-    out["value_z"] = zscore(out["value"].tolist())
-    out["value_pct"] = percentile(out["value"].tolist())
-    return out
+def pick_metric_column(df: pd.DataFrame) -> str | None:
+    for c in df.columns:
+        lc = c.lower()
+        if "aiie" in lc or "aioe" in lc or "exposure" in lc or "score" in lc:
+            return c
+    nums = [c for c in df.columns if pd.api.types.is_numeric_dtype(df[c])]
+    return nums[-1] if nums else None
 
 
-def load_external_aiie_metrics() -> tuple[dict[str, pd.DataFrame], list[str]]:
-    metrics: dict[str, pd.DataFrame] = {}
-    issues: list[str] = []
-
-    targets = {
-        "felten_base_aiie": ("AIOE_DataAppendix.xlsx", "Appendix B"),
-        "felten_language_modeling_aiie": ("Language_Modeling_AIOE_and_AIIE.xlsx", "LM AIIE"),
-        "felten_image_generation_aiie": ("Image_Generation_AIOE_and_AIIE.xlsx", "IG AIIE"),
-    }
-
-    for metric_name, (filename, sheet_name) in targets.items():
-        workbook_path = COMPARISON_SOURCE_DIR / filename
-        if not workbook_path.exists():
-            issues.append(f"Missing workbook for {metric_name}: {workbook_path}")
-            continue
-        try:
-            df = pd.read_excel(workbook_path, sheet_name=sheet_name)
-            cleaned = _clean_aiie_sheet(df, filename, sheet_name)
-            if cleaned is None:
-                issues.append(f"No NAICS/AIIE columns parsed for {metric_name} ({filename}:{sheet_name})")
+def load_external_industry_metrics(source_dir: Path) -> dict[str, pd.DataFrame]:
+    metrics = {}
+    for path in source_dir.glob("*.xlsx"):
+        xls = pd.ExcelFile(path)
+        for sheet in xls.sheet_names:
+            df = pd.read_excel(path, sheet_name=sheet)
+            naics_col = pick_naics_column(df)
+            val_col = pick_metric_column(df)
+            if not naics_col or not val_col:
                 continue
-            metrics[metric_name] = cleaned
-        except Exception as exc:  # pragma: no cover
-            issues.append(f"Failed loading {filename}:{sheet_name} -> {exc}")
-
-    return metrics, issues
-
-
-def compare_variant_to_metric(variant_df: pd.DataFrame, metric_name: str, metric_df: pd.DataFrame, tables_dir: Path, figures_dir: Path) -> dict[str, object] | None:
-    variant_name = variant_df["variant"].iloc[0]
-
-    left = variant_df[["naics4", "value", "value_z", "value_pct"]].rename(
-        columns={"value": "variant_value", "value_z": "variant_z", "value_pct": "variant_pct"}
-    )
-    right = metric_df[["source_file", "sheet_name", "raw_naics", "value", "value_z", "value_pct", "naics4"]].rename(
-        columns={"value": "metric_value", "value_z": "metric_z", "value_pct": "metric_pct"}
-    )
-
-    merged = left.merge(right, on="naics4", how="inner").dropna(subset=["variant_value", "metric_value"]).copy()
-    if merged.empty:
-        return None
-
-    merged["rank_gap_abs"] = (merged["variant_pct"] - merged["metric_pct"]).abs()
-    disagreements = merged.sort_values("rank_gap_abs", ascending=False).head(25)
-    disagreements.to_csv(tables_dir / f"industry_disagreements_{variant_name}_{metric_name}.csv", index=False)
-
-    merged.to_csv(tables_dir / f"industry_overlap_{variant_name}_{metric_name}.csv", index=False)
-
-    plt.figure(figsize=(6, 5))
-    plt.scatter(merged["variant_z"], merged["metric_z"], alpha=0.6, s=14)
-    plt.xlabel(f"{variant_name} z-score")
-    plt.ylabel(f"{metric_name} z-score")
-    plt.title(f"Industry exposure: {variant_name} vs {metric_name}")
-    plt.tight_layout()
-    plt.savefig(figures_dir / f"industry_scatter_{variant_name}_{metric_name}.png", dpi=150)
-    plt.close()
-
-    return {
-        "variant": variant_name,
-        "metric": metric_name,
-        "overlap_count": int(len(merged)),
-        "pearson_z": round(pearson(merged["variant_z"].tolist(), merged["metric_z"].tolist()), 4),
-        "spearman_pct": round(spearman(merged["variant_pct"].tolist(), merged["metric_pct"].tolist()), 4),
-    }
+            metric = df[[naics_col, val_col]].copy()
+            metric.columns = ["naics_raw", "value"]
+            metric["naics_code"] = metric["naics_raw"].map(norm_naics)
+            metric = metric.dropna(subset=["naics_code", "value"])  # type: ignore[arg-type]
+            metric["naics_code"] = metric["naics_code"].astype(str)
+            metric = metric[metric["naics_code"].str.len() == 4]
+            if metric.empty:
+                continue
+            metrics[f"{path.stem}__{sheet.lower().replace(' ', '_')}"] = metric
+    return metrics
 
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--output-dir", default=None, help="Override output root (default: data/exports/comparisons)")
-    parser.add_argument("--variant", default=None, help="Only run one internal variant")
+    parser.add_argument("--variant", default=None)
+    parser.add_argument("--skip-download", action="store_true")
+    parser.add_argument("--output-dir", default="data/exports/comparisons")
     args = parser.parse_args()
 
-    ensure_comparison_dirs()
+    output_root = resolve_project_path(args.output_dir)
+    tables_dir = ensure_dir(output_root / "tables")
+    figures_dir = ensure_dir(output_root / "figures")
 
-    if args.output_dir:
-        output_root = resolve_project_path(args.output_dir)
-        tables_dir = output_root / "tables"
-        figures_dir = output_root / "figures"
-        ensure_dir(tables_dir)
-        ensure_dir(figures_dir)
-    else:
-        output_root = COMPARISON_TABLES_DIR.parent
-        tables_dir = COMPARISON_TABLES_DIR
-        figures_dir = COMPARISON_FIGURES_DIR
+    variants = {
+        "repo_current": pd.read_csv(INDUSTRY_EXPOSURE_4DIGIT_CSV),
+    }
 
-    variants, variant_issues = load_internal_variants(output_root)
+    repo_original_custom = build_custom_industry(SCORES_ORG_JSON, SCORES_JSON, "repo_original", tables_dir)
+    variants["repo_original"] = repo_original_custom
+
+    local_scores = resolve_project_path("data/local/scores_gpt54.json")
+    if local_scores.exists():
+        variants["local_gpt54"] = build_custom_industry(local_scores, SCORES_JSON, "local_gpt54", tables_dir)
+
     if args.variant:
         variants = {k: v for k, v in variants.items() if k == args.variant}
 
-    metrics, metric_issues = load_external_aiie_metrics()
+    source_dir = ensure_dir(EXPORTS_DIR.parent / "source" / "comparison")
+    external_metrics = load_external_industry_metrics(source_dir)
 
-    summary_rows: list[dict[str, object]] = []
-    for _, variant_df in variants.items():
-        for metric_name, metric_df in metrics.items():
-            result = compare_variant_to_metric(variant_df, metric_name, metric_df, tables_dir, figures_dir)
-            if result:
-                summary_rows.append(result)
+    summary = []
+    for variant_name, variant_df in variants.items():
+        variant = variant_df[["naics_code", "weighted_exposure"]].copy()
+        variant["naics_code"] = variant["naics_code"].astype(str)
+        for metric_name, metric_df in external_metrics.items():
+            merged = variant.merge(metric_df[["naics_code", "value"]], on="naics_code", how="inner").dropna()
+            if merged.empty:
+                continue
+            merged["variant_pct"] = percentile_ranks(merged["weighted_exposure"].tolist())
+            merged["metric_pct"] = percentile_ranks(merged["value"].tolist())
+            write_csv(
+                tables_dir / f"industry_overlap_{variant_name}_{metric_name}.csv",
+                merged.to_dict(orient="records"),
+                ["naics_code", "weighted_exposure", "value", "variant_pct", "metric_pct"],
+            )
 
-    pd.DataFrame(summary_rows, columns=SUMMARY_COLUMNS).to_csv(tables_dir / "industry_comparison_summary.csv", index=False)
+            plt.figure(figsize=(6, 5))
+            plt.scatter(merged["weighted_exposure"], merged["value"], s=12, alpha=0.6)
+            plt.xlabel(f"{variant_name} weighted exposure")
+            plt.ylabel(f"{metric_name} metric")
+            plt.title(f"Industry comparison\n{variant_name} vs {metric_name}")
+            plt.tight_layout()
+            plt.savefig(figures_dir / f"industry_scatter_{variant_name}_{metric_name}.png", dpi=150)
+            plt.close()
 
-    pd.DataFrame(
-        [{"variant": k, "rows": len(v)} for k, v in variants.items()],
-        columns=["variant", "rows"],
-    ).to_csv(tables_dir / "industry_variant_inventory.csv", index=False)
+            summary.append(
+                {
+                    "variant": variant_name,
+                    "metric": metric_name,
+                    "overlap_count": int(len(merged)),
+                    "pearson": round(pearson(merged["weighted_exposure"].tolist(), merged["value"].tolist()), 4),
+                    "spearman": round(spearman(merged["weighted_exposure"].tolist(), merged["value"].tolist()), 4),
+                }
+            )
 
-    pd.DataFrame(
-        [{"metric": k, "rows": len(v)} for k, v in metrics.items()],
-        columns=["metric", "rows"],
-    ).to_csv(tables_dir / "industry_metric_inventory.csv", index=False)
-
-    all_issues = [{"issue": msg} for msg in (variant_issues + metric_issues)]
-    pd.DataFrame(all_issues, columns=["issue"]).to_csv(tables_dir / "industry_compare_issues.csv", index=False)
-
-    print(f"Industry variants loaded: {', '.join(sorted(variants.keys()))}")
-    print(f"External AIIE metrics loaded: {', '.join(sorted(metrics.keys()))}")
-    if all_issues:
-        print(f"Logged {len(all_issues)} non-fatal issues to industry_compare_issues.csv")
-    print(f"Wrote industry comparison outputs to {output_root}")
+    write_csv(
+        tables_dir / "industry_comparison_summary.csv",
+        summary,
+        ["variant", "metric", "overlap_count", "pearson", "spearman"],
+    )
+    print(f"Wrote industry comparison outputs under {output_root}")
 
 
 if __name__ == "__main__":
