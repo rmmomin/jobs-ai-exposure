@@ -26,6 +26,43 @@ def load_scores(path):
         return json.load(f)
 
 
+def coalesce_industry_lists(base_scores, override_scores):
+    """Merge alternate scores onto canonical industry lists by slug.
+
+    This preserves backward compatibility while allowing overrides such as
+    data/local/scores_gpt54.json that may only include exposure/rationale fields.
+    """
+
+    base_by_slug = {row.get("slug"): row for row in base_scores if row.get("slug")}
+    merged = []
+
+    for row in override_scores:
+        merged_row = dict(row)
+        slug = merged_row.get("slug")
+        base_row = base_by_slug.get(slug)
+
+        if base_row:
+            if "title" not in merged_row or not merged_row.get("title"):
+                merged_row["title"] = base_row.get("title")
+            if "industries" not in merged_row or not merged_row.get("industries"):
+                merged_row["industries"] = base_row.get("industries", [])
+
+        merged.append(merged_row)
+
+    return merged
+
+
+def load_scores_for_aggregation(scores_path):
+    canonical_scores = load_scores(SCORES_JSON)
+
+    # Default path keeps prior behavior exactly.
+    if scores_path == SCORES_JSON:
+        return canonical_scores
+
+    alternate_scores = load_scores(scores_path)
+    return coalesce_industry_lists(canonical_scores, alternate_scores)
+
+
 def naics_level(code: str) -> int:
     if code.endswith("0000"):
         return 2
@@ -183,6 +220,7 @@ def main():
     write_json(rows, output_json)
     write_csv(rows, output_csv)
 
+    print(f"Loaded scores from {scores_path}")
     print(f"Wrote {len(rows)} industry rows to {output_json}")
     print(f"Wrote {len(rows)} industry rows to {output_csv}")
     print(f"Loaded scores from {scores_path}")
