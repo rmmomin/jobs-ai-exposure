@@ -118,13 +118,13 @@ and save it under `data/exports/comparisons/tables/`. Then
 The repo includes one alternate internal variant already:
 
 - `scripts/score_gabriel.py` creates `data/exports/scores_gabriel.json`
-- `scripts/build_industry_exposure.py --scores-path data/exports/scores_gabriel.json --naics-level 4 --output-prefix data/exports/comparisons/tables/custom_industry_exposure_repo_gabriel_4digit` builds the Gabriel 4-digit industry file
+- `scripts/build_industry_exposure.py --scores-path data/exports/scores_gabriel.json --naics-level 4 --output-prefix data/exports/comparisons/tables/custom_industry_exposure_repo_gabriel_4digit` builds the GABRIEL 4-digit industry file
 
 ## Current benchmark results
 
 Using the current comparison exports in `data/exports/comparisons/`, the
 rebuilt `repo_current` occupation scores are closest to OpenAI GPTs-are-GPTs
-and the Yale reference bundle. The Gabriel variant is also close to the
+and the Yale reference bundle. The GABRIEL variant is also close to the
 canonical scores, but it is a bit more conservative on average: mean occupation
 exposure falls from `5.26` to `5.01`, and the employment-weighted occupation
 mean falls from `5.05` to `4.72`.
@@ -145,7 +145,7 @@ mean falls from `5.05` to `4.72`.
 `repo_current` and `repo_original` are also very close internally at the
 occupation level: overlap `342`, Pearson `0.955`, Spearman `0.956`.
 
-### Gabriel occupation comparison
+### GABRIEL occupation comparison
 
 `repo_current` vs `repo_gabriel` has overlap `342`, Pearson `0.950`, and
 Spearman `0.958`. `repo_gabriel` is also very close to `repo_original`
@@ -157,7 +157,7 @@ Among external occupation benchmarks, `repo_gabriel` matches:
 - OpenAI GPTs-are-GPTs best by Spearman: overlap `341`, Pearson `0.873`, Spearman `0.891`
 - Eisfeldt remains strong: overlap `329`, Pearson `0.853`, Spearman `0.864`
 
-Substantively, Gabriel raises some digital and analytical occupations, such as
+Substantively, GABRIEL raises some digital and analytical occupations, such as
 medical scientists, air-traffic controllers, IT managers, and accountants, and
 lowers many teaching, care, and transport occupations, such as registered
 nurses, elementary-school teachers, veterinarians, pilots, and delivery
@@ -175,10 +175,10 @@ The internal industry variants are even closer to each other than the external
 benchmarks: `repo_current` vs `repo_original` has overlap `186`, Pearson
 `0.987`, and Spearman `0.982`.
 
-### Gabriel industry comparison (`repo_gabriel`, 4-digit NAICS)
+### GABRIEL industry comparison (`repo_gabriel`, 4-digit NAICS)
 
 `repo_current` vs `repo_gabriel` has overlap `186`, Pearson `0.975`, and
-Spearman `0.964` at the 4-digit NAICS level. The Gabriel industry variant is
+Spearman `0.964` at the 4-digit NAICS level. The GABRIEL industry variant is
 also slightly more conservative on average: mean 4-digit industry exposure
 falls from `5.39` to `5.11`, and the employment-weighted 4-digit mean falls
 from `5.23` to `4.91`.
@@ -189,7 +189,7 @@ Among external 4-digit industry benchmarks, `repo_gabriel` matches:
 - Felten base AIIE close behind: overlap `172`, Pearson `0.707`, Spearman `0.616`
 - Felten language-modeling AIIE somewhat lower: overlap `172`, Pearson `0.658`, Spearman `0.562`
 
-Gabriel raises some finance, software, accounting, and R&D industries slightly,
+GABRIEL raises some finance, software, accounting, and R&D industries slightly,
 while pulling down several transportation and healthcare-adjacent industries,
 including air transportation, daycare, couriers, and outpatient care.
 
@@ -268,7 +268,7 @@ uv run python scripts/compare_occupation_exposure.py
 # Build a custom 4-digit industry exposure output for an alternate score file
 uv run python scripts/build_industry_exposure.py --scores-path data/exports/scores_org.json --naics-level 4 --output-prefix data/exports/comparisons/tables/custom_industry_exposure_repo_original_4digit
 
-# Build the Gabriel 4-digit industry exposure variant
+# Build the GABRIEL 4-digit industry exposure variant
 uv run python scripts/build_industry_exposure.py --scores-path data/exports/scores_gabriel.json --naics-level 4 --output-prefix data/exports/comparisons/tables/custom_industry_exposure_repo_gabriel_4digit
 
 # Compare industry exposure with external 4-digit AIIE benchmarks

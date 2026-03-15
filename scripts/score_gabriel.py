@@ -3,7 +3,7 @@ Score occupation AI exposure with the GABRIEL measurement toolkit.
 
 This builds `data/exports/scores_gabriel.json` as an alternate occupation-level
 score variant. The file preserves the repo's canonical industry metadata by
-overlaying the new Gabriel scores onto the current `scores.json` records.
+overlaying the new GABRIEL scores onto the current `scores.json` records.
 
 Usage:
     uv run python scripts/score_gabriel.py
@@ -104,7 +104,7 @@ def load_existing_scores(path: Path) -> dict[str, dict]:
 
 
 def load_canonical_scores() -> dict[str, dict]:
-    """Load canonical score rows so the Gabriel variant inherits metadata."""
+    """Load canonical score rows so the GABRIEL variant inherits metadata."""
     with SCORES_JSON.open(encoding="utf-8") as handle:
         return {row["slug"]: row for row in json.load(handle)}
 
@@ -128,7 +128,7 @@ def build_input_frame(occupations: list[dict]) -> pd.DataFrame:
 
 
 async def run_gabriel_rating(frame: pd.DataFrame, args: argparse.Namespace) -> pd.DataFrame:
-    """Run Gabriel's `rate` helper and return the cleaned result table."""
+    """Run GABRIEL's `rate` helper and return the cleaned result table."""
     return await gabriel.rate(
         frame,
         column_name="page_markdown",
@@ -152,7 +152,7 @@ def build_score_entry(
     model: str,
     n_runs: int,
 ) -> dict:
-    """Convert one Gabriel rating row into the repo's score-export shape."""
+    """Convert one GABRIEL rating row into the repo's score-export shape."""
     slug = row["slug"]
     score_100 = float(row[ATTRIBUTE_NAME])
     entry = dict(canonical_by_slug.get(slug, {}))
@@ -178,7 +178,7 @@ def build_score_entry(
 def summarize_scores(scores: list[dict]) -> None:
     """Print a compact summary of the generated scores."""
     if not scores:
-        print("No Gabriel scores were generated.")
+        print("No GABRIEL scores were generated.")
         return
 
     exposures = [float(row["exposure"]) for row in scores if row.get("exposure") is not None]
@@ -188,14 +188,14 @@ def summarize_scores(scores: list[dict]) -> None:
         bucket = int(round(value))
         buckets[bucket] = buckets.get(bucket, 0) + 1
 
-    print(f"\nAverage Gabriel exposure across {len(exposures)} occupations: {average:.2f}")
+    print(f"\nAverage GABRIEL exposure across {len(exposures)} occupations: {average:.2f}")
     print("Rounded-score distribution:")
     for bucket in sorted(buckets):
         print(f"  {bucket}: {buckets[bucket]}")
 
 
 def write_scores(path: Path, scores_by_slug: dict[str, dict], occupations: list[dict]) -> list[dict]:
-    """Write ordered Gabriel scores to disk and return the ordered list."""
+    """Write ordered GABRIEL scores to disk and return the ordered list."""
     ordered = ordered_scores(scores_by_slug, occupations)
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8") as handle:
@@ -204,7 +204,7 @@ def write_scores(path: Path, scores_by_slug: dict[str, dict], occupations: list[
 
 
 def parse_args() -> argparse.Namespace:
-    """Parse CLI arguments for the Gabriel scoring workflow."""
+    """Parse CLI arguments for the GABRIEL scoring workflow."""
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", default=DEFAULT_MODEL)
     parser.add_argument("--start", type=int, default=0)
@@ -215,17 +215,17 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--save-dir",
         default=str(DEFAULT_SAVE_DIR.relative_to(ROOT_DIR)),
-        help="Directory for Gabriel raw responses and cleaned rating tables.",
+        help="Directory for GABRIEL raw responses and cleaned rating tables.",
     )
     parser.add_argument(
         "--output-file",
         default=str(SCORES_GABRIEL_JSON.relative_to(ROOT_DIR)),
-        help="Path for the Gabriel score JSON export.",
+        help="Path for the GABRIEL score JSON export.",
     )
     parser.add_argument(
         "--reset-files",
         action="store_true",
-        help="Force Gabriel to ignore cached raw-response files and rerun requests.",
+        help="Force GABRIEL to ignore cached raw-response files and rerun requests.",
     )
     parser.add_argument(
         "--force",
@@ -236,7 +236,7 @@ def parse_args() -> argparse.Namespace:
 
 
 async def main_async(args: argparse.Namespace) -> None:
-    """Run the Gabriel scorer and save the alternate score export."""
+    """Run the GABRIEL scorer and save the alternate score export."""
     occupations = load_occupations()
     subset = occupations[args.start:args.end]
     frame = build_input_frame(subset)
@@ -258,7 +258,7 @@ async def main_async(args: argparse.Namespace) -> None:
         scores_by_slug[row["slug"]] = build_score_entry(row, canonical_by_slug, args.model, args.n_runs)
 
     ordered = write_scores(resolve_project_path(args.output_file), scores_by_slug, occupations)
-    print(f"Wrote {len(ordered)} Gabriel score rows to {resolve_project_path(args.output_file)}")
+    print(f"Wrote {len(ordered)} GABRIEL score rows to {resolve_project_path(args.output_file)}")
     summarize_scores(ordered)
 
 
