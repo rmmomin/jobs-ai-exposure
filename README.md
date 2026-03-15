@@ -1,62 +1,58 @@
 # AI Exposure of the US Job Market
 
-Analyzing how susceptible every occupation in the US economy is to AI and automation, using data from the Bureau of Labor Statistics [Occupational Outlook Handbook](https://www.bls.gov/ooh/) (OOH).
+This repository started from code released by Andrej Karpathy on AI exposure at
+the occupation level, and it was later forked from Josh Kale's repository. This
+version removes the website, rebuilds the occupational exposures, and computes
+industry AI exposures from those occupation-level exposures.
 
-**Live demo: [joshkale.github.io/jobs](https://joshkale.github.io/jobs/)**
-
-![AI Exposure Treemap](jobs.png)
+There is no live website in this repo anymore. The repository is now focused on
+the data pipeline, the occupation-level scores, and the derived industry-level
+outputs.
 
 ## What's here
 
-The BLS OOH covers **342 occupations** spanning every sector of the US economy, with detailed data on job duties, work environment, education requirements, pay, and employment projections. We scraped all of it, scored each occupation's AI exposure using an LLM, and built an interactive treemap visualization.
+The BLS Occupational Outlook Handbook covers **342 occupations** across the US
+economy, with detailed descriptions of work, pay, training, and employment
+projections. This repo scrapes that material, rebuilds occupation-level AI
+exposure scores, and then aggregates those scores into industry-level AI
+exposure measures.
 
 ## Data pipeline
 
-1. **Scrape** (`scrape.py`) - Playwright (non-headless, BLS blocks bots) downloads raw HTML for all 342 occupation pages into `html/`.
-2. **Parse** (`parse_detail.py`, `process.py`) - BeautifulSoup converts raw HTML into clean Markdown files in `pages/`.
-3. **Tabulate** (`make_csv.py`) - Extracts structured fields (pay, education, job count, growth outlook, SOC code, and each occupation's BLS industry-matrix URL) into `occupations.csv`.
-4. **Score** (`score.py`) - Sends each occupation's Markdown description to OpenAI, saves the latest results into `scores.json`, and enriches each score entry with SOC metadata, industry rows, and NAICS industry codes.
-5. **Aggregate industries** (`build_industry_exposure.py`) - Converts occupation scores into NAICS-level industry exposure measures using employment-weighted averages across occupations.
-6. **Build site data** (`build_site_data.py`) - Merges CSV stats and the latest AI exposure scores into `site/data.json`, and compares `scores_org.json` vs `scores.json` for `site/changes.json`.
-7. **Website** (`site/index.html`) - Interactive treemap visualization where area = employment and color = AI exposure (green to red).
+1. **Scrape** (`scrape.py`) - Playwright downloads raw HTML for each BLS occupation page into `html/`.
+2. **Parse** (`parse_detail.py`, `process.py`) - BeautifulSoup converts the raw HTML into cleaner structured content in `pages/`.
+3. **Tabulate** (`make_csv.py`) - Structured occupation fields are extracted into `occupations.csv`, including each occupation's BLS industry-matrix URL.
+4. **Score occupations** (`score.py`) - OpenAI scores each occupation's AI exposure and saves the latest canonical results into `scores.json`.
+5. **Aggregate industries** (`build_industry_exposure.py`) - Industry AI exposure is computed from the occupational exposures using employment-weighted averages across NAICS industries.
 
 ## Key files
 
 | File | Description |
 |------|-------------|
-| `occupations.json` | Master list of 342 occupations with title, URL, category, slug |
-| `occupations.csv` | Summary stats plus the BLS employment-by-industry matrix URL |
-| `scores_org.json` | Archived original score baseline |
-| `scores.json` | Latest canonical AI exposure scores with rationales, industries, and NAICS industry codes |
-| `industry_exposure.json` | Employment-weighted AI exposure by NAICS code with top occupation contributors |
-| `industry_exposure.csv` | Flat industry exposure table for spreadsheets and analysis |
-| `html/` | Raw HTML pages from BLS (source of truth, ~40MB) |
-| `pages/` | Clean Markdown versions of each occupation page |
-| `site/` | Static website (treemap visualization) |
+| `occupations.json` | Master list of occupations with title, URL, category, and slug |
+| `occupations.csv` | Structured occupation summary data from the BLS pages |
+| `scores_org.json` | Archived original occupation-level score baseline |
+| `scores.json` | Current rebuilt occupation-level AI exposure scores |
+| `industry_exposure.json` | Employment-weighted AI exposure by NAICS code across all available NAICS levels |
+| `industry_exposure.csv` | Flat CSV export of the mixed-level industry exposure dataset |
+| `industry_exposure_4digit.json` | Employment-weighted AI exposure filtered to 4-digit NAICS codes |
+| `industry_exposure_4digit.csv` | Flat CSV export of the 4-digit industry exposure dataset |
+| `html/` | Raw BLS HTML pages (source of truth) |
+| `pages/` | Parsed occupation pages used for occupation-level scoring |
 
-## AI exposure scoring
+## Occupational AI exposure
 
-Each occupation is scored on a single **AI Exposure** axis from 0 to 10, measuring how much AI will reshape that occupation. The score considers both direct automation (AI doing the work) and indirect effects (AI making workers so productive that fewer are needed).
+Each occupation receives a single **AI Exposure** score from 0 to 10. The score
+is intended to capture how much AI is likely to reshape that occupation,
+combining direct automation effects with indirect productivity effects.
 
-A key signal is whether the job's work product is fundamentally digital - if the job can be done entirely from a home office on a computer, AI exposure is inherently high. Conversely, jobs requiring physical presence, manual skill, or real-time human interaction have a natural barrier.
+The current `scores.json` file is the canonical rebuilt occupation dataset.
+`scores_org.json` preserves the earlier baseline for comparison.
 
-**Calibration examples from the dataset:**
+## Industry AI exposure
 
-| Score | Meaning | Examples |
-|-------|---------|---------|
-| 0-1 | Minimal | Roofers, janitors, construction laborers |
-| 2-3 | Low | Electricians, plumbers, nurses aides, firefighters |
-| 4-5 | Moderate | Registered nurses, retail workers, physicians |
-| 6-7 | High | Teachers, managers, accountants, engineers |
-| 8-9 | Very high | Software developers, paralegals, data analysts, editors |
-| 10 | Maximum | Medical transcriptionists |
-
-Average exposure across all 342 occupations: **5.3/10**.
-
-## Industry exposure
-
-Industry exposure is derived from the occupation scores using each occupation's
-employment inside a NAICS industry as the weight:
+Industry AI exposure is derived from the occupation scores. For a given NAICS
+industry, the metric is:
 
 ```text
 industry exposure =
@@ -64,17 +60,13 @@ industry exposure =
   / sum(occupation jobs in industry)
 ```
 
-The resulting `industry_exposure.*` files are based on the occupations covered
-by this repository's BLS dataset, so `covered_employment_2024` refers to the
-covered occupations rather than a full census of every job in the industry.
+That means industry exposure is not independently scored by an LLM. It is
+computed from the occupation-level scores using occupation employment within
+each industry as the weight.
 
-## Visualization
-
-The main visualization is an interactive **treemap** where:
-- **Area** of each rectangle is proportional to employment (number of jobs)
-- **Color** indicates AI exposure on a green (safe) to red (exposed) scale
-- **Layout** groups occupations by BLS category
-- **Hover** shows detailed tooltip with pay, jobs, outlook, education, exposure score, and LLM rationale
+The industry outputs are based on the occupations covered by this repository's
+BLS-derived dataset, so `covered_employment_2024` reflects covered occupations
+rather than a full census of every job in the industry.
 
 ## Setup
 
@@ -92,24 +84,21 @@ OPENAI_API_KEY=your_key_here
 ## Usage
 
 ```bash
-# Scrape BLS pages (only needed once, results are cached in html/)
+# Scrape BLS pages (results are cached in html/)
 uv run python scrape.py
 
 # Generate Markdown from HTML
 uv run python process.py
 
-# Generate CSV summary
+# Generate CSV summary data
 uv run python make_csv.py
 
-# Score AI exposure and overwrite the latest canonical scores file
+# Rebuild occupation-level AI exposure scores
 uv run python score.py
 
-# Build industry exposure files from the occupation scores
+# Build mixed-level NAICS industry exposure outputs
 uv run python build_industry_exposure.py
 
-# Build website data and baseline-vs-latest comparison data
-uv run python build_site_data.py
-
-# Serve the site locally
-cd site && python -m http.server 8000
+# Build 4-digit NAICS industry exposure outputs
+uv run python build_industry_exposure.py --naics-level 4 --output-prefix industry_exposure_4digit
 ```
