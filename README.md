@@ -112,6 +112,67 @@ it in the industry comparison step. `scripts/compare_industry_exposure.py`
 automatically picks up any `custom_industry_exposure_*_4digit.csv` files from
 `data/exports/comparisons/tables/`.
 
+## Current benchmark results
+
+Using the current comparison exports in `data/exports/comparisons/`, the
+rebuilt `repo_current` occupation scores are closest to OpenAI GPTs-are-GPTs
+and the Yale reference bundle. At the industry level, the closest match is
+Felten base AIIE by Pearson correlation and Felten language-modeling AIIE by
+top-decile overlap.
+
+### Occupation-level comparison (`repo_current`)
+
+| External measure | Overlap | Pearson | Spearman |
+| --- | ---: | ---: | ---: |
+| OpenAI GPTs-are-GPTs | 341 | 0.885 | 0.893 |
+| Yale PCA standardized reference | 334 | 0.878 | 0.888 |
+| Felten base AIOE | 329 | 0.851 | 0.850 |
+| Eisfeldt GenAI exposure | 329 | 0.834 | 0.851 |
+| Felten language-modeling AIOE | 329 | 0.825 | 0.823 |
+| Felten image-generation AIOE | 329 | 0.761 | 0.783 |
+| Microsoft AI applicability | 341 | 0.661 | 0.680 |
+| Webb SOC4 exposure | 84 | 0.002 | 0.066 |
+
+`repo_current` and `repo_original` are also very close internally at the
+occupation level: overlap `342`, Pearson `0.955`, Spearman `0.956`.
+
+### Industry-level comparison (`repo_current`, 4-digit NAICS)
+
+| External measure | Overlap | Pearson | Spearman |
+| --- | ---: | ---: | ---: |
+| Felten base AIIE | 172 | 0.745 | 0.670 |
+| Felten image-generation AIIE | 172 | 0.742 | 0.680 |
+| Felten language-modeling AIIE | 172 | 0.699 | 0.619 |
+
+The internal industry variants are even closer to each other than the external
+benchmarks: `repo_current` vs `repo_original` has overlap `186`, Pearson
+`0.987`, and Spearman `0.982`.
+
+These summary numbers come from:
+
+- `data/exports/comparisons/tables/occupation_comparison_summary.csv`
+- `data/exports/comparisons/tables/internal_variant_comparisons.csv`
+- `data/exports/comparisons/tables/industry_comparison_summary.csv`
+
+One important caveat: Webb is compared at `SOC4` grain rather than the repo's
+occupation `slug` grain, and the industry comparisons normalize both sides to
+4-digit NAICS.
+
+## Bibliography
+
+The repo's external benchmark and crosswalk work draws on the following primary
+sources:
+
+- Andrej Karpathy, original occupation-exposure code release that this repo extends: [karpathy/AI-jobs](https://github.com/karpathy/AI-jobs)
+- BLS Occupational Outlook Handbook, the core occupation source used by this repo: [U.S. Bureau of Labor Statistics](https://www.bls.gov/ooh/)
+- BLS crosswalks used for comparison harmonization: [2010 to 2018 SOC crosswalk](https://www.bls.gov/soc/2018/soc_2010_to_2018_crosswalk.xlsx), [NEM O*NET to SOC crosswalk](https://www.bls.gov/emp/classifications-crosswalks/nem-onet-to-soc-crosswalk.xlsx), [NEM occupational coverage](https://www.bls.gov/emp/classifications-crosswalks/nem-occupational-coverage.xlsx)
+- Felten, Edward, Manav Raj, and Robert Seamans (2021), "Occupational, Industry, and Geographic Exposure to Artificial Intelligence: A Novel Dataset and Its Potential Uses," *Strategic Management Journal*: [paper](https://doi.org/10.1002/smj.3286), [data repository](https://github.com/AIOE-Data/AIOE)
+- Eloundou, Tyna, Sam Manning, Pamela Mishkin, and Daniel Rock (2023), "GPTs are GPTs: An early look at the labor market impact potential of large language models": [paper page](https://openai.com/index/gpts-are-gpts/), [paper](https://arxiv.org/abs/2303.10130), [data repository](https://github.com/openai/GPTs-are-GPTs)
+- Tomlinson, Kiran, Sonia Jaffe, Will Wang, Scott Counts, and Siddharth Suri (2025), "Working with AI: Measuring the Applicability of Generative AI to Occupations": [paper](https://arxiv.org/abs/2507.07935), [data repository](https://github.com/microsoft/working-with-ai)
+- Eisfeldt, Andrea L., Gregor Schubert, Bledi Taska, and Miao Ben Zhang (2026 forthcoming), "Generative AI and Firm Values": [NBER working paper](https://www.nber.org/papers/w31222), [data repository](https://artificialminushuman.com/)
+- Webb, Michael (2020), "The Impact of Artificial Intelligence on the Labor Market": [paper PDF](https://www.michaelwebb.co/webb_ai.pdf)
+- The Budget Lab at Yale (2026), "Labor Market AI Exposure: What Do We Know?": [analysis page](https://budgetlab.yale.edu/research/labor-market-ai-exposure-what-do-we-know)
+
 ## Setup
 
 ```bash
