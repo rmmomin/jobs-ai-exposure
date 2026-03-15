@@ -1,14 +1,13 @@
 """
 Score each occupation's AI exposure using the OpenAI Responses API.
 
-Reads Markdown descriptions from pages/, sends each to an OpenAI model with a
-scoring rubric, and collects structured scores. Results are cached
-incrementally to scores.json so the script can be resumed if interrupted.
+Reads Markdown descriptions from `data/pages/`, sends each to an OpenAI model
+with a scoring rubric, and caches results in `data/exports/scores.json`.
 
 Usage:
-    uv run python score.py
-    uv run python score.py --model gpt-5.4
-    uv run python score.py --start 0 --end 10
+    uv run python scripts/score.py
+    uv run python scripts/score.py --model gpt-5.4
+    uv run python scripts/score.py --start 0 --end 10
 """
 
 import argparse
@@ -22,10 +21,11 @@ import httpx
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 
-load_dotenv()
+from paths import OCCUPATIONS_CSV, OCCUPATIONS_JSON, PAGES_DIR, ROOT_DIR, SCORES_JSON, resolve_project_path
+
+load_dotenv(ROOT_DIR / ".env")
 
 DEFAULT_MODEL = "gpt-5.4"
-OUTPUT_FILE = "scores.json"
 API_URL = "https://api.openai.com/v1/responses"
 NUMERIC_CODE_RE = re.compile(r"^\d+$")
 OUTPUT_SCHEMA = {
@@ -131,10 +131,9 @@ def get_api_key():
     if api_key:
         return api_key.strip()
 
-    dotenv_path = ".env"
-    if os.path.exists(dotenv_path):
-        with open(dotenv_path, encoding="utf-8") as f:
-            raw = f.read().strip()
+    dotenv_path = ROOT_DIR / ".env"
+    if dotenv_path.exists():
+        raw = dotenv_path.read_text(encoding="utf-8").strip()
         if raw.startswith("sk-") and "=" not in raw:
             return raw
 
@@ -173,7 +172,7 @@ def parse_percent(value):
 
 def load_occupation_metadata():
     metadata = {}
-    with open("occupations.csv", encoding="utf-8") as f:
+    with OCCUPATIONS_CSV.open(encoding="utf-8") as f:
         reader = csv.DictReader(f)
         for row in reader:
             metadata[row["slug"]] = {
@@ -189,10 +188,7 @@ def parse_industry_matrix(html):
     soup = BeautifulSoup(html, "html.parser")
     table = None
     for candidate in soup.find_all("table"):
-        headers = {
-            clean(th.get_text(" ", strip=True))
-            for th in candidate.find_all("th")
-        }
+        headers = {clean(th.get_text(" ", strip=True)) for th in candidate.find_all("th")}
         if "Industry Title" in headers and "Industry Code" in headers:
             table = candidate
             break
@@ -224,7 +220,6 @@ def parse_industry_matrix(html):
             "title": title,
             "naics_code": code,
         }
-
         if len(cells) > 2 and cells[2]:
             industry["industry_type"] = cells[2]
 
@@ -279,11 +274,7 @@ def enrich_score_entry(entry, metadata, bls_client, industry_cache):
         entry["url"] = url
         changed = True
 
-    industries, naics_codes = fetch_industry_profile(
-        bls_client,
-        industry_matrix_url,
-        industry_cache,
-    )
+    industries, naics_codes = fetch_industry_profile(bls_client, industry_matrix_url, industry_cache)
     if entry.get("industries") != industries:
         entry["industries"] = industries
         changed = True
@@ -352,7 +343,8 @@ def ordered_scores(scores, occupations):
 
 
 def write_scores(path, scores, occupations):
-    with open(path, "w", encoding="utf-8") as f:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8") as f:
         json.dump(ordered_scores(scores, occupations), f, indent=2)
 
 
@@ -363,23 +355,21 @@ def main():
     parser.add_argument("--end", type=int, default=None)
     parser.add_argument("--delay", type=float, default=0.5)
     parser.add_argument("--reasoning-effort", default=None)
-    parser.add_argument("--output-file", default=OUTPUT_FILE)
-    parser.add_argument(
-        "--force",
-        action="store_true",
-        help="Re-score even if already cached",
-    )
+    parser.add_argument("--output-file", default=str(SCORES_JSON.relative_to(ROOT_DIR)))
+    parser.add_argument("--force", action="store_true", help="Re-score even if already cached")
     args = parser.parse_args()
 
-    with open("occupations.json", encoding="utf-8") as f:
+    output_path = resolve_project_path(args.output_file)
+
+    with OCCUPATIONS_JSON.open(encoding="utf-8") as f:
         occupations = json.load(f)
 
     subset = occupations[args.start:args.end]
     metadata_by_slug = load_occupation_metadata()
 
     scores = {}
-    if os.path.exists(args.output_file) and not args.force:
-        with open(args.output_file, encoding="utf-8") as f:
+    if output_path.exists() and not args.force:
+        with output_path.open(encoding="utf-8") as f:
             for entry in json.load(f):
                 scores[entry["slug"]] = entry
 
@@ -406,23 +396,16 @@ def main():
         if slug in scores:
             continue
 
-        md_path = f"pages/{slug}.md"
-        if not os.path.exists(md_path):
+        md_path = PAGES_DIR / f"{slug}.md"
+        if not md_path.exists():
             print(f"  [{index + 1}] SKIP {slug} (no markdown)")
             continue
 
-        with open(md_path, encoding="utf-8") as f:
-            text = f.read()
-
+        text = md_path.read_text(encoding="utf-8")
         print(f"  [{index + 1}/{len(subset)}] {occ['title']}...", end=" ", flush=True)
 
         try:
-            result = score_occupation(
-                openai_client,
-                text,
-                args.model,
-                args.reasoning_effort,
-            )
+            result = score_occupation(openai_client, text, args.model, args.reasoning_effort)
             entry = {
                 "slug": slug,
                 "title": occ["title"],
@@ -439,13 +422,13 @@ def main():
             print(f"ERROR: {exc}")
             errors.append(slug)
 
-        write_scores(args.output_file, scores, occupations)
+        write_scores(output_path, scores, occupations)
 
         if index < len(subset) - 1:
             time.sleep(args.delay)
 
     if dirty:
-        write_scores(args.output_file, scores, occupations)
+        write_scores(output_path, scores, occupations)
 
     openai_client.close()
     bls_client.close()

@@ -12,8 +12,8 @@ wheels/
 # Secrets
 .env
 
-# Parsed markdown (reproducible via process.py)
-pages/
+# Parsed markdown (reproducible via scripts/process.py)
+data/pages/
 
 # Embeddings (unused in final visualization)
 embed.py

@@ -1,19 +1,20 @@
 """
 Build a CSV summary of all occupations from the scraped HTML files.
 
-Reads from html/<slug>.html, writes to occupations.csv.
+Reads from `data/source/html/` and writes to `data/exports/occupations.csv`.
 
 Usage:
-    uv run python make_csv.py
+    uv run python scripts/make_csv.py
 """
 
 import csv
 import json
-import os
 import re
 from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
+
+from paths import HTML_DIR, OCCUPATIONS_CSV, OCCUPATIONS_JSON
 
 
 def clean(text):
@@ -83,7 +84,7 @@ def extract_industry_matrix_url(soup, occupation_title):
 
 def extract_occupation(html_path, occ_meta):
     """Extract one row of data from an HTML file."""
-    with open(html_path, encoding="utf-8", errors="replace") as f:
+    with html_path.open(encoding="utf-8", errors="replace") as f:
         soup = BeautifulSoup(f.read(), "html.parser")
 
     row = {
@@ -138,7 +139,7 @@ def extract_occupation(html_path, occ_meta):
         if tbody:
             tr = tbody.find("tr")
             if tr:
-                cells = [clean(c.get_text()) for c in tr.find_all(["td", "th"])]
+                cells = [clean(cell.get_text()) for cell in tr.find_all(["td", "th"])]
                 if len(cells) >= 4:
                     soc = cells[1]
                     if soc != "-":
@@ -154,7 +155,7 @@ def extract_occupation(html_path, occ_meta):
 
 
 def main():
-    with open("occupations.json", encoding="utf-8") as f:
+    with OCCUPATIONS_JSON.open(encoding="utf-8") as f:
         occupations = json.load(f)
 
     fieldnames = [
@@ -179,18 +180,18 @@ def main():
     rows = []
     missing = 0
     for occ in occupations:
-        html_path = f"html/{occ['slug']}.html"
-        if not os.path.exists(html_path):
+        html_path = HTML_DIR / f"{occ['slug']}.html"
+        if not html_path.exists():
             missing += 1
             continue
         rows.append(extract_occupation(html_path, occ))
 
-    with open("occupations.csv", "w", newline="", encoding="utf-8") as f:
+    with OCCUPATIONS_CSV.open("w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(rows)
 
-    print(f"Wrote {len(rows)} rows to occupations.csv (missing HTML: {missing})")
+    print(f"Wrote {len(rows)} rows to {OCCUPATIONS_CSV} (missing HTML: {missing})")
     print("\nSample rows:")
     for row in rows[:3]:
         print(

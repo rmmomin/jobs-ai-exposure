@@ -1,23 +1,11 @@
 """
 Aggregate occupation AI exposure scores into industry-level exposure measures.
 
-Each industry's score is an employment-weighted average of the occupation
-exposure scores observed in that NAICS code:
-
-    weighted_exposure =
-        sum(occupation_exposure * occupation_jobs_in_industry)
-        / sum(occupation_jobs_in_industry)
-
-The output reflects the occupations covered in this repository's BLS-derived
-dataset. It is not a full census of every occupation in the industry.
-
-Outputs:
-    industry_exposure.json
-    industry_exposure.csv
+Outputs are written into `data/exports/`.
 
 Usage:
-    uv run python build_industry_exposure.py
-    uv run python build_industry_exposure.py --naics-level 4
+    uv run python scripts/build_industry_exposure.py
+    uv run python scripts/build_industry_exposure.py --naics-level 4
 """
 
 from __future__ import annotations
@@ -27,15 +15,14 @@ import csv
 import json
 from collections import defaultdict
 
+from paths import INDUSTRY_EXPOSURE_JSON, ROOT_DIR, SCORES_JSON, resolve_project_path
 
-SCORES_FILE = "scores.json"
-OUTPUT_JSON = "industry_exposure.json"
-OUTPUT_CSV = "industry_exposure.csv"
+
 TOP_OCCUPATIONS_LIMIT = 10
 
 
-def load_scores(path: str):
-    with open(path, encoding="utf-8") as f:
+def load_scores(path):
+    with path.open(encoding="utf-8") as f:
         return json.load(f)
 
 
@@ -109,9 +96,9 @@ def aggregate_industries(scores, exact_naics_level=None):
 
     rows = []
     for code, record in industries.items():
-        employment = record.pop("weighted_exposure_numerator")
+        numerator = record.pop("weighted_exposure_numerator")
         total_jobs = record["covered_employment_2024"]
-        record["weighted_exposure"] = round(employment / total_jobs, 4)
+        record["weighted_exposure"] = round(numerator / total_jobs, 4)
         record["naics_level"] = naics_level(code)
         record["is_sector"] = record["naics_level"] == 2
         if not keep_row(record, exact_naics_level):
@@ -137,7 +124,7 @@ def aggregate_industries(scores, exact_naics_level=None):
     return sort_rows(rows)
 
 
-def write_csv(rows, path: str):
+def write_csv(rows, path):
     fieldnames = [
         "naics_code",
         "title",
@@ -149,15 +136,17 @@ def write_csv(rows, path: str):
         "weighted_exposure",
     ]
 
-    with open(path, "w", newline="", encoding="utf-8") as f:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         for row in rows:
             writer.writerow({key: row[key] for key in fieldnames})
 
 
-def write_json(rows, path: str):
-    with open(path, "w", encoding="utf-8") as f:
+def write_json(rows, path):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8") as f:
         json.dump(rows, f, indent=2)
 
 
@@ -177,11 +166,13 @@ def main():
     )
     args = parser.parse_args()
 
-    output_prefix = args.output_prefix or OUTPUT_JSON.removesuffix(".json")
-    output_json = f"{output_prefix}.json"
-    output_csv = f"{output_prefix}.csv"
+    default_prefix = str(INDUSTRY_EXPOSURE_JSON.relative_to(ROOT_DIR).with_suffix(""))
+    output_prefix = args.output_prefix or default_prefix
+    output_base = resolve_project_path(output_prefix)
+    output_json = output_base.with_suffix(".json")
+    output_csv = output_base.with_suffix(".csv")
 
-    scores = load_scores(SCORES_FILE)
+    scores = load_scores(SCORES_JSON)
     rows = aggregate_industries(scores, args.naics_level)
     write_json(rows, output_json)
     write_csv(rows, output_csv)
@@ -189,21 +180,11 @@ def main():
     print(f"Wrote {len(rows)} industry rows to {output_json}")
     print(f"Wrote {len(rows)} industry rows to {output_csv}")
 
-    label = (
-        f"NAICS level {args.naics_level} industries"
-        if args.naics_level is not None
-        else "sectors"
-    )
-    printable_rows = rows
-    if args.naics_level is None:
-        printable_rows = [row for row in rows if row["is_sector"]]
+    label = f"NAICS level {args.naics_level} industries" if args.naics_level is not None else "sectors"
+    printable_rows = rows if args.naics_level is not None else [row for row in rows if row["is_sector"]]
 
     print(f"\nTop {label} by weighted exposure:")
-    for row in sorted(
-        printable_rows,
-        key=lambda row: row["weighted_exposure"],
-        reverse=True,
-    )[:10]:
+    for row in sorted(printable_rows, key=lambda row: row["weighted_exposure"], reverse=True)[:10]:
         print(
             f"  {row['naics_code']} {row['title']}: "
             f"{row['weighted_exposure']:.2f} "
