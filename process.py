@@ -44,7 +44,7 @@ def main():
             continue
 
         md = parse_ooh_page(html_path)
-        with open(md_path, "w") as f:
+        with open(md_path, "w", encoding="utf-8") as f:
             f.write(md)
         processed += 1
 

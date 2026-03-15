@@ -15,7 +15,7 @@ The BLS OOH covers **342 occupations** spanning every sector of the US economy, 
 1. **Scrape** (`scrape.py`) — Playwright (non-headless, BLS blocks bots) downloads raw HTML for all 342 occupation pages into `html/`.
 2. **Parse** (`parse_detail.py`, `process.py`) — BeautifulSoup converts raw HTML into clean Markdown files in `pages/`.
 3. **Tabulate** (`make_csv.py`) — Extracts structured fields (pay, education, job count, growth outlook, SOC code) into `occupations.csv`.
-4. **Score** (`score.py`) — Sends each occupation's Markdown description to an LLM (Gemini Flash via OpenRouter) with a scoring rubric. Each occupation gets an AI Exposure score from 0-10 with a rationale. Results saved to `scores.json`.
+4. **Score** (`score.py`) — Sends each occupation's Markdown description to an OpenAI model via the Responses API with a scoring rubric. Each occupation gets an AI Exposure score from 0-10 with a rationale. Results saved to `scores.json`.
 5. **Build site data** (`build_site_data.py`) — Merges CSV stats and AI exposure scores into a compact `site/data.json` for the frontend.
 6. **Website** (`site/index.html`) — Interactive treemap visualization where area = employment and color = AI exposure (green to red).
 
@@ -64,9 +64,9 @@ uv sync
 uv run playwright install chromium
 ```
 
-Requires an OpenRouter API key in `.env`:
+Requires an OpenAI API key in `.env`:
 ```
-OPENROUTER_API_KEY=your_key_here
+OPENAI_API_KEY=your_key_here
 ```
 
 ## Usage
@@ -81,7 +81,7 @@ uv run python process.py
 # Generate CSV summary
 uv run python make_csv.py
 
-# Score AI exposure (uses OpenRouter API)
+# Score AI exposure (uses the OpenAI Responses API)
 uv run python score.py
 
 # Build website data

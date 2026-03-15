@@ -1,13 +1,13 @@
 """
-Score each occupation's AI exposure using an LLM via OpenRouter.
+Score each occupation's AI exposure using the OpenAI Responses API.
 
-Reads Markdown descriptions from pages/, sends each to an LLM with a scoring
-rubric, and collects structured scores. Results are cached incrementally to
-scores.json so the script can be resumed if interrupted.
+Reads Markdown descriptions from pages/, sends each to an OpenAI model with a
+scoring rubric, and collects structured scores. Results are cached
+incrementally to scores.json so the script can be resumed if interrupted.
 
 Usage:
     uv run python score.py
-    uv run python score.py --model google/gemini-3-flash-preview
+    uv run python score.py --model gpt-5-mini
     uv run python score.py --start 0 --end 10   # test on first 10
 """
 
@@ -20,9 +20,25 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-DEFAULT_MODEL = "google/gemini-3-flash-preview"
+DEFAULT_MODEL = "gpt-5-mini"
 OUTPUT_FILE = "scores.json"
-API_URL = "https://openrouter.ai/api/v1/chat/completions"
+API_URL = "https://api.openai.com/v1/responses"
+OUTPUT_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "exposure": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 10,
+        },
+        "rationale": {
+            "type": "string",
+            "minLength": 1,
+        },
+    },
+    "required": ["exposure", "rationale"],
+    "additionalProperties": False,
+}
 
 SYSTEM_PROMPT = """\
 You are an expert analyst evaluating how exposed different occupations are to \
@@ -85,35 +101,88 @@ Respond with ONLY a JSON object in this exact format, no other text:
 """
 
 
-def score_occupation(client, text, model):
-    """Send one occupation to the LLM and parse the structured response."""
+def extract_output_text(payload):
+    """Extract concatenated output_text content from a Responses API payload."""
+    texts = []
+
+    if isinstance(payload.get("output_text"), str):
+        texts.append(payload["output_text"])
+
+    for item in payload.get("output", []):
+        if item.get("type") != "message":
+            continue
+        for content in item.get("content", []):
+            if content.get("type") == "output_text" and content.get("text"):
+                texts.append(content["text"])
+
+    return "\n".join(texts).strip()
+
+
+def get_api_key():
+    """Load the OpenAI API key from env or a bare-key .env file."""
+    api_key = os.environ.get("OPENAI_API_KEY")
+    if api_key:
+        return api_key.strip()
+
+    dotenv_path = ".env"
+    if os.path.exists(dotenv_path):
+        with open(dotenv_path, encoding="utf-8") as f:
+            raw = f.read().strip()
+        if raw.startswith("sk-") and "=" not in raw:
+            return raw
+
+    raise RuntimeError("OPENAI_API_KEY is not set")
+
+
+def default_reasoning_effort(model):
+    """Pick a safe default reasoning effort for the requested model family."""
+    if model.startswith("gpt-5.4"):
+        return "low"
+    if model.startswith("gpt-5"):
+        return "minimal"
+    return None
+
+
+def score_occupation(client, text, model, reasoning_effort=None):
+    """Send one occupation to the model and parse the structured response."""
+    payload = {
+        "model": model,
+        "instructions": SYSTEM_PROMPT,
+        "input": text,
+        "text": {
+            "verbosity": "low",
+            "format": {
+                "type": "json_schema",
+                "name": "ai_exposure_score",
+                "strict": True,
+                "schema": OUTPUT_SCHEMA,
+            }
+        },
+        "max_output_tokens": 800,
+        "store": False,
+    }
+    effort = reasoning_effort or default_reasoning_effort(model)
+    if effort is not None:
+        payload["reasoning"] = {"effort": effort}
+
     response = client.post(
         API_URL,
         headers={
-            "Authorization": f"Bearer {os.environ['OPENROUTER_API_KEY']}",
+            "Authorization": f"Bearer {get_api_key()}",
+            "Content-Type": "application/json",
         },
-        json={
-            "model": model,
-            "messages": [
-                {"role": "system", "content": SYSTEM_PROMPT},
-                {"role": "user", "content": text},
-            ],
-            "temperature": 0.2,
-        },
+        json=payload,
         timeout=60,
     )
     response.raise_for_status()
-    content = response.json()["choices"][0]["message"]["content"]
+    content = extract_output_text(response.json())
+    if not content:
+        raise RuntimeError("OpenAI response did not include output text")
 
-    # Strip markdown code fences if present
-    content = content.strip()
-    if content.startswith("```"):
-        content = content.split("\n", 1)[1]  # remove first line
-        if content.endswith("```"):
-            content = content[:-3]
-        content = content.strip()
-
-    return json.loads(content)
+    result = json.loads(content)
+    result["exposure"] = int(result["exposure"])
+    result["rationale"] = result["rationale"].strip()
+    return result
 
 
 def main():
@@ -122,6 +191,8 @@ def main():
     parser.add_argument("--start", type=int, default=0)
     parser.add_argument("--end", type=int, default=None)
     parser.add_argument("--delay", type=float, default=0.5)
+    parser.add_argument("--reasoning-effort", default=None)
+    parser.add_argument("--output-file", default=OUTPUT_FILE)
     parser.add_argument("--force", action="store_true",
                         help="Re-score even if already cached")
     args = parser.parse_args()
@@ -133,8 +204,8 @@ def main():
 
     # Load existing scores
     scores = {}
-    if os.path.exists(OUTPUT_FILE) and not args.force:
-        with open(OUTPUT_FILE) as f:
+    if os.path.exists(args.output_file) and not args.force:
+        with open(args.output_file) as f:
             for entry in json.load(f):
                 scores[entry["slug"]] = entry
 
@@ -155,13 +226,13 @@ def main():
             print(f"  [{i+1}] SKIP {slug} (no markdown)")
             continue
 
-        with open(md_path) as f:
+        with open(md_path, encoding="utf-8") as f:
             text = f.read()
 
         print(f"  [{i+1}/{len(subset)}] {occ['title']}...", end=" ", flush=True)
 
         try:
-            result = score_occupation(client, text, args.model)
+            result = score_occupation(client, text, args.model, args.reasoning_effort)
             scores[slug] = {
                 "slug": slug,
                 "title": occ["title"],
@@ -173,7 +244,7 @@ def main():
             errors.append(slug)
 
         # Save after each one (incremental checkpoint)
-        with open(OUTPUT_FILE, "w") as f:
+        with open(args.output_file, "w") as f:
             json.dump(list(scores.values()), f, indent=2)
 
         if i < len(subset) - 1:

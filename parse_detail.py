@@ -10,7 +10,7 @@ def clean(text):
     return text
 
 def parse_ooh_page(html_path):
-    with open(html_path, "r") as f:
+    with open(html_path, "r", encoding="utf-8", errors="replace") as f:
         soup = BeautifulSoup(f.read(), "html.parser")
 
     md = []
