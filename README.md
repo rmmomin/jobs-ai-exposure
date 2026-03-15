@@ -78,19 +78,21 @@ rather than a full census of every job in the industry.
 
 ## Comparison scripts
 
-Use the comparison downloader first, then run the occupation-level harmonization/comparison script.
+The repository includes a comparison/benchmarking layer for aligning internal Karpathy-style scores with external occupation and industry AI exposure datasets.
+
+- `scripts/download_comparison_data.py` downloads comparison workbooks/CSVs into `data/source/comparison/`.
+- `scripts/compare_occupation_exposure.py` harmonizes occupation-level metrics, writes cleaned datasets to `data/exports/comparisons/cleaned/`, summary/disagreement tables to `data/exports/comparisons/tables/`, and scatter plots to `data/exports/comparisons/figures/`.
+- `scripts/compare_industry_exposure.py` compares 4-digit industry exposures and writes overlap tables/figures to `data/exports/comparisons/`.
+- `scripts/build_industry_exposure.py` now accepts `--scores-path` for alternate score files while preserving defaults.
+
+If present, `data/local/scores_gpt54.json` is treated as an optional additional internal variant.
 
 ```bash
 uv run python scripts/download_comparison_data.py
 uv run python scripts/compare_occupation_exposure.py
+uv run python scripts/build_industry_exposure.py --scores-path data/local/scores_gpt54.json --naics-level 4 --output-prefix data/exports/comparisons/tables/custom_industry_exposure_local_gpt54_4digit
+uv run python scripts/compare_industry_exposure.py
 ```
-
-Outputs are written under `data/exports/comparisons/`:
-- cleaned metric tables in `cleaned/`,
-- summaries/disagreement tables in `tables/`,
-- scatter plots in `figures/`.
-
-`data/local/scores_gpt54.json` is optional; if present, it is included as an additional internal variant.
 
 ## Setup
 
