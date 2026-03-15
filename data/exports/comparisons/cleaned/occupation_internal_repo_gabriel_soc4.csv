@@ -1,0 +1,89 @@
+variant,soc4,title,karpathy_score,num_jobs_2024,occupation_count,karpathy_zscore,karpathy_percentile,comparison_key,comparison_title,comparison_level
+repo_gabriel,11-10,Top executives,7.4,4022200.0,1,1.233819532719265,0.8522727272727273,11-10,Top executives,soc4
+repo_gabriel,11-20,Sales managers,7.232459404600812,1182400.0,3,1.159081360261757,0.8181818181818182,11-20,Sales managers,soc4
+repo_gabriel,11-30,Financial managers,7.373492142266336,3022500.0,6,1.2219946443209797,0.8409090909090909,11-30,Financial managers,soc4
+repo_gabriel,11-31,Human resources managers,7.460995850622407,289200.0,3,1.2610291674477798,0.8636363636363636,11-31,Human resources managers,soc4
+repo_gabriel,11-90,"Farmers, ranchers, and other agricultural managers",4.878529287821324,2847600.0,10,0.10901683947135504,0.5795454545454546,11-90,"Farmers, ranchers, and other agricultural managers",soc4
+repo_gabriel,11-91,Medical and health services managers,6.456997025419145,1479200.0,6,0.8131554018902993,0.7159090909090909,11-91,Medical and health services managers,soc4
+repo_gabriel,13-10,Project management specialists,7.617545506860102,3301700.0,7,1.3308643926251709,0.875,13-10,Project management specialists,soc4
+repo_gabriel,13-11,Management analysts,7.907120678226285,2866300.0,6,1.460040960521521,0.9204545454545454,13-11,Management analysts,soc4
+repo_gabriel,13-20,Accountants and auditors,7.860192421356801,3045400.0,10,1.439106737704149,0.9090909090909091,13-20,Accountants and auditors,soc4
+repo_gabriel,15-12,"Software developers, quality assurance analysts, and testers",8.642129516804395,4513700.0,10,1.7879210018008156,0.9886363636363636,15-12,"Software developers, quality assurance analysts, and testers",soc4
+repo_gabriel,15-20,Data scientists,8.919263256687001,426200.0,4,1.9115475723987658,1.0,15-20,Data scientists,soc4
+repo_gabriel,17-10,Architects,6.617636109818521,214900.0,4,0.8848148797896769,0.7613636363636364,17-10,Architects,soc4
+repo_gabriel,17-20,Civil engineers,6.603527693517583,890100.0,8,0.878521257350951,0.75,17-20,Civil engineers,soc4
+repo_gabriel,17-21,Industrial engineers,6.928577208361429,741500.0,8,1.0235225726426025,0.7954545454545454,17-21,Industrial engineers,soc4
+repo_gabriel,17-30,Drafters,6.156319444444445,576000.0,10,0.6790261608699325,0.6590909090909091,17-30,Drafters,soc4
+repo_gabriel,19-10,Medical scientists,6.73610444177671,333200.0,7,0.9376624096886149,0.7840909090909091,19-10,Medical scientists,soc4
+repo_gabriel,19-20,Chemists and materials scientists,6.424466403162056,253000.0,6,0.798643818887938,0.7045454545454546,19-20,Chemists and materials scientists,soc4
+repo_gabriel,19-30,Psychologists,6.568227424749164,299000.0,9,0.8627741629304949,0.7272727272727273,19-30,Psychologists,soc4
+repo_gabriel,19-40,Biological technicians,4.070688321732406,258600.0,7,-0.2513528804639121,0.5113636363636364,19-40,Biological technicians,soc4
+repo_gabriel,19-50,Occupational health and safety specialists and technicians,5.4,163700.0,1,0.3416396729135374,0.5909090909090909,19-50,Occupational health and safety specialists and technicians,soc4
+repo_gabriel,21-10,Social workers,4.372995395363607,2519200.0,9,-0.11649673917862954,0.5340909090909091,21-10,Social workers,soc4
+repo_gabriel,23-10,Lawyers,8.117786001959288,918700.0,3,1.5540166400185407,0.9431818181818182,23-10,Lawyers,soc4
+repo_gabriel,23-20,Paralegals and legal assistants,7.8,376200.0,1,1.4122555046804102,0.8920454545454546,23-20,Paralegals and legal assistants,soc4
+repo_gabriel,25-10,Postsecondary teachers,6.6,1415600.0,1,0.8769475887969737,0.7386363636363636,25-10,Postsecondary teachers,soc4
+repo_gabriel,25-11,Career and technical education teachers,3.8,239600.0,1,-0.37210421493104484,0.48295454545454547,25-11,Career and technical education teachers,soc4
+repo_gabriel,25-20,Kindergarten and elementary school teachers,4.2645187788071,4382600.0,5,-0.16488706545442147,0.5227272727272727,25-20,Kindergarten and elementary school teachers,soc4
+repo_gabriel,25-30,Tutors,6.268096723868955,256400.0,2,0.7288888796131451,0.6704545454545454,25-30,Tutors,soc4
+repo_gabriel,25-40,Library technicians and assistants,6.352692530399537,345400.0,3,0.7666262170184487,0.6818181818181818,25-40,Library technicians and assistants,soc4
+repo_gabriel,25-90,Teacher assistants,3.7041923402198864,1655400.0,2,-0.41484304716651305,0.45454545454545453,25-90,Teacher assistants,soc4
+repo_gabriel,27-10,Graphic designers,7.262498284145504,728500.0,9,1.1724814019322094,0.8295454545454546,27-10,Graphic designers,soc4
+repo_gabriel,27-20,Coaches and scouts,4.401369863013699,803000.0,8,-0.10383917489356917,0.5454545454545454,27-20,Coaches and scouts,soc4
+repo_gabriel,27-30,Public relations specialists,7.963690550105551,805300.0,8,1.4852762107027568,0.9318181818181818,27-30,Public relations specialists,soc4
+repo_gabriel,27-40,Photographers,5.8230646871686105,377200.0,3,0.5303645695569598,0.6363636363636364,27-40,Photographers,soc4
+repo_gabriel,29-10,Pharmacists,4.521191509323326,852700.0,7,-0.05038794509046188,0.5568181818181818,29-10,Pharmacists,soc4
+repo_gabriel,29-11,Registered nurses,2.83058238969569,4689300.0,11,-0.8045516487582961,0.3522727272727273,29-11,Registered nurses,soc4
+repo_gabriel,29-12,Physicians and surgeons,3.7030171600980575,1060600.0,2,-0.41536728318468297,0.4431818181818182,29-12,Physicians and surgeons,soc4
+repo_gabriel,29-20,Licensed practical and licensed vocational nurses,3.569798183296222,2829300.0,14,-0.4747949272079451,0.4318181818181818,29-20,Licensed practical and licensed vocational nurses,soc4
+repo_gabriel,29-90,Surgical assistants and technologists,3.268297101449275,220800.0,4,-0.6092915236746871,0.375,29-90,Surgical assistants and technologists,soc4
+repo_gabriel,31-11,Home health and personal care aides,1.774407420718454,5843100.0,2,-1.2757006666345108,0.056818181818181816,31-11,Home health and personal care aides,soc4
+repo_gabriel,31-20,Physical therapist assistants and aides,2.2514420803782507,211500.0,2,-1.0629003087456355,0.18181818181818182,31-20,Physical therapist assistants and aides,soc4
+repo_gabriel,31-90,Medical assistants,3.3259459784635745,1662300.0,6,-0.5835749401683995,0.3977272727272727,31-90,Medical assistants,soc4
+repo_gabriel,33-20,Firefighters,1.592248275862069,362500.0,2,-1.356960026794661,0.011363636363636364,33-20,Firefighters,soc4
+repo_gabriel,33-30,Police and detectives,2.3363171977621016,1233300.0,2,-1.0250383735813762,0.19318181818181818,33-30,Police and detectives,soc4
+repo_gabriel,33-90,Security guards and gambling surveillance officers,3.4927659574468084,1316000.0,2,-0.5091582274373715,0.4090909090909091,33-90,Security guards and gambling surveillance officers,soc4
+repo_gabriel,35-10,Chefs and head cooks,2.6,197300.0,1,-0.9074121308144812,0.3068181818181818,35-10,Chefs and head cooks,soc4
+repo_gabriel,35-20,Cooks,2.175654026646529,3707800.0,2,-1.0967085963222936,0.125,35-20,Cooks,soc4
+repo_gabriel,35-30,Food and beverage serving and related workers,2.344065541456203,8117000.0,3,-1.021581915486011,0.20454545454545456,35-30,Food and beverage serving and related workers,soc4
+repo_gabriel,37-20,Janitors and building cleaners,2.2,2550100.0,2,-1.0858481027756268,0.14772727272727273,37-20,Janitors and building cleaners,soc4
+repo_gabriel,37-30,Grounds maintenance workers,1.6,1296400.0,1,-1.3535020607173451,0.022727272727272728,37-30,Grounds maintenance workers,soc4
+repo_gabriel,39-20,Animal care and service workers,2.1,439400.0,1,-1.1304570957659132,0.10227272727272728,39-20,Animal care and service workers,soc4
+repo_gabriel,39-50,"Barbers, hairstylists, and cosmetologists",1.6203191822259309,958700.0,3,-1.3444378781424962,0.03409090909090909,39-50,"Barbers, hairstylists, and cosmetologists",soc4
+repo_gabriel,39-60,Concierges,5.8,45600.0,1,0.5200756448746827,0.6193181818181818,39-60,Concierges,soc4
+repo_gabriel,39-70,Tour and travel guides,3.8,55800.0,1,-0.37210421493104484,0.48295454545454547,39-70,Tour and travel guides,soc4
+repo_gabriel,39-90,Childcare workers,2.047827631111637,1689400.0,3,-1.1537306641461893,0.09090909090909091,39-90,Childcare workers,soc4
+repo_gabriel,41-20,Retail sales workers,5.6000977464023896,7366000.0,2,0.43090126257990025,0.6022727272727273,41-20,Retail sales workers,soc4
+repo_gabriel,41-30,Insurance sales agents,7.0202123413427,1252700.0,4,1.064400082690857,0.8068181818181818,41-30,Insurance sales agents,soc4
+repo_gabriel,41-40,Wholesale and manufacturing sales representatives,5.8,1613600.0,1,0.5200756448746827,0.6193181818181818,41-40,Wholesale and manufacturing sales representatives,soc4
+repo_gabriel,41-90,Real estate brokers and sales agents,6.38019137149572,595700.0,3,0.778893173115455,0.6931818181818182,41-90,Real estate brokers and sales agents,soc4
+repo_gabriel,43-30,"Bookkeeping, accounting, and auditing clerks",8.374649923208962,3320700.0,4,1.668601048643382,0.9659090909090909,43-30,"Bookkeeping, accounting, and auditing clerks",soc4
+repo_gabriel,43-40,Customer service representatives,8.213569122536502,4150600.0,2,1.596744525562707,0.9545454545454546,43-40,Customer service representatives,soc4
+repo_gabriel,43-41,Receptionists,6.7,1007200.0,1,0.9215565817872603,0.7727272727272727,43-41,Receptionists,soc4
+repo_gabriel,43-50,Material recording clerks,6.117943336831059,1906000.0,3,0.6619069657147327,0.6477272727272727,43-50,Material recording clerks,soc4
+repo_gabriel,43-60,Secretaries and administrative assistants,7.8,3453100.0,1,1.4122555046804102,0.8920454545454546,43-60,Secretaries and administrative assistants,soc4
+repo_gabriel,43-90,General office clerks,8.400754432289702,2651000.0,2,1.6802460072693581,0.9772727272727273,43-90,General office clerks,soc4
+repo_gabriel,45-20,Agricultural workers,2.8,812600.0,1,-0.8181941448339086,0.32954545454545453,45-20,Agricultural workers,soc4
+repo_gabriel,45-30,Fishing and hunting workers,1.7,21900.0,1,-1.3088930677270587,0.045454545454545456,45-30,Fishing and hunting workers,soc4
+repo_gabriel,45-40,Logging workers,2.4,55100.0,2,-0.9966301167950541,0.23295454545454544,45-40,Logging workers,soc4
+repo_gabriel,47-20,Construction laborers and helpers,1.9249619895742835,3683200.0,7,-1.2085397895670578,0.06818181818181818,47-20,Construction laborers and helpers,soc4
+repo_gabriel,47-21,Electricians,1.9672143171483056,2045100.0,7,-1.1896914517213295,0.07954545454545454,47-21,Electricians,soc4
+repo_gabriel,47-22,Sheet metal workers,2.126478149100257,155600.0,2,-1.118645460089822,0.11363636363636363,47-22,Sheet metal workers,soc4
+repo_gabriel,47-40,Construction and building inspectors,3.1665620797848497,223100.0,3,-0.654674492357637,0.36363636363636365,47-40,Construction and building inspectors,soc4
+repo_gabriel,47-50,Oil and gas workers,2.8,115900.0,1,-0.8181941448339086,0.32954545454545453,47-50,Oil and gas workers,soc4
+repo_gabriel,49-20,Telecommunications technicians,2.4880131362889983,548100.0,3,-0.9573683429973636,0.2727272727272727,49-20,Telecommunications technicians,soc4
+repo_gabriel,49-30,Automotive service technicians and mechanics,2.523670909201632,1642100.0,5,-0.9414617695782747,0.29545454545454547,49-30,Automotive service technicians and mechanics,soc4
+repo_gabriel,49-90,General maintenance and repair workers,2.395489258439797,2802200.0,6,-0.9986423131814549,0.2159090909090909,49-90,General maintenance and repair workers,soc4
+repo_gabriel,51-20,Assemblers and fabricators,2.8,1885400.0,1,-0.8181941448339086,0.32954545454545453,51-20,Assemblers and fabricators,soc4
+repo_gabriel,51-30,Food processing equipment workers,2.2138263189093066,674800.0,3,-1.0796803211425596,0.17045454545454544,51-30,Food processing equipment workers,soc4
+repo_gabriel,51-40,Metal and plastic machine workers,3.88120250829952,1355500.0,2,-0.3358805936957752,0.5,51-40,Metal and plastic machine workers,soc4
+repo_gabriel,51-41,"Welders, cutters, solderers, and brazers",2.2,457300.0,1,-1.0858481027756268,0.14772727272727273,51-41,"Welders, cutters, solderers, and brazers",soc4
+repo_gabriel,51-70,Woodworkers,2.4,214600.0,1,-0.9966301167950541,0.23295454545454544,51-70,Woodworkers,soc4
+repo_gabriel,51-80,Water and wastewater treatment plant and system operators,3.7643900141309463,212300.0,3,-0.3879894710312129,0.4659090909090909,51-80,Water and wastewater treatment plant and system operators,soc4
+repo_gabriel,51-90,Quality control inspectors,4.540791541648807,699900.0,3,-0.04164456804429399,0.5681818181818182,51-90,Quality control inspectors,soc4
+repo_gabriel,51-91,Painting and coating workers,2.493937924345296,206200.0,2,-0.9547253547086404,0.2840909090909091,51-91,Painting and coating workers,soc4
+repo_gabriel,53-20,Airline and commercial pilots,2.404511762810184,310300.0,3,-0.9946174648393207,0.25,53-20,Airline and commercial pilots,soc4
+repo_gabriel,53-30,Heavy and tractor-trailer truck drivers,3.545141164608016,4760400.0,4,-0.4857941749461803,0.42045454545454547,53-30,Heavy and tractor-trailer truck drivers,soc4
+repo_gabriel,53-40,Railroad workers,3.3,77900.0,1,-0.5951491798824767,0.38636363636363635,53-40,Railroad workers,soc4
+repo_gabriel,53-50,Water transportation workers,2.2,84300.0,1,-1.0858481027756268,0.14772727272727273,53-50,Water transportation workers,soc4
+repo_gabriel,53-70,Hand laborers and material movers,2.4221983447817133,7817700.0,2,-0.98672765872742,0.26136363636363635,53-70,Hand laborers and material movers,soc4

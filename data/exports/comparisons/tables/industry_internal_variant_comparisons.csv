@@ -1,0 +1,4 @@
+left,right,overlap_count,pearson_correlation,pearson_pvalue,spearman_correlation,spearman_pvalue,top_decile_intersection_count,top_decile_union_count,top_decile_overlap,bottom_decile_intersection_count,bottom_decile_union_count,bottom_decile_overlap,comparison_level
+repo_current,repo_gabriel,186,0.9748128793543758,7.528513581688033e-122,0.9635580379413395,2.5838594534708385e-107,18,20,0.9,14,22,0.6363636363636364,naics4
+repo_current,repo_original,186,0.987491725963029,1.4474315916761228e-149,0.9822965280270782,8.659720054913363e-136,17,21,0.8095238095238095,13,23,0.5652173913043478,naics4
+repo_gabriel,repo_original,186,0.976372935464979,2.2534518284967394e-124,0.9692347859330781,5.744419219069727e-114,17,21,0.8095238095238095,13,23,0.5652173913043478,naics4

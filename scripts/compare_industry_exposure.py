@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import re
+from itertools import combinations
 from pathlib import Path
 
 import pandas as pd
@@ -263,6 +264,79 @@ def compare_variant_to_metric(
     return summary
 
 
+def compare_internal_variants(
+    internal_variants: dict[str, pd.DataFrame],
+    tables_dir: Path,
+    figures_dir: Path,
+) -> pd.DataFrame:
+    """Compare every available internal industry variant directly."""
+    rows = []
+    for left_name, right_name in combinations(sorted(internal_variants), 2):
+        left = internal_variants[left_name]
+        right = internal_variants[right_name]
+        merged = left.merge(right, on="comparison_key", how="inner", suffixes=("_left", "_right"))
+        if merged.empty:
+            rows.append(
+                {
+                    "left": left_name,
+                    "right": right_name,
+                    "overlap_count": 0,
+                    "pearson_correlation": None,
+                    "pearson_pvalue": None,
+                    "spearman_correlation": None,
+                    "spearman_pvalue": None,
+                    "top_decile_intersection_count": 0,
+                    "top_decile_union_count": 0,
+                    "top_decile_overlap": None,
+                    "bottom_decile_intersection_count": 0,
+                    "bottom_decile_union_count": 0,
+                    "bottom_decile_overlap": None,
+                    "comparison_level": "naics4",
+                }
+            )
+            continue
+
+        merged["comparison_title"] = merged["comparison_title_left"].fillna(merged["comparison_title_right"])
+        stem = f"{metric_output_stem(left_name)}_{metric_output_stem(right_name)}"
+        write_table(merged, tables_dir / f"industry_overlap_{stem}.csv")
+
+        summary = build_overlap_summary(
+            merged,
+            left_label=left_name,
+            right_label=right_name,
+            left_z_column="karpathy_zscore_left",
+            right_z_column="karpathy_zscore_right",
+            left_percentile_column="karpathy_percentile_left",
+            right_percentile_column="karpathy_percentile_right",
+        )
+        summary["comparison_level"] = "naics4"
+        rows.append(summary)
+
+        disagreements = disagreement_table(
+            merged,
+            left_label=left_name,
+            right_label=right_name,
+            left_value_column="karpathy_score_left",
+            right_value_column="karpathy_score_right",
+            left_percentile_column="karpathy_percentile_left",
+            right_percentile_column="karpathy_percentile_right",
+        )
+        write_table(disagreements, tables_dir / f"industry_disagreements_{stem}.csv")
+        save_scatter_plot(
+            merged,
+            x_column="karpathy_zscore_left",
+            y_column="karpathy_zscore_right",
+            output_path=figures_dir / f"industry_scatter_{stem}.png",
+            title=f"{left_name} vs {right_name}",
+            x_label=f"{left_name} z-score",
+            y_label=f"{right_name} z-score",
+        )
+
+    result = pd.DataFrame(rows)
+    write_table(result, tables_dir / "industry_internal_variant_comparisons.csv")
+    return result
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--variant", nargs="*", default=None, help="Only compare selected internal industry variants.")
@@ -332,6 +406,7 @@ def main() -> None:
 
     summary = pd.DataFrame(summary_rows)
     write_table(summary, tables_dir / "industry_comparison_summary.csv")
+    compare_internal_variants(internal_variants, tables_dir, figures_dir)
 
     print(f"Wrote industry comparison outputs to {tables_dir.parent}")
     print("Loaded internal variants:")

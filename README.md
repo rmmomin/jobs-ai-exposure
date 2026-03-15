@@ -38,7 +38,8 @@ data/
 2. `scripts/process.py` converts raw HTML into markdown files in `data/pages/`.
 3. `scripts/make_csv.py` extracts structured occupation fields into `data/exports/occupations.csv`.
 4. `scripts/score.py` rebuilds occupation-level AI exposure scores into `data/exports/scores.json`.
-5. `scripts/build_industry_exposure.py` computes industry AI exposure from the occupational exposures.
+5. `scripts/score_gabriel.py` builds an alternate GABRIEL-based score variant into `data/exports/scores_gabriel.json`.
+6. `scripts/build_industry_exposure.py` computes industry AI exposure from the occupational exposures.
 
 ## Main data files
 
@@ -46,6 +47,7 @@ data/
 - `data/exports/occupations.csv`: structured occupation summary fields extracted from the BLS pages.
 - `data/exports/scores_org.json`: archived original occupation-level score baseline.
 - `data/exports/scores.json`: current rebuilt occupation-level AI exposure scores.
+- `data/exports/scores_gabriel.json`: GABRIEL-based alternate occupation-level score variant, rescaled to the repo's 0-10 exposure scale.
 - `data/exports/industry_exposure.json`: employment-weighted AI exposure by NAICS code across all available levels.
 - `data/exports/industry_exposure.csv`: flat CSV export of the mixed-level industry exposure dataset.
 - `data/exports/industry_exposure_4digit.json`: employment-weighted AI exposure filtered to 4-digit NAICS codes.
@@ -59,6 +61,9 @@ combining direct automation effects with indirect productivity effects.
 
 `data/exports/scores.json` is the canonical rebuilt occupation dataset.
 `data/exports/scores_org.json` preserves the earlier baseline for comparison.
+`data/exports/scores_gabriel.json` is an alternate GABRIEL-based variant that
+rates the same BLS occupation pages on a raw 0-100 scale and rescales the
+result to the repo's 0-10 exposure convention.
 
 ## Industry AI exposure
 
@@ -110,13 +115,19 @@ and save it under `data/exports/comparisons/tables/`. Then
 `scripts/compare_industry_exposure.py` will automatically pick up any
 `custom_industry_exposure_*_4digit.csv` files from that directory.
 
+The repo includes one alternate internal variant already:
+
+- `scripts/score_gabriel.py` creates `data/exports/scores_gabriel.json`
+- `scripts/build_industry_exposure.py --scores-path data/exports/scores_gabriel.json --naics-level 4 --output-prefix data/exports/comparisons/tables/custom_industry_exposure_repo_gabriel_4digit` builds the Gabriel 4-digit industry file
+
 ## Current benchmark results
 
 Using the current comparison exports in `data/exports/comparisons/`, the
 rebuilt `repo_current` occupation scores are closest to OpenAI GPTs-are-GPTs
-and the Yale reference bundle. At the industry level, the closest match is
-Felten base AIIE by Pearson correlation and Felten language-modeling AIIE by
-top-decile overlap.
+and the Yale reference bundle. The Gabriel variant is also close to the
+canonical scores, but it is a bit more conservative on average: mean occupation
+exposure falls from `5.26` to `5.01`, and the employment-weighted occupation
+mean falls from `5.05` to `4.72`.
 
 ### Occupation-level comparison (`repo_current`)
 
@@ -134,6 +145,24 @@ top-decile overlap.
 `repo_current` and `repo_original` are also very close internally at the
 occupation level: overlap `342`, Pearson `0.955`, Spearman `0.956`.
 
+### Gabriel occupation comparison
+
+`repo_current` vs `repo_gabriel` has overlap `342`, Pearson `0.950`, and
+Spearman `0.958`. `repo_gabriel` is also very close to `repo_original`
+(Pearson `0.955`, Spearman `0.959`).
+
+Among external occupation benchmarks, `repo_gabriel` matches:
+
+- Yale best by Pearson: overlap `334`, Pearson `0.884`, Spearman `0.889`
+- OpenAI GPTs-are-GPTs best by Spearman: overlap `341`, Pearson `0.873`, Spearman `0.891`
+- Eisfeldt remains strong: overlap `329`, Pearson `0.853`, Spearman `0.864`
+
+Substantively, Gabriel raises some digital and analytical occupations, such as
+medical scientists, air-traffic controllers, IT managers, and accountants, and
+lowers many teaching, care, and transport occupations, such as registered
+nurses, elementary-school teachers, veterinarians, pilots, and delivery
+drivers.
+
 ### Industry-level comparison (`repo_current`, 4-digit NAICS)
 
 | External measure | Overlap | Pearson | Spearman |
@@ -146,11 +175,30 @@ The internal industry variants are even closer to each other than the external
 benchmarks: `repo_current` vs `repo_original` has overlap `186`, Pearson
 `0.987`, and Spearman `0.982`.
 
+### Gabriel industry comparison (`repo_gabriel`, 4-digit NAICS)
+
+`repo_current` vs `repo_gabriel` has overlap `186`, Pearson `0.975`, and
+Spearman `0.964` at the 4-digit NAICS level. The Gabriel industry variant is
+also slightly more conservative on average: mean 4-digit industry exposure
+falls from `5.39` to `5.11`, and the employment-weighted 4-digit mean falls
+from `5.23` to `4.91`.
+
+Among external 4-digit industry benchmarks, `repo_gabriel` matches:
+
+- Felten image-generation AIIE best overall: overlap `172`, Pearson `0.725`, Spearman `0.637`
+- Felten base AIIE close behind: overlap `172`, Pearson `0.707`, Spearman `0.616`
+- Felten language-modeling AIIE somewhat lower: overlap `172`, Pearson `0.658`, Spearman `0.562`
+
+Gabriel raises some finance, software, accounting, and R&D industries slightly,
+while pulling down several transportation and healthcare-adjacent industries,
+including air transportation, daycare, couriers, and outpatient care.
+
 These summary numbers come from:
 
 - `data/exports/comparisons/tables/occupation_comparison_summary.csv`
 - `data/exports/comparisons/tables/internal_variant_comparisons.csv`
 - `data/exports/comparisons/tables/industry_comparison_summary.csv`
+- `data/exports/comparisons/tables/industry_internal_variant_comparisons.csv`
 
 One important caveat: Webb is compared at `SOC4` grain rather than the repo's
 occupation `slug` grain, and the industry comparisons normalize both sides to
@@ -166,6 +214,7 @@ sources:
 - BLS crosswalks used for comparison harmonization: [2010 to 2018 SOC crosswalk](https://www.bls.gov/soc/2018/soc_2010_to_2018_crosswalk.xlsx), [NEM O*NET to SOC crosswalk](https://www.bls.gov/emp/classifications-crosswalks/nem-onet-to-soc-crosswalk.xlsx), [NEM occupational coverage](https://www.bls.gov/emp/classifications-crosswalks/nem-occupational-coverage.xlsx)
 - Felten, Edward, Manav Raj, and Robert Seamans (2021), "Occupational, Industry, and Geographic Exposure to Artificial Intelligence: A Novel Dataset and Its Potential Uses," *Strategic Management Journal*: [paper](https://doi.org/10.1002/smj.3286), [data repository](https://github.com/AIOE-Data/AIOE)
 - Eloundou, Tyna, Sam Manning, Pamela Mishkin, and Daniel Rock (2023), "GPTs are GPTs: An early look at the labor market impact potential of large language models": [paper page](https://openai.com/index/gpts-are-gpts/), [paper](https://arxiv.org/abs/2303.10130), [data repository](https://github.com/openai/GPTs-are-GPTs)
+- Asirvatham, Hemanth, Elliott Mokski, and Andrei Shleifer (2026), "GPT as a Measurement Tool": [NBER working paper](https://www.nber.org/papers/w34834), [GABRIEL repository](https://github.com/openai/GABRIEL), [OpenAI blog post](https://openai.com/index/scaling-social-science-research/)
 - Tomlinson, Kiran, Sonia Jaffe, Will Wang, Scott Counts, and Siddharth Suri (2025), "Working with AI: Measuring the Applicability of Generative AI to Occupations": [paper](https://arxiv.org/abs/2507.07935), [data repository](https://github.com/microsoft/working-with-ai)
 - Eisfeldt, Andrea L., Gregor Schubert, Bledi Taska, and Miao Ben Zhang (2026 forthcoming), "Generative AI and Firm Values": [NBER working paper](https://www.nber.org/papers/w31222), [data repository](https://artificialminushuman.com/)
 - Webb, Michael (2020), "The Impact of Artificial Intelligence on the Labor Market": [paper PDF](https://www.michaelwebb.co/webb_ai.pdf)
@@ -201,6 +250,9 @@ uv run python scripts/make_csv.py
 # Rebuild occupation-level AI exposure scores
 uv run python scripts/score.py
 
+# Build the alternate GABRIEL occupation score variant
+uv run python scripts/score_gabriel.py
+
 # Build mixed-level NAICS industry exposure outputs
 uv run python scripts/build_industry_exposure.py
 
@@ -215,6 +267,9 @@ uv run python scripts/compare_occupation_exposure.py
 
 # Build a custom 4-digit industry exposure output for an alternate score file
 uv run python scripts/build_industry_exposure.py --scores-path data/exports/scores_org.json --naics-level 4 --output-prefix data/exports/comparisons/tables/custom_industry_exposure_repo_original_4digit
+
+# Build the Gabriel 4-digit industry exposure variant
+uv run python scripts/build_industry_exposure.py --scores-path data/exports/scores_gabriel.json --naics-level 4 --output-prefix data/exports/comparisons/tables/custom_industry_exposure_repo_gabriel_4digit
 
 # Compare industry exposure with external 4-digit AIIE benchmarks
 uv run python scripts/compare_industry_exposure.py

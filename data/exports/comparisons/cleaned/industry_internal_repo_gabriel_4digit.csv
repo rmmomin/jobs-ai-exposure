@@ -1,0 +1,187 @@
+comparison_key,raw_naics_examples,source_row_count,comparison_title,covered_employment_2024,occupation_count,karpathy_score,variant,comparison_level,source_file,karpathy_zscore,karpathy_percentile
+1133,113300,1,Logging,33400,11,3.332,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-1.214346031579889,0.11290322580645161
+2121,212100,1,Coal mining,18400,32,3.3033,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-1.233968470978225,0.10215053763440861
+2122,212200,1,Metal ore mining,24100,58,3.873,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.8444596303778038,0.21505376344086022
+2123,212300,1,Nonmetallic mineral mining and quarrying,47700,45,3.9763,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.7738325227175906,0.24193548387096775
+2211,221100,1,"Electric power generation, transmission and distribution",295300,120,5.3127,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.13987577038123866,0.5967741935483871
+2212,221200,1,Natural gas distribution,61300,83,5.9641,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.5852436109413831,0.7311827956989247
+2213,221300,1,"Water, sewage and other systems",42700,48,4.5133,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.4066809562748555,0.3548387096774194
+2361,236100,1,Residential building construction,712900,86,4.1478,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.6565764824104601,0.27419354838709675
+2362,236200,1,Nonresidential building construction,668800,97,4.5234,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.3997754985074971,0.3709677419354839
+2371,237100,1,Utility system construction,419800,89,3.3109,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-1.22877228493546,0.10752688172043011
+2372,237200,1,Land subdivision,27800,47,5.7302,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.4253241483883927,0.6989247311827957
+2373,237300,1,"Highway, street, and bridge construction",280500,65,3.2766,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-1.2522234929968863,0.0967741935483871
+2379,237900,1,Other heavy and civil engineering construction,101500,64,3.4477,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-1.1352409361656908,0.15591397849462366
+2381,238100,1,"Foundation, structure, and building exterior contractors",642800,78,3.1785,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-1.3192953154699445,0.0913978494623656
+2382,238200,1,Building equipment contractors,1885000,105,3.543,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-1.0700834980241773,0.17204301075268819
+2383,238300,1,Building finishing contractors,640700,69,3.0377,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-1.415561498999064,0.06989247311827956
+2389,238900,1,Other specialty trade contractors,566700,80,3.3381,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-1.2101754085718806,0.11827956989247312
+3111,311100,1,Animal food manufacturing,28500,50,5.3232,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.14705471162453201,0.6075268817204301
+3112,311200,1,Grain and oilseed milling,25000,58,5.0488,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.04055495286687674,0.5268817204301075
+3113,311300,1,Sugar and confectionery product manufacturing,22100,54,5.1986,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.06186460887078005,0.5752688172043011
+3114,311400,1,Fruit and vegetable preserving and specialty food manufacturing,54300,60,4.5525,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.3798795756332256,0.3870967741935484
+3115,311500,1,Dairy product manufacturing,52600,60,4.6551,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.3097310640558987,0.41935483870967744
+3116,311600,1,Animal slaughtering and processing,136100,72,3.9528,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.7898996769287719,0.23118279569892472
+3117,311700,1,Seafood product preparation and packaging,7800,35,4.8154,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.20013256107494792,0.46236559139784944
+3118,311800,1,Bakeries and tortilla manufacturing,186800,61,3.4063,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-1.1635464759249632,0.13978494623655913
+3119,311900,1,Other food manufacturing,92500,72,4.7147,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.2689820261415842,0.45161290322580644
+3121,312100,1,Beverage manufacturing,157000,76,3.8228,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.8787818066076463,0.1989247311827957
+3122,312200,1,Tobacco manufacturing,4500,24,5.1467,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.026380127868214143,0.553763440860215
+3211,321100,1,Sawmills and wood preservation,26200,40,4.2702,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.5728905387743507,0.3064516129032258
+3212,321200,1,"Veneer, plywood, and engineered wood product manufacturing",22400,44,4.9161,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.13128309600831228,0.4946236559139785
+3219,321900,1,Other wood product manufacturing,75500,66,4.5136,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.4064758436679041,0.3602150537634409
+3221,322100,1,"Pulp, paper, and paperboard mills",28800,55,4.8861,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.1517943567034373,0.4838709677419355
+3222,322200,1,Converted paper product manufacturing,75100,61,5.5726,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.31757165887000377,0.6612903225806451
+3254,325400,1,Pharmaceutical and medicine manufacturing,183600,100,6.2659,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.7915868935343393,0.7741935483870968
+3261,326100,1,Plastics product manufacturing,208300,82,5.3622,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.17371935052819415,0.6236559139784946
+3262,326200,1,Rubber product manufacturing,40000,59,5.3803,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.18609447781425312,0.6344086021505376
+3311,331100,1,Iron and steel mills and ferroalloy manufacturing,30500,53,4.5213,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.4012112867561555,0.3655913978494624
+3312,331200,1,Steel product manufacturing from purchased steel,23400,47,4.859,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.17032286219803336,0.478494623655914
+3313,331300,1,Alumina and aluminum production and processing,22300,51,4.7691,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.2317882734144243,0.45698924731182794
+3314,331400,1,Nonferrous metal (except aluminum) production and processing,28200,53,5.1745,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.04538722944569655,0.5645161290322581
+3315,331500,1,Foundries,33500,55,4.9564,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.10372963580786106,0.5053763440860215
+3327,332700,1,"Machine shops; turned product; and screw, nut, and bolt manufacturing",172800,61,4.3084,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.5467728668225585,0.3172043010752688
+3328,332800,1,"Coating, engraving, heat treating, and allied activities",50100,54,4.4435,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.4544038228255126,0.34946236559139787
+3333,333300,1,Commercial and service industry machinery manufacturing,45900,69,6.3139,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.8244049106465391,0.7903225806451613
+3335,333500,1,Metalworking machinery manufacturing,74900,55,5.063,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.030846289471184462,0.532258064516129
+3336,333600,1,"Engine, turbine, and power transmission equipment manufacturing",48300,60,5.5996,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.3360317934956156,0.6774193548387096
+3341,334100,1,Computer and peripheral equipment manufacturing,74400,68,7.4505,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,1.6015082075158362,0.9193548387096774
+3342,334200,1,Communications equipment manufacturing,50000,67,7.1904,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,1.423675577289104,0.8817204301075269
+3343,334300,1,Audio and video equipment manufacturing,8800,33,7.1955,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,1.427162491607275,0.8870967741935484
+3344,334400,1,Semiconductor and other electronic component manufacturing,242700,84,6.3092,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.8211914798043025,0.7849462365591398
+3345,334500,1,"Navigational, measuring, electromedical, and control instruments manufacturing",250900,98,6.862,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,1.1991456435464702,0.8387096774193549
+3346,334600,1,Manufacturing and reproducing magnetic and optical media,4900,27,7.6469,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,1.7357885941999203,0.946236559139785
+3351,335100,1,Electric lighting equipment manufacturing,15000,45,6.4293,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.9033048934537856,0.7956989247311828
+3352,335200,1,Household appliance manufacturing,17100,43,5.6696,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.3838914017842405,0.6881720430107527
+3353,335300,1,Electrical equipment manufacturing,64800,62,5.9648,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.5857222070242695,0.7365591397849462
+3359,335900,1,Other electrical equipment and component manufacturing,67000,65,5.7742,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.45540733074124284,0.7043010752688172
+3361,336100,1,Motor vehicle manufacturing,89500,80,5.3764,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.18342801392388702,0.6290322580645161
+3362,336200,1,Motor vehicle body and trailer manufacturing,70400,64,3.9707,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.7776612913806807,0.23655913978494625
+3363,336300,1,Motor vehicle parts manufacturing,187500,87,5.2169,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.07437647789480621,0.5806451612903226
+3364,336400,1,Aerospace product and parts manufacturing,346100,105,5.9504,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.5758768018906094,0.7258064516129032
+3365,336500,1,Railroad rolling stock manufacturing,12200,35,4.709,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.27287916567365794,0.44086021505376344
+3366,336600,1,Ship and boat building,78700,73,4.1859,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.6305271813276515,0.2849462365591398
+3369,336900,1,Other transportation equipment manufacturing,16900,47,5.1763,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.04661790508740421,0.5698924731182796
+3379,337900,1,Other furniture related product manufacturing,5600,23,6.2232,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.7623925324782782,0.7688172043010753
+3391,339100,1,Medical equipment and supplies manufacturing,180000,92,5.8823,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.5293162401126758,0.7204301075268817
+3399,339900,1,Other miscellaneous manufacturing,113300,87,6.2803,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.8014322986679994,0.7795698924731183
+4231,423100,1,Motor vehicle and motor vehicle parts and supplies merchant wholesalers,192600,82,5.3178,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.14336268469940966,0.6021505376344086
+4234,423400,1,Professional and commercial equipment and supplies merchant wholesalers,494700,114,6.9545,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,1.2623886973564389,0.8548387096774194
+4238,423800,1,"Machinery, equipment, and supplies merchant wholesalers",497900,97,5.347,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.16332697844266475,0.6129032258064516
+4243,424300,1,"Apparel, piece goods, and notions merchant wholesalers",63600,50,7.1281,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,1.3810805259122276,0.8763440860215054
+4245,424500,1,Farm product raw material merchant wholesalers,32300,47,5.4282,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.21884412405746934,0.6397849462365591
+4411,441100,1,Automobile dealers,723100,70,4.6249,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.3303790664889909,0.40860215053763443
+4412,441200,1,Other motor vehicle dealers,79400,46,4.7139,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.26952899309345413,0.44623655913978494
+4413,441300,1,"Automotive parts, accessories, and tire retailers",242000,48,4.6446,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.31691000529919267,0.41397849462365593
+4441,444100,1,Building material and supplies dealers,332500,66,6.4783,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.9368066192558231,0.8010752688172043
+4442,444200,1,Lawn and garden equipment and supplies retailers,55400,42,5.1421,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.023235067894961707,0.5483870967741935
+4453,445300,1,"Beer, wine, and liquor retailers",89900,24,6.5607,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.9931442152984327,0.8118279569892473
+4491,449100,1,Furniture and home furnishings retailers,119700,60,6.5034,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.9539677073707443,0.8064516129032258
+4492,449200,1,Electronics and appliance retailers,50000,45,7.3754,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,1.5501616849090405,0.9032258064516129
+4561,456100,1,Health and personal care retailers,690800,80,5.6692,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.38361791830830555,0.6827956989247311
+4571,457100,1,Gasoline stations,731900,28,6.1585,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.7181565802457922,0.7634408602150538
+4572,457200,1,Fuel dealers,48700,32,4.8238,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.194389408080313,0.46774193548387094
+4581,458100,1,Clothing and clothing accessories retailers,124200,48,6.9752,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,1.2765414672360749,0.8602150537634409
+4582,458200,1,Shoe retailers,11800,19,7.0356,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,1.3178374721022592,0.8655913978494624
+4583,458300,1,"Jewelry, luggage, and leather goods retailers",30000,31,6.0807,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.6649640441764351,0.7580645161290323
+4592,459200,1,Book retailers and news dealers,12500,20,5.252,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.09837465290810224,0.5913978494623656
+4593,459300,1,Florists,35000,22,3.1414,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-1.3446609078629157,0.08602150537634409
+4599,459900,1,Other miscellaneous retailers,175700,88,5.6703,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.38436999786712683,0.6935483870967742
+4811,481100,1,Scheduled air transportation,261400,52,2.878,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-1.524749776766112,0.053763440860215055
+4812,481200,1,Nonscheduled air transportation,36000,35,3.9392,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.7991981151105617,0.22580645161290322
+4831,483100,1,"Deep sea, coastal, and great lakes water transportation",29700,46,5.4391,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.2262965487766977,0.6451612903225806
+4832,483200,1,Inland water transportation,22600,22,2.8345,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-1.5544911047740433,0.04838709677419355
+4851,485100,1,Urban transit systems,12800,29,4.3484,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.5194245192290587,0.3279569892473118
+4852,485200,1,Interurban and rural bus transportation,3200,12,4.3344,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.5289964408867838,0.3225806451612903
+4853,485300,1,Taxi and limousine service,41500,31,5.5643,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.3118968767443524,0.6559139784946236
+4854,485400,1,School and employee bus transportation,158600,23,2.9455,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-1.478599440202081,0.05913978494623656
+4855,485500,1,Charter bus industry,8200,17,4.1402,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.6617726684532251,0.26881720430107525
+4859,485900,1,Other transit and ground passenger transportation,81100,31,4.2592,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.5804113343625633,0.2956989247311828
+4861,486100,1,Pipeline transportation of crude oil,5700,31,5.5772,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.3207167188432562,0.6666666666666666
+4862,486200,1,Pipeline transportation of natural gas,14000,42,4.7043,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.27609259651589396,0.43548387096774194
+4869,486900,1,Other pipeline transportation,2700,15,4.4074,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.47908570652864635,0.34408602150537637
+4871,487100,1,"Scenic and sightseeing transportation, land",5400,20,4.5796,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.36135107013862955,0.4032258064516129
+4872,487200,1,"Scenic and sightseeing transportation, water",11800,20,3.3814,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-1.1805708223019167,0.12903225806451613
+4879,487900,1,"Scenic and sightseeing transportation, other",1200,6,4.2167,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.6094689536806566,0.2903225806451613
+4881,488100,1,Support activities for air transportation,86800,79,4.8908,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.14858092586120128,0.489247311827957
+4882,488200,1,Support activities for rail transportation,18600,38,3.9914,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.7635085215010444,0.25268817204301075
+4883,488300,1,Support activities for water transportation,45800,39,3.4797,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-1.113362258090891,0.16666666666666666
+4884,488400,1,Support activities for road transportation,75600,37,4.3849,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.49446915204999,0.3333333333333333
+4885,488500,1,Freight transportation arrangement,102600,54,7.2713,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,1.4789876102969572,0.8924731182795699
+4889,488900,1,Other support activities for transportation,14400,33,6.0521,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.6454099756470828,0.7526881720430108
+4921,492100,1,Couriers and express delivery services,173600,49,4.5586,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.37570895262521686,0.3924731182795699
+4922,492200,1,Local messengers and local delivery,24000,32,5.2296,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.0830595782557422,0.5860215053763441
+5121,512100,1,Motion picture and video industries,228900,95,6.0177,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.6218903967166725,0.7419354838709677
+5122,512200,1,Sound recording industries,15500,34,6.789,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,1.149234909188333,0.8279569892473119
+5131,513100,1,"Newspaper, Periodical, Book, and Directory Publishers",196800,76,7.9783,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,1.9623696540120665,0.9838709677419355
+5132,513200,1,Software publishers,476500,75,8.2938,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,2.1780797456557957,0.9946236559139785
+5161,516100,1,Radio and Television Broadcasting Stations,102000,58,6.9426,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,1.254252563947372,0.8494623655913979
+5222,522200,1,Nondepository credit intermediation,330400,76,7.9576,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,1.9482168841324305,0.9731182795698925
+5241,524100,1,Insurance carriers,1248600,116,7.5363,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,1.6601704131038932,0.9301075268817204
+5242,524200,1,"Agencies, brokerages, and other insurance related activities",1094700,90,7.3304,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,1.5193947938663532,0.8978494623655914
+5251,525100,1,Insurance and employee benefit funds,9100,34,7.8593,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,1.8810083199214047,0.9623655913978495
+5259,525900,1,Other investment pools and funds,13300,30,7.4421,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,1.5957650545212014,0.9139784946236559
+5321,532100,1,Automotive equipment rental and leasing,93500,45,4.0966,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.6915823673301402,0.25806451612903225
+5411,541100,1,Legal services,1063000,64,7.9679,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,1.9552590836377566,0.978494623655914
+5412,541200,1,"Accounting, tax preparation, bookkeeping, and payroll services",887100,95,7.8891,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,1.9013828388785619,0.967741935483871
+5413,541300,1,"Architectural, engineering, and related services",1450000,172,6.6843,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,1.0776506093623475,0.8225806451612904
+5414,541400,1,Specialized design services,105800,70,7.4178,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,1.5791509333581502,0.9086021505376344
+5415,541500,1,Computer systems design and related services,1882900,117,8.2904,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,2.175755136110349,0.989247311827957
+5416,541600,1,"Management, scientific, and technical consulting services",1279200,173,7.6266,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,1.721909307796219,0.9354838709677419
+5417,541700,1,Scientific research and development services,724400,190,7.0962,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,1.3592702187064114,0.8709677419354839
+5418,541800,1,"Advertising, public relations, and related services",329700,80,7.8121,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,1.8487372697610747,0.956989247311828
+5419,541900,1,"Other professional, scientific, and technical services",720300,130,4.956,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.10400311928379602,0.5
+5611,561100,1,Office administrative services,414300,104,7.6272,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,1.722319533010122,0.9408602150537635
+5612,561200,1,Facilities support services,128500,107,3.4044,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-1.1648455224356544,0.13440860215053763
+5613,561300,1,Employment services,1549300,241,5.3586,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.17125799924477944,0.6182795698924731
+5614,561400,1,Business support services,437600,75,8.3324,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,2.2044709010835235,1.0
+5615,561500,1,Travel arrangement and reservation services,118400,64,7.5122,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,1.6436930336788098,0.9247311827956989
+5616,561600,1,Investigation and security services,821400,62,3.7776,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.909685439388301,0.1827956989247312
+5617,561700,1,Services to buildings and dwellings,1827500,55,2.5209,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-1.7689021499070816,0.016129032258064516
+5619,561900,1,Other support services,122700,90,5.5798,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.3224943614368332,0.6720430107526881
+5621,562100,1,Waste collection,95300,49,4.5759,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.36388079229102843,0.3978494623655914
+5622,562200,1,Waste treatment and disposal,56600,62,4.2604,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.5795908839347583,0.3010752688172043
+5629,562900,1,Remediation and other waste management services,110400,70,3.9858,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.7673372901641347,0.24731182795698925
+6211,621100,1,Offices of physicians,2513300,132,5.1639,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.03813991733341898,0.5591397849462365
+6212,621200,1,Offices of dentists,978300,33,3.8139,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.8848668139472,0.1881720430107527
+6213,621300,1,Offices of other health practitioners,1086900,103,4.3969,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.48626464777194034,0.3387096774193548
+6214,621400,1,Outpatient care centers,929500,138,4.691,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.28518592209073274,0.43010752688172044
+6215,621500,1,Medical and diagnostic laboratories,245400,85,5.0961,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.00821553183756327,0.5376344086021505
+6216,621600,1,Home healthcare services,1670600,85,2.5782,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-1.7297256419793934,0.021505376344086023
+6219,621900,1,Other ambulatory healthcare services,297500,106,3.8439,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.864355553252075,0.20430107526881722
+6231,623100,1,Nursing care facilities (skilled nursing facilities),1256300,92,2.7047,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-1.64323649271495,0.03225806451612903
+6232,623200,1,"Residential intellectual and developmental disability, mental health, and substance abuse facilities",598800,90,3.0488,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-1.4079723325418678,0.07526881720430108
+6233,623300,1,Continuing care retirement communities and assisted living facilities for the elderly,772700,84,2.7186,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-1.633732941926209,0.043010752688172046
+6239,623900,1,Other residential care facilities,137900,72,3.4635,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-1.1244383388662584,0.16129032258064516
+6241,624100,1,Individual and family services,3056100,129,2.716,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-1.6355105845197861,0.03763440860215054
+6242,624200,1,"Community food and housing, and emergency and other relief services",163500,98,5.024,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.05751092837484658,0.510752688172043
+6243,624300,1,Vocational rehabilitation services,201100,90,4.1363,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.6644391323435912,0.26344086021505375
+6244,624400,1,Child daycare services,1026000,69,2.5809,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-1.7278796285168319,0.026881720430107527
+7111,711100,1,Performing arts companies,93400,68,5.1333,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.0172184314243918,0.543010752688172
+7112,711200,1,Spectator sports,109100,93,4.2969,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.5546355167556897,0.3118279569892473
+7113,711300,1,"Promoters of performing arts, sports, and similar events",101400,83,5.0294,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.05381890144972421,0.5161290322580645
+7114,711400,1,"Agents and managers for artists, athletes, entertainers, and other public figures",10300,19,7.7029,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,1.77407628083082,0.9516129032258065
+7115,711500,1,"Independent artists, writers, and performers",24100,33,6.8079,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,1.1621570034262618,0.8333333333333334
+7131,713100,1,Amusement parks and arcades,90900,67,4.1513,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.6541835019960289,0.27956989247311825
+7132,713200,1,Gambling industries (except casino hotels),51800,53,4.5328,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.39334863682302446,0.3763440860215054
+7139,713900,1,Other amusement and recreation industries,934700,119,3.4226,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-1.152402024280612,0.14516129032258066
+7211,721100,1,Traveler accommodation,696300,105,3.3623,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-1.193629658277813,0.12365591397849462
+7212,721200,1,RV (recreational vehicle) parks and recreational camps,44000,39,3.8802,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.8395369278109741,0.22043010752688172
+7213,721300,1,"Rooming and boarding houses, dormitories, and workers' camps",3700,12,3.073,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-1.3914265822478005,0.08064516129032258
+7223,722300,1,Special food services,553500,62,3.0221,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-1.4262273545605288,0.06451612903225806
+7224,722400,1,Drinking places (alcoholic beverages),322000,27,2.2517,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-1.9529565292113356,0.005376344086021506
+8111,811100,1,Automotive repair and maintenance,744300,58,3.5863,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-1.040478911754214,0.1774193548387097
+8112,811200,1,Electronic and precision equipment repair and maintenance,47500,60,6.0314,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.6312572057674462,0.7473118279569892
+8113,811300,1,Commercial and industrial machinery and equipment (except automotive and electronic) repair and maintenance,165000,75,3.8593,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.8538264394285775,0.20967741935483872
+8114,811400,1,Personal and household goods repair and maintenance,35200,43,4.5384,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.3895198681599343,0.3817204301075269
+8121,812100,1,Personal care services,648200,33,2.4347,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-1.8278378389710739,0.010752688172043012
+8122,812200,1,Death care services,57700,27,4.8307,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.18967181812043435,0.4731182795698925
+8123,812300,1,Drycleaning and laundry services,60100,33,5.0439,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.043905125447080556,0.521505376344086
+8129,812900,1,Other personal services,256500,58,3.4423,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-1.1389329630908134,0.15053763440860216
+8132,813200,1,Grantmaking and giving services,144100,96,6.9141,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,1.234766866287004,0.8440860215053764
+8133,813300,1,Social advocacy organizations,201400,117,5.7854,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.4630648680674226,0.7096774193548387
+8134,813400,1,Civic and social organizations,264400,90,3.8224,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.8790552900835812,0.1935483870967742
+8139,813900,1,"Business, professional, labor, political, and similar organizations",344500,136,6.6606,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,1.0614467134131984,0.8172043010752689
+9991,999100,1,"Federal government, excluding postal service",1313400,193,5.8666,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.5185820136822272,0.7150537634408602
+9992,999200,1,"State government, excluding education and hospitals",1673600,245,5.548,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,0.3007524251000011,0.6505376344086021
+9993,999300,1,"Local government, excluding education and hospitals",3639500,276,4.6647,repo_gabriel,naics4,custom_industry_exposure_repo_gabriel_4digit.csv,-0.30316746063345884,0.42473118279569894

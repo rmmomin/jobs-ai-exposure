@@ -1,0 +1,187 @@
+naics_code,title,industry_type,naics_level,is_sector,covered_employment_2024,occupation_count,weighted_exposure
+561400,Business support services,Line Item,4,False,437600,75,8.3324
+513200,Software publishers,Line Item,4,False,476500,75,8.2938
+541500,Computer systems design and related services,Line Item,4,False,1882900,117,8.2904
+513100,"Newspaper, Periodical, Book, and Directory Publishers",Summary,4,False,196800,76,7.9783
+541100,Legal services,Line Item,4,False,1063000,64,7.9679
+522200,Nondepository credit intermediation,Summary,4,False,330400,76,7.9576
+541200,"Accounting, tax preparation, bookkeeping, and payroll services",Line Item,4,False,887100,95,7.8891
+525100,Insurance and employee benefit funds,Line Item,4,False,9100,34,7.8593
+541800,"Advertising, public relations, and related services",Line Item,4,False,329700,80,7.8121
+711400,"Agents and managers for artists, athletes, entertainers, and other public figures",Line Item,4,False,10300,19,7.7029
+334600,Manufacturing and reproducing magnetic and optical media,Line Item,4,False,4900,27,7.6469
+561100,Office administrative services,Line Item,4,False,414300,104,7.6272
+541600,"Management, scientific, and technical consulting services",Line Item,4,False,1279200,173,7.6266
+524100,Insurance carriers,Summary,4,False,1248600,116,7.5363
+561500,Travel arrangement and reservation services,Line Item,4,False,118400,64,7.5122
+334100,Computer and peripheral equipment manufacturing,Line Item,4,False,74400,68,7.4505
+525900,Other investment pools and funds,Line Item,4,False,13300,30,7.4421
+541400,Specialized design services,Line Item,4,False,105800,70,7.4178
+449200,Electronics and appliance retailers,Line Item,4,False,50000,45,7.3754
+524200,"Agencies, brokerages, and other insurance related activities",Summary,4,False,1094700,90,7.3304
+488500,Freight transportation arrangement,Line Item,4,False,102600,54,7.2713
+334300,Audio and video equipment manufacturing,Line Item,4,False,8800,33,7.1955
+334200,Communications equipment manufacturing,Line Item,4,False,50000,67,7.1904
+424300,"Apparel, piece goods, and notions merchant wholesalers",Line Item,4,False,63600,50,7.1281
+541700,Scientific research and development services,Summary,4,False,724400,190,7.0962
+458200,Shoe retailers,Line Item,4,False,11800,19,7.0356
+458100,Clothing and clothing accessories retailers,Line Item,4,False,124200,48,6.9752
+423400,Professional and commercial equipment and supplies merchant wholesalers,Line Item,4,False,494700,114,6.9545
+516100,Radio and Television Broadcasting Stations,Summary,4,False,102000,58,6.9426
+813200,Grantmaking and giving services,Line Item,4,False,144100,96,6.9141
+334500,"Navigational, measuring, electromedical, and control instruments manufacturing",Line Item,4,False,250900,98,6.862
+711500,"Independent artists, writers, and performers",Line Item,4,False,24100,33,6.8079
+512200,Sound recording industries,Line Item,4,False,15500,34,6.789
+541300,"Architectural, engineering, and related services",Summary,4,False,1450000,172,6.6843
+813900,"Business, professional, labor, political, and similar organizations",Summary,4,False,344500,136,6.6606
+445300,"Beer, wine, and liquor retailers",Line Item,4,False,89900,24,6.5607
+449100,Furniture and home furnishings retailers,Line Item,4,False,119700,60,6.5034
+444100,Building material and supplies dealers,Line Item,4,False,332500,66,6.4783
+335100,Electric lighting equipment manufacturing,Line Item,4,False,15000,45,6.4293
+333300,Commercial and service industry machinery manufacturing,Line Item,4,False,45900,69,6.3139
+334400,Semiconductor and other electronic component manufacturing,Line Item,4,False,242700,84,6.3092
+339900,Other miscellaneous manufacturing,Summary,4,False,113300,87,6.2803
+325400,Pharmaceutical and medicine manufacturing,Line Item,4,False,183600,100,6.2659
+337900,Other furniture related product manufacturing,Line Item,4,False,5600,23,6.2232
+457100,Gasoline stations,Line Item,4,False,731900,28,6.1585
+458300,"Jewelry, luggage, and leather goods retailers",Line Item,4,False,30000,31,6.0807
+488900,Other support activities for transportation,Line Item,4,False,14400,33,6.0521
+811200,Electronic and precision equipment repair and maintenance,Line Item,4,False,47500,60,6.0314
+512100,Motion picture and video industries,Summary,4,False,228900,95,6.0177
+335300,Electrical equipment manufacturing,Line Item,4,False,64800,62,5.9648
+221200,Natural gas distribution,Line Item,4,False,61300,83,5.9641
+336400,Aerospace product and parts manufacturing,Line Item,4,False,346100,105,5.9504
+339100,Medical equipment and supplies manufacturing,Line Item,4,False,180000,92,5.8823
+999100,"Federal government, excluding postal service",Line Item,4,False,1313400,193,5.8666
+813300,Social advocacy organizations,Line Item,4,False,201400,117,5.7854
+335900,Other electrical equipment and component manufacturing,Line Item,4,False,67000,65,5.7742
+237200,Land subdivision,Line Item,4,False,27800,47,5.7302
+459900,Other miscellaneous retailers,Line Item,4,False,175700,88,5.6703
+335200,Household appliance manufacturing,Line Item,4,False,17100,43,5.6696
+456100,Health and personal care retailers,Summary,4,False,690800,80,5.6692
+333600,"Engine, turbine, and power transmission equipment manufacturing",Line Item,4,False,48300,60,5.5996
+561900,Other support services,Line Item,4,False,122700,90,5.5798
+486100,Pipeline transportation of crude oil,Line Item,4,False,5700,31,5.5772
+322200,Converted paper product manufacturing,Line Item,4,False,75100,61,5.5726
+485300,Taxi and limousine service,Line Item,4,False,41500,31,5.5643
+999200,"State government, excluding education and hospitals",Line Item,4,False,1673600,245,5.548
+483100,"Deep sea, coastal, and great lakes water transportation",Line Item,4,False,29700,46,5.4391
+424500,Farm product raw material merchant wholesalers,Line Item,4,False,32300,47,5.4282
+326200,Rubber product manufacturing,Line Item,4,False,40000,59,5.3803
+336100,Motor vehicle manufacturing,Line Item,4,False,89500,80,5.3764
+326100,Plastics product manufacturing,Line Item,4,False,208300,82,5.3622
+561300,Employment services,Summary,4,False,1549300,241,5.3586
+423800,"Machinery, equipment, and supplies merchant wholesalers",Summary,4,False,497900,97,5.347
+311100,Animal food manufacturing,Line Item,4,False,28500,50,5.3232
+423100,Motor vehicle and motor vehicle parts and supplies merchant wholesalers,Line Item,4,False,192600,82,5.3178
+221100,"Electric power generation, transmission and distribution",Summary,4,False,295300,120,5.3127
+459200,Book retailers and news dealers,Line Item,4,False,12500,20,5.252
+492200,Local messengers and local delivery,Line Item,4,False,24000,32,5.2296
+336300,Motor vehicle parts manufacturing,Line Item,4,False,187500,87,5.2169
+311300,Sugar and confectionery product manufacturing,Line Item,4,False,22100,54,5.1986
+336900,Other transportation equipment manufacturing,Line Item,4,False,16900,47,5.1763
+331400,Nonferrous metal (except aluminum) production and processing,Line Item,4,False,28200,53,5.1745
+621100,Offices of physicians,Line Item,4,False,2513300,132,5.1639
+312200,Tobacco manufacturing,Line Item,4,False,4500,24,5.1467
+444200,Lawn and garden equipment and supplies retailers,Line Item,4,False,55400,42,5.1421
+711100,Performing arts companies,Summary,4,False,93400,68,5.1333
+621500,Medical and diagnostic laboratories,Line Item,4,False,245400,85,5.0961
+333500,Metalworking machinery manufacturing,Line Item,4,False,74900,55,5.063
+311200,Grain and oilseed milling,Line Item,4,False,25000,58,5.0488
+812300,Drycleaning and laundry services,Line Item,4,False,60100,33,5.0439
+711300,"Promoters of performing arts, sports, and similar events",Line Item,4,False,101400,83,5.0294
+624200,"Community food and housing, and emergency and other relief services",Line Item,4,False,163500,98,5.024
+331500,Foundries,Line Item,4,False,33500,55,4.9564
+541900,"Other professional, scientific, and technical services",Summary,4,False,720300,130,4.956
+321200,"Veneer, plywood, and engineered wood product manufacturing",Line Item,4,False,22400,44,4.9161
+488100,Support activities for air transportation,Line Item,4,False,86800,79,4.8908
+322100,"Pulp, paper, and paperboard mills",Line Item,4,False,28800,55,4.8861
+331200,Steel product manufacturing from purchased steel,Line Item,4,False,23400,47,4.859
+812200,Death care services,Line Item,4,False,57700,27,4.8307
+457200,Fuel dealers,Line Item,4,False,48700,32,4.8238
+311700,Seafood product preparation and packaging,Line Item,4,False,7800,35,4.8154
+331300,Alumina and aluminum production and processing,Line Item,4,False,22300,51,4.7691
+311900,Other food manufacturing,Line Item,4,False,92500,72,4.7147
+441200,Other motor vehicle dealers,Line Item,4,False,79400,46,4.7139
+336500,Railroad rolling stock manufacturing,Line Item,4,False,12200,35,4.709
+486200,Pipeline transportation of natural gas,Line Item,4,False,14000,42,4.7043
+621400,Outpatient care centers,Summary,4,False,929500,138,4.691
+999300,"Local government, excluding education and hospitals",Line Item,4,False,3639500,276,4.6647
+311500,Dairy product manufacturing,Line Item,4,False,52600,60,4.6551
+441300,"Automotive parts, accessories, and tire retailers",Line Item,4,False,242000,48,4.6446
+441100,Automobile dealers,Line Item,4,False,723100,70,4.6249
+487100,"Scenic and sightseeing transportation, land",Line Item,4,False,5400,20,4.5796
+562100,Waste collection,Line Item,4,False,95300,49,4.5759
+492100,Couriers and express delivery services,Line Item,4,False,173600,49,4.5586
+311400,Fruit and vegetable preserving and specialty food manufacturing,Line Item,4,False,54300,60,4.5525
+811400,Personal and household goods repair and maintenance,Line Item,4,False,35200,43,4.5384
+713200,Gambling industries (except casino hotels),Line Item,4,False,51800,53,4.5328
+236200,Nonresidential building construction,Line Item,4,False,668800,97,4.5234
+331100,Iron and steel mills and ferroalloy manufacturing,Line Item,4,False,30500,53,4.5213
+321900,Other wood product manufacturing,Line Item,4,False,75500,66,4.5136
+221300,"Water, sewage and other systems",Line Item,4,False,42700,48,4.5133
+332800,"Coating, engraving, heat treating, and allied activities",Line Item,4,False,50100,54,4.4435
+486900,Other pipeline transportation,Line Item,4,False,2700,15,4.4074
+621300,Offices of other health practitioners,Summary,4,False,1086900,103,4.3969
+488400,Support activities for road transportation,Line Item,4,False,75600,37,4.3849
+485100,Urban transit systems,Line Item,4,False,12800,29,4.3484
+485200,Interurban and rural bus transportation,Line Item,4,False,3200,12,4.3344
+332700,"Machine shops; turned product; and screw, nut, and bolt manufacturing",Summary,4,False,172800,61,4.3084
+711200,Spectator sports,Line Item,4,False,109100,93,4.2969
+321100,Sawmills and wood preservation,Line Item,4,False,26200,40,4.2702
+562200,Waste treatment and disposal,Line Item,4,False,56600,62,4.2604
+485900,Other transit and ground passenger transportation,Line Item,4,False,81100,31,4.2592
+487900,"Scenic and sightseeing transportation, other",Line Item,4,False,1200,6,4.2167
+336600,Ship and boat building,Line Item,4,False,78700,73,4.1859
+713100,Amusement parks and arcades,Line Item,4,False,90900,67,4.1513
+236100,Residential building construction,Line Item,4,False,712900,86,4.1478
+485500,Charter bus industry,Line Item,4,False,8200,17,4.1402
+624300,Vocational rehabilitation services,Line Item,4,False,201100,90,4.1363
+532100,Automotive equipment rental and leasing,Line Item,4,False,93500,45,4.0966
+488200,Support activities for rail transportation,Line Item,4,False,18600,38,3.9914
+562900,Remediation and other waste management services,Line Item,4,False,110400,70,3.9858
+212300,Nonmetallic mineral mining and quarrying,Line Item,4,False,47700,45,3.9763
+336200,Motor vehicle body and trailer manufacturing,Line Item,4,False,70400,64,3.9707
+311600,Animal slaughtering and processing,Line Item,4,False,136100,72,3.9528
+481200,Nonscheduled air transportation,Line Item,4,False,36000,35,3.9392
+721200,RV (recreational vehicle) parks and recreational camps,Line Item,4,False,44000,39,3.8802
+212200,Metal ore mining,Line Item,4,False,24100,58,3.873
+811300,Commercial and industrial machinery and equipment (except automotive and electronic) repair and maintenance,Line Item,4,False,165000,75,3.8593
+621900,Other ambulatory healthcare services,Summary,4,False,297500,106,3.8439
+312100,Beverage manufacturing,Line Item,4,False,157000,76,3.8228
+813400,Civic and social organizations,Line Item,4,False,264400,90,3.8224
+621200,Offices of dentists,Line Item,4,False,978300,33,3.8139
+561600,Investigation and security services,Summary,4,False,821400,62,3.7776
+811100,Automotive repair and maintenance,Summary,4,False,744300,58,3.5863
+238200,Building equipment contractors,Summary,4,False,1885000,105,3.543
+488300,Support activities for water transportation,Line Item,4,False,45800,39,3.4797
+623900,Other residential care facilities,Line Item,4,False,137900,72,3.4635
+237900,Other heavy and civil engineering construction,Line Item,4,False,101500,64,3.4477
+812900,Other personal services,Line Item,4,False,256500,58,3.4423
+713900,Other amusement and recreation industries,Summary,4,False,934700,119,3.4226
+311800,Bakeries and tortilla manufacturing,Line Item,4,False,186800,61,3.4063
+561200,Facilities support services,Line Item,4,False,128500,107,3.4044
+487200,"Scenic and sightseeing transportation, water",Line Item,4,False,11800,20,3.3814
+721100,Traveler accommodation,Summary,4,False,696300,105,3.3623
+238900,Other specialty trade contractors,Line Item,4,False,566700,80,3.3381
+113300,Logging,Line Item,4,False,33400,11,3.332
+237100,Utility system construction,Summary,4,False,419800,89,3.3109
+212100,Coal mining,Line Item,4,False,18400,32,3.3033
+237300,"Highway, street, and bridge construction",Line Item,4,False,280500,65,3.2766
+238100,"Foundation, structure, and building exterior contractors",Summary,4,False,642800,78,3.1785
+459300,Florists,Line Item,4,False,35000,22,3.1414
+721300,"Rooming and boarding houses, dormitories, and workers' camps",Line Item,4,False,3700,12,3.073
+623200,"Residential intellectual and developmental disability, mental health, and substance abuse facilities",Summary,4,False,598800,90,3.0488
+238300,Building finishing contractors,Summary,4,False,640700,69,3.0377
+722300,Special food services,Line Item,4,False,553500,62,3.0221
+485400,School and employee bus transportation,Line Item,4,False,158600,23,2.9455
+481100,Scheduled air transportation,Line Item,4,False,261400,52,2.878
+483200,Inland water transportation,Line Item,4,False,22600,22,2.8345
+623300,Continuing care retirement communities and assisted living facilities for the elderly,Line Item,4,False,772700,84,2.7186
+624100,Individual and family services,Summary,4,False,3056100,129,2.716
+623100,Nursing care facilities (skilled nursing facilities),Line Item,4,False,1256300,92,2.7047
+624400,Child daycare services,Line Item,4,False,1026000,69,2.5809
+621600,Home healthcare services,Line Item,4,False,1670600,85,2.5782
+561700,Services to buildings and dwellings,Summary,4,False,1827500,55,2.5209
+812100,Personal care services,Line Item,4,False,648200,33,2.4347
+722400,Drinking places (alcoholic beverages),Line Item,4,False,322000,27,2.2517

@@ -15,6 +15,7 @@ data/local/
 
 # Parsed markdown (reproducible via scripts/process.py)
 data/pages/
+data/source/gabriel_runs/
 
 # Embeddings (unused in final visualization)
 embed.py

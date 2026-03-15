@@ -8,6 +8,7 @@ DATA_DIR = ROOT_DIR / "data"
 SOURCE_DIR = DATA_DIR / "source"
 HTML_DIR = SOURCE_DIR / "html"
 COMPARISON_SOURCE_DIR = SOURCE_DIR / "comparison"
+GABRIEL_RUNS_DIR = SOURCE_DIR / "gabriel_runs"
 PAGES_DIR = DATA_DIR / "pages"
 EXPORTS_DIR = DATA_DIR / "exports"
 COMPARISON_EXPORTS_DIR = EXPORTS_DIR / "comparisons"
@@ -20,6 +21,7 @@ OCCUPATIONS_JSON = EXPORTS_DIR / "occupations.json"
 OCCUPATIONS_CSV = EXPORTS_DIR / "occupations.csv"
 SCORES_JSON = EXPORTS_DIR / "scores.json"
 SCORES_ORG_JSON = EXPORTS_DIR / "scores_org.json"
+SCORES_GABRIEL_JSON = EXPORTS_DIR / "scores_gabriel.json"
 INDUSTRY_EXPOSURE_JSON = EXPORTS_DIR / "industry_exposure.json"
 INDUSTRY_EXPOSURE_CSV = EXPORTS_DIR / "industry_exposure.csv"
 INDUSTRY_EXPOSURE_4DIGIT_JSON = EXPORTS_DIR / "industry_exposure_4digit.json"
@@ -31,6 +33,7 @@ def ensure_data_dirs():
     SOURCE_DIR.mkdir(parents=True, exist_ok=True)
     HTML_DIR.mkdir(parents=True, exist_ok=True)
     COMPARISON_SOURCE_DIR.mkdir(parents=True, exist_ok=True)
+    GABRIEL_RUNS_DIR.mkdir(parents=True, exist_ok=True)
     PAGES_DIR.mkdir(parents=True, exist_ok=True)
     EXPORTS_DIR.mkdir(parents=True, exist_ok=True)
     COMPARISON_EXPORTS_DIR.mkdir(parents=True, exist_ok=True)

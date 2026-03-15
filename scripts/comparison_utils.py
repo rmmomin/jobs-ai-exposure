@@ -19,6 +19,7 @@ from paths import (
     COMPARISON_SOURCE_DIR,
     COMPARISON_TABLES_DIR,
     OCCUPATIONS_CSV,
+    SCORES_GABRIEL_JSON,
     SCORES_JSON,
     SCORES_ORG_JSON,
     ensure_data_dirs,
@@ -584,12 +585,12 @@ def _prepare_variant_frame(
 
 
 def load_internal_variants() -> dict[str, pd.DataFrame]:
-    """Load the canonical current and archived original occupation score variants."""
+    """Load every available internal occupation score variant."""
     occupations = load_occupations_metadata()
     current = pd.DataFrame(load_json_records(SCORES_JSON))
     current_extras = current[["slug", "industry_matrix_url", "industries", "naics_industry_codes"]].copy()
 
-    return {
+    variants = {
         "repo_current": _prepare_variant_frame(current, "repo_current", occupations),
         "repo_original": _prepare_variant_frame(
             pd.DataFrame(load_json_records(SCORES_ORG_JSON)),
@@ -598,6 +599,14 @@ def load_internal_variants() -> dict[str, pd.DataFrame]:
             current_extras=current_extras,
         ),
     }
+    if SCORES_GABRIEL_JSON.exists():
+        variants["repo_gabriel"] = _prepare_variant_frame(
+            pd.DataFrame(load_json_records(SCORES_GABRIEL_JSON)),
+            "repo_gabriel",
+            occupations,
+            current_extras=current_extras,
+        )
+    return variants
 
 
 def aggregate_variant_by_column(frame: pd.DataFrame, code_column: str) -> pd.DataFrame:

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+from itertools import combinations
 
 import httpx
 import pandas as pd
@@ -332,9 +333,7 @@ def compare_variant_to_metric(left, right, left_label, right_label, tables_dir, 
 
 def compare_internal_variants(prepared, tables_dir, figures_dir):
     """Compare internal variants directly on slug overlap."""
-    pairs = []
-    if "repo_current" in prepared and "repo_original" in prepared:
-        pairs.append(("repo_current", "repo_original"))
+    pairs = list(combinations(sorted(prepared), 2))
 
     rows = []
     for left_name, right_name in pairs:
