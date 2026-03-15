@@ -1,0 +1,44 @@
+# Build checklist for `jobs-ai-exposure`
+
+- [ ] Keep the existing repo layout and `uv` workflow
+- [ ] Add `data/local/` if missing
+- [ ] Add `data/source/comparison/`
+- [ ] Add `data/exports/comparisons/cleaned/`
+- [ ] Add `data/exports/comparisons/tables/`
+- [ ] Add `data/exports/comparisons/figures/`
+- [ ] Add `scripts/download_comparison_data.py`
+- [ ] Add `scripts/compare_occupation_exposure.py`
+- [ ] Add `scripts/compare_industry_exposure.py`
+- [ ] Add a small shared comparison helper module only if needed
+- [ ] Load `data/exports/scores.json`
+- [ ] Load `data/exports/scores_org.json`
+- [ ] Load `data/exports/occupations.csv`
+- [ ] Load `data/local/scores_gpt54.json` if present
+- [ ] Normalize internal score variants: `repo_current`, `repo_original`, optional `local_gpt54`
+- [ ] Normalize SOC codes and SOC4 keys
+- [ ] Normalize NAICS keys and levels
+- [ ] Download and load Felten base workbook
+- [ ] Download and load Felten LM workbook
+- [ ] Download and load Felten image workbook
+- [ ] Download and load GPTs-are-GPTs occupation data
+- [ ] Download and load Microsoft AI applicability data
+- [ ] Download and load Eisfeldt occupation data
+- [ ] Download and load Webb SOC4 exposure data
+- [ ] Download Yale workbook for validation/reference
+- [ ] Download official BLS crosswalk/helper files
+- [ ] Build cleaned occupation-level metric tables
+- [ ] Compare each internal score variant to occupation-level external metrics
+- [ ] Compare internal variants to each other
+- [ ] Save occupation summary tables
+- [ ] Save occupation disagreement tables
+- [ ] Save occupation comparison plots
+- [ ] Extend `scripts/build_industry_exposure.py` with `--scores-path`
+- [ ] Build custom industry exposure for alternate score variants when available
+- [ ] Use repo `industry_exposure_4digit.csv` for the canonical current variant
+- [ ] Compare industry variants to Felten base AIIE
+- [ ] Compare industry variants to Felten LM AIIE
+- [ ] Compare industry variants to Felten image AIIE
+- [ ] Save industry summary tables
+- [ ] Save industry overlap tables
+- [ ] Save industry comparison plots
+- [ ] Update the repo README with comparison-script instructions
