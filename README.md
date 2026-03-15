@@ -75,6 +75,23 @@ The industry outputs are based on the occupations covered by this repository's
 BLS-derived dataset, so `covered_employment_2024` reflects covered occupations
 rather than a full census of every job in the industry.
 
+
+## Comparison scripts
+
+Use the comparison downloader first, then run the occupation-level harmonization/comparison script.
+
+```bash
+uv run python scripts/download_comparison_data.py
+uv run python scripts/compare_occupation_exposure.py
+```
+
+Outputs are written under `data/exports/comparisons/`:
+- cleaned metric tables in `cleaned/`,
+- summaries/disagreement tables in `tables/`,
+- scatter plots in `figures/`.
+
+`data/local/scores_gpt54.json` is optional; if present, it is included as an additional internal variant.
+
 ## Setup
 
 ```bash
